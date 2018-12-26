@@ -1,0 +1,19 @@
+{
+  "name": "@alaska/orion-icons",
+  "version": "0.0.0",
+  "description": "Orion Design System icons",
+  "main": "index.js",
+  "author": "Alaska Design and Research",
+  "devDependencies": {
+    "jest": "^23.5.0",
+    "jsonlint2": "^1.7.1",
+    "svglint": "^1.0.2"
+  },
+  "scripts": {
+    "jsonlint": "jsonlint data/orion-icons.json -q -V .jsonlintschema",
+    "svglint": "svglint icons/* --ci",
+    "build": "node scripts/build.js",
+    "clean": "rm dist/icons/*.js dist/index.js",
+    "test": "jest"
+  }
+}
