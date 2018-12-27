@@ -173,3 +173,7 @@ Never include the following:
     </g>
 </svg>
 ```
+
+## Thanks!
+
+This project was forked from, and inspired by [simple-icons](https://github.com/simple-icons). On the shoulder's of giants, open-source projects help and inspire us all to do better things!
