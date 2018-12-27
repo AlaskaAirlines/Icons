@@ -1,9 +1,13 @@
 {
-    "icons": [
-        {
-            "title": "Apple",
-            "hex": "999999",
-            "source": "https://worldvectorlogo.com/logo/apple"
-        }
-    ]
+  "icons": [
+    {
+      "title": "Arrow Up",
+      "hex": "222222",
+      "source": "https://alaskaair.design"
+    },{
+      "title": "Arrow Down",
+      "hex": "222222",
+      "source": "https://alaskaair.design"
+    }
+  ]
 }

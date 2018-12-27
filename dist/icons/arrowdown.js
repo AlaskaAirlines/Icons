@@ -1,0 +1,1 @@
+module.exports={"title":"Arrow Down","hex":"222222","source":"https://alaskaair.design","svg":"<svg role=\"img\" viewBox=\"0 0 8 4\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><title>Arrow Down</title><g><polygon points=\"4 4 0 0 8 0\"></polygon></g></svg>"};
