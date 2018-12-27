@@ -1,5 +1,5 @@
 {
-    "title": "Simple Icons",
+    "title": "Orion Icons",
     "type": "object",
     "properties": {
         "icons": {
@@ -14,16 +14,19 @@
                         "type": "string",
                         "required": true
                     },
-                    "hex": {
-                        "description": "The icons color, as HEX (without #)",
+                    "color": {
+                        "description": "The icon's default color, as Token",
                         "type": "string",
-                        "pattern": "^[0-9A-F]{6}$",
                         "required": true
                     },
-                    "source": {
-                        "description": "The website from which the icon originated",
+                    "width": {
+                        "description": "The icon's default width, as Token",
                         "type": "string",
-                        "pattern": "^https?://",
+                        "required": true
+                    },
+                    "style": {
+                        "description": "The icon's default CSS class",
+                        "type": "string",
                         "required": true
                     }
                 },

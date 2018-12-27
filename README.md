@@ -108,6 +108,8 @@ Adding new icons to this repository requires a few steps.
 1. Run `npm run clean` to clear the repository of old build artifacts
 1. Run `npm run build` to create new build artifacts
 1. Run `npm run test` to ensure that output artifacts meet specifications
+1. Run `npm run svglint` to ensure that SVGs are properly formatted
+1. Run `npm run jsonlint` to ensure that JSON is properly formatted
 1. Submit pull request for approval
 
 ### Icon shape schema
