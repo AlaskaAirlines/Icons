@@ -5,15 +5,18 @@
   "main": "index.js",
   "author": "Alaska Design and Research",
   "devDependencies": {
+    "concurrently": "^4.1.0",
     "jest": "^23.5.0",
     "jsonlint2": "^1.7.1",
     "svglint": "^1.0.2"
   },
   "scripts": {
+    "test": "jest",
     "jsonlint": "jsonlint data/orion-icons.json -q -V .jsonlintschema",
     "svglint": "svglint icons/* --ci",
-    "build": "node scripts/build.js",
+    "newbuild": "node scripts/build.js",
     "clean": "rm dist/icons/*.js dist/index.js",
-    "test": "jest"
+    "build": "concurrently \"npm run clean\" \"npm run newbuild\"",
+    "tests": "concurrently \"npm run test\" \"npm run jsonlint\" \"npm run svglint\""
   }
 }
