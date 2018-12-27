@@ -112,7 +112,7 @@ Adding new icons to this repository requires a few steps.
 
 ### Icon shape schema
 
-When adding new icons, be sure to follow this example to add the proper data to the `orion-icos.json` file
+When adding new icons, be sure to follow this example to add the proper data to the `orion-icons.json` file
 
 ```js
 {
