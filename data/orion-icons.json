@@ -2,12 +2,14 @@
   "icons": [
     {
       "title": "Arrow Up",
-      "hex": "222222",
-      "source": "https://alaskaair.design"
+      "color": "val(--color-icon-toggle-arrow)",
+      "width": "val(--size-icon-toggle-arrow)",
+      "style": "ico__toggleArrow"
     },{
       "title": "Arrow Down",
-      "hex": "222222",
-      "source": "https://alaskaair.design"
+      "color": "val(--color-icon-toggle-arrow)",
+      "width": "val(--size-icon-toggle-arrow)",
+      "style": "ico__toggleArrow"
     }
   ]
 }

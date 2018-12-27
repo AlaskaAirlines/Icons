@@ -1,0 +1,29 @@
+// ====================================================================
+// DO NOT EDIT THE CONTENT OF THIS FILE!
+// ====================================================================
+// Note:
+// None of the Orion Icon styles are exported by default.
+// To make use of a Icon class name, where this SCSS file is imported,
+// update the $iconMap variable to change the flag from FALSE to TRUE
+
+// Example:
+// ====================================================================
+// @import: '@alaska/orion-icons/dist/orion-icons';
+
+// $iconMap: (
+//   toggleArrow: true
+// );
+
+// Default map and values
+$iconMap: (
+  key: value
+) !default;
+
+
+// Icon base shape styles
+.ico__toggleArrow {
+  @if (map-get($iconMap, toggleArrow)) {
+    fill: $color-icon-toggle-arrow;
+    width: $size-icon-toggle-arrow-width;
+  }
+}
