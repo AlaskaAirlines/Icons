@@ -2,6 +2,10 @@
 
 The focus of this repository is to manage, at scale, the enterprise need for icons in the Orion Design System. Please see all supporting documentation for contributing to, and consuming icons from the Orion SVG Icon Library.
 
+## Supported icons
+
+All currently supported icons are located in the `icons/` directory.
+
 ## Install
 
 All icons are made available via a npm package, to install simply run:
@@ -93,9 +97,9 @@ console.log(`
 This will output the following:
 
 ```css
-.ico__toggleArrow {
+.ico__toggleArrowHorizontal {
   color: val(--color-brand-blue-atlas);
-  width: val(--size-icon-toggle-arrow);
+  width: val(--size-icon-toggle-arrow-horizontal);
 }
 ```
 
@@ -122,9 +126,20 @@ When adding new icons, be sure to follow this example to add the proper data to 
 }
 ```
 
+Example:
+
+```js
+{
+  "title": "Arrow Down",
+  "color": "val(--color-icon-toggle-arrow)",
+  "width": "val(--size-icon-toggle-arrow-horizontal-width)",
+  "style": "ico__toggleArrowHorizontal"
+}
+```
+
 **NEVER**: For `color` and `width` do not use hard-coded values. To be compliant you must use Orion Design Token references.
 
-### Icon guide lines
+### Icon guide-lines
 
 All new icon pull requests MUST comply with the following specifications. Any pull-request that does not follow these specifications will be considered non-compliant and will be rejected.
 
@@ -137,15 +152,18 @@ Reduce the SVG HTML to only the following attributes;
 
 1. Add CSS class
 1. Add `role="img"`
+1. Add `aria-hidden="true"` for decorative icons
+1. Add `aria-labelledby="[unique id]"`
 1. Keep `viewBox`
 1. Keep `xmlns`
 1. Keep `xmlns:xlink`
-1. Populate `<title>` tags
+1. Populate `<title>` element
+1. Add id="[unique id]" to `<title>` tag referencing `aria-labelledby` unique id
 1. Keep all necessary `<svg>` elements to render output
 1. Reduce HTML to remove all spaces and returns
 
 ```html
-<svg class="ico__toggleArrow" role="img" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Arrow Down</title><g><polygon points="4 4 0 0 8 0"></polygon></g></svg>
+<svg class="ico__toggleArrow" aria-hidden="true" aria-labelledby="icoArrowDown" role="img" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title id="icoArrowDown">Arrow Down</title><g><polygon points="4 4 0 0 8 0"></polygon></g></svg>
 ```
 
 #### DO NOT
@@ -157,8 +175,8 @@ Never include the following:
 1. xml version
 1. `width` or `height` hard coded HTML attributes
 1. Any auto generated comments
-1. Description
-1. Any IDs, stroke or fill attributes
+1. Description, unless title is unable to describe the intent of the SVG image/icon
+1. Any IDs, stroke or fill attributes, unless required for the complexity of the SVG image/icon
 
 ```html
 <?xml version="1.0" encoding="UTF-8"?>

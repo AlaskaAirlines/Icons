@@ -3,13 +3,23 @@
     {
       "title": "Arrow Up",
       "color": "val(--color-icon-toggle-arrow)",
-      "width": "val(--size-icon-toggle-arrow)",
-      "style": "ico__toggleArrow"
+      "width": "val(--size-icon-toggle-arrow-horizontal-width)",
+      "style": "ico__toggleArrowHorizontal"
     },{
       "title": "Arrow Down",
       "color": "val(--color-icon-toggle-arrow)",
-      "width": "val(--size-icon-toggle-arrow)",
-      "style": "ico__toggleArrow"
+      "width": "val(--size-icon-toggle-arrow-horizontal-width)",
+      "style": "ico__toggleArrowHorizontal"
+    },{
+      "title": "Arrow Left",
+      "color": "val(--color-icon-toggle-arrow)",
+      "width": "val(--size-icon-toggle-arrow-vertical-width)",
+      "style": "ico__toggleArrowVertical"
+    },{
+      "title": "Arrow Right",
+      "color": "val(--color-icon-toggle-arrow)",
+      "width": "val(--size-icon-toggle-arrow-vertical-width)",
+      "style": "ico__toggleArrowVertical"
     }
   ]
 }

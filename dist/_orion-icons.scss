@@ -21,9 +21,16 @@ $iconMap: (
 
 
 // Icon base shape styles
-.ico__toggleArrow {
-  @if (map-get($iconMap, toggleArrow)) {
+.ico__toggleArrowHorizontal {
+  @if (map-get($iconMap, toggleArrowHorizontal)) {
     fill: $color-icon-toggle-arrow;
-    width: $size-icon-toggle-arrow-width;
+    width: $size-icon-toggle-arrow-horizontal-width;
+  }
+}
+
+.ico__toggleArrowVertical {
+  @if (map-get($iconMap, toggleArrowVertical)) {
+    fill: $color-icon-toggle-arrow;
+    width: $size-icon-toggle-arrow-vertical-width;
   }
 }
