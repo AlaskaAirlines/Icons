@@ -105,8 +105,8 @@ Adding new icons to this repository requires a few steps.
 
 1. Add a new icon `.svg` file to the `icons/` directory (see DOs and DON'Ts below)
 1. Add **shape schema** to `orion-icons.json` file (see example below)
-1. Run `npm run build` to clear the repository of old build artifacts and build new ones
-1. Run `npm run tests` to ensure that output artifacts meet specifications
+1. Run `npm run build` to clear the repository of old build artifacts, build new artifacts and run tests
+  1. You can run `npm run tests` to ensure that output artifacts meet specifications independently if needed
 1. Submit pull request for approval
 
 ### Icon shape schema

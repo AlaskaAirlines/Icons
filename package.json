@@ -16,7 +16,7 @@
     "svglint": "svglint icons/* --ci",
     "newbuild": "node scripts/build.js",
     "clean": "rm dist/icons/*.js dist/index.js",
-    "build": "concurrently \"npm run clean\" \"npm run newbuild\"",
-    "tests": "concurrently \"npm run test\" \"npm run jsonlint\" \"npm run svglint\""
+    "tests": "concurrently \"npm run test\" \"npm run jsonlint\" \"npm run svglint\"",
+    "build": "concurrently \"npm run clean\" \"npm run newbuild\" \"npm run tests\""
   }
 }
