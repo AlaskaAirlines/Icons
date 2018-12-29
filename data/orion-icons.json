@@ -20,6 +20,26 @@
       "color": "val(--color-icon-toggle-arrow)",
       "width": "val(--size-icon-toggle-arrow-vertical-width)",
       "style": "ico__toggleArrowVertical"
+    },{
+      "title": "Chevron Left",
+      "color": "val(--color-icon-chevron-arrow)",
+      "height": "val(--size-icon-toggle-chevron-vertical-height)",
+      "style": "ico__toggleChevronVertical"
+    },{
+      "title": "Chevron Right",
+      "color": "val(--color-icon-chevron-arrow)",
+      "height": "val(--size-icon-toggle-chevron-vertical-height)",
+      "style": "ico__toggleChevronVertical"
+    },{
+      "title": "Chevron Up",
+      "color": "val(--color-icon-chevron-arrow)",
+      "width": "val(--size-icon-toggle-chevron-vertical-width)",
+      "style": "ico__toggleChevronHorizontal"
+    },{
+      "title": "Chevron Down",
+      "color": "val(--color-icon-chevron-arrow)",
+      "width": "val(--size-icon-toggle-chevron-vertical-width)",
+      "style": "ico__toggleChevronHorizontal"
     }
   ]
 }

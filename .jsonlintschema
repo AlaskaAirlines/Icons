@@ -21,9 +21,10 @@
                     },
                     "width": {
                         "description": "The icon's default width, as Token",
-                        "type": "string",
-                        "required": true
-                    },
+                        "type": "string"                    },
+                    "height": {
+                        "description": "The icon's default height, as Token",
+                        "type": "string"                    },
                     "style": {
                         "description": "The icon's default CSS class",
                         "type": "string",

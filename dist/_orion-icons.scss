@@ -34,3 +34,17 @@ $iconMap: (
     width: $size-icon-toggle-arrow-vertical-width;
   }
 }
+
+.ico__chevronArrowVertical {
+  @if (map-get($iconMap, toggleArrowVertical)) {
+    fill: $color-icon-chevron-arrow;
+    height: $size-icon-chevron-arrow-vertical-height;
+  }
+}
+
+.ico__chevronArrowHorizontal {
+  @if (map-get($iconMap, toggleArrowVertical)) {
+    fill: $color-icon-chevron-arrow;
+    height: $size-icon-chevron-arrow-horizontal-width;
+  }
+}
