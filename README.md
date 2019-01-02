@@ -11,7 +11,7 @@ All currently supported icons are located in the `icons/` directory.
 All icons are made available via a npm package, to install simply run:
 
 ```js
-npm i @alaska/orion-icons --save
+npm i @alaska/orion-icons@0.1.x --save
 ```
 
 ## Node application dependency
@@ -23,7 +23,7 @@ Via a node.js dependency or other node like dependency management architecture, 
 It is suggested that developers list individual dependencies per UI component, like so:
 
 ```js
-const arrowDown = require('@alaska/orion-icons/dist/icons/arrowDown');
+const arrowDown = require('@alaskaair/orion-icons/icons/arrowDown');
 ```
 
 Within the UI component a developer can reference the object assigned to the newly created variable to get the specific icon's SVG code:
@@ -45,7 +45,7 @@ If there are several icons within a view, developers may opt to include all avai
 To require the full library as a dependency of the UI, do the following:
 
 ```js
-const orionIcons = require('@alaska/orion-icons/dist');
+const orionIcons = require('@alaskaair/orion-icons/dist');
 ```
 
 Then within UI component, a developer can render a specific icon from the output array, like so:
@@ -65,7 +65,7 @@ This will return the icon's SVG code from the object, like so:
 In the `dist/` directory is `orion-icons.scss`. Import this Sass file for default shape styles.
 
 ```scss
-@import: '@alaska/orion-icons/dist/orion-icons';
+@import: '@alaskaair/orion-icons/orion-icons';
 ```
 
 By default, no CSS classes are created when importing this file. To opt-in to the icon styles you need, you need to add a config variable map that will set a flag to `true` to process the classes you want.
@@ -84,7 +84,7 @@ If you prefer to build your CSS in the JS component itself, this is supported in
 Example:
 
 ```js
-const arrowDown = require('@alaska/orion-icons/dist/icons/arrowDown');
+const arrowDown = require('@alaskaair/orion-icons/icons/arrowDown');
 
 console.log(`
 .${arrowDown.style} {
