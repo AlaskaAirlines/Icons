@@ -1,14 +1,15 @@
 {
   "name": "@alaska/orion-icons",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Orion Design System icons",
-  "main": "index.js",
+  "main": "dist/",
   "author": "Alaska Design and Research",
   "devDependencies": {
     "concurrently": "^4.1.0",
     "jest": "^23.5.0",
     "jsonlint2": "^1.7.1",
-    "svglint": "^1.0.2"
+    "svglint": "^1.0.2",
+    "versiony-cli": "^1.3.0"
   },
   "scripts": {
     "test": "jest",
@@ -17,6 +18,7 @@
     "newbuild": "node scripts/build.js",
     "clean": "rm dist/icons/*.js dist/index.js",
     "tests": "concurrently \"npm run test\" \"npm run jsonlint\" \"npm run svglint\"",
-    "build": "concurrently \"npm run clean\" \"npm run newbuild\" \"npm run tests\""
+    "build": "concurrently \"npm run clean\" \"npm run newbuild\" \"npm run tests\"",
+    "set-patch": "versiony ./src/package.json --patch"
   }
 }

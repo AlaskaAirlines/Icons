@@ -1,0 +1,12 @@
+{
+  "name": "@alaska/orion-icons",
+  "description": "AlaskaAir Orion Icon Library",
+  "version": "0.1.0",
+  "author": "Product design and research",
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://itsals.visualstudio.com/Orion%20Design%20System/_git/icons"
+  }
+}
