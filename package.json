@@ -19,6 +19,6 @@
     "clean": "rm dist/icons/*.js dist/index.js",
     "tests": "concurrently \"npm run test\" \"npm run jsonlint\" \"npm run svglint\"",
     "build": "concurrently \"npm run clean\" \"npm run newbuild\" \"npm run tests\"",
-    "set-patch": "versiony ./src/package.json --patch"
+    "set-patch": "versiony ./dist/package.json --patch"
   }
 }
