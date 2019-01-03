@@ -113,6 +113,20 @@ Adding new icons to this repository requires a few steps.
   1. You can run `npm run tests` to ensure that output artifacts meet specifications independently if needed
 1. Submit pull request for approval
 
+### Test new icon SVG code
+
+Be sure to test your new SVG code. There is a template HTML file in this project. Please follow the directions below to copy the file and run a local server. DO NOT edit the template file.
+
+From the root of the project, run:
+
+```
+$ cd validate
+$ cp icons.template icons.html
+$ npm run icoserve
+```
+
+The server command should start a new server and you should be able to see your icon HTML at `http://localhost:9001/icons.html`
+
 ### Icon shape schema
 
 When adding new icons, be sure to follow this example to add the proper data to the `orion-icons.json` file

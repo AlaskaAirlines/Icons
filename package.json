@@ -17,8 +17,11 @@
     "svglint": "svglint icons/* --ci",
     "newbuild": "node scripts/build.js",
     "clean": "rm dist/icons/*.js dist/index.js",
+    "surv": "python -m SimpleHTTPServer 9001",
+    "browser": "open http://localhost:9001/validate/icons.html",
     "tests": "concurrently \"npm run test\" \"npm run jsonlint\" \"npm run svglint\"",
     "build": "concurrently \"npm run clean\" \"npm run newbuild\" \"npm run tests\"",
+    "icoserve": "concurrently \"npm run surv\" \"npm run browser\"",
     "set-patch": "versiony ./dist/package.json --patch"
   }
 }
