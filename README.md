@@ -125,7 +125,7 @@ $ cp icons.template icons.html
 $ npm run icoserve
 ```
 
-The server command should start a new server and you should be able to see your icon HTML at `http://localhost:9001/icons.html`
+Open the new `icons.html` file in your editor and you should be able to see the icon HTML at `http://localhost:9001/validate/icons.html`
 
 ### Icon shape schema
 
