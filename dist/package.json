@@ -3,7 +3,7 @@
   "description": "AlaskaAir Orion Icon Library",
   "version": "0.1.0",
   "author": "Product design and research",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "main": "index.js",
   "repository": {
     "type": "git",

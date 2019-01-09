@@ -4,6 +4,7 @@
   "description": "Orion Design System icons",
   "main": "dist/",
   "author": "Alaska Design and Research",
+  "license": "Apache-2.0",
   "devDependencies": {
     "concurrently": "^4.1.0",
     "jest": "^23.5.0",
