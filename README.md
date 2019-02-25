@@ -1,5 +1,7 @@
 # Orion SVG Icon Library
 
+[![Build status](https://itsals.visualstudio.com/Orion%20Design%20System/_apis/build/status/Orion%20Icons)](https://itsals.visualstudio.com/Orion%20Design%20System/_build/latest?definitionId=3089)
+
 The focus of this repository is to manage, at scale, the enterprise need for icons in the Orion Design System. Please see all supporting documentation for contributing to, and consuming icons from the Orion SVG Icon Library.
 
 ## Supported icons
