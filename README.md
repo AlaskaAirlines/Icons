@@ -13,7 +13,7 @@ All currently supported icons are located in the `icons/` directory.
 All icons are made available via a npm package, to install simply run:
 
 ```js
-npm i @alaska/orion-icons@0.1.x --save
+npm i @alaskaair/orion-icons@0.1.x --save
 ```
 
 ## Node application dependency
