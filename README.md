@@ -55,13 +55,13 @@ This will return the icon's SVG code from the object.
 In the `dist/` directory is `orion-icons.scss`. Import this Sass file for default shape styles.
 
 ```scss
-@import: '@alaskaair/orion-icons/orion-icons';
+@import '@alaskaair/orion-icons/orion-icons';
 ```
 
 With Sass, React requires a `~` character prior to the importing library, example:
 
 ```scss
-@import: '~@alaskaair/orion-icons/orion-icons';
+@import '~@alaskaair/orion-icons/orion-icons';
 ```
 
 By default, no CSS classes are created when importing this file. To opt-in to the icon styles you need, you need to add a config variable map that will set a flag to `true` to process the classes you want.
