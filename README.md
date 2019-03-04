@@ -10,11 +10,7 @@ All currently supported icons are located in the `icons/` directory.
 
 ## Install
 
-All icons are made available via a npm package, to install simply run:
-
-```js
-npm i @alaskaair/orion-icons@0.1.x --save
-```
+All icons are made available via a [npm package](https://itsals.visualstudio.com/Orion%20Design%20System/_packaging?_a=package&feed=as.com-npm&package=%40alaskaair%2Forion-icons&protocolType=Npm&version=0.1.1410118)
 
 ## Node application dependency
 
@@ -25,7 +21,7 @@ Via a node.js dependency or other node like dependency management architecture, 
 It is suggested that developers list individual dependencies per UI component, like so:
 
 ```js
-const arrowDown = require('@alaskaair/orion-icons/icons/arrowDown');
+const arrowDown = require('@alaskaair/orion-icons/icons/arrowdown');
 ```
 
 Within the UI component a developer can reference the object assigned to the newly created variable to get the specific icon's SVG code:
@@ -34,11 +30,7 @@ Within the UI component a developer can reference the object assigned to the new
 console.log(`<button>Click Me ${arrowDown.svg}</button>`);
 ```
 
-This will return the icon's SVG code from the object, like so:
-
-```html
-<button>Click Me <svg class="ico__toggleArrow" role="img" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Arrow Down</title><g><polygon points="4 4 0 0 8 0"></polygon></g></svg></button>
-```
+This will return the icon's SVG code from the object
 
 ### Full library dependency
 
@@ -56,11 +48,7 @@ Then within UI component, a developer can render a specific icon from the output
 console.log(orionIcons['Arrow Down'].svg);
 ```
 
-This will return the icon's SVG code from the object, like so:
-
-```html
-<svg class="ico__toggleArrow" role="img" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Arrow Down</title><g><polygon points="4 4 0 0 8 0"></polygon></g></svg>
-```
+This will return the icon's SVG code from the object.
 
 ## Using Icon styles
 
@@ -70,12 +58,18 @@ In the `dist/` directory is `orion-icons.scss`. Import this Sass file for defaul
 @import: '@alaskaair/orion-icons/orion-icons';
 ```
 
+With Sass, React requires a `~` character prior to the importing library, example:
+
+```scss
+@import: '~@alaskaair/orion-icons/orion-icons';
+```
+
 By default, no CSS classes are created when importing this file. To opt-in to the icon styles you need, you need to add a config variable map that will set a flag to `true` to process the classes you want.
 
 ```scss
 $iconMap: (
-  toggleArrow: true,
-  chevronRight: true
+  toggleArrowHorizontal: true,
+  toggleArrowVertical: true
 );
 ```
 
@@ -86,7 +80,7 @@ If you prefer to build your CSS in the JS component itself, this is supported in
 Example:
 
 ```js
-const arrowDown = require('@alaskaair/orion-icons/icons/arrowDown');
+const arrowDown = require('@alaskaair/orion-icons/icons/arrowdown');
 
 console.log(`
 .${arrowDown.style} {
@@ -101,7 +95,7 @@ This will output the following:
 ```css
 .ico__toggleArrowHorizontal {
   color: val(--color-brand-blue-atlas);
-  width: val(--size-icon-toggle-arrow-horizontal);
+  width: val(--size-icon-toggle-arrow-horizontal-width);
 }
 ```
 
@@ -110,7 +104,7 @@ This will output the following:
 Adding new icons to this repository requires a few steps.
 
 1. Add a new icon `.svg` file to the `icons/` directory (see DOs and DON'Ts below)
-1. Add **shape schema** to `orion-icons.json` file (see example below)
+1. Add **shape schema** to `./data/orion-icons.json` file (see example below)
 1. Run `npm run build` to clear the repository of old build artifacts, build new artifacts and run tests
   1. You can run `npm run tests` to ensure that output artifacts meet specifications independently if needed
 1. Submit pull request for approval
@@ -135,10 +129,14 @@ When adding new icons, be sure to follow this example to add the proper data to 
 
 ```js
 {
-  "title": "[icon title]",
-  "color": "[Orion Design Token reference]",
-  "width": "[Orion Design Token reference]",
-  "style": "[Icon class name]"
+  "icons": [
+    {
+      "title": "[icon title]",
+      "color": "[Orion Design Token reference]",
+      "width": "[Orion Design Token reference]",
+      "style": "[Icon class name]"
+    }
+  ]
 }
 ```
 
@@ -146,10 +144,14 @@ Example:
 
 ```js
 {
-  "title": "Arrow Down",
-  "color": "val(--color-icon-toggle-arrow)",
-  "width": "val(--size-icon-toggle-arrow-horizontal-width)",
-  "style": "ico__toggleArrowHorizontal"
+  "icons": [
+    {
+      "title": "Arrow Up",
+      "color": "val(--color-icon-toggle-arrow)",
+      "width": "val(--size-icon-toggle-arrow-horizontal-width)",
+      "style": "ico__toggleArrowHorizontal"
+    }
+  ]
 }
 ```
 

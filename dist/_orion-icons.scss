@@ -8,19 +8,22 @@
 
 // Example:
 // ====================================================================
-// @import: '@alaskaair/orion-icons/orion-icons';
-
 // $iconMap: (
-//   toggleArrow: true
+//   toggleArrowHorizontal: true,
 // );
+// @import: '@alaskaair/orion-icons/orion-icons';
+// ====================================================================
 
 // Default map and values
 $iconMap: (
-  key: value
+  toggleArrowHorizontal: false,
+  toggleArrowVertical: false,
+  chevronArrowVertical: false,
+  chevronArrowHorizontal: false
 ) !default;
 
 
-// Icon base shape styles
+// Icon Toggle Arrow, left and right
 .ico__toggleArrowHorizontal {
   @if (map-get($iconMap, toggleArrowHorizontal)) {
     fill: $color-icon-toggle-arrow;
@@ -28,6 +31,7 @@ $iconMap: (
   }
 }
 
+// Icon Toggle Arrow, up and down
 .ico__toggleArrowVertical {
   @if (map-get($iconMap, toggleArrowVertical)) {
     fill: $color-icon-toggle-arrow;
@@ -35,15 +39,17 @@ $iconMap: (
   }
 }
 
+// Icon Chevron Arrow, left and right
 .ico__chevronArrowVertical {
-  @if (map-get($iconMap, toggleArrowVertical)) {
+  @if (map-get($iconMap, chevronArrowVertical)) {
     fill: $color-icon-chevron-arrow;
     height: $size-icon-chevron-arrow-vertical-height;
   }
 }
 
+// Icon Chevron Arrow, up and down
 .ico__chevronArrowHorizontal {
-  @if (map-get($iconMap, toggleArrowVertical)) {
+  @if (map-get($iconMap, chevronArrowHorizontal)) {
     fill: $color-icon-chevron-arrow;
     height: $size-icon-chevron-arrow-horizontal-width;
   }
