@@ -13,16 +13,20 @@
     "versiony-cli": "^1.3.0"
   },
   "scripts": {
-    "test": "jest",
     "jsonlint": "jsonlint data/orion-icons.json -q -V .jsonlintschema",
     "svglint": "svglint icons/* --ci",
     "newbuild": "node scripts/build.js",
-    "clean": "rm dist/icons/*.js dist/index.js",
+    "test": "jest",
+    "clean": "rm dist/icons/*.js dist/index.js dist/*.scss dist/*.json",
     "surv": "python -m SimpleHTTPServer 9001",
     "browser": "open http://localhost:9001/validate/icons.html",
-    "tests": "concurrently \"npm run test\" \"npm run jsonlint\" \"npm run svglint\"",
-    "build": "concurrently \"npm run clean\" \"npm run newbuild\" \"npm run tests\"",
     "icoserve": "concurrently \"npm run surv\" \"npm run browser\"",
-    "set-patch": "versiony ./dist/package.json --patch"
+    "set-patch": "versiony ./dist/package.json --patch",
+    "copyPkg": "copyfiles -f ./src/package.json ./dist",
+    "copySass": "copyfiles -f ./src/*.scss ./dist",
+    "build": "concurrently \"npm run jsonlint\" \"npm run svglint\" \"npm run copyPkg\" \"npm run copySass\" \"npm run newbuild\" \"npm run test\""
+  },
+  "dependencies": {
+    "copyfiles": "^2.1.0"
   }
 }

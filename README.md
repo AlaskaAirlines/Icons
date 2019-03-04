@@ -210,6 +210,22 @@ Never include the following:
 </svg>
 ```
 
+## npm API
+
+The following scripts are available from `./package.json`
+
+| script | Description |
+|----|----|
+| test | runs `jest` to ensure that `index.js` and `./data/orion-icons.json` are formatted correctly |
+| jsonlint | validates that `./data/orion-icons.json` is correctly formatted JSON | 
+| svglint | validates all SVGs per spec `./.svglintrc.js`| 
+| clean | manual step to delete build resources |
+| copyPkg | build step to copy resource | 
+| copySass | build step to copy resource | 
+| newbuild | to execute `./scripts/build.js` |
+| build | runs concurrently tests and build process pipeline |
+
+
 ## Thanks!
 
 This project was forked from, and inspired by [simple-icons](https://github.com/simple-icons). On the shoulder's of giants, open-source projects help and inspire us all to do better things!
