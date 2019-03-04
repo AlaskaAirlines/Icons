@@ -84,7 +84,7 @@ const arrowDown = require('@alaskaair/orion-icons/icons/arrowdown');
 
 console.log(`
 .${arrowDown.style} {
-  color: ${arrowDown.color};
+  fill: ${arrowDown.color};
   width: ${arrowDown.width};
 }
 `)
@@ -94,8 +94,8 @@ This will output the following:
 
 ```css
 .ico__toggleArrowHorizontal {
-  color: val(--color-brand-blue-atlas);
-  width: val(--size-icon-toggle-arrow-horizontal-width);
+  color: var(--color-brand-blue-atlas);
+  width: var(--size-icon-toggle-arrow-horizontal-width);
 }
 ```
 
