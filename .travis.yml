@@ -4,13 +4,12 @@ node_js:
 branches:
   only:
     - master
-script:
-  - npm run jsonlint
-  - npm run svglint
+before_deploy:
+  - npx semantic-release
   - npm run copySass
   - npm run copyPkg
   - npm run newbuild
-before_deploy:
+  - npm run svgTest
   - cd dist
 deploy:
   on:
