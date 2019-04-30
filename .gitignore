@@ -6,6 +6,9 @@
 # Icon must end with two \r
 Icon
 
+# Buyild resources
+dist/
+
 # Thumbnails
 ._*
 
