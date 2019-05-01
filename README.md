@@ -1,6 +1,8 @@
-<img src="https://resource.alaskaair.net/-/media/2C1969F8FB244C919205CD48429C13AC" alt="Orion Design System Logo" title="Be the change you want to see" width="125" align="right" /> 
+<img src="https://resource.alaskaair.net/-/media/2C1969F8FB244C919205CD48429C13AC" alt="Orion Design System Logo" title="Be the change you want to see" width="125" align="right" />
 
-[![Build status](https://itsals.visualstudio.com/Orion%20Design%20System/_apis/build/status/Orion%20Icons)](https://itsals.visualstudio.com/Orion%20Design%20System/_build/latest?definitionId=3089)
+[![Build Status](https://travis-ci.org/AlaskaAirlines/OrionIcons.svg?branch=master)](https://travis-ci.org/AlaskaAirlines/OrionDesignTokens)
+![npm (scoped)](https://img.shields.io/npm/v/@alaskaairux/orionicons.svg?color=orange)
+![NPM](https://img.shields.io/npm/l/@alaskaairux/orionicons.svg?color=blue)
 
 # Orion SVG Icon Library
 
@@ -23,7 +25,7 @@ Via a node.js dependency or other node like dependency management architecture, 
 It is suggested that developers list individual dependencies per UI component, like so:
 
 ```js
-const arrowDown = require('@alaskaair/orion-icons/icons/arrowdown');
+const arrowDown = require('@alaskaair/orion-icons/dist/icons/arrowdown');
 ```
 
 Within the UI component a developer can reference the object assigned to the newly created variable to get the specific icon's SVG code:
@@ -57,13 +59,13 @@ This will return the icon's SVG code from the object.
 In the `dist/` directory is `orion-icons.scss`. Import this Sass file for default shape styles.
 
 ```scss
-@import '@alaskaair/orion-icons/orion-icons';
+@import '@alaskaair/orion-icons/dist/orion-icons';
 ```
 
 With Sass, React requires a `~` character prior to the importing library, example:
 
 ```scss
-@import '~@alaskaair/orion-icons/orion-icons';
+@import '~@alaskaair/orion-icons/dist/orion-icons';
 ```
 
 By default, no CSS classes are created when importing this file. To opt-in to the icon styles you need, you need to add a config variable map that will set a flag to `true` to process the classes you want.
@@ -82,7 +84,7 @@ If you prefer to build your CSS in the JS component itself, this is supported in
 Example:
 
 ```js
-const arrowDown = require('@alaskaair/orion-icons/icons/arrowdown');
+const arrowDown = require('@alaskaair/orion-icons/dist/icons/arrowdown');
 
 console.log(`
 .${arrowDown.style} {
@@ -105,8 +107,8 @@ This will output the following:
 
 Adding new icons to this repository requires a few steps.
 
-1. Add a new icon `.svg` file to the `icons/` directory (see DOs and DON'Ts below)
-1. Add **shape schema** to `./data/orion-icons.json` file (see example below)
+1. Add a new icon `.svg` file to the `src/icons/` directory (see DOs and DON'Ts below)
+1. Add **shape schema** to `./src/data/orion-icons.json` file (see example below)
 1. Run `npm run build` to clear the repository of old build artifacts, build new artifacts and run tests
   1. You can run `npm run tests` to ensure that output artifacts meet specifications independently if needed
 1. Submit pull request for approval
@@ -218,14 +220,14 @@ The following scripts are available from `./package.json`
 
 | script | Description |
 |----|----|
-| test | runs `jest` to ensure that `index.js` and `./data/orion-icons.json` are formatted correctly |
-| jsonlint | validates that `./data/orion-icons.json` is correctly formatted JSON | 
-| svglint | validates all SVGs per spec `./.svglintrc.js`| 
-| clean | manual step to delete build resources |
-| copyPkg | build step to copy resource | 
-| copySass | build step to copy resource | 
+| svgTest | runs `jest` to ensure that `index.js` and `./data/orion-icons.json` are formatted correctly |
+| jsonlint | validates that `./data/orion-icons.json` is correctly formatted JSON |
+| svglint | validates all SVGs per spec `./.svglintrc.js`|
+| test | runs jsonlint and svglint |
+| changelog | builds new changelog document |
+| concat | concatenates CHANGELOG.md with README.md |
+| copySass | build step to copy resource |
 | newbuild | to execute `./scripts/build.js` |
-| build | runs concurrently tests and build process pipeline |
 
 
 ## Thanks!
