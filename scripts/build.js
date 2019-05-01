@@ -8,8 +8,6 @@
  */
 
 const dataFile = '../src/data/orion-icons.json';
-const dirTree = require('directory-tree');
-const tree = dirTree(`./dist`);
 const indexFile = `${__dirname}/../dist/index.js`;
 const iconsDir = `${__dirname}/../src/icons`;
 const buildIconsDir = `${__dirname}/../dist/icons`;
@@ -37,5 +35,3 @@ data.icons.forEach(icon => {
 
 // write our generic index.js
 fs.writeFileSync(indexFile, `module.exports=${JSON.stringify(icons)};`);
-
-console.log(tree);
