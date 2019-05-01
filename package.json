@@ -12,8 +12,9 @@
   "devDependencies": {
     "auto-changelog": "^1.13.0",
     "concat": "^1.0.3",
-    "copyfiles": "^2.1.0",
     "concurrently": "^4.1.0",
+    "copyfiles": "^2.1.0",
+    "directory-tree": "^2.2.2",
     "file-system": "^2.2.2",
     "jest": "^24.7.1",
     "jsonlint2": "^1.7.1",

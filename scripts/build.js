@@ -7,14 +7,16 @@
  * Also generates an index.js that exports all icons by title, but is not tree-shakeable
  */
 
-const dataFile = "../src/data/orion-icons.json";
+const dataFile = '../src/data/orion-icons.json';
+const dirTree = require('directory-tree');
+const tree = dirTree(`./dist`);
 const indexFile = `${__dirname}/../dist/index.js`;
 const iconsDir = `${__dirname}/../src/icons`;
 const buildIconsDir = `${__dirname}/../dist/icons`;
 const data = require(dataFile);
-const fs = require("file-system");
+const fs = require('file-system');
 
-const { titleToFilename } = require("./utils");
+const { titleToFilename } = require('./utils');
 
 const icoDir = './dist/icons';
 if (!fs.existsSync(icoDir)){
@@ -24,7 +26,7 @@ if (!fs.existsSync(icoDir)){
 const icons = {};
 data.icons.forEach(icon => {
   const filename = titleToFilename(icon.title);
-  icon.svg = fs.readFileSync(`${iconsDir}/${filename}.svg`, "utf8");
+  icon.svg = fs.readFileSync(`${iconsDir}/${filename}.svg`, 'utf8');
   icons[icon.title] = icon;
   // write the static .js file for the icon
   fs.writeFileSync(
@@ -35,3 +37,5 @@ data.icons.forEach(icon => {
 
 // write our generic index.js
 fs.writeFileSync(indexFile, `module.exports=${JSON.stringify(icons)};`);
+
+console.log(tree);

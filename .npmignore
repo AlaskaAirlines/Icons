@@ -2,8 +2,6 @@
 /*
 
 # Except the ones we want to publish
-!data/
-!icons/
+!dist/
 !package.json
 !README.md
-!index.js
