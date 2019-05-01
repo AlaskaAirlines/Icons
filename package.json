@@ -1,6 +1,7 @@
 {
   "name": "@alaskaairux/orion-icons",
   "description": "Orion Design System icons",
+  "version": "0.0.1",
   "main": "src/",
   "author": "Alaska Design and Research",
   "license": "Apache-2.0",
@@ -9,6 +10,7 @@
     "url": "https://github.com/AlaskaAirlines/OrionIcons"
   },
   "devDependencies": {
+    "@semantic-release/git": "^7.0.8",
     "auto-changelog": "^1.13.0",
     "concat": "^1.0.3",
     "concurrently": "^4.1.0",
@@ -33,7 +35,18 @@
     "concat": "concat -o ./README.md ./README.md ./CHANGELOG.md"
   },
   "release": {
-    "branch": "master"
+    "branch": "master",
+    "plugins": [
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json"
+          ],
+          "message": "chore(release): ${nextRelease.version} published"
+        }
+      ]
+    ]
   },
   "publishConfig": {
     "access": "public"
