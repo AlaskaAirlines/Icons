@@ -10,7 +10,6 @@ before_deploy:
   - npm run svgTest
   - npm run changelog
   - npm run concat
-  - npx semantic-release
 deploy:
   on:
     branch: master
