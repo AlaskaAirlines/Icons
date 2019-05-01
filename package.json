@@ -30,11 +30,8 @@
     "surv": "python -m SimpleHTTPServer 9001",
     "browser": "open http://localhost:9001/validate/icons.html",
     "icoserve": "concurrently \"npm run surv\" \"npm run browser\"",
-    "set-patch": "versiony ./dist/package.json --patch",
-    "copyPkg": "copyfiles -f ./src/package.json ./dist",
-    "copySass": "copyfiles -f ./src/*.scss ./dist",
-    "changelog": "auto-changelog --template ./scripts/template.hbs --output ./dist/CHANGELOG.md -p -b 5",
-    "concat": "concat -o ./dist/README.md ./README.md ./dist/CHANGELOG.md"
+    "changelog": "auto-changelog --template ./scripts/template.hbs --output ./CHANGELOG.md -p -b 5",
+    "concat": "concat -o ./README.md ./README.md ./CHANGELOG.md"
   },
   "release": {
     "branch": "master"

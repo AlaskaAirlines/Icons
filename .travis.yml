@@ -5,14 +5,11 @@ branches:
   only:
     - master
 before_deploy:
-  - npm run copySass
   - npm run newbuild
   - npm run svgTest
   - npm run changelog
   - npm run concat
   - npx semantic-release
-  - npm run copyPkg
-  - cd dist
 deploy:
   on:
     branch: master
