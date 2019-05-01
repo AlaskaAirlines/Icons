@@ -1,8 +1,13 @@
+# standard ignore
 .gitignore
 .jsonlintschema
 .svglintrc.js
 .travis.yml
 scripts/
-src/
 tests/
 validate/
+
+# ignore src
+src/**/*
+
+# overrides

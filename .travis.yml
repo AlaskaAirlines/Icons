@@ -6,6 +6,7 @@ branches:
     - master
 before_deploy:
   - npm run newbuild
+  - npm run copySass
   - npm run svgTest
   - npm run changelog
   - npm run concat

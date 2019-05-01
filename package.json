@@ -1,7 +1,7 @@
 {
   "name": "@alaskaairux/orion-icons",
   "description": "Orion Design System icons",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "src/",
   "author": "Alaska Design and Research",
   "license": "Apache-2.0",
@@ -26,6 +26,7 @@
     "jsonlint": "jsonlint src/data/orion-icons.json -q -V .jsonlintschema",
     "svglint": "svglint src/icons/* --ci",
     "newbuild": "node scripts/build.js",
+    "copySass": "copyfiles -f ./src/*.scss ./dist",
     "test": "npm run jsonlint || npm run svglint",
     "svgTest": "jest",
     "surv": "python -m SimpleHTTPServer 9001",
@@ -37,15 +38,9 @@
   "release": {
     "branch": "master",
     "plugins": [
-      [
-        "@semantic-release/git",
-        {
-          "assets": [
-            "package.json"
-          ],
-          "message": "chore(release): ${nextRelease.version} published"
-        }
-      ]
+      ["@semantic-release/git", {
+        "assets": ["package.json"]
+      }]
     ]
   },
   "publishConfig": {
