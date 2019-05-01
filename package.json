@@ -1,11 +1,18 @@
 {
-  "name": "@alaskaair/orion-icons",
+  "name": "@alaskaairux/orion-icons",
   "version": "0.1.0",
   "description": "Orion Design System icons",
-  "main": "dist/",
+  "main": "src/",
   "author": "Alaska Design and Research",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlaskaAirlines/OrionIcons"
+  },
   "devDependencies": {
+    "auto-changelog": "^1.13.0",
+    "concat": "^1.0.3",
+    "copyfiles": "^2.1.0",
     "concurrently": "^4.1.0",
     "file-system": "^2.2.2",
     "jest": "^24.7.1",
@@ -25,9 +32,33 @@
     "icoserve": "concurrently \"npm run surv\" \"npm run browser\"",
     "set-patch": "versiony ./dist/package.json --patch",
     "copyPkg": "copyfiles -f ./src/package.json ./dist",
-    "copySass": "copyfiles -f ./src/*.scss ./dist"
+    "copySass": "copyfiles -f ./src/*.scss ./dist",
+    "changelog": "auto-changelog --template ./scripts/template.hbs --output ./dist/CHANGELOG.md -p -b 5",
+    "concat": "concat -o ./dist/README.md ./README.md ./dist/CHANGELOG.md"
   },
-  "dependencies": {
-    "copyfiles": "^2.1.0"
-  }
+  "release": {
+    "branch": "master"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "alaska airlines",
+    "orion design system",
+    "icons"
+  ],
+  "contributors": [
+    {
+      "name": "Dale Sande",
+      "email": "dale.sande@alaskaair.com"
+    },
+    {
+      "name": "Camron Lockeby",
+      "email": "camron.lockeby@AlaskaAir.com"
+    },
+    {
+      "name": "Kevin Sonnichsen",
+      "email": "Kevin.Sonnichsen@alaskaair.com"
+    }
+  ]
 }
