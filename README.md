@@ -1,8 +1,8 @@
 <img src="https://resource.alaskaair.net/-/media/2C1969F8FB244C919205CD48429C13AC" alt="Orion Design System Logo" title="Be the change you want to see" width="125" align="right" />
 
 [![Build Status](https://travis-ci.org/AlaskaAirlines/OrionIcons.svg?branch=master)](https://travis-ci.org/AlaskaAirlines/OrionDesignTokens)
-![npm (scoped)](https://img.shields.io/npm/v/@alaskaairux/orionicons.svg?color=orange)
-![NPM](https://img.shields.io/npm/l/@alaskaairux/orionicons.svg?color=blue)
+![npm (scoped)](https://img.shields.io/npm/v/@alaskaairux/orion-icons.svg?color=orange)
+![NPM](https://img.shields.io/npm/l/@alaskaairux/orion-icons.svg?color=blue)
 
 # Orion SVG Icon Library
 
