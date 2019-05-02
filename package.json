@@ -10,7 +10,6 @@
     "url": "https://github.com/AlaskaAirlines/OrionIcons"
   },
   "devDependencies": {
-    "@semantic-release/git": "^7.0.8",
     "auto-changelog": "^1.13.0",
     "concat": "^1.0.3",
     "concurrently": "^4.1.0",
@@ -36,12 +35,7 @@
     "concat": "concat -o ./README.md ./README.md ./CHANGELOG.md"
   },
   "release": {
-    "branch": "master",
-    "plugins": [
-      ["@semantic-release/git", {
-        "assets": ["package.json"]
-      }]
-    ]
+    "branch": "master"
   },
   "publishConfig": {
     "access": "public"
