@@ -12,13 +12,14 @@ const indexFile = `${__dirname}/../dist/index.js`;
 const iconsDir = `${__dirname}/../src/icons`;
 const buildIconsDir = `${__dirname}/../dist/icons`;
 const data = require(dataFile);
-const fs = require('file-system');
+const fileSys = require('file-system');
+const fs = require('fs');
 
 const { titleToFilename } = require('./utils');
 
 const icoDir = './dist/icons';
-if (!fs.existsSync(icoDir)){
-  fs.mkdirSync(icoDir);
+if (!fileSys.existsSync(icoDir)){
+  fileSys.mkdirSync(icoDir);
 }
 
 const icons = {};
@@ -27,11 +28,36 @@ data.icons.forEach(icon => {
   icon.svg = fs.readFileSync(`${iconsDir}/${filename}.svg`, 'utf8');
   icons[icon.title] = icon;
   // write the static .js file for the icon
-  fs.writeFileSync(
-    `${buildIconsDir}/${filename}.js`,
-    `module.exports=${JSON.stringify(icon)};`
-  );
+  fs.writeFileSync( `${buildIconsDir}/${filename}.js`, `module.exports=${JSON.stringify(icon)};`);
+
+  // copy SVGs from ./src to ./dist
+  fs.copyFile( `${iconsDir}/${filename}.svg`, `${buildIconsDir}/${filename}.svg`, (err) => {
+    if (err) throw err;
+  });
 });
+
+console.log('')
+console.log('         .         . ')
+console.log('               *       *')
+console.log('')
+console.log('                 * * *')
+console.log('                    !')
+console.log('               *       * ')
+console.log('')
+console.log(" ██████╗ ██████╗ ██╗ ██████╗ ███╗   ██╗")
+console.log("██╔═══██╗██╔══██╗██║██╔═══██╗████╗  ██║")
+console.log("██║   ██║██████╔╝██║██║   ██║██╔██╗ ██║")
+console.log("██║   ██║██╔══██╗██║██║   ██║██║╚██╗██║")
+console.log("╚██████╔╝██║  ██║██║╚██████╔╝██║ ╚████║")
+console.log("╚═════╝ ╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝")
+console.log("                                       ")
+console.log("██╗ ██████╗ ██████╗ ███╗   ██╗███████╗ ")
+console.log("██║██╔════╝██╔═══██╗████╗  ██║██╔════╝ ")
+console.log("██║██║     ██║   ██║██╔██╗ ██║███████╗ ")
+console.log("██║██║     ██║   ██║██║╚██╗██║╚════██║ ")
+console.log("██║╚██████╗╚██████╔╝██║ ╚████║███████║ ")
+console.log("╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝ ")
+console.log('')
 
 // write our generic index.js
 fs.writeFileSync(indexFile, `module.exports=${JSON.stringify(icons)};`);
