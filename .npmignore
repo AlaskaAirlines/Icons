@@ -11,3 +11,4 @@ validate/
 src/**/*
 
 # overrides
+!src/icons
