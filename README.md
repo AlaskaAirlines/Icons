@@ -20,14 +20,14 @@ $ npm i @alaskaairux/orion-icons -D
 
 ## Node application dependency
 
-Via a node.js dependency or other node like dependency management architecture, developer can choose from two different scenarios for consumption.
+Via a node.js dependency or other node like dependency management architecture, developer can choose from two different scenarios for the rendering of the SVG. This technique will render the SVG inline from the designated resource location.
 
 ### Individual icon request
 
 It is suggested that developers list individual dependencies per UI component, like so:
 
 ```js
-const arrowDown = require('@alaskaair/orion-icons/dist/icons/arrowdown');
+const arrowDown = require('@alaskaairux/orion-icons/dist/icons/arrowdown');
 ```
 
 Within the UI component a developer can reference the object assigned to the newly created variable to get the specific icon's SVG code:
@@ -36,7 +36,7 @@ Within the UI component a developer can reference the object assigned to the new
 console.log(`<button>Click Me ${arrowDown.svg}</button>`);
 ```
 
-This will return the icon's SVG code from the object
+This will return the icon's SVG HTML inline.
 
 ### Full library dependency
 
@@ -45,7 +45,7 @@ If there are several icons within a view, developers may opt to include all avai
 To require the full library as a dependency of the UI, do the following:
 
 ```js
-const orionIcons = require('@alaskaair/orion-icons/dist');
+const orionIcons = require('@alaskaairux/orion-icons/dist');
 ```
 
 Then within UI component, a developer can render a specific icon from the output array, like so:
@@ -56,18 +56,59 @@ console.log(orionIcons['Arrow Down'].svg);
 
 This will return the icon's SVG code from the object.
 
+## JavaScript framework support
+
+When using other JavaScript development frameworks, the process above may not parse to HTML. To address this, there are a few techniques that could be used. 
+
+Within the npm, `@alaskaairux/orion-icons/dist/icons/`, developers may access the SVGs directly for consumption into the development environment. 
+
+### React
+
+React supports a standard for linking to assets and using them within the context of a component. 
+
+```javascript
+import arrowup from '@alaskaairux/orion-icons/dist/icons/arrowup.svg';
+```
+
+Within the component's `render()` function, passing in the new variable into the `src` attribute of an `<img>` element will render the asset. 
+
+```html
+<img src={arrowup} alt="arrow up" />
+```
+
+### SVG React Loader
+
+Using `svg-react-loader` in combination with webpack will render the SVG inline from the designated resource location.
+
+```javascript
+import Arrowdown from '-!svg-react-loader!@alaskaairux/orion-icons/dist/icons/arrowdown.svg';
+```
+
+Within the component's `render()` function, simply reference the new component that is generated via `svg-react-loader`.
+
+```html
+<Arrowdown />
+```
+
+### Angular SVG Icon
+
+For use with Angular projects, `angular-svg-icon` renders a component that will render the SVG inline from the designated resource location.
+
+See [angular-svg-icon](https://www.npmjs.com/package/angular-svg-icon) for more information. 
+
+
 ## Using Icon styles
 
 In the `dist/` directory is `orion-icons.scss`. Import this Sass file for default shape styles.
 
 ```scss
-@import '@alaskaair/orion-icons/dist/orion-icons';
+@import '@alaskaairux/orion-icons/dist/orion-icons';
 ```
 
 With Sass, React requires a `~` character prior to the importing library, example:
 
 ```scss
-@import '~@alaskaair/orion-icons/dist/orion-icons';
+@import '~@alaskaairux/orion-icons/dist/orion-icons';
 ```
 
 By default, no CSS classes are created when importing this file. To opt-in to the icon styles you need, you need to add a config variable map that will set a flag to `true` to process the classes you want.
@@ -86,7 +127,7 @@ If you prefer to build your CSS in the JS component itself, this is supported in
 Example:
 
 ```js
-const arrowDown = require('@alaskaair/orion-icons/dist/icons/arrowdown');
+const arrowDown = require('@alaskaairux/orion-icons/dist/icons/arrowdown');
 
 console.log(`
 .${arrowDown.style} {
