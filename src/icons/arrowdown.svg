@@ -1,1 +1,6 @@
-<svg width="1rem" fill="white" class="ico__toggleArrowHorizontal" aria-hidden="false" aria-labelledby="icoArrowDown" role="img" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title id="icoArrowDown">Arrow Down</title><g><polygon points="4 4 0 0 8 0"></polygon></g></svg>
+<svg viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>iconTitle</title>
+  <g>
+    <polygon points="4 4 0 0 8 0"></polygon>
+  </g>
+</svg>
