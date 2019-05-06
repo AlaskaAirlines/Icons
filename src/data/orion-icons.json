@@ -2,43 +2,59 @@
   "icons": [
     {
       "title": "Arrow Up",
-      "color": "val(--color-icon-toggle-arrow)",
-      "width": "val(--size-icon-toggle-arrow-horizontal-width)",
+      "hidden": "true",
+      "role": "img",
+      "color": "var(--color-icon-toggle-arrow)",
+      "width": "var(--size-icon-toggle-arrow-horizontal-width)",
       "style": "ico__toggleArrowHorizontal"
     },{
       "title": "Arrow Down",
-      "color": "val(--color-icon-toggle-arrow)",
-      "width": "val(--size-icon-toggle-arrow-horizontal-width)",
+      "hidden": "true",
+      "role": "img",
+      "color": "var(--color-icon-toggle-arrow)",
+      "width": "var(--size-icon-toggle-arrow-horizontal-width)",
       "style": "ico__toggleArrowHorizontal"
     },{
       "title": "Arrow Left",
-      "color": "val(--color-icon-toggle-arrow)",
-      "width": "val(--size-icon-toggle-arrow-vertical-width)",
+      "hidden": "true",
+      "role": "img",
+      "color": "var(--color-icon-toggle-arrow)",
+      "width": "var(--size-icon-toggle-arrow-vertical-width)",
       "style": "ico__toggleArrowVertical"
     },{
       "title": "Arrow Right",
-      "color": "val(--color-icon-toggle-arrow)",
-      "width": "val(--size-icon-toggle-arrow-vertical-width)",
+      "hidden": "true",
+      "role": "img",
+      "color": "var(--color-icon-toggle-arrow)",
+      "width": "var(--size-icon-toggle-arrow-vertical-width)",
       "style": "ico__toggleArrowVertical"
     },{
       "title": "Chevron Left",
-      "color": "val(--color-icon-chevron-arrow)",
-      "height": "val(--size-icon-chevron-arrow-vertical-height)",
+      "hidden": "true",
+      "role": "img",
+      "color": "var(--color-icon-chevron-arrow)",
+      "height": "var(--size-icon-chevron-arrow-vertical-height)",
       "style": "ico__chevronArrowVertical"
     },{
       "title": "Chevron Right",
-      "color": "val(--color-icon-chevron-arrow)",
-      "height": "val(--size-icon-chevron-arrow-vertical-height)",
+      "hidden": "true",
+      "role": "img",
+      "color": "var(--color-icon-chevron-arrow)",
+      "height": "var(--size-icon-chevron-arrow-vertical-height)",
       "style": "ico__chevronArrowVertical"
     },{
       "title": "Chevron Up",
-      "color": "val(--color-icon-chevron-arrow)",
-      "width": "val(--size-icon-chevron-arrow-horizontal-width)",
+      "hidden": "true",
+      "role": "img",
+      "color": "var(--color-icon-chevron-arrow)",
+      "width": "var(--size-icon-chevron-arrow-horizontal-width)",
       "style": "ico__chevronArrowHorizontal"
     },{
       "title": "Chevron Down",
-      "color": "val(--color-icon-chevron-arrow)",
-      "width": "val(--size-icon-chevron-arrow-horizontal-width)",
+      "hidden": "true",
+      "role": "img",
+      "color": "var(--color-icon-chevron-arrow)",
+      "width": "var(--size-icon-chevron-arrow-horizontal-width)",
       "style": "ico__chevronArrowHorizontal"
     }
   ]

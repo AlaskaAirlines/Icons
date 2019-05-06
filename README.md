@@ -14,8 +14,8 @@ All currently supported icons are located in the `icons/` directory.
 
 ## Install
 
-```
-$ npm i @alaskaairux/orion-icons -D
+```bash
+$ npm i @alaskaairux/orion-icons
 ```
 
 ## Node application dependency
@@ -26,14 +26,14 @@ Via a node.js dependency or other node like dependency management architecture, 
 
 It is suggested that developers list individual dependencies per UI component, like so:
 
-```js
+```javascript
 const arrowDown = require('@alaskaairux/orion-icons/dist/icons/arrowdown');
 ```
 
 Within the UI component a developer can reference the object assigned to the newly created variable to get the specific icon's SVG code:
 
-```js
-console.log(`<button>Click Me ${arrowDown.svg}</button>`);
+```javascript
+<button>Click Me ${arrowDown.svg}</button>
 ```
 
 This will return the icon's SVG HTML inline.
@@ -44,33 +44,69 @@ If there are several icons within a view, developers may opt to include all avai
 
 To require the full library as a dependency of the UI, do the following:
 
-```js
+```javascript
 const orionIcons = require('@alaskaairux/orion-icons/dist');
 ```
 
 Then within UI component, a developer can render a specific icon from the output array, like so:
 
-```js
-console.log(orionIcons['Arrow Down'].svg);
+```javascript
+<button>Click Me ${orionIcons['Arrow Down'].svg}</button>
 ```
 
-This will return the icon's SVG code from the object.
+This will return the icon's SVG HTML inline.
+
+### Altering the SVG output
+
+Using either method, the SVG is captured as an object that can be manipulated. For example, calling the `arrowdown.js` file as shown below ...
+
+```javascript
+const arrowDown = require('@alaskaairux/orion-icons/dist/icons/arrowdown');
+```
+
+... will output the following HTML
+
+```html
+<svg role="img" aria-hidden="true" style="width: var(--size-icon-toggle-arrow-horizontal-width);  fill: var(--color-icon-toggle-arrow)" class="ico__toggleArrowHorizontal" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Arrow Down</title>
+  <g>
+    <polygon points="4 4 0 0 8 0"></polygon>
+  </g>
+</svg>
+```
+
+Adding the following line of JavaScript will find and replace the `aria-hidden` attribute in the `arrowDown.svg` string ...
+
+```javascript
+arrowDown.svg = arrowDown.svg.replace(/aria-hidden="true"/g, `aria-hidden="false"`);
+```
+
+... and then output the following: 
+
+```html
+<svg role="img" aria-hidden="false" style="width: var(--size-icon-toggle-arrow-horizontal-width);  fill: var(--color-icon-toggle-arrow)" class="ico__toggleArrowHorizontal" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Arrow Down</title>
+  <g>
+    <polygon points="4 4 0 0 8 0"></polygon>
+  </g>
+</svg>
+```
 
 ## JavaScript framework support
 
-When using other JavaScript development frameworks, the process above may not parse to HTML. To address this, there are a few techniques that could be used. 
+When using other JavaScript development frameworks, the process above may not parse to HTML. To address this, there are a few techniques that could be used.
 
-Within the npm, `@alaskaairux/orion-icons/dist/icons/`, developers may access the SVGs directly for consumption into the development environment. 
+Within the npm, `@alaskaairux/orion-icons/dist/icons/`, developers may access the SVGs directly for consumption into the development environment.
 
 ### React
 
-React supports a standard for linking to assets and using them within the context of a component. 
+React supports a standard for linking to assets and using them within the context of a component.
 
 ```javascript
 import arrowup from '@alaskaairux/orion-icons/dist/icons/arrowup.svg';
 ```
 
-Within the component's `render()` function, passing in the new variable into the `src` attribute of an `<img>` element will render the asset. 
+Within the component's `render()` function, passing in the new variable into the `src` attribute of an `<img>` element will render the asset.
 
 ```html
 <img src={arrowup} alt="arrow up" />
@@ -90,14 +126,51 @@ Within the component's `render()` function, simply reference the new component t
 <Arrowdown />
 ```
 
+With SVG React Loader, users are also able to over-ride attributes within the SVG. For example, the following code illustrates how a user could over-ride the `role="img"` and `aria-hidden="true"` attributes:
+
+```html
+<Arrowdown role="group" aria-hidden="false"/>
+```
+
+##### Note: 
+
+The above syntax may cause issues with your eslint configurations. The following error may appear:
+
+```bash
+Unexpected '!' in '-!svg-react-loader?name=Icon!@alaskaairux/orion-icons/dist/icons/arrowdown.svg'. Do not use import syntax to configure webpack loaders
+```
+
+In this event, adding the following comments within the component may address the issue:
+
+```javascript
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import Arrowdown from '-!svg-react-loader?name=Icon!@alaskaairux/orion-icons/dist/icons/arrowdown.svg';
+```
+
 ### Angular SVG Icon
 
 For use with Angular projects, `angular-svg-icon` renders a component that will render the SVG inline from the designated resource location.
 
-See [angular-svg-icon](https://www.npmjs.com/package/angular-svg-icon) for more information. 
+See [angular-svg-icon](https://www.npmjs.com/package/angular-svg-icon) for more information.
 
 
-## Using Icon styles
+## Icon styles
+
+Embedded with each SVG file are the default styles for that icon. These styles are leveraging CSS Custom Properties, installing Design Tokens or referencing the tokens via the CSS in the package is required. See example icon SVG below.
+
+```html
+<svg style="width: var(--size-icon-toggle-arrow-horizontal-width);  fill: var(--color-icon-toggle-arrow)" class="ico__toggleArrowHorizontal" aria-hidden="false" role="img" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Arrow Down</title>
+  <g>
+    <polygon points="4 4 0 0 8 0"></polygon>
+  </g>
+</svg>
+```
+
+If the user support matrix requires support for browsers that do not support CSS Custom Properties, see the fallback Sass solution below. 
+
+
+### Using Sass styles
 
 In the `dist/` directory is `orion-icons.scss`. Import this Sass file for default shape styles.
 
@@ -105,13 +178,13 @@ In the `dist/` directory is `orion-icons.scss`. Import this Sass file for defaul
 @import '@alaskaairux/orion-icons/dist/orion-icons';
 ```
 
-With Sass, React requires a `~` character prior to the importing library, example:
+Within React, Sass requires a `~` character prior to the importing library, example:
 
 ```scss
 @import '~@alaskaairux/orion-icons/dist/orion-icons';
 ```
 
-By default, no CSS classes are created when importing this file. To opt-in to the icon styles you need, you need to add a config variable map that will set a flag to `true` to process the classes you want.
+By default, no CSS classes are created when importing this file. To opt-in to the icon styles needed, add a config variable map that will set a flag to `true` to output the classes needed. See the following example:
 
 ```scss
 $iconMap: (
@@ -120,20 +193,35 @@ $iconMap: (
 );
 ```
 
+The use of `orion-icons.scss` has a dependency on the Sass version of Orion Design Tokens, so a typical Sass file may look like the following: 
+
+```scss
+@import "~@alaskaairux/orion-design-tokens/tokens/TokenVariables";    <= Sass variables
+@import "~@alaskaairux/orion-design-tokens/tokens/TokenProperties";   <= CSS Custom Properties 
+
+// The following map will override the default settings inside orion-icons.scss
+$iconMap: (
+  toggleArrowHorizontal: true
+);
+
+// Output the requested selectors 
+@import '~@alaskaairux/orion-icons/dist/orion-icons';
+```
+
+This will produce the CSS Custom Properties needed to produce the UI, as well provide a CSS fallback for browsers that do not support CSS Custom Properties. 
+
 ### Building CSS in JS
 
 If you prefer to build your CSS in the JS component itself, this is supported in the exported icon object js file. There is a dependency to output CSS Custom Properties from the Orion Design Tokens. See the [Orion Design Token documentation](https://github.com/AlaskaAirlines/OrionIcons#building-css-in-js) to support this process.
 
 Example:
 
-```js
-const arrowDown = require('@alaskaairux/orion-icons/dist/icons/arrowdown');
-
+```javascript
 console.log(`
-.${arrowDown.style} {
-  fill: ${arrowDown.color};
-  width: ${arrowDown.width};
-}
+  .${arrowDown.style} {
+    fill: ${arrowDown.color};
+    width: ${arrowDown.width};
+  }
 `)
 ```
 
@@ -152,8 +240,6 @@ Adding new icons to this repository requires a few steps.
 
 1. Add a new icon `.svg` file to the `src/icons/` directory (see DOs and DON'Ts below)
 1. Add **shape schema** to `./src/data/orion-icons.json` file (see example below)
-1. Run `npm run build` to clear the repository of old build artifacts, build new artifacts and run tests
-  1. You can run `npm run tests` to ensure that output artifacts meet specifications independently if needed
 1. Submit pull request for approval
 
 ### Test new icon SVG code
@@ -162,7 +248,7 @@ Be sure to test your new SVG code. There is a template HTML file in this project
 
 From the root of the project, run:
 
-```
+```bash
 $ cd validate
 $ cp icons.template icons.html
 $ npm run icoserve
@@ -174,11 +260,13 @@ Open the new `icons.html` file in your editor and you should be able to see the 
 
 When adding new icons, be sure to follow this example to add the proper data to the `orion-icons.json` file
 
-```js
+```javascript
 {
   "icons": [
     {
       "title": "[icon title]",
+      "hidden": "true",
+      "role": "img",
       "color": "[Orion Design Token reference]",
       "width": "[Orion Design Token reference]",
       "style": "[Icon class name]"
@@ -189,7 +277,7 @@ When adding new icons, be sure to follow this example to add the proper data to 
 
 Example:
 
-```js
+```javascript
 {
   "icons": [
     {
@@ -215,20 +303,19 @@ All new icon pull requests MUST comply with the following specifications. Any pu
 
 Reduce the SVG HTML to only the following attributes;
 
-1. Add CSS class
-1. Add `role="img"`
-1. Add `aria-hidden="true"` for decorative icons
-1. Add `aria-labelledby="[unique id]"`
 1. Keep `viewBox`
 1. Keep `xmlns`
 1. Keep `xmlns:xlink`
-1. Populate `<title>` element
-1. Add id="[unique id]" to `<title>` tag referencing `aria-labelledby` unique id
+1. Set `<title>` specifically to `<title>iconTitle</title>`
 1. Keep all necessary `<svg>` elements to render output
-1. Reduce HTML to remove all spaces and returns
 
 ```html
-<svg class="ico__toggleArrow" aria-hidden="true" aria-labelledby="icoArrowDown" role="img" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title id="icoArrowDown">Arrow Down</title><g><polygon points="4 4 0 0 8 0"></polygon></g></svg>
+<svg viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>iconTitle</title>
+  <g>
+    <polygon points="4 4 0 0 8 0"></polygon>
+  </g>
+</svg>
 ```
 
 #### DO NOT
