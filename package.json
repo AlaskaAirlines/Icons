@@ -2,7 +2,7 @@
   "name": "@alaskaairux/orion-icons",
   "description": "Orion Design System icons",
   "version": "0.1.0",
-  "main": "src/",
+  "main": "dist/index.js",
   "author": "Alaska Design and Research",
   "license": "Apache-2.0",
   "repository": {
@@ -34,9 +34,7 @@
     "browser": "open http://localhost:9001/validate/icons.html",
     "icoserve": "concurrently \"npm run surv\" \"npm run browser\"",
     "changelog": "auto-changelog --template ./scripts/template.hbs --output ./CHANGELOG.md -p -b 5",
-    "concat": "concat -o ./README.md ./README.md ./CHANGELOG.md",
-    "precommit": "npm test",
-    "commitmsg": "commitlint -E GIT_PARAMS"
+    "concat": "concat -o ./README.md ./README.md ./CHANGELOG.md"
   },
   "husky": {
     "hooks": {
