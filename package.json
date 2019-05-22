@@ -12,8 +12,9 @@
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
-    "auto-changelog": "^1.13.0",
-    "concat": "^1.0.3",
+    "@semantic-release/changelog": "^3.0.2",
+    "@semantic-release/git": "^7.0.8",
+    "@semantic-release/npm": "^5.1.7",
     "concurrently": "^4.1.0",
     "copyfiles": "^2.1.0",
     "file-system": "^2.2.2",
@@ -32,9 +33,7 @@
     "svgTest": "jest",
     "surv": "python -m SimpleHTTPServer 9001",
     "browser": "open http://localhost:9001/validate/icons.html",
-    "icoserve": "concurrently \"npm run surv\" \"npm run browser\"",
-    "changelog": "auto-changelog --template ./scripts/template.hbs --output ./CHANGELOG.md -p -b 5",
-    "concat": "concat -o ./README.md ./README.md ./CHANGELOG.md"
+    "icoserve": "concurrently \"npm run surv\" \"npm run browser\""
   },
   "husky": {
     "hooks": {
@@ -48,7 +47,29 @@
     ]
   },
   "release": {
-    "branch": "master"
+    "branch": "master",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "./CHANGELOG.md",
+          "changelogTitle": "# Semantic Release Automated Changelog"
+        }
+      ],
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "./CHANGELOG.md",
+            "package.json"
+          ]
+        }
+      ],
+      "@semantic-release/github"
+    ]
   },
   "publishConfig": {
     "access": "public"
