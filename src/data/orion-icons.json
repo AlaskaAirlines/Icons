@@ -4,58 +4,66 @@
       "title": "Arrow Up",
       "hidden": "true",
       "role": "img",
-      "color": "var(--color-icon-toggle-arrow)",
+      "color": "currentColor",
       "width": "var(--size-icon-toggle-arrow-horizontal-width)",
       "style": "ico__toggleArrowHorizontal"
     },{
       "title": "Arrow Down",
       "hidden": "true",
       "role": "img",
-      "color": "var(--color-icon-toggle-arrow)",
+      "color": "currentColor",
       "width": "var(--size-icon-toggle-arrow-horizontal-width)",
       "style": "ico__toggleArrowHorizontal"
     },{
       "title": "Arrow Left",
       "hidden": "true",
       "role": "img",
-      "color": "var(--color-icon-toggle-arrow)",
+      "color": "currentColor",
       "width": "var(--size-icon-toggle-arrow-vertical-width)",
       "style": "ico__toggleArrowVertical"
     },{
       "title": "Arrow Right",
       "hidden": "true",
       "role": "img",
-      "color": "var(--color-icon-toggle-arrow)",
+      "color": "currentColor",
       "width": "var(--size-icon-toggle-arrow-vertical-width)",
       "style": "ico__toggleArrowVertical"
     },{
       "title": "Chevron Left",
       "hidden": "true",
       "role": "img",
-      "color": "var(--color-icon-chevron-arrow)",
+      "color": "currentColor",
       "height": "var(--size-icon-chevron-arrow-vertical-height)",
       "style": "ico__chevronArrowVertical"
     },{
       "title": "Chevron Right",
       "hidden": "true",
       "role": "img",
-      "color": "var(--color-icon-chevron-arrow)",
+      "color": "currentColor",
       "height": "var(--size-icon-chevron-arrow-vertical-height)",
       "style": "ico__chevronArrowVertical"
     },{
       "title": "Chevron Up",
       "hidden": "true",
       "role": "img",
-      "color": "var(--color-icon-chevron-arrow)",
+      "color": "currentColor",
       "width": "var(--size-icon-chevron-arrow-horizontal-width)",
       "style": "ico__chevronArrowHorizontal"
     },{
       "title": "Chevron Down",
       "hidden": "true",
       "role": "img",
-      "color": "var(--color-icon-chevron-arrow)",
+      "color": "currentColor",
       "width": "var(--size-icon-chevron-arrow-horizontal-width)",
       "style": "ico__chevronArrowHorizontal"
+    },{
+      "title": "Step Out",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "width": "var(--size-icon-step-out-width)",
+      "height": "var(--size-icon-step-out-width)",
+      "style": "ico__stepout"
     }
   ]
 }

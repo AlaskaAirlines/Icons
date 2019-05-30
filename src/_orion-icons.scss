@@ -19,7 +19,8 @@ $iconMap: (
   toggleArrowHorizontal: false,
   toggleArrowVertical: false,
   chevronArrowVertical: false,
-  chevronArrowHorizontal: false
+  chevronArrowHorizontal: false,
+  stepout: false
 ) !default;
 
 
@@ -52,5 +53,17 @@ $iconMap: (
   @if (map-get($iconMap, chevronArrowHorizontal)) {
     fill: $color-icon-chevron-arrow;
     height: $size-icon-chevron-arrow-horizontal-width;
+  }
+}
+
+// Icon Step Out
+.ico__stepout {
+  @if (map-get($iconMap, stepout)) {
+    // fill: $color-icon-stepout;
+    // width: $size-icon-stepout-width;
+    // height: $size-icon-stepout-height;
+    fill: orange;
+    width: 10px;
+    height: 10px;
   }
 }

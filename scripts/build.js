@@ -42,6 +42,7 @@ data.icons.forEach(icon => {
   icons[icon.title] = icon;
   // write the static .js file for the icon
   fs.writeFileSync( `${buildIconsDir}/${filename}.js`, `module.exports=${JSON.stringify(icon)};`);
+  fs.writeFileSync( `${buildIconsDir}/${filename}_es6.js`, `export default ${JSON.stringify(icon)};`);
 
   // write new SVGs to ./dist
   fs.writeFileSync( `${buildIconsDir}/${filename}.svg`, icon.svg);
