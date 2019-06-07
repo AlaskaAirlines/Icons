@@ -60,7 +60,7 @@ $iconMap: (
 .ico__stepout {
   @if (map-get($iconMap, stepout)) {
     fill: currentColor;
-    width: $size-icon-stepout-width;
-    height: $size-icon-stepout-height;
+    width: $size-icon-step-out-width;
+    height: $size-icon-step-out-height;
   }
 }
