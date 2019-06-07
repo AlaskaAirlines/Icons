@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.4.2](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.4.1...v1.4.2) (2019-06-07)
+
+
+### Bug Fixes
+
+* bug with icon stepout Sass ([3133ad6](https://github.com/AlaskaAirlines/OrionIcons/commit/3133ad6))
+
 ## [1.4.1](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.4.0...v1.4.1) (2019-06-07)
 
 
