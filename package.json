@@ -1,7 +1,7 @@
 {
   "name": "@alaskaairux/orion-icons",
   "description": "Orion Design System icons",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "main": "dist/index.js",
   "author": "Alaska Design and Research",
   "license": "Apache-2.0",

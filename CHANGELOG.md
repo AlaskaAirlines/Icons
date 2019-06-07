@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.4.3](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.4.2...v1.4.3) (2019-06-07)
+
+
+### Bug Fixes
+
+* address title template bug ([4858e83](https://github.com/AlaskaAirlines/OrionIcons/commit/4858e83))
+
 ## [1.4.2](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.4.1...v1.4.2) (2019-06-07)
 
 
