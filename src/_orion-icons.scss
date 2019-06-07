@@ -27,7 +27,7 @@ $iconMap: (
 // Icon Toggle Arrow, left and right
 .ico__toggleArrowHorizontal {
   @if (map-get($iconMap, toggleArrowHorizontal)) {
-    fill: $color-icon-toggle-arrow;
+    fill: currentColor;
     width: $size-icon-toggle-arrow-horizontal-width;
   }
 }
@@ -35,7 +35,7 @@ $iconMap: (
 // Icon Toggle Arrow, up and down
 .ico__toggleArrowVertical {
   @if (map-get($iconMap, toggleArrowVertical)) {
-    fill: $color-icon-toggle-arrow;
+    fill: currentColor;
     width: $size-icon-toggle-arrow-vertical-width;
   }
 }
@@ -43,7 +43,7 @@ $iconMap: (
 // Icon Chevron Arrow, left and right
 .ico__chevronArrowVertical {
   @if (map-get($iconMap, chevronArrowVertical)) {
-    fill: $color-icon-chevron-arrow;
+    fill: currentColor;
     height: $size-icon-chevron-arrow-vertical-height;
   }
 }
@@ -51,7 +51,7 @@ $iconMap: (
 // Icon Chevron Arrow, up and down
 .ico__chevronArrowHorizontal {
   @if (map-get($iconMap, chevronArrowHorizontal)) {
-    fill: $color-icon-chevron-arrow;
+    fill: currentColor;
     height: $size-icon-chevron-arrow-horizontal-width;
   }
 }
@@ -59,11 +59,8 @@ $iconMap: (
 // Icon Step Out
 .ico__stepout {
   @if (map-get($iconMap, stepout)) {
-    // fill: $color-icon-stepout;
-    // width: $size-icon-stepout-width;
-    // height: $size-icon-stepout-height;
-    fill: orange;
-    width: 10px;
-    height: 10px;
+    fill: currentColor;
+    width: $size-icon-stepout-width;
+    height: $size-icon-stepout-height;
   }
 }
