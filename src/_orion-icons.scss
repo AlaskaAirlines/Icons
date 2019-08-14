@@ -15,13 +15,18 @@
 // ====================================================================
 
 // Default map and values
+// TO-DO ... replace with Tokens
 $iconMap: (
   toggleArrowHorizontal: false,
   toggleArrowVertical: false,
   chevronArrowVertical: false,
   chevronArrowHorizontal: false,
+  classiccheckmark: false,
   stepout: false
 ) !default;
+
+@import "./tokens/TokenProperties"; // Sass file of custom properties
+@import "./tokens/TokenVariables"; // Sass variables
 
 
 // Icon Toggle Arrow, left and right
@@ -62,5 +67,30 @@ $iconMap: (
     fill: currentColor;
     width: $size-icon-step-out-width;
     height: $size-icon-step-out-height;
+  }
+}
+
+// Icon Step Out
+.ico_classiccheckmark {
+  @if (map-get($iconMap, classiccheckmark)) {
+    fill: currentColor;
+    width: $size-icon-classiccheckmark-width;
+  }
+}
+
+// Icon Classic Checkmark
+.ico_classiccheckmark {
+  @if (map-get($iconMap, classiccheckmark)) {
+    fill: currentColor;
+    width: $size-icon-classiccheckmark-width;
+  }
+}
+
+// X Close Icon
+.ico_close {
+  @if (map-get($iconMap, close)) {
+    fill: currentColor;
+    width: $size-icon-close-width;
+    height: $size-icon-close-height;
   }
 }

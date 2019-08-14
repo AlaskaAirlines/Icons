@@ -1,12 +1,12 @@
-const arrowDown = require('../dist/icons/arrowdown');
+const classicCheckmark = require('../dist/icons/classiccheckmark');
 
-arrowDown.svg = arrowDown.svg.replace(/aria-hidden="true"/g, `aria-hidden="false"`);
+classicCheckmark.svg = classicCheckmark.svg.replace(/aria-hidden="true"/g, `aria-hidden="false"`);
 
-console.log(arrowDown.svg);
+console.log(classicCheckmark.svg);
 
 console.log(`
-  .${arrowDown.style} {
-    fill: ${arrowDown.color};
-    width: ${arrowDown.width};
+  .${classicCheckmark.style} {
+    fill: ${classicCheckmark.color};
+    width: ${classicCheckmark.width};
   }
 `)

@@ -2,6 +2,7 @@
   "icons": [
     {
       "title": "Arrow Up",
+      "desc": "Up pointer",
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
@@ -9,6 +10,7 @@
       "style": "ico__toggleArrowHorizontal"
     },{
       "title": "Arrow Down",
+      "desc": "Down pointer",
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
@@ -16,6 +18,7 @@
       "style": "ico__toggleArrowHorizontal"
     },{
       "title": "Arrow Left",
+      "desc": "Left pointer",
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
@@ -23,6 +26,7 @@
       "style": "ico__toggleArrowVertical"
     },{
       "title": "Arrow Right",
+      "desc": "Right pointer",
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
@@ -30,6 +34,7 @@
       "style": "ico__toggleArrowVertical"
     },{
       "title": "Chevron Left",
+      "desc": "Left indicator",
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
@@ -37,6 +42,7 @@
       "style": "ico__chevronArrowVertical"
     },{
       "title": "Chevron Right",
+      "desc": "Right indicator",
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
@@ -44,6 +50,7 @@
       "style": "ico__chevronArrowVertical"
     },{
       "title": "Chevron Up",
+      "desc": "Up pointer",
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
@@ -51,6 +58,7 @@
       "style": "ico__chevronArrowHorizontal"
     },{
       "title": "Chevron Down",
+      "desc": "Down pointer",
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
@@ -58,12 +66,30 @@
       "style": "ico__chevronArrowHorizontal"
     },{
       "title": "Step Out",
+      "desc": "Linked item is outside primary domain",
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
       "width": "var(--size-icon-step-out-width)",
       "height": "var(--size-icon-step-out-width)",
       "style": "ico__stepout"
+    },{
+      "title": "Classic checkmark",
+      "desc": "Checkmark display indicator",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "width": "var(--size-icon-classiccheckmark-width)",
+      "style": "ico_classiccheckmark"
+    },{
+      "title": "Close",
+      "desc": "Close options icon",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "width": "var(--size-icon-close-width)",
+      "height": "var(--size-icon-close-height)",
+      "style": "ico_close"
     }
   ]
 }

@@ -292,7 +292,7 @@ Example:
 
 **NEVER**: For `color` and `width` do not use hard-coded values. To be compliant you must use Orion Design Token references.
 
-### Icon guide-lines
+### Icon guidelines
 
 All new icon pull requests MUST comply with the following specifications. Any pull-request that does not follow these specifications will be considered non-compliant and will be rejected.
 
@@ -310,10 +310,11 @@ Reduce the SVG HTML to only the following attributes;
 1. Keep all necessary `<svg>` elements to render output
 
 ```html
-<svg viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg viewBox="0 0 4 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>iconTitle</title>
+  <desc>iconDesc</desc>
   <g>
-    <polygon points="4 4 0 0 8 0"></polygon>
+    <polygon transform="translate(2.000000, 4.000000) rotate(90.000000) translate(-2.000000, -4.000000) " points="2 6 -2 2 6 2"></polygon>
   </g>
 </svg>
 ```

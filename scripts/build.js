@@ -14,6 +14,7 @@ const buildIconsDir = `${__dirname}/../dist/icons`;
 const data = require(dataFile);
 const fileSys = require('file-system');
 const fs = require('fs');
+const StyleDictionary = require('style-dictionary').extend('./scripts/tokensConfig.json');
 
 const { titleToFilename } = require('./utils');
 
@@ -38,6 +39,7 @@ data.icons.forEach(icon => {
   icon.svg = [icon.svg.slice(0, insertPos), `aria-hidden="${icon.hidden}" `, icon.svg.slice(insertPos)].join('');
   icon.svg = [icon.svg.slice(0, insertPos), `role="${icon.role}" `, icon.svg.slice(insertPos)].join('');
   icon.svg = icon.svg.replace("iconTitle", `${icon.title}`);
+  icon.svg = icon.svg.replace("iconDesc", `${icon.desc}`);
 
   icons[icon.title] = icon;
   // write the static .js file for the icon
@@ -49,6 +51,12 @@ data.icons.forEach(icon => {
 
   console.log(`${filename}.js / ${filename}.svg written to ./dist dir`)
 });
+
+
+// Style Dictionary build function
+StyleDictionary.buildPlatform('SassVariables');
+StyleDictionary.buildPlatform('CSSCustomElements');
+StyleDictionary.buildPlatform('CSSCustomElements_SassFiletype');
 
 console.log('')
 console.log('         .         . ')
