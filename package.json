@@ -31,10 +31,7 @@
     "newbuild": "node scripts/build.js",
     "copySass": "copyfiles -f ./src/*.scss ./dist",
     "test": "npm run jsonlint || npm run svglint",
-    "svgTest": "jest",
-    "surv": "python -m SimpleHTTPServer 9001",
-    "browser": "open http://localhost:9001/validate/icons.html",
-    "icoserve": "concurrently \"npm run surv\" \"npm run browser\""
+    "svgTest": "jest"
   },
   "husky": {
     "hooks": {

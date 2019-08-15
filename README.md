@@ -98,6 +98,47 @@ When using other JavaScript development frameworks, the process above may not pa
 
 Within the npm, `@alaskaairux/orion-icons/dist/icons/`, developers may access the SVGs directly for consumption into the development environment.
 
+### JS versions of SVGs
+
+This repo output two types of JS wrapped SVGs for easy inclusion with front-end frameworks. 
+
+##### Default style - iconName.js
+
+```javascript
+module.exports={ ... }
+```
+
+##### ES6 style - iconName_es6.js
+
+```javascript
+export default { ... }
+```
+
+In most cases, the default exported JS file will work. But in some cases, the ES6 style module export is required. Simply point to the resource needed for use. 
+
+### Lit-element 
+
+Lit-element requires the ES6 module export syntax for use, so an example dependency reference would be:
+
+```javascript
+import stepout from '@alaskaairux/orion-icons/dist/icons/stepout_es6.js';
+```
+
+Parsing out the SVG HTML to become DOM requires lines of code within the scope of the new custom element class, for example:
+
+```javascript
+constructor() {
+  this.dom = new DOMParser().parseFromString(stepout.svg, 'text/html');
+  this.svg = this.dom.body.firstChild;
+}
+```
+
+Now that the SVG DOM is assigned to the `this.svg` variable, rendering this within the HTML render() template could be like the following:
+
+```html
+<p>${this.svg}</p> 
+```
+
 ### React
 
 React supports a standard for linking to assets and using them within the context of a component.
@@ -351,13 +392,10 @@ The following scripts are available from `./package.json`
 
 | script | Description |
 |----|----|
-| icoserve | opens dev test file in browser |
 | svgTest | runs `jest` to ensure that `index.js` and `./data/orion-icons.json` are formatted correctly |
 | jsonlint | validates that `./data/orion-icons.json` is correctly formatted JSON |
 | svglint | validates all SVGs per spec `./.svglintrc.js`|
 | test | runs jsonlint and svglint |
-| changelog | builds new changelog document |
-| concat | concatenates CHANGELOG.md with README.md |
 | copySass | build step to copy resource |
 | newbuild | to execute `./scripts/build.js` |
 
