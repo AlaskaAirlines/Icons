@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [1.5.0](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.4.3...v1.5.0) (2019-08-15)
+
+
+### Features
+
+* add new classic checkmark and Orion close X ([e12815c](https://github.com/AlaskaAirlines/OrionIcons/commit/e12815c))
+
 ## [1.4.3](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.4.2...v1.4.3) (2019-06-07)
 
 
