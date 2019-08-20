@@ -6,6 +6,7 @@
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
       "width": "var(--size-icon-toggle-arrow-horizontal-width)",
       "style": "ico__toggleArrowHorizontal"
     },{
@@ -14,6 +15,7 @@
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
       "width": "var(--size-icon-toggle-arrow-horizontal-width)",
       "style": "ico__toggleArrowHorizontal"
     },{
@@ -22,6 +24,7 @@
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
       "width": "var(--size-icon-toggle-arrow-vertical-width)",
       "style": "ico__toggleArrowVertical"
     },{
@@ -30,6 +33,7 @@
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
       "width": "var(--size-icon-toggle-arrow-vertical-width)",
       "style": "ico__toggleArrowVertical"
     },{
@@ -38,6 +42,7 @@
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
       "height": "var(--size-icon-chevron-arrow-vertical-height)",
       "style": "ico__chevronArrowVertical"
     },{
@@ -46,6 +51,7 @@
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
       "height": "var(--size-icon-chevron-arrow-vertical-height)",
       "style": "ico__chevronArrowVertical"
     },{
@@ -54,6 +60,7 @@
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
       "width": "var(--size-icon-chevron-arrow-horizontal-width)",
       "style": "ico__chevronArrowHorizontal"
     },{
@@ -62,6 +69,7 @@
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
       "width": "var(--size-icon-chevron-arrow-horizontal-width)",
       "style": "ico__chevronArrowHorizontal"
     },{
@@ -70,6 +78,9 @@
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "AltPngColor": "var(--color-type-theme-dark-link)",
+      "PngSize": 20,
       "width": "var(--size-icon-step-out-width)",
       "height": "var(--size-icon-step-out-width)",
       "style": "ico__stepout"
@@ -79,6 +90,7 @@
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
+      "PngColor": "var(--color-base-galapagos)",
       "width": "var(--size-icon-classiccheckmark-width)",
       "style": "ico_classiccheckmark"
     },{
@@ -87,6 +99,7 @@
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
       "width": "var(--size-icon-close-width)",
       "height": "var(--size-icon-close-height)",
       "style": "ico_close"
