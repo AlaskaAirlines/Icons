@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [1.6.0](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.5.1...v1.6.0) (2019-08-20)
+
+
+### Features
+
+* update build process to support PNG exports ([020d495](https://github.com/AlaskaAirlines/OrionIcons/commit/020d495))
+
 ## [1.5.1](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.5.0...v1.5.1) (2019-08-20)
 
 
