@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.5.1](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.5.0...v1.5.1) (2019-08-20)
+
+
+### Bug Fixes
+
+* update outdated packages ([4fd8f80](https://github.com/AlaskaAirlines/OrionIcons/commit/4fd8f80))
+
 # [1.5.0](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.4.3...v1.5.0) (2019-08-15)
 
 
