@@ -237,8 +237,8 @@ $iconMap: (
 The use of `orion-icons.scss` has a dependency on the Sass version of Orion Design Tokens, so a typical Sass file may look like the following: 
 
 ```scss
-@import "~@alaskaairux/orion-design-tokens/tokens/TokenVariables";    <= Sass variables
-@import "~@alaskaairux/orion-design-tokens/tokens/TokenProperties";   <= CSS Custom Properties 
+@import "~@alaskaairux/orion-design-tokens/dist/tokens/TokenVariables";    <= Sass variables
+@import "~@alaskaairux/orion-design-tokens/dist/tokens/TokenProperties";   <= CSS Custom Properties 
 
 // The following map will override the default settings inside orion-icons.scss
 $iconMap: (
@@ -292,10 +292,8 @@ From the root of the project, run:
 ```bash
 $ cd validate
 $ cp icons.template icons.html
-$ npm run icoserve
+$ open icons.html
 ```
-
-Open the new `icons.html` file in your editor and you should be able to see the icon HTML at `http://localhost:9001/validate/icons.html`
 
 ### Icon shape schema
 
@@ -306,11 +304,16 @@ When adding new icons, be sure to follow this example to add the proper data to 
   "icons": [
     {
       "title": "[icon title]",
+      "desc": "[icon description]",
       "hidden": "true",
       "role": "img",
-      "color": "[Orion Design Token reference]",
-      "width": "[Orion Design Token reference]",
-      "style": "[Icon class name]"
+      "color": "currentColor",
+      "PngColor": "[default color used to generate PNG file]",
+      "AltPngColor": "[optional: alternate PNG color]",
+      "PngSize": "[optional: default PNG size of icon]",
+      "width": "[default width of icon]",
+      "height": "[default height of icon]"
+      "style": "ico__[icon class name]"
     }
   ]
 }
@@ -321,11 +324,18 @@ Example:
 ```javascript
 {
   "icons": [
-    {
-      "title": "Arrow Up",
-      "color": "val(--color-icon-toggle-arrow)",
-      "width": "val(--size-icon-toggle-arrow-horizontal-width)",
-      "style": "ico__toggleArrowHorizontal"
+{
+      "title": "Step Out",
+      "desc": "Linked item is outside primary domain",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "AltPngColor": "var(--color-type-theme-dark-link)",
+      "PngSize": 20,
+      "width": "var(--size-icon-step-out-width)",
+      "height": "var(--size-icon-step-out-width)",
+      "style": "ico__stepout"
     }
   ]
 }
@@ -348,12 +358,15 @@ Reduce the SVG HTML to only the following attributes;
 1. Keep `xmlns`
 1. Keep `xmlns:xlink`
 1. Set `<title>` specifically to `<title>iconTitle</title>`
+2. Set `<desc>` specifically to `<desc>iconDesc</desc>`
+3. Set `<style></style>` 
 1. Keep all necessary `<svg>` elements to render output
 
 ```html
 <svg viewBox="0 0 4 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>iconTitle</title>
   <desc>iconDesc</desc>
+  <style></style>
   <g>
     <polygon transform="translate(2.000000, 4.000000) rotate(90.000000) translate(-2.000000, -4.000000) " points="2 6 -2 2 6 2"></polygon>
   </g>
@@ -398,6 +411,7 @@ The following scripts are available from `./package.json`
 | test | runs jsonlint and svglint |
 | copySass | build step to copy resource |
 | newbuild | to execute `./scripts/build.js` |
+| png@2x | build PNG files from SVGs |
 
 
 ## Thanks!
