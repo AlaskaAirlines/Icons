@@ -18,6 +18,94 @@ All currently supported icons are located in the `icons/` directory.
 $ npm i @alaskaairux/orion-icons
 ```
 
+## Icon styles
+
+Embedded with each SVG file are the default styles for that icon. These styles are leveraging CSS Custom Properties, referencing the icons tokens via the CSS in the package is required.
+
+##### Import stylesheet at global level
+```JavaScript
+import `./node_modules/@alaskaairux/orion-icons/dist/tokens/CSSTokenProperties.css`
+```
+
+##### HTML will reference variables
+```html
+<svg style="width: var(--size-icon-toggle-arrow-horizontal-width);  fill: var(--color-icon-toggle-arrow)" class="ico__toggleArrowHorizontal" aria-hidden="false" role="img" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Arrow Down</title>
+  <g>
+    <polygon points="4 4 0 0 8 0"></polygon>
+  </g>
+</svg>
+```
+
+If the user support matrix requires support for browsers that do not support CSS Custom Properties, see the fallback Sass solution below.
+
+
+### Using Sass styles (IE fallback)
+
+For use in situations where CSS custom properties are not supported. In the `dist/` directory is `orion-icons.scss`. Import this Sass file for default shape styles.
+
+```scss
+@import '@alaskaairux/orion-icons/dist/orion-icons';
+```
+
+Within React, Sass requires a `~` character prior to the importing library, example:
+
+```scss
+@import '~@alaskaairux/orion-icons/dist/orion-icons';
+```
+
+By default, no CSS classes are created when importing this file. To opt-in to the icon styles needed, add a config variable map, prior to import, that will set a flag to `true` to output the classes needed. See the following example:
+
+```scss
+$iconMap: (
+  toggleArrowHorizontal: true,
+  toggleArrowVertical: true
+);
+
+@import '~@alaskaairux/orion-icons/dist/orion-icons';
+```
+
+The use of `orion-icons.scss` has a dependency on the Sass version of Orion Design Tokens, so a typical Sass file may look like the following:
+
+```scss
+@import "~@alaskaairux/orion-design-tokens/dist/tokens/TokenVariables";    <= Sass variables
+@import "~@alaskaairux/orion-design-tokens/dist/tokens/TokenProperties";   <= CSS Custom Properties
+
+// The following map will override the default settings inside orion-icons.scss
+$iconMap: (
+  toggleArrowHorizontal: true
+);
+
+// Output the requested selectors
+@import '~@alaskaairux/orion-icons/dist/orion-icons';
+```
+
+This will produce the CSS Custom Properties needed to produce the UI, as well provide a CSS fallback for browsers that do not support CSS Custom Properties.
+
+### Building CSS in JS
+
+If you prefer to build your CSS in the JS component itself, this is supported in the exported icon object js file. There is a dependency to output CSS Custom Properties from the Orion Design Tokens. See the [Orion Design Token documentation](https://github.com/AlaskaAirlines/OrionIcons#building-css-in-js) to support this process.
+
+Example:
+
+```javascript
+console.log(`
+  .${arrowDown.style} {
+    fill: ${arrowDown.color};
+    width: ${arrowDown.width};
+  }
+`)
+```
+
+This will output the following:
+
+```css
+.ico__toggleArrowHorizontal {
+  color: var(--color-brand-blue-atlas);
+  width: var(--size-icon-toggle-arrow-horizontal-width);
+}
+```
+
 ## Node application dependency
 
 Via a node.js dependency or other node like dependency management architecture, developer can choose from two different scenarios for the rendering of the SVG. This technique will render the SVG inline from the designated resource location.
@@ -81,7 +169,7 @@ Adding the following line of JavaScript will find and replace the `aria-hidden` 
 arrowDown.svg = arrowDown.svg.replace(/aria-hidden="true"/g, `aria-hidden="false"`);
 ```
 
-... and then output the following: 
+... and then output the following:
 
 ```html
 <svg role="img" aria-hidden="false" style="width: var(--size-icon-toggle-arrow-horizontal-width);  fill: var(--color-icon-toggle-arrow)" class="ico__toggleArrowHorizontal" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -100,7 +188,7 @@ Within the npm, `@alaskaairux/orion-icons/dist/icons/`, developers may access th
 
 ### JS versions of SVGs
 
-This repo output two types of JS wrapped SVGs for easy inclusion with front-end frameworks. 
+This repo output two types of JS wrapped SVGs for easy inclusion with front-end frameworks.
 
 ##### Default style - iconName.js
 
@@ -114,9 +202,9 @@ module.exports={ ... }
 export default { ... }
 ```
 
-In most cases, the default exported JS file will work. But in some cases, the ES6 style module export is required. Simply point to the resource needed for use. 
+In most cases, the default exported JS file will work. But in some cases, the ES6 style module export is required. Simply point to the resource needed for use.
 
-### Lit-element 
+### Lit-element
 
 Lit-element requires the ES6 module export syntax for use, so an example dependency reference would be:
 
@@ -136,7 +224,7 @@ constructor() {
 Now that the SVG DOM is assigned to the `this.svg` variable, rendering this within the HTML render() template could be like the following:
 
 ```html
-<p>${this.svg}</p> 
+<p>${this.svg}</p>
 ```
 
 ### React
@@ -173,7 +261,7 @@ With SVG React Loader, users are also able to over-ride attributes within the SV
 <Arrowdown role="group" aria-hidden="false"/>
 ```
 
-##### Note: 
+##### Note:
 
 The above syntax may cause issues with your eslint configurations. The following error may appear:
 
@@ -194,86 +282,6 @@ For use with Angular projects, `angular-svg-icon` renders a component that will 
 
 See [angular-svg-icon](https://www.npmjs.com/package/angular-svg-icon) for more information.
 
-
-## Icon styles
-
-Embedded with each SVG file are the default styles for that icon. These styles are leveraging CSS Custom Properties, installing Design Tokens or referencing the tokens via the CSS in the package is required. See example icon SVG below.
-
-```html
-<svg style="width: var(--size-icon-toggle-arrow-horizontal-width);  fill: var(--color-icon-toggle-arrow)" class="ico__toggleArrowHorizontal" aria-hidden="false" role="img" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <title>Arrow Down</title>
-  <g>
-    <polygon points="4 4 0 0 8 0"></polygon>
-  </g>
-</svg>
-```
-
-If the user support matrix requires support for browsers that do not support CSS Custom Properties, see the fallback Sass solution below. 
-
-
-### Using Sass styles
-
-In the `dist/` directory is `orion-icons.scss`. Import this Sass file for default shape styles.
-
-```scss
-@import '@alaskaairux/orion-icons/dist/orion-icons';
-```
-
-Within React, Sass requires a `~` character prior to the importing library, example:
-
-```scss
-@import '~@alaskaairux/orion-icons/dist/orion-icons';
-```
-
-By default, no CSS classes are created when importing this file. To opt-in to the icon styles needed, add a config variable map that will set a flag to `true` to output the classes needed. See the following example:
-
-```scss
-$iconMap: (
-  toggleArrowHorizontal: true,
-  toggleArrowVertical: true
-);
-```
-
-The use of `orion-icons.scss` has a dependency on the Sass version of Orion Design Tokens, so a typical Sass file may look like the following: 
-
-```scss
-@import "~@alaskaairux/orion-design-tokens/dist/tokens/TokenVariables";    <= Sass variables
-@import "~@alaskaairux/orion-design-tokens/dist/tokens/TokenProperties";   <= CSS Custom Properties 
-
-// The following map will override the default settings inside orion-icons.scss
-$iconMap: (
-  toggleArrowHorizontal: true
-);
-
-// Output the requested selectors 
-@import '~@alaskaairux/orion-icons/dist/orion-icons';
-```
-
-This will produce the CSS Custom Properties needed to produce the UI, as well provide a CSS fallback for browsers that do not support CSS Custom Properties. 
-
-### Building CSS in JS
-
-If you prefer to build your CSS in the JS component itself, this is supported in the exported icon object js file. There is a dependency to output CSS Custom Properties from the Orion Design Tokens. See the [Orion Design Token documentation](https://github.com/AlaskaAirlines/OrionIcons#building-css-in-js) to support this process.
-
-Example:
-
-```javascript
-console.log(`
-  .${arrowDown.style} {
-    fill: ${arrowDown.color};
-    width: ${arrowDown.width};
-  }
-`)
-```
-
-This will output the following:
-
-```css
-.ico__toggleArrowHorizontal {
-  color: var(--color-brand-blue-atlas);
-  width: var(--size-icon-toggle-arrow-horizontal-width);
-}
-```
 
 ## Adding Icons
 
@@ -359,7 +367,7 @@ Reduce the SVG HTML to only the following attributes;
 1. Keep `xmlns:xlink`
 1. Set `<title>` specifically to `<title>iconTitle</title>`
 2. Set `<desc>` specifically to `<desc>iconDesc</desc>`
-3. Set `<style></style>` 
+3. Set `<style></style>`
 1. Keep all necessary `<svg>` elements to render output
 
 ```html
