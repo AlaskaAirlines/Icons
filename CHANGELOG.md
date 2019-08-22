@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.6.1](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.6.0...v1.6.1) (2019-08-22)
+
+
+### Bug Fixes
+
+* update support for LitElement use ([0ae4eae](https://github.com/AlaskaAirlines/OrionIcons/commit/0ae4eae))
+
 # [1.6.0](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.5.1...v1.6.0) (2019-08-20)
 
 
