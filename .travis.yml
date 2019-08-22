@@ -12,6 +12,7 @@ notifactions:
 
 before_script:
   - npm run newbuild
+  - npm run sassRender
   - npm run png@2x
   - npm run png@3x
   - npm run copySass

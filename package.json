@@ -23,14 +23,17 @@
     "husky": "^2.3.0",
     "jest": "^24.8.0",
     "jsonlint2": "^1.7.1",
+    "lodash": "^4.17.15",
     "semantic-release": "^15.13.21",
     "style-dictionary": "^2.8.1",
-    "svglint": "^1.0.4"
+    "svglint": "^1.0.4",
+    "wc-sass-render": "^1.2.1"
   },
   "scripts": {
     "jsonlint": "jsonlint src/data/orion-icons.json -q -V .jsonlintschema",
     "svglint": "svglint src/icons/* --ci",
     "newbuild": "node scripts/build.js",
+    "sassRender": "sass-render dist/tokens/*.css",
     "copySass": "copyfiles -f ./src/*.scss ./dist",
     "test": "npm run jsonlint || npm run svglint",
     "svgTest": "jest",
@@ -94,5 +97,8 @@
       "name": "Kevin Sonnichsen",
       "email": "Kevin.Sonnichsen@alaskaair.com"
     }
-  ]
+  ],
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
 }

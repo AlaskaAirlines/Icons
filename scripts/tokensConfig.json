@@ -11,17 +11,7 @@
         }
       ]
     },
-    "CSSCustomElements": {
-      "transformGroup": "css",
-      "buildPath": "./dist/tokens/",
-      "files": [
-        {
-          "destination": "CSSTokenProperties.css",
-          "format": "css/variables"
-        }
-      ]
-    },
-    "CSSCustomElements_SassFiletype": {
+    "CSSCustomProperties_SassFiletype": {
       "transformGroup": "css",
       "buildPath": "./dist/tokens/",
       "files": [

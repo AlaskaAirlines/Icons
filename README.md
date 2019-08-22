@@ -82,6 +82,22 @@ $iconMap: (
 
 This will produce the CSS Custom Properties needed to produce the UI, as well provide a CSS fallback for browsers that do not support CSS Custom Properties.
 
+### Using Icons/Tokens within a LitElement Custom Element
+
+When using Icons within the scope of a LitElement Custom Element, the `CSSTokenProperties.css` file needs to be referenced within the scope of the shadow DOM. To do this, add the following line to the head of the Custom Element document:
+
+```javascript
+import iconProperties from '../node_modules/@alaskaairux/orion-icons/dist/tokens/CSSTokenProperties-css.js';
+```
+
+Within the `render()`, then within the `return html` template literal, add the following:
+
+```javascript
+${iconProperties}
+```
+
+This will inset the Token output within the scope of the shadow DOM Custom Element and render the appropiate values per the CSS Custom Properties.
+
 ### Building CSS in JS
 
 If you prefer to build your CSS in the JS component itself, this is supported in the exported icon object js file. There is a dependency to output CSS Custom Properties from the Orion Design Tokens. See the [Orion Design Token documentation](https://github.com/AlaskaAirlines/OrionIcons#building-css-in-js) to support this process.
