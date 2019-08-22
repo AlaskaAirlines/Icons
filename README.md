@@ -87,7 +87,7 @@ This will produce the CSS Custom Properties needed to produce the UI, as well pr
 When using Icons within the scope of a LitElement Custom Element, the `CSSTokenProperties.css` file needs to be referenced within the scope of the shadow DOM. To do this, add the following line to the head of the Custom Element document:
 
 ```javascript
-import iconProperties from '../node_modules/@alaskaairux/orion-icons/dist/tokens/CSSTokenProperties-css.js';
+import iconProperties from '@alaskaairux/orion-icons/dist/tokens/CSSTokenProperties-css.js';
 ```
 
 Within the `render()`, then within the `return html` template literal, add the following:
