@@ -84,7 +84,9 @@ This will produce the CSS Custom Properties needed to produce the UI, as well pr
 
 ### Using Icons/Tokens within a LitElement Custom Element
 
-When using Icons within the scope of a LitElement Custom Element, the `CSSTokenProperties.css` file needs to be referenced within the scope of the shadow DOM. To do this, add the following line to the head of the Custom Element document:
+When using Icons within the scope of a LitElement Custom Element, the `CSSTokenProperties.css` file can to be referenced within the scope of the shadow DOM. To do this, the CSS needs to be wrapped in a JavaScript module. 
+
+Add the following line to the head of the Custom Element document:
 
 ```javascript
 import iconProperties from '@alaskaairux/orion-icons/dist/tokens/CSSTokenProperties-css.js';
@@ -96,7 +98,15 @@ Within the `render()`, then within the `return html` template literal, add the f
 ${iconProperties}
 ```
 
-This will inset the Token output within the scope of the shadow DOM Custom Element and render the appropiate values per the CSS Custom Properties.
+This will inset the Token output within the scope of the shadow DOM Custom Element and render the appropriate values per the CSS Custom Properties.
+
+In this case, Orion Icons are a direct dependency of the custom element. 
+
+#### Using Icon Properties outside the shadow DOM
+
+It is not necessary to load the Icon CSS custom properties within the scope of the shadow DOM. As long as the variables are made available from the global scope of the project, the CSS custom properties will pierce the shadow DOM and style the icons. 
+
+In this case, the Orion Icons should be noted as a peer dependency with install instructions at the global level. 
 
 ### Building CSS in JS
 
