@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.6.2](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.6.1...v1.6.2) (2019-08-22)
+
+
+### Bug Fixes
+
+* output custom properties inside :root selector ([fd96cd5](https://github.com/AlaskaAirlines/OrionIcons/commit/fd96cd5))
+
 ## [1.6.1](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.6.0...v1.6.1) (2019-08-22)
 
 
