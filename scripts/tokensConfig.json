@@ -20,6 +20,16 @@
           "format": "css/variables"
         }
       ]
+    },
+    "CSSCustomProperties": {
+      "transformGroup": "css",
+      "buildPath": "./dist/tokens/",
+      "files": [
+        {
+          "destination": "CSSTokenProperties.css",
+          "format": "css/variables"
+        }
+      ]
     }
   }
 }

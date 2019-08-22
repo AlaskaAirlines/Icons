@@ -32,7 +32,8 @@
   "scripts": {
     "jsonlint": "jsonlint src/data/orion-icons.json -q -V .jsonlintschema",
     "svglint": "svglint src/icons/* --ci",
-    "newbuild": "node scripts/build.js",
+    "primarybuild": "node scripts/primarybuild.js",
+    "secondarybuild": "node scripts/secondarybuild.js",
     "sassRender": "sass-render dist/tokens/*.css",
     "copySass": "copyfiles -f ./src/*.scss ./dist",
     "test": "npm run jsonlint || npm run svglint",

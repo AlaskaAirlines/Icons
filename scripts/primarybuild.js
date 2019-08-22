@@ -55,7 +55,7 @@ data.icons.forEach(icon => {
   // console.log(`${filename}.js / ${filename}.svg written to ./dist dir`)
 });
 
-// export 16px PNGs versions of Icons; default colors
+// export 20px PNGs versions of Icons; default colors
 // =======================================================================
 const pngIcons = {};
 const SizeMedIcons = data.icons.filter(function(sizeData) {
@@ -85,7 +85,7 @@ SizeMedIcons.forEach(icon => {
   // console.log(`${filename}.js / ${filename}.png written to ./dist dir`)
 });
 
-// export 16px PNGs versions of Icons; alt colors
+// export 20px PNGs versions of Icons; alt colors
 // =======================================================================
 const pngIconsAlt = {};
 const altColorSet = data.icons.filter(function(altData) {
@@ -115,7 +115,6 @@ altColorSet.forEach(icon => {
   // console.log(`${filename}.js / ${filename}.png written to ./dist dir`)
 });
 
-
 // Standard Style Dictionary build function
 LocalTokens.buildPlatform('SassVariables');
 LocalTokens.buildPlatform('CSSCustomProperties_SassFiletype');
@@ -124,7 +123,6 @@ DesignTokens.buildPlatform('colorTokens');
 
 // Custom Style Dictionary build function
 const CustomStyleDictionary = require('style-dictionary');
-// const fs = require('fs');
 const _ = require('lodash');
 
 function variablesWithPrefix(prefix, properties) {
@@ -161,7 +159,7 @@ CustomStyleDictionary.registerFormat({
   }
 });
 
-// FINALLY, BUILD ALL THE PLATFORMS
+// Build custom platform(s)
 const componentConfig = CustomStyleDictionary.extend('./scripts/CSSCustomProperty.json');
 componentConfig.buildAllPlatforms();
 
