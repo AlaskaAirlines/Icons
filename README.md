@@ -22,9 +22,14 @@ $ npm i @alaskaairux/orion-icons
 
 Embedded with each SVG file are the default styles for that icon. These styles are leveraging CSS Custom Properties, referencing the icons tokens via the CSS in the package is required.
 
-##### Import stylesheet at global level
+##### Import custom properties CSS into JS doc
 ```JavaScript
 import `./node_modules/@alaskaairux/orion-icons/dist/tokens/CSSTokenProperties.css`
+```
+
+##### Import custom properties Sass into Sass doc
+```Sass
+@import `./node_modules/@alaskaairux/alaskaairux/orion-icons/dist/tokens/TokenProperties`
 ```
 
 ##### HTML will reference variables
