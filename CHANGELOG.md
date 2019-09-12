@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.6.3](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.6.2...v1.6.3) (2019-09-12)
+
+
+### Bug Fixes
+
+* [#2](https://github.com/AlaskaAirlines/OrionIcons/issues/2) dupe selector ([464fca1](https://github.com/AlaskaAirlines/OrionIcons/commit/464fca1))
+
 ## [1.6.2](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.6.1...v1.6.2) (2019-08-22)
 
 
