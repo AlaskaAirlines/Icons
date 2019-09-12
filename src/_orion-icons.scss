@@ -70,14 +70,6 @@ $iconMap: (
   }
 }
 
-// Icon Step Out
-.ico_classiccheckmark {
-  @if (map-get($iconMap, classiccheckmark)) {
-    fill: currentColor;
-    width: $size-icon-classiccheckmark-width;
-  }
-}
-
 // Icon Classic Checkmark
 .ico_classiccheckmark {
   @if (map-get($iconMap, classiccheckmark)) {
