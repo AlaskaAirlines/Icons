@@ -15,14 +15,18 @@
 // ====================================================================
 
 // Default map and values
-// TO-DO ... replace with Tokens
 $iconMap: (
-  toggleArrowHorizontal: false,
-  toggleArrowVertical: false,
-  chevronArrowVertical: false,
-  chevronArrowHorizontal: false,
+  toggleArrow: false,
+  chevronArrow: false,
   classiccheckmark: false,
-  stepout: false
+  stepout: false,
+  stepoutLg: false,
+  checkmarkLg: false,
+  close: false,
+  closeLg: false,
+  closeSml: false,
+  alert: false,
+  creditcard: false
 ) !default;
 
 @import "./tokens/TokenProperties"; // Sass file of custom properties
@@ -30,34 +34,20 @@ $iconMap: (
 
 
 // Icon Toggle Arrow, left and right
-.ico__toggleArrowHorizontal {
-  @if (map-get($iconMap, toggleArrowHorizontal)) {
+.ico__toggleArrow {
+  @if (map-get($iconMap, toggleArrow)) {
     fill: currentColor;
-    width: $size-icon-toggle-arrow-horizontal-width;
-  }
-}
-
-// Icon Toggle Arrow, up and down
-.ico__toggleArrowVertical {
-  @if (map-get($iconMap, toggleArrowVertical)) {
-    fill: currentColor;
-    width: $size-icon-toggle-arrow-vertical-width;
+    width: $size-icon-square-lg;
+    height: $size-icon-square-lg;
   }
 }
 
 // Icon Chevron Arrow, left and right
-.ico__chevronArrowVertical {
-  @if (map-get($iconMap, chevronArrowVertical)) {
+.ico__chevronArrow {
+  @if (map-get($iconMap, chevronArrow)) {
     fill: currentColor;
-    height: $size-icon-chevron-arrow-vertical-height;
-  }
-}
-
-// Icon Chevron Arrow, up and down
-.ico__chevronArrowHorizontal {
-  @if (map-get($iconMap, chevronArrowHorizontal)) {
-    fill: currentColor;
-    height: $size-icon-chevron-arrow-horizontal-width;
+    width: $size-icon-square-lg;
+    height: $size-icon-square-lg;
   }
 }
 
@@ -65,8 +55,17 @@ $iconMap: (
 .ico__stepout {
   @if (map-get($iconMap, stepout)) {
     fill: currentColor;
-    width: $size-icon-step-out-width;
-    height: $size-icon-step-out-height;
+    width: $size-icon-square-sml;
+    height: $size-icon-square-sml;
+  }
+}
+
+// Icon Step Out
+.ico__stepoutLg {
+  @if (map-get($iconMap, stepoutLg)) {
+    fill: currentColor;
+    width: $size-icon-square-lg;
+    height: $size-icon-square-lg;
   }
 }
 
@@ -74,7 +73,16 @@ $iconMap: (
 .ico_classiccheckmark {
   @if (map-get($iconMap, classiccheckmark)) {
     fill: currentColor;
-    width: $size-icon-classiccheckmark-width;
+    width: $size-icon-square-med;
+  }
+}
+
+// Icon Classic Checkmark
+.ico_classiccheckmarkLg {
+  @if (map-get($iconMap, checkmarkLg)) {
+    fill: currentColor;
+    width: $size-icon-square-lg;
+    height: $size-icon-square-lg;
   }
 }
 
@@ -82,7 +90,43 @@ $iconMap: (
 .ico_close {
   @if (map-get($iconMap, close)) {
     fill: currentColor;
-    width: $size-icon-close-width;
-    height: $size-icon-close-height;
+    width: $size-icon-square-med;
+    height: $size-icon-square-med;
+  }
+}
+
+// X Close Icon
+.ico_closeSml {
+  @if (map-get($iconMap, closeSml)) {
+    fill: currentColor;
+    width: $size-icon-square-lg;
+    height: $size-icon-square-lg;
+  }
+}
+
+// X Close Icon
+.ico_closeLg {
+  @if (map-get($iconMap, closeLg)) {
+    fill: currentColor;
+    width: $size-icon-square-lg;
+    height: $size-icon-square-lg;
+  }
+}
+
+// Alert Icon
+.ico_alert {
+  @if (map-get($iconMap, alert)) {
+    fill: currentColor;
+    width: $size-icon-square-lg;
+    height: $size-icon-square-lg;
+  }
+}
+
+// Credit card Icon
+.ico_creditCard {
+  @if (map-get($iconMap, creditcard)) {
+    fill: currentColor;
+    width: $size-icon-square-lg;
+    height: $size-icon-square-lg;
   }
 }

@@ -10,8 +10,8 @@
     "url": "https://github.com/AlaskaAirlines/OrionIcons"
   },
   "devDependencies": {
-    "@alaskaairux/orion-design-tokens": "^2.6.0",
-    "@commitlint/cli": "^7.6.1",
+    "@alaskaairux/orion-design-tokens": "^2.7.2",
+    "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^7.6.0",
     "@semantic-release/changelog": "^3.0.4",
     "@semantic-release/git": "^7.0.16",
@@ -38,8 +38,8 @@
     "copySass": "copyfiles -f ./src/*.scss ./dist",
     "test": "npm run jsonlint || npm run svglint",
     "svgTest": "jest",
-    "png@2x": "convert-svg-to-png --height 40px dist/icons/*20@2.png",
-    "png@3x": "convert-svg-to-png --height 60px dist/icons/*20@3.png"
+    "png@2x": "convert-svg-to-png --height 48px dist/icons/*24@2x.png",
+    "png@3x": "convert-svg-to-png --height 72px dist/icons/*24@3x.png"
   },
   "husky": {
     "hooks": {

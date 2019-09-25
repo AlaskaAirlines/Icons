@@ -1,8 +1,8 @@
-<svg viewBox="0 0 4 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>iconTitle</title>
   <desc>iconDesc</desc>
   <style></style>
   <g>
-    <polygon transform="translate(2.000000, 4.000000) rotate(-90.000000) translate(-2.000000, -4.000000) " points="2 6 -2 2 6 2"></polygon>
+    <polygon points="10 15 14 12 10 9"></polygon>
   </g>
 </svg>

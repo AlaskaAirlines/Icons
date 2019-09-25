@@ -59,7 +59,7 @@ data.icons.forEach(icon => {
 // =======================================================================
 const pngIcons = {};
 const SizeMedIcons = data.icons.filter(function(sizeData) {
-  return sizeData.PngSize == 20;
+  return sizeData.PngSize == 24;
 });
 
 SizeMedIcons.forEach(icon => {
@@ -79,8 +79,8 @@ SizeMedIcons.forEach(icon => {
   icons[icon.title] = icon;
 
   // write new SVGs to ./dist
-  fs.writeFileSync( `${buildIconsDir}/${filename}--20@2.png`, icon.svg);
-  fs.writeFileSync( `${buildIconsDir}/${filename}--20@3.png`, icon.svg);
+  fs.writeFileSync( `${buildIconsDir}/${filename}--24@2x.png`, icon.svg);
+  fs.writeFileSync( `${buildIconsDir}/${filename}--24@3x.png`, icon.svg);
 
   // console.log(`${filename}.js / ${filename}.png written to ./dist dir`)
 });
@@ -89,7 +89,7 @@ SizeMedIcons.forEach(icon => {
 // =======================================================================
 const pngIconsAlt = {};
 const altColorSet = data.icons.filter(function(altData) {
-  return altData.AltPngColor && altData.PngSize == 20;
+  return altData.AltPngColor && altData.PngSize == 24;
 });
 
 altColorSet.forEach(icon => {
@@ -109,8 +109,8 @@ altColorSet.forEach(icon => {
   icons[icon.title] = icon;
 
   // write new SVGs to ./dist
-  fs.writeFileSync( `${buildIconsDir}/${filename}-alt--20@2.png`, icon.svg);
-  fs.writeFileSync( `${buildIconsDir}/${filename}-alt--20@3.png`, icon.svg);
+  fs.writeFileSync( `${buildIconsDir}/${filename}-alt--24@2x.png`, icon.svg);
+  fs.writeFileSync( `${buildIconsDir}/${filename}-alt--24@3x.png`, icon.svg);
 
   // console.log(`${filename}.js / ${filename}.png written to ./dist dir`)
 });

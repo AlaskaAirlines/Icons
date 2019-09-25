@@ -7,8 +7,10 @@
       "role": "img",
       "color": "currentColor",
       "PngColor": "var(--color-type-theme-light-link)",
-      "width": "var(--size-icon-toggle-arrow-horizontal-width)",
-      "style": "ico__toggleArrowHorizontal"
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__toggleArrow"
     },{
       "title": "Arrow Down",
       "desc": "Down pointer",
@@ -16,8 +18,10 @@
       "role": "img",
       "color": "currentColor",
       "PngColor": "var(--color-type-theme-light-link)",
-      "width": "var(--size-icon-toggle-arrow-horizontal-width)",
-      "style": "ico__toggleArrowHorizontal"
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__toggleArrow"
     },{
       "title": "Arrow Left",
       "desc": "Left pointer",
@@ -25,8 +29,10 @@
       "role": "img",
       "color": "currentColor",
       "PngColor": "var(--color-type-theme-light-link)",
-      "width": "var(--size-icon-toggle-arrow-vertical-width)",
-      "style": "ico__toggleArrowVertical"
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__toggleArrow"
     },{
       "title": "Arrow Right",
       "desc": "Right pointer",
@@ -34,8 +40,10 @@
       "role": "img",
       "color": "currentColor",
       "PngColor": "var(--color-type-theme-light-link)",
-      "width": "var(--size-icon-toggle-arrow-vertical-width)",
-      "style": "ico__toggleArrowVertical"
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__toggleArrow"
     },{
       "title": "Chevron Left",
       "desc": "Left indicator",
@@ -43,8 +51,10 @@
       "role": "img",
       "color": "currentColor",
       "PngColor": "var(--color-type-theme-light-link)",
-      "height": "var(--size-icon-chevron-arrow-vertical-height)",
-      "style": "ico__chevronArrowVertical"
+      "PngSize": 24,
+      "height": "var(--size-icon-square-lg)",
+      "width": "var(--size-icon-square-lg)",
+      "style": "ico__chevronArrow"
     },{
       "title": "Chevron Right",
       "desc": "Right indicator",
@@ -52,8 +62,10 @@
       "role": "img",
       "color": "currentColor",
       "PngColor": "var(--color-type-theme-light-link)",
-      "height": "var(--size-icon-chevron-arrow-vertical-height)",
-      "style": "ico__chevronArrowVertical"
+      "PngSize": 24,
+      "height": "var(--size-icon-square-lg)",
+      "width": "var(--size-icon-square-lg)",
+      "style": "ico__chevronArrow"
     },{
       "title": "Chevron Up",
       "desc": "Up pointer",
@@ -61,8 +73,10 @@
       "role": "img",
       "color": "currentColor",
       "PngColor": "var(--color-type-theme-light-link)",
-      "width": "var(--size-icon-chevron-arrow-horizontal-width)",
-      "style": "ico__chevronArrowHorizontal"
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__chevronArrow"
     },{
       "title": "Chevron Down",
       "desc": "Down pointer",
@@ -70,8 +84,10 @@
       "role": "img",
       "color": "currentColor",
       "PngColor": "var(--color-type-theme-light-link)",
-      "width": "var(--size-icon-chevron-arrow-horizontal-width)",
-      "style": "ico__chevronArrowHorizontal"
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__chevronArrow"
     },{
       "title": "Step Out",
       "desc": "Linked item is outside primary domain",
@@ -79,30 +95,112 @@
       "role": "img",
       "color": "currentColor",
       "PngColor": "var(--color-type-theme-light-link)",
-      "AltPngColor": "var(--color-type-theme-dark-link)",
-      "PngSize": 20,
-      "width": "var(--size-icon-step-out-width)",
-      "height": "var(--size-icon-step-out-width)",
+      "AltPngColor": "var(--color-base-orca)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-sml)",
+      "height": "var(--size-icon-square-sml)",
       "style": "ico__stepout"
+    },{
+      "title": "Step Out Lg",
+      "desc": "Linked item is outside primary domain",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "AltPngColor": "var(--color-base-orca)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__stepoutLG"
     },{
       "title": "Classic checkmark",
       "desc": "Checkmark display indicator",
       "hidden": "true",
       "role": "img",
-      "color": "currentColor",
+      "color": "var(--color-base-galapagos)",
       "PngColor": "var(--color-base-galapagos)",
-      "width": "var(--size-icon-classiccheckmark-width)",
+      "width": "var(--size-icon-square-med)",
       "style": "ico_classiccheckmark"
+    },{
+      "title": "Checkmark lg",
+      "desc": "Checkmark display indicator",
+      "hidden": "true",
+      "role": "img",
+      "color": "var(--color-base-galapagos)",
+      "PngColor": "var(--color-base-galapagos)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico_checkmarklg"
+    },{
+      "title": "Checkmark sml",
+      "desc": "Checkmark display indicator",
+      "hidden": "true",
+      "role": "img",
+      "color": "var(--color-base-galapagos)",
+      "PngColor": "var(--color-base-galapagos)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico_checkmarksml"
     },{
       "title": "Close",
       "desc": "Close options icon",
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
-      "PngColor": "var(--color-type-theme-light-link)",
-      "width": "var(--size-icon-close-width)",
-      "height": "var(--size-icon-close-height)",
+      "PngColor": "var(--color-base-orca)",
+      "width": "var(--size-icon-square-med)",
+      "height": "var(--size-icon-square-med)",
       "style": "ico_close"
+    },
+    {
+      "title": "Close lg",
+      "desc": "Close options icon",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-base-orca)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico_close"
+    },
+    {
+      "title": "Close sml",
+      "desc": "Close options icon",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-base-orca)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico_close"
+    },
+    {
+      "title": "alert",
+      "desc": "Error alert icon",
+      "hidden": "true",
+      "role": "img",
+      "color": "var(--color-background-error)",
+      "PngColor": "var(--color-background-error)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico_alert"
+    },
+    {
+      "title": "credit card",
+      "desc": "generic credit card icon",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico_creditCard"
     }
   ]
 }
