@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [1.7.0](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.6.3...v1.7.0) (2019-09-27)
+
+
+### Features
+
+* update all the icons to new spec ([01b9bb0](https://github.com/AlaskaAirlines/OrionIcons/commit/01b9bb0))
+
 ## [1.6.3](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.6.2...v1.6.3) (2019-09-12)
 
 
