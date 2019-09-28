@@ -22,6 +22,7 @@ $iconMap: (
   stepout: false,
   stepoutLg: false,
   checkmarkLg: false,
+  checkmarkSml: false,
   close: false,
   closeLg: false,
   closeSml: false,
@@ -77,10 +78,19 @@ $iconMap: (
   }
 }
 
-// Icon Classic Checkmark
-.ico_classiccheckmarkLg {
+// Icon  Checkmark Large
+.ico_checkmarkLg {
   @if (map-get($iconMap, checkmarkLg)) {
-    fill: currentColor;
+    fill: $color-base-galapagos;
+    width: $size-icon-square-lg;
+    height: $size-icon-square-lg;
+  }
+}
+
+// Icon  Checkmark Small
+.ico_checkmarkSml {
+  @if (map-get($iconMap, checkmarkSml)) {
+    fill: $color-base-galapagos;
     width: $size-icon-square-lg;
     height: $size-icon-square-lg;
   }
@@ -116,7 +126,7 @@ $iconMap: (
 // Alert Icon
 .ico_alert {
   @if (map-get($iconMap, alert)) {
-    fill: currentColor;
+    fill: $color-background-error;
     width: $size-icon-square-lg;
     height: $size-icon-square-lg;
   }

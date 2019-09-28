@@ -111,7 +111,7 @@
       "PngSize": 24,
       "width": "var(--size-icon-square-lg)",
       "height": "var(--size-icon-square-lg)",
-      "style": "ico__stepoutLG"
+      "style": "ico__stepoutLg"
     },{
       "title": "Classic checkmark",
       "desc": "Checkmark display indicator",
@@ -131,7 +131,7 @@
       "PngSize": 24,
       "width": "var(--size-icon-square-lg)",
       "height": "var(--size-icon-square-lg)",
-      "style": "ico_checkmarklg"
+      "style": "ico_checkmarkLg"
     },{
       "title": "Checkmark sml",
       "desc": "Checkmark display indicator",
@@ -142,7 +142,7 @@
       "PngSize": 24,
       "width": "var(--size-icon-square-lg)",
       "height": "var(--size-icon-square-lg)",
-      "style": "ico_checkmarksml"
+      "style": "ico_checkmarkSml"
     },{
       "title": "Close",
       "desc": "Close options icon",
@@ -164,7 +164,7 @@
       "PngSize": 24,
       "width": "var(--size-icon-square-lg)",
       "height": "var(--size-icon-square-lg)",
-      "style": "ico_close"
+      "style": "ico_closeLg"
     },
     {
       "title": "Close sml",
@@ -176,7 +176,7 @@
       "PngSize": 24,
       "width": "var(--size-icon-square-lg)",
       "height": "var(--size-icon-square-lg)",
-      "style": "ico_close"
+      "style": "ico_closeSml"
     },
     {
       "title": "alert",
