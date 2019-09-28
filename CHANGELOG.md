@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.7.1](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.7.0...v1.7.1) (2019-09-28)
+
+
+### Bug Fixes
+
+* address typos with CSS class names in JSON ([6930e04](https://github.com/AlaskaAirlines/OrionIcons/commit/6930e04))
+
 # [1.7.0](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.6.3...v1.7.0) (2019-09-27)
 
 
