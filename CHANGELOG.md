@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.7.2](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.7.1...v1.7.2) (2019-10-02)
+
+
+### Bug Fixes
+
+* update all icon fills to be currentColor ([c8bf533](https://github.com/AlaskaAirlines/OrionIcons/commit/c8bf533))
+
 ## [1.7.1](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.7.0...v1.7.1) (2019-09-28)
 
 
