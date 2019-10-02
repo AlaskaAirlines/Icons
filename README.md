@@ -34,10 +34,12 @@ import `./node_modules/@alaskaairux/orion-icons/dist/tokens/CSSTokenProperties.c
 
 ##### HTML will reference variables
 ```html
-<svg style="width: var(--size-icon-toggle-arrow-horizontal-width);  fill: var(--color-icon-toggle-arrow)" class="ico__toggleArrowHorizontal" aria-hidden="false" role="img" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <title>Arrow Down</title>
+<svg role="img" aria-hidden="true" style="width: var(--size-icon-square-lg); height: var(--size-icon-square-lg); fill: currentColor" class="ico__toggleArrow" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Arrow Up</title>
+  <desc>Up pointer</desc>
+  <style></style>
   <g>
-    <polygon points="4 4 0 0 8 0"></polygon>
+    <polygon points="15 14 12 10 9 14"></polygon>
   </g>
 </svg>
 ```
@@ -63,9 +65,10 @@ By default, no CSS classes are created when importing this file. To opt-in to th
 
 ```scss
 $iconMap: (
-  toggleArrowHorizontal: true,
-  toggleArrowVertical: true
-);
+  toggleArrow: true,
+  chevronArrow: true,
+  classiccheckmark: true,
+) ;
 
 @import '~@alaskaairux/orion-icons/dist/orion-icons';
 ```
