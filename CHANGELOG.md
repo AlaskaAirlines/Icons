@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+## [1.7.3](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.7.2...v1.7.3) (2019-10-11)
+
+
+### Bug Fixes
+
+* add npm-run-all for easier dev ([b5d8d1a](https://github.com/AlaskaAirlines/OrionIcons/commit/b5d8d1a))
+* update package scripts for dev builds ([2165d0e](https://github.com/AlaskaAirlines/OrionIcons/commit/2165d0e))
+
 ## [1.7.2](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.7.1...v1.7.2) (2019-10-02)
 
 
