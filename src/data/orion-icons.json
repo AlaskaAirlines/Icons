@@ -120,7 +120,7 @@
       "color": "currentColor",
       "PngColor": "var(--color-base-galapagos)",
       "width": "var(--size-icon-square-med)",
-      "style": "ico_classiccheckmark"
+      "style": "ico__classiccheckmark"
     },{
       "title": "Checkmark lg",
       "desc": "Checkmark display indicator",
@@ -131,7 +131,7 @@
       "PngSize": 24,
       "width": "var(--size-icon-square-lg)",
       "height": "var(--size-icon-square-lg)",
-      "style": "ico_checkmarkLg"
+      "style": "ico__checkmarkLg"
     },{
       "title": "Checkmark sml",
       "desc": "Checkmark display indicator",
@@ -142,7 +142,7 @@
       "PngSize": 24,
       "width": "var(--size-icon-square-lg)",
       "height": "var(--size-icon-square-lg)",
-      "style": "ico_checkmarkSml"
+      "style": "ico__checkmarkSml"
     },{
       "title": "Close",
       "desc": "Close options icon",
@@ -152,7 +152,7 @@
       "PngColor": "var(--color-base-orca)",
       "width": "var(--size-icon-square-med)",
       "height": "var(--size-icon-square-med)",
-      "style": "ico_close"
+      "style": "ico__close"
     },
     {
       "title": "Close lg",
@@ -164,7 +164,7 @@
       "PngSize": 24,
       "width": "var(--size-icon-square-lg)",
       "height": "var(--size-icon-square-lg)",
-      "style": "ico_closeLg"
+      "style": "ico__closeLg"
     },
     {
       "title": "Close sml",
@@ -176,7 +176,7 @@
       "PngSize": 24,
       "width": "var(--size-icon-square-lg)",
       "height": "var(--size-icon-square-lg)",
-      "style": "ico_closeSml"
+      "style": "ico__closeSml"
     },
     {
       "title": "alert",
@@ -188,7 +188,7 @@
       "PngSize": 24,
       "width": "var(--size-icon-square-lg)",
       "height": "var(--size-icon-square-lg)",
-      "style": "ico_alert"
+      "style": "ico__alert"
     },
     {
       "title": "credit card",
@@ -200,7 +200,103 @@
       "PngSize": 24,
       "width": "var(--size-icon-square-lg)",
       "height": "var(--size-icon-square-lg)",
-      "style": "ico_creditCard"
+      "style": "ico__creditCard"
+    },
+    {
+      "title": "Add to calendar",
+      "desc": "Add to calendar icon",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__addToCalendar"
+    },
+    {
+      "title": "Boarding pass filled",
+      "desc": "Boarding pass icon",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__boardingPassFilled"
+    },
+    {
+      "title": "Boarding pass stroke",
+      "desc": "Boarding pass icon",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__boardingPassStroke"
+    },
+    {
+      "title": "Booking filled",
+      "desc": "Booking icon",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__bookingFilled"
+    },
+    {
+      "title": "Booking stroke",
+      "desc": "Booking icon",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__bookingStroke"
+    },
+    {
+      "title": "Calendar",
+      "desc": "Calendar icon",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__calendar"
+    },
+    {
+      "title": "Radar filled",
+      "desc": "Radar icon",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__radarFilled"
+    },
+    {
+      "title": "Radar stroke",
+      "desc": "Radar icon",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__radarStroke"
     }
   ]
 }

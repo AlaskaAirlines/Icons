@@ -28,6 +28,14 @@ $iconMap: (
   closeSml: false,
   alert: false,
   creditcard: false
+  addToCalendar: false,
+  boardingPassFilled: false,
+  boardingPassStroke: false,
+  bookingFilled: false,
+  bookingStroke: false,
+  calendar: false,
+  radarFilled: false,
+  radarStroke: false
 ) !default;
 
 @import "./tokens/TokenProperties"; // Sass file of custom properties
@@ -71,7 +79,7 @@ $iconMap: (
 }
 
 // Icon Classic Checkmark
-.ico_classiccheckmark {
+.ico__classiccheckmark {
   @if (map-get($iconMap, classiccheckmark)) {
     fill: currentColor;
     width: $size-icon-square-med;
@@ -79,7 +87,7 @@ $iconMap: (
 }
 
 // Icon  Checkmark Large
-.ico_checkmarkLg {
+.ico__checkmarkLg {
   @if (map-get($iconMap, checkmarkLg)) {
     fill: currentColor;
     width: $size-icon-square-lg;
@@ -88,7 +96,7 @@ $iconMap: (
 }
 
 // Icon  Checkmark Small
-.ico_checkmarkSml {
+.ico__checkmarkSml {
   @if (map-get($iconMap, checkmarkSml)) {
     fill: currentColor;
     width: $size-icon-square-lg;
@@ -97,7 +105,7 @@ $iconMap: (
 }
 
 // X Close Icon
-.ico_close {
+.ico__close {
   @if (map-get($iconMap, close)) {
     fill: currentColor;
     width: $size-icon-square-med;
@@ -106,7 +114,7 @@ $iconMap: (
 }
 
 // X Close Icon
-.ico_closeSml {
+.ico__closeSml {
   @if (map-get($iconMap, closeSml)) {
     fill: currentColor;
     width: $size-icon-square-lg;
@@ -115,7 +123,7 @@ $iconMap: (
 }
 
 // X Close Icon
-.ico_closeLg {
+.ico__closeLg {
   @if (map-get($iconMap, closeLg)) {
     fill: currentColor;
     width: $size-icon-square-lg;
@@ -124,7 +132,7 @@ $iconMap: (
 }
 
 // Alert Icon
-.ico_alert {
+.ico__alert {
   @if (map-get($iconMap, alert)) {
     fill: currentColor;
     width: $size-icon-square-lg;
@@ -133,8 +141,80 @@ $iconMap: (
 }
 
 // Credit card Icon
-.ico_creditCard {
+.ico__creditCard {
   @if (map-get($iconMap, creditcard)) {
+    fill: currentColor;
+    width: $size-icon-square-lg;
+    height: $size-icon-square-lg;
+  }
+}
+
+// Add to calendar Icon
+.ico__addToCalendar {
+  @if (map-get($iconMap, addToCalendar)) {
+    fill: currentColor;
+    width: $size-icon-square-lg;
+    height: $size-icon-square-lg;
+  }
+}
+
+// Boarding pass filled Icon
+.ico__boardingPassFilled {
+  @if (map-get($iconMap, boardingPassFilled)) {
+    fill: currentColor;
+    width: $size-icon-square-lg;
+    height: $size-icon-square-lg;
+  }
+}
+
+// Boarding pass stroke Icon
+.ico__boardingPassStroke {
+  @if (map-get($iconMap, boardingPassStroke)) {
+    fill: currentColor;
+    width: $size-icon-square-lg;
+    height: $size-icon-square-lg;
+  }
+}
+
+// Booking filled icon
+.ico__bookingFilled {
+  @if (map-get($iconMap, bookingFilled)) {
+    fill: currentColor;
+    width: $size-icon-square-lg;
+    height: $size-icon-square-lg;
+  }
+}
+
+// Booking stroke icon
+.ico__bookingStroke {
+  @if (map-get($iconMap, bookingStroke)) {
+    fill: currentColor;
+    width: $size-icon-square-lg;
+    height: $size-icon-square-lg;
+  }
+}
+
+// Calendar icon
+.ico__calendar {
+  @if (map-get($iconMap, calendar)) {
+    fill: currentColor;
+    width: $size-icon-square-lg;
+    height: $size-icon-square-lg;
+  }
+}
+
+// Radar filled icon
+.ico__radarFilled {
+  @if (map-get($iconMap, radarFilled)) {
+    fill: currentColor;
+    width: $size-icon-square-lg;
+    height: $size-icon-square-lg;
+  }
+}
+
+// Radar stroke icon
+.ico__radarStroke {
+  @if (map-get($iconMap, radarStroke)) {
     fill: currentColor;
     width: $size-icon-square-lg;
     height: $size-icon-square-lg;
