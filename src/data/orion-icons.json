@@ -297,6 +297,30 @@
       "width": "var(--size-icon-square-lg)",
       "height": "var(--size-icon-square-lg)",
       "style": "ico__radarStroke"
+    },
+    {
+      "title": "Facebook",
+      "desc": "Facebook icon",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__facebook"
+    },
+    {
+      "title": "Instagram",
+      "desc": "Instagram icon",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__instagram"
     }
   ]
 }
