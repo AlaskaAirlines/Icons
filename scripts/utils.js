@@ -5,6 +5,6 @@ module.exports = {
   */
   titleToFilename: title => (
     title.toLowerCase()
-      .replace(/[ !’]/g, "")
+      .replace(/[ !’]/g, "-")
   )
 }
