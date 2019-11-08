@@ -934,6 +934,90 @@
       "width": "var(--size-icon-square-lg)",
       "height": "var(--size-icon-square-lg)",
       "style": "ico__xSm"
+    },
+    {
+      "title": "Error",
+      "desc": "Error alert icon",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__error"
+    },
+    {
+      "title": "Information Filled",
+      "desc": "Information icon - filled",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__informationFilled"
+    },
+    {
+      "title": "Information Stroke",
+      "desc": "Information icon - stroke",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__informationStroke"
+    },
+    {
+      "title": "Question Filled",
+      "desc": "Question icon - filled",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__questionFilled"
+    },
+    {
+      "title": "Question Stroke",
+      "desc": "Question icon - stroke",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__questionStroke"
+    },
+    {
+      "title": "Warning Filled",
+      "desc": "Warning icon - filled",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__warningFilled"
+    },
+    {
+      "title": "Warning Stroke",
+      "desc": "Warning icon - stroke",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__warningStroke"
     }
   ]
 }
