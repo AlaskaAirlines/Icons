@@ -28,7 +28,12 @@ if (!fileSys.existsSync(icoDir)){
 // export JS versions of Icons
 // =======================================================================
 const icons = {};
-data.icons.forEach(icon => {
+data.icons.forEach(iconRaw => {
+  let icon = {
+    ...data.commonProperties,
+    ...iconRaw
+  }
+
   const filename = titleToFilename(icon.title);
   icon.svg = fs.readFileSync(`${iconsDir}/${filename}.svg`, 'utf8');
   const insertPos = icon.svg.indexOf("svg") + 4;
