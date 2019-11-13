@@ -828,42 +828,6 @@
       "style": "ico__plusStroke"
     },
     {
-      "title": "Minus filled",
-      "desc": "Minus icon",
-      "hidden": "true",
-      "role": "img",
-      "color": "currentColor",
-      "PngColor": "var(--color-type-theme-light-link)",
-      "PngSize": 24,
-      "width": "var(--size-icon-square-lg)",
-      "height": "var(--size-icon-square-lg)",
-      "style": "ico__minusFilled"
-    },
-    {
-      "title": "Minus lg",
-      "desc": "Minus icon",
-      "hidden": "true",
-      "role": "img",
-      "color": "currentColor",
-      "PngColor": "var(--color-type-theme-light-link)",
-      "PngSize": 24,
-      "width": "var(--size-icon-square-lg)",
-      "height": "var(--size-icon-square-lg)",
-      "style": "ico__minusLg"
-    },
-    {
-      "title": "Minus sm",
-      "desc": "Minus icon",
-      "hidden": "true",
-      "role": "img",
-      "color": "currentColor",
-      "PngColor": "var(--color-type-theme-light-link)",
-      "PngSize": 24,
-      "width": "var(--size-icon-square-lg)",
-      "height": "var(--size-icon-square-lg)",
-      "style": "ico__minusSm"
-    },
-    {
       "title": "Printer",
       "desc": "Printer icon",
       "hidden": "true",
@@ -1018,6 +982,66 @@
       "width": "var(--size-icon-square-lg)",
       "height": "var(--size-icon-square-lg)",
       "style": "ico__warningStroke"
+    },
+    {
+      "title": "CC Alaska",
+      "desc": "Alaska Credit Card",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__creditCardAlaska"
+    },
+    {
+      "title": "CC Amex",
+      "desc": "Amex Credit Card",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__creditCardAmex"
+    },
+    {
+      "title": "CC Discover",
+      "desc": "Discover Credit Card",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__creditCardDiscover"
+    },
+    {
+      "title": "CC Mastercard",
+      "desc": "Mastercard Credit Card",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__creditCardMastercard"
+    },
+    {
+      "title": "CC Visa",
+      "desc": "Visa Credit Card",
+      "hidden": "true",
+      "role": "img",
+      "color": "currentColor",
+      "PngColor": "var(--color-type-theme-light-link)",
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)",
+      "style": "ico__creditCardVisa"
     }
   ]
 }
