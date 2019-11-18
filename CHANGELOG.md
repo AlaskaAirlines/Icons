@@ -1,5 +1,23 @@
 # Semantic Release Automated Changelog
 
+# [1.8.0](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.7.3...v1.8.0) (2019-11-18)
+
+
+### Bug Fixes
+
+* remove fills from terminal icons ([8cdf899](https://github.com/AlaskaAirlines/OrionIcons/commit/8cdf899))
+* rename terminal icons back to original names ([629cb70](https://github.com/AlaskaAirlines/OrionIcons/commit/629cb70))
+* updated icons to support - in the name for build ([ba8c010](https://github.com/AlaskaAirlines/OrionIcons/commit/ba8c010))
+
+
+### Features
+
+* add alert svg with '-' in file names ([84a537c](https://github.com/AlaskaAirlines/OrionIcons/commit/84a537c))
+* add interface icons ([148a67c](https://github.com/AlaskaAirlines/OrionIcons/commit/148a67c))
+* add social icons ([593cd8a](https://github.com/AlaskaAirlines/OrionIcons/commit/593cd8a))
+* add terminal icons ([6d2b5a3](https://github.com/AlaskaAirlines/OrionIcons/commit/6d2b5a3))
+* payment icons; remove duplication json, remove fill from some icons ([979ce23](https://github.com/AlaskaAirlines/OrionIcons/commit/979ce23))
+
 ## [1.7.3](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.7.2...v1.7.3) (2019-10-11)
 
 
