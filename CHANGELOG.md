@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.8.1](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.8.0...v1.8.1) (2019-11-18)
+
+
+### Bug Fixes
+
+* added missing comma ([259759d](https://github.com/AlaskaAirlines/OrionIcons/commit/259759d))
+
 # [1.8.0](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.7.3...v1.8.0) (2019-11-18)
 
 
