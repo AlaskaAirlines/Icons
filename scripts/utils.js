@@ -6,11 +6,11 @@ const titleToFilename = title => (
   title.toLowerCase()
     .replace(/[ !’]/g, "-")
 );
-const getDistSubFolder = type => !!type ? `${type}/` : '';
+const getDistSubFolder = category => !!category ? `${category}/` : '';
 
 const getDistFilename = icon => {
 
-  const dir = !!icon.type ? `${icon.type}/` : '';
+  const dir = !!icon.category ? `${icon.category}/` : '';
   return `${dir}${titleToFilename(icon.title)}`;
 };
 

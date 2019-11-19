@@ -52,7 +52,7 @@ data.icons.forEach(iconRaw => {
   icon.svg = icon.svg.replace("iconTitle", `${icon.title}`);
   icon.svg = icon.svg.replace("iconDesc", `${icon.desc}`);
 
-  const publishFolder = `${buildIconsDir}/${getDistSubFolder(icon.type)}`;
+  const publishFolder = `${buildIconsDir}/${getDistSubFolder(icon.category)}`;
   if (!fileSys.existsSync(publishFolder)){
     fileSys.mkdirSync(publishFolder);
   }
@@ -90,7 +90,7 @@ SizeMedIcons.forEach(icon => {
   icon.svg = [icon.svg.slice(0, insertPos), elementStyle, icon.svg.slice(insertPos)].join('');
   icon.svg = icon.svg.replace("<style></style>", `${iconStyle}`);
 
-  const publishFolder = `${buildIconsDir}/${getDistSubFolder(icon.type)}`;
+  const publishFolder = `${buildIconsDir}/${getDistSubFolder(icon.category)}`;
   if (!fileSys.existsSync(publishFolder)){
     fileSys.mkdirSync(publishFolder);
   }
@@ -125,7 +125,7 @@ altColorSet.forEach(icon => {
   icon.svg = [icon.svg.slice(0, insertPos), elementStyle, icon.svg.slice(insertPos)].join('');
   icon.svg = icon.svg.replace("<style></style>", `${iconStyle}`);
 
-  const publishFolder = `${buildIconsDir}/${getDistSubFolder(icon.type)}`;
+  const publishFolder = `${buildIconsDir}/${getDistSubFolder(icon.category)}`;
   if (!fileSys.existsSync(publishFolder)){
     fileSys.mkdirSync(publishFolder);
   }

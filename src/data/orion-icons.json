@@ -14,49 +14,49 @@
       "title": "Arrow Up",
       "desc": "Up pointer",
       "style": "ico__toggleArrow",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Arrow Down",
       "desc": "Down pointer",
       "style": "ico__toggleArrow",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Arrow Left",
       "desc": "Left pointer",
       "style": "ico__toggleArrow",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Arrow Right",
       "desc": "Right pointer",
       "style": "ico__toggleArrow",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Chevron Left",
       "desc": "Left indicator",
       "style": "ico__chevronArrow",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Chevron Right",
       "desc": "Right indicator",
       "style": "ico__chevronArrow",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Chevron Up",
       "desc": "Up pointer",
       "style": "ico__chevronArrow",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Chevron Down",
       "desc": "Down pointer",
       "style": "ico__chevronArrow",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Step Out",
@@ -78,21 +78,21 @@
       "PngColor": "var(--color-base-galapagos)",
       "width": "var(--size-icon-square-med)",
       "style": "ico__classiccheckmark",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Checkmark lg",
       "desc": "Checkmark display indicator",
       "PngColor": "var(--color-base-galapagos)",
       "style": "ico__checkmarkLg",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Checkmark sml",
       "desc": "Checkmark display indicator",
       "PngColor": "var(--color-base-galapagos)",
       "style": "ico__checkmarkSml",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Close",
@@ -124,223 +124,223 @@
       "title": "credit card",
       "desc": "generic credit card icon",
       "style": "ico__creditCard",
-      "type": "payment"
+      "category": "payment"
     },
     {
       "title": "Add to calendar",
       "desc": "Add to calendar icon",
       "style": "ico__addToCalendar",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Boarding pass filled",
       "desc": "Boarding pass icon",
       "style": "ico__boardingPassFilled",
-      "type": "terminal"
+      "category": "terminal"
     },
     {
       "title": "Boarding pass stroke",
       "desc": "Boarding pass icon",
       "style": "ico__boardingPassStroke",
-      "type": "terminal"
+      "category": "terminal"
     },
     {
       "title": "Booking filled",
       "desc": "Booking icon",
       "style": "ico__bookingFilled",
-      "type": "terminal"
+      "category": "terminal"
     },
     {
       "title": "Booking stroke",
       "desc": "Booking icon",
       "style": "ico__bookingStroke",
-      "type": "terminal"
+      "category": "terminal"
     },
     {
       "title": "Calendar",
       "desc": "Calendar icon",
       "style": "ico__calendar",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Radar filled",
       "desc": "Radar icon",
       "style": "ico__radarFilled",
-      "type": "terminal"
+      "category": "terminal"
     },
     {
       "title": "Radar stroke",
       "desc": "Radar icon",
       "style": "ico__radarStroke",
-      "type": "terminal"
+      "category": "terminal"
     },
     {
       "title": "Facebook",
       "desc": "Facebook icon",
       "style": "ico__facebook",
-      "type": "social"
+      "category": "social"
     },
     {
       "title": "Instagram",
       "desc": "Instagram icon",
       "style": "ico__instagram",
-      "type": "social"
+      "category": "social"
     },
     {
       "title": "Accessibility",
       "desc": "Accessibility icon",
       "style": "ico__accessibility",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Account filled",
       "desc": "Account icon",
       "style": "ico__accountFilled",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Account stroke",
       "desc": "Account icon",
       "style": "ico__accountStroke",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Arrow down",
       "desc": "Arrow icon",
       "style": "ico__arrowDown",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Arrow left",
       "desc": "Arrow icon",
       "style": "ico__arrowLeft",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Arrow right",
       "desc": "Arrow icon",
       "style": "ico__arrowRight",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Arrow up",
       "desc": "Arrow icon",
       "style": "ico__arrowUp",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Caret down",
       "desc": "Caret icon",
       "style": "ico__caretDown",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Caret left",
       "desc": "Caret icon",
       "style": "ico__caretLeft",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Caret right",
       "desc": "Caret icon",
       "style": "ico__caretRight",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Caret up",
       "desc": "Caret icon",
       "style": "ico__caretUp",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Chain link",
       "desc": "Chain link icon",
       "style": "ico__chainLink",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Chat",
       "desc": "Chat icon",
       "style": "ico__chat",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Check filled",
       "desc": "Check icon",
       "style": "ico__checkFilled",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Check lg",
       "desc": "Check icon",
       "style": "ico__checkLg",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Check sm",
       "desc": "Check icon",
       "style": "ico__checkSm",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Check stroke",
       "desc": "Check icon",
       "style": "ico__checkStroke",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Chevron down",
       "desc": "Chevron icon",
       "style": "ico__chevronDown",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Chevron left",
       "desc": "Chevron icon",
       "style": "ico__chevronLeft",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Chevron right",
       "desc": "Chevron icon",
       "style": "ico__chevronRight",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Chevron up",
       "desc": "Chevron icon",
       "style": "ico__chevronUp",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Filter",
       "desc": "Filter icon",
       "style": "ico__filter",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Heart filled",
       "desc": "Heart icon",
       "style": "ico__heartFilled",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Heart stroke",
       "desc": "Heart icon",
       "style": "ico__heartStroke",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Home filled",
       "desc": "Home icon",
       "style": "ico__homeFilled",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Home stroke",
       "desc": "Home icon",
       "style": "ico__homeStroke",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Link",
@@ -351,13 +351,13 @@
       "title": "Location filled",
       "desc": "Location icon",
       "style": "ico__locationFilled",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Location stroke",
       "desc": "Location icon",
       "style": "ico__locationStroke",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Location finder",
@@ -373,31 +373,31 @@
       "title": "Mail",
       "desc": "Mail icon",
       "style": "ico__mail",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Minus filled",
       "desc": "Minus icon",
       "style": "ico__minusFilled",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Minus lg",
       "desc": "Minus icon",
       "style": "ico__minusLg",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Minus sm",
       "desc": "Minus icon",
       "style": "ico__minusSm",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Minus stroke",
       "desc": "Minus icon",
       "style": "ico__minusStroke",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Penguin",
@@ -408,61 +408,61 @@
       "title": "Plus filled",
       "desc": "Plus icon",
       "style": "ico__plusFilled",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Plus lg",
       "desc": "Plus icon",
       "style": "ico__plusLg",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Plus sm",
       "desc": "Plus icon",
       "style": "ico__plusSm",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Plus stroke",
       "desc": "Plus icon",
       "style": "ico__plusStroke",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Printer",
       "desc": "Printer icon",
       "style": "ico__printer",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Search",
       "desc": "Search icon",
       "style": "ico__search",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Star filled",
       "desc": "Star icon",
       "style": "ico__starFilled",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Star stroke",
       "desc": "Star icon",
       "style": "ico__starStroke",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "X lg",
       "desc": "X icon",
       "style": "ico__xLg",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "X sm",
       "desc": "X icon",
       "style": "ico__xSm",
-      "type": "interface"
+      "category": "interface"
     },
     {
       "title": "Error",
@@ -503,31 +503,31 @@
       "title": "CC Alaska",
       "desc": "Alaska Credit Card",
       "style": "ico__creditCardAlaska",
-      "type": "payment"
+      "category": "payment"
     },
     {
       "title": "CC Amex",
       "desc": "Amex Credit Card",
       "style": "ico__creditCardAmex",
-      "type": "payment"
+      "category": "payment"
     },
     {
       "title": "CC Discover",
       "desc": "Discover Credit Card",
       "style": "ico__creditCardDiscover",
-      "type": "payment"
+      "category": "payment"
     },
     {
       "title": "CC Mastercard",
       "desc": "Mastercard Credit Card",
       "style": "ico__creditCardMastercard",
-      "type": "payment"
+      "category": "payment"
     },
     {
       "title": "CC Visa",
       "desc": "Visa Credit Card",
       "style": "ico__creditCardVisa",
-      "type": "payment"
+      "category": "payment"
     }
   ]
 }
