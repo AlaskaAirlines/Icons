@@ -34,8 +34,8 @@ import `./node_modules/@alaskaairux/orion-icons/dist/tokens/CSSTokenProperties.c
 
 ##### HTML will reference variables
 ```html
-<svg role="img" aria-hidden="true" style="width: var(--size-icon-square-lg); height: var(--size-icon-square-lg); fill: currentColor" class="ico__toggleArrow" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <title>Arrow Up</title>
+<svg role="img" aria-hidden="true" style="width: var(--size-icon-square-lg); height: var(--size-icon-square-lg); fill: currentColor" class="ico__warning" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Warning</title>
   <desc>Up pointer</desc>
   <style></style>
   <g>
@@ -92,7 +92,7 @@ This will produce the CSS Custom Properties needed to produce the UI, as well pr
 
 ### Using Icons/Tokens within a LitElement Custom Element
 
-When using Icons within the scope of a LitElement Custom Element, the `CSSTokenProperties.css` file can to be referenced within the scope of the shadow DOM. To do this, the CSS needs to be wrapped in a JavaScript module. 
+When using Icons within the scope of a LitElement Custom Element, the `CSSTokenProperties.css` file can to be referenced within the scope of the shadow DOM. To do this, the CSS needs to be wrapped in a JavaScript module.
 
 Add the following line to the head of the Custom Element document:
 
@@ -108,37 +108,27 @@ ${iconProperties}
 
 This will inset the Token output within the scope of the shadow DOM Custom Element and render the appropriate values per the CSS Custom Properties.
 
-In this case, Orion Icons are a direct dependency of the custom element. 
+In this case, Orion Icons are a direct dependency of the custom element.
 
 #### Using Icon Properties outside the shadow DOM
 
-It is not necessary to load the Icon CSS custom properties within the scope of the shadow DOM. As long as the variables are made available from the global scope of the project, the CSS custom properties will pierce the shadow DOM and style the icons. 
+It is not necessary to load the Icon CSS custom properties within the scope of the shadow DOM. As long as the variables are made available from the global scope of the project, the CSS custom properties will pierce the shadow DOM and style the icons.
 
-In this case, the Orion Icons should be noted as a peer dependency with install instructions at the global level. 
+In this case, the Orion Icons should be noted as a peer dependency with install instructions at the global level.
 
-### Building CSS in JS
+## Categories 
 
-If you prefer to build your CSS in the JS component itself, this is supported in the exported icon object js file. There is a dependency to output CSS Custom Properties from the Orion Design Tokens. See the [Orion Design Token documentation](https://github.com/AlaskaAirlines/OrionIcons#building-css-in-js) to support this process.
+Icons fall into a series of use categories, these are:
 
-Example:
-
-```javascript
-console.log(`
-  .${arrowDown.style} {
-    fill: ${arrowDown.color};
-    width: ${arrowDown.width};
-  }
-`)
+```
+├── alert
+├── interface
+├── payment
+├── social
+├── terminal
 ```
 
-This will output the following:
-
-```css
-.ico__toggleArrowHorizontal {
-  color: var(--color-brand-blue-atlas);
-  width: var(--size-icon-toggle-arrow-horizontal-width);
-}
-```
+For the purposes of backwards compatibility, legacy icons will **NOT** be categorized and deprecated. 
 
 ## Node application dependency
 
@@ -149,65 +139,47 @@ Via a node.js dependency or other node like dependency management architecture, 
 It is suggested that developers list individual dependencies per UI component, like so:
 
 ```javascript
-const arrowDown = require('@alaskaairux/orion-icons/dist/icons/arrowdown');
+const warning = require('@alaskaairux/orion-icons/dist/icons/alert/warning');
 ```
 
 Within the UI component a developer can reference the object assigned to the newly created variable to get the specific icon's SVG code:
 
 ```javascript
-<button>Click Me ${arrowDown.svg}</button>
-```
-
-This will return the icon's SVG HTML inline.
-
-### Full library dependency
-
-If there are several icons within a view, developers may opt to include all available icons. **Be aware**, as this npm grows, so will this type of dependency. It's strongly suggested that dependencies are individually declared.
-
-To require the full library as a dependency of the UI, do the following:
-
-```javascript
-const orionIcons = require('@alaskaairux/orion-icons/dist');
-```
-
-Then within UI component, a developer can render a specific icon from the output array, like so:
-
-```javascript
-<button>Click Me ${orionIcons['Arrow Down'].svg}</button>
+<button>Click Me ${warning.svg}</button>
 ```
 
 This will return the icon's SVG HTML inline.
 
 ### Altering the SVG output
 
-Using either method, the SVG is captured as an object that can be manipulated. For example, calling the `arrowdown.js` file as shown below ...
+Using either method, the SVG is captured as an object that can be manipulated. For example, calling the `warning.js` file as shown below ...
 
 ```javascript
-const arrowDown = require('@alaskaairux/orion-icons/dist/icons/arrowdown');
+const warning = require('@alaskaairux/orion-icons/dist/icons/alert/warning');
 ```
 
 ... will output the following HTML
 
 ```html
-<svg role="img" aria-hidden="true" style="width: var(--size-icon-toggle-arrow-horizontal-width);  fill: var(--color-icon-toggle-arrow)" class="ico__toggleArrowHorizontal" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <title>Arrow Down</title>
+<svg role="img" aria-hidden="true" style="width: var(--size-icon-toggle-arrow-horizontal-width);  fill: var(--color-icon-toggle-arrow)" class="ico__warning" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Warning</title>
   <g>
     <polygon points="4 4 0 0 8 0"></polygon>
   </g>
 </svg>
 ```
 
-Adding the following line of JavaScript will find and replace the `aria-hidden` attribute in the `arrowDown.svg` string ...
+Adding the following line of JavaScript will find and replace the `aria-hidden` attribute in the `aledrt.svg` string ...
 
 ```javascript
-arrowDown.svg = arrowDown.svg.replace(/aria-hidden="true"/g, `aria-hidden="false"`);
+warning.svg = warning.svg.replace(/aria-hidden="true"/g, `aria-hidden="false"`);
 ```
 
 ... and then output the following:
 
 ```html
-<svg role="img" aria-hidden="false" style="width: var(--size-icon-toggle-arrow-horizontal-width);  fill: var(--color-icon-toggle-arrow)" class="ico__toggleArrowHorizontal" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <title>Arrow Down</title>
+<svg role="img" aria-hidden="false" style="width: var(--size-icon-toggle-arrow-horizontal-width);  fill: var(--color-icon-toggle-arrow)" class="ico__warning" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Warning</title>
   <g>
     <polygon points="4 4 0 0 8 0"></polygon>
   </g>
@@ -243,14 +215,14 @@ In most cases, the default exported JS file will work. But in some cases, the ES
 Lit-element requires the ES6 module export syntax for use, so an example dependency reference would be:
 
 ```javascript
-import stepout from '@alaskaairux/orion-icons/dist/icons/stepout_es6.js';
+import warning from '@alaskaairux/orion-icons/dist/icons/alert/warning_es6.js';
 ```
 
 Parsing out the SVG HTML to become DOM requires lines of code within the scope of the new custom element class, for example:
 
 ```javascript
 constructor() {
-  this.dom = new DOMParser().parseFromString(stepout.svg, 'text/html');
+  this.dom = new DOMParser().parseFromString(warning.svg, 'text/html');
   this.svg = this.dom.body.firstChild;
 }
 ```
@@ -266,13 +238,13 @@ Now that the SVG DOM is assigned to the `this.svg` variable, rendering this with
 React supports a standard for linking to assets and using them within the context of a component.
 
 ```javascript
-import arrowup from '@alaskaairux/orion-icons/dist/icons/arrowup.svg';
+import warning from '@alaskaairux/orion-icons/dist/icons/alert/warning.svg';
 ```
 
 Within the component's `render()` function, passing in the new variable into the `src` attribute of an `<img>` element will render the asset.
 
 ```html
-<img src={arrowup} alt="arrow up" />
+<img src={warning} alt="warning" />
 ```
 
 ### SVG React Loader
@@ -280,19 +252,19 @@ Within the component's `render()` function, passing in the new variable into the
 Using `svg-react-loader` in combination with webpack will render the SVG inline from the designated resource location.
 
 ```javascript
-import Arrowdown from '-!svg-react-loader!@alaskaairux/orion-icons/dist/icons/arrowdown.svg';
+import warning from '-!svg-react-loader!@alaskaairux/orion-icons/dist/icons/alert/warning.svg';
 ```
 
 Within the component's `render()` function, simply reference the new component that is generated via `svg-react-loader`.
 
 ```html
-<Arrowdown />
+<warning />
 ```
 
 With SVG React Loader, users are also able to over-ride attributes within the SVG. For example, the following code illustrates how a user could over-ride the `role="img"` and `aria-hidden="true"` attributes:
 
 ```html
-<Arrowdown role="group" aria-hidden="false"/>
+<warning role="group" aria-hidden="false"/>
 ```
 
 ##### Note:
@@ -300,14 +272,14 @@ With SVG React Loader, users are also able to over-ride attributes within the SV
 The above syntax may cause issues with your eslint configurations. The following error may appear:
 
 ```bash
-Unexpected '!' in '-!svg-react-loader?name=Icon!@alaskaairux/orion-icons/dist/icons/arrowdown.svg'. Do not use import syntax to configure webpack loaders
+Unexpected '!' in '-!svg-react-loader?name=Icon!@alaskaairux/orion-icons/dist/icons/alert/warning.svg'. Do not use import syntax to configure webpack loaders
 ```
 
 In this event, adding the following comments within the component may address the issue:
 
 ```javascript
 // eslint-disable-next-line import/no-webpack-loader-syntax
-import Arrowdown from '-!svg-react-loader?name=Icon!@alaskaairux/orion-icons/dist/icons/arrowdown.svg';
+import Arrowdown from '-!svg-react-loader?name=Icon!@alaskaairux/orion-icons/dist/icons/alert/warning.svg';
 ```
 
 ### Angular SVG Icon
@@ -343,47 +315,28 @@ When adding new icons, be sure to follow this example to add the proper data to 
 
 ```javascript
 {
-  "icons": [
-    {
-      "title": "[icon title]",
-      "desc": "[icon description]",
-      "hidden": "true",
-      "role": "img",
-      "color": "currentColor",
-      "PngColor": "[default color used to generate PNG file]",
-      "AltPngColor": "[optional: alternate PNG color]",
-      "PngSize": "[optional: default PNG size of icon]",
-      "width": "[default width of icon]",
-      "height": "[default height of icon]"
-      "style": "ico__[icon class name]"
-    }
-  ]
-}
-```
-
-Example:
-
-```javascript
-{
-  "icons": [
-{
-      "title": "Step Out",
-      "desc": "Linked item is outside primary domain",
+  "commonProperties":
+  {
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
       "PngColor": "var(--color-type-theme-light-link)",
-      "AltPngColor": "var(--color-type-theme-dark-link)",
-      "PngSize": 20,
-      "width": "var(--size-icon-step-out-width)",
-      "height": "var(--size-icon-step-out-width)",
-      "style": "ico__stepout"
+      "PngSize": 24,
+      "width": "var(--size-icon-square-lg)",
+      "height": "var(--size-icon-square-lg)"
+  },
+  "icons": [
+    {
+      "title": "Arrow Up",
+      "desc": "Up pointer",
+      "style": "ico__toggleArrow",
+      "category": "interface"
     }
   ]
 }
 ```
 
-**NEVER**: For `color` and `width` do not use hard-coded values. To be compliant you must use Orion Design Token references.
+**Discouraged**: For `color` and `width` do not use hard-coded values. To be compliant you must use Orion Design Token references.
 
 ### Icon guidelines
 
