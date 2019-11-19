@@ -17,7 +17,7 @@ const fs = require('fs');
 const LocalTokens = require('style-dictionary').extend('./scripts/tokensConfig.json');
 const DesignTokens = require('style-dictionary').extend('./scripts/colorTokensConfig.json');
 
-const { titleToFilename } = require('./utils');
+const { titleToFilename, getDistFilename, getDistSubFolder } = require('./utils');
 
 // creates necessary directory on build of not already there
 const icoDir = './dist/icons';
@@ -28,6 +28,8 @@ if (!fileSys.existsSync(icoDir)){
 // export JS versions of Icons
 // =======================================================================
 const icons = {};
+
+//console.log(data.icons);
 data.icons.forEach(iconRaw => {
   let icon = {
     ...data.commonProperties,
@@ -35,6 +37,7 @@ data.icons.forEach(iconRaw => {
   }
 
   const filename = titleToFilename(icon.title);
+  const distFilename = getDistFilename(icon);
   icon.svg = fs.readFileSync(`${iconsDir}/${filename}.svg`, 'utf8');
   const insertPos = icon.svg.indexOf("svg") + 4;
   const height = icon.height ? `height: ${icon.height};` : '';
@@ -49,13 +52,18 @@ data.icons.forEach(iconRaw => {
   icon.svg = icon.svg.replace("iconTitle", `${icon.title}`);
   icon.svg = icon.svg.replace("iconDesc", `${icon.desc}`);
 
+  const publishFolder = `${buildIconsDir}/${getDistSubFolder(icon.category)}`;
+  if (!fileSys.existsSync(publishFolder)){
+    fileSys.mkdirSync(publishFolder);
+  }
+
   icons[icon.title] = icon;
   // write the static .js file for the icon
-  fs.writeFileSync( `${buildIconsDir}/${filename}.js`, `module.exports=${JSON.stringify(icon)};`);
-  fs.writeFileSync( `${buildIconsDir}/${filename}_es6.js`, `export default ${JSON.stringify(icon)};`);
+  fs.writeFileSync( `${buildIconsDir}/${distFilename}.js`, `module.exports=${JSON.stringify(icon)};`);
+  fs.writeFileSync( `${buildIconsDir}/${distFilename}_es6.js`, `export default ${JSON.stringify(icon)};`);
 
   // write new SVGs to ./dist
-  fs.writeFileSync( `${buildIconsDir}/${filename}.svg`, icon.svg);
+  fs.writeFileSync( `${buildIconsDir}/${distFilename}.svg`, icon.svg);
 
   // console.log(`${filename}.js / ${filename}.svg written to ./dist dir`)
 });
@@ -69,6 +77,7 @@ const SizeMedIcons = data.icons.filter(function(sizeData) {
 
 SizeMedIcons.forEach(icon => {
   const filename = titleToFilename(icon.title);
+  const distFilename = getDistFilename(icon);
   icon.svg = fs.readFileSync(`${iconsDir}/${filename}.svg`, 'utf8');
   const insertPos = icon.svg.indexOf("svg") + 4;
   const elementStyle = `style="fill: ${icon.PngColor}" `;
@@ -81,11 +90,15 @@ SizeMedIcons.forEach(icon => {
   icon.svg = [icon.svg.slice(0, insertPos), elementStyle, icon.svg.slice(insertPos)].join('');
   icon.svg = icon.svg.replace("<style></style>", `${iconStyle}`);
 
+  const publishFolder = `${buildIconsDir}/${getDistSubFolder(icon.category)}`;
+  if (!fileSys.existsSync(publishFolder)){
+    fileSys.mkdirSync(publishFolder);
+  }
   icons[icon.title] = icon;
-
+  
   // write new SVGs to ./dist
-  fs.writeFileSync( `${buildIconsDir}/${filename}--24@2x.png`, icon.svg);
-  fs.writeFileSync( `${buildIconsDir}/${filename}--24@3x.png`, icon.svg);
+  fs.writeFileSync( `${buildIconsDir}/${distFilename}--24@2x.png`, icon.svg);
+  fs.writeFileSync( `${buildIconsDir}/${distFilename}--24@3x.png`, icon.svg);
 
   // console.log(`${filename}.js / ${filename}.png written to ./dist dir`)
 });
@@ -99,6 +112,7 @@ const altColorSet = data.icons.filter(function(altData) {
 
 altColorSet.forEach(icon => {
   const filename = titleToFilename(icon.title);
+  const distFilename = getDistFilename(icon);
   icon.svg = fs.readFileSync(`${iconsDir}/${filename}.svg`, 'utf8');
   const insertPos = icon.svg.indexOf("svg") + 4;
   const elementStyle = `style="fill: ${icon.AltPngColor}" `;
@@ -111,11 +125,16 @@ altColorSet.forEach(icon => {
   icon.svg = [icon.svg.slice(0, insertPos), elementStyle, icon.svg.slice(insertPos)].join('');
   icon.svg = icon.svg.replace("<style></style>", `${iconStyle}`);
 
-  icons[icon.title] = icon;
+  const publishFolder = `${buildIconsDir}/${getDistSubFolder(icon.category)}`;
+  if (!fileSys.existsSync(publishFolder)){
+    fileSys.mkdirSync(publishFolder);
+  }
 
+  icons[icon.title] = icon;
+  
   // write new SVGs to ./dist
-  fs.writeFileSync( `${buildIconsDir}/${filename}-alt--24@2x.png`, icon.svg);
-  fs.writeFileSync( `${buildIconsDir}/${filename}-alt--24@3x.png`, icon.svg);
+  fs.writeFileSync( `${buildIconsDir}/${distFilename}-alt--24@2x.png`, icon.svg);
+  fs.writeFileSync( `${buildIconsDir}/${distFilename}-alt--24@3x.png`, icon.svg);
 
   // console.log(`${filename}.js / ${filename}.png written to ./dist dir`)
 });
