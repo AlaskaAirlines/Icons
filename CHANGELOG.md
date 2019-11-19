@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+# [2.0.0](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.9.0...v2.0.0) (2019-11-19)
+
+
+### Features
+
+* alert icons are now categorized ([11a6208](https://github.com/AlaskaAirlines/OrionIcons/commit/11a6208))
+
+
+### BREAKING CHANGES
+
+* api path for svgs now requires category
+
 # [1.9.0](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.8.1...v1.9.0) (2019-11-19)
 
 
