@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [1.9.0](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.8.1...v1.9.0) (2019-11-19)
+
+
+### Features
+
+* icons are now auto sorted in to folders ([#9](https://github.com/AlaskaAirlines/OrionIcons/issues/9)) ([656a4ab](https://github.com/AlaskaAirlines/OrionIcons/commit/656a4ab))
+
 ## [1.8.1](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.8.0...v1.8.1) (2019-11-18)
 
 
