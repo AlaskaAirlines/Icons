@@ -1,8 +1,8 @@
 const { icons } = require('../src/data/orion-icons.json');
-const { titleToFilename } = require('../scripts/utils.js');
+const { getDistFilename } = require('../scripts/utils.js');
 
 icons.forEach(icon => {
-  const filename = titleToFilename(icon.title);
+  const filename = getDistFilename(icon);
   const subject = require(`../dist/icons/${filename}.js`);
 
   test(`${icon.title} has a "title"`, () => {
