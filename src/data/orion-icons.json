@@ -118,7 +118,8 @@
       "title": "alert",
       "desc": "Error alert icon",
       "PngColor": "var(--color-background-error)",
-      "style": "ico__alert"
+      "style": "ico__alert",
+      "category": "alert"
     },
     {
       "title": "credit card",
@@ -472,32 +473,38 @@
     {
       "title": "Information Filled",
       "desc": "Information icon - filled",
-      "style": "ico__informationFilled"
+      "style": "ico__informationFilled",
+      "category": "alert"
     },
     {
       "title": "Information Stroke",
       "desc": "Information icon - stroke",
-      "style": "ico__informationStroke"
+      "style": "ico__informationStroke",
+      "category": "alert"
     },
     {
       "title": "Question Filled",
       "desc": "Question icon - filled",
-      "style": "ico__questionFilled"
+      "style": "ico__questionFilled",
+      "category": "alert"
     },
     {
       "title": "Question Stroke",
       "desc": "Question icon - stroke",
-      "style": "ico__questionStroke"
+      "style": "ico__questionStroke",
+      "category": "alert"
     },
     {
       "title": "Warning Filled",
       "desc": "Warning icon - filled",
-      "style": "ico__warningFilled"
+      "style": "ico__warningFilled",
+      "category": "alert"
     },
     {
       "title": "Warning Stroke",
       "desc": "Warning icon - stroke",
-      "style": "ico__warningStroke"
+      "style": "ico__warningStroke",
+      "category": "alert"
     },
     {
       "title": "CC Alaska",
