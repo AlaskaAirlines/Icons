@@ -11,527 +11,616 @@
   },
   "icons": [
     {
-      "title": "Arrow Up",
-      "desc": "Up pointer",
+      "title": "Up pointer",
+      "name": "arrow-up",
+      "desc": "Directional pointer for user reference",
       "style": "ico__toggleArrow",
       "category": "interface"
     },
     {
-      "title": "Arrow Down",
-      "desc": "Down pointer",
+      "title": "Down pointer",
+      "name": "arrow-down",
+      "desc": "Directional pointer for user reference",
       "style": "ico__toggleArrow",
       "category": "interface"
     },
     {
-      "title": "Arrow Left",
-      "desc": "Left pointer",
+      "title": "Left pointer",
+      "name": "arrow-left",
+      "desc": "Directional pointer for user reference",
       "style": "ico__toggleArrow",
       "category": "interface"
     },
     {
-      "title": "Arrow Right",
-      "desc": "Right pointer",
+      "title": "Right pointer",
+      "name": "arrow-right",
+      "desc": "Directional pointer for user reference",
       "style": "ico__toggleArrow",
       "category": "interface"
     },
     {
-      "title": "Chevron Left",
-      "desc": "Left indicator",
+      "title": "Left indicator",
+      "name": "chevron-left",
+      "desc": "Directional indicator for user reference",
       "style": "ico__chevronArrow",
       "category": "interface"
     },
     {
-      "title": "Chevron Right",
-      "desc": "Right indicator",
+      "title": "Right indicator",
+      "name": "chevron-right",
+      "desc": "Directional indicator for user reference",
       "style": "ico__chevronArrow",
       "category": "interface"
     },
     {
-      "title": "Chevron Up",
-      "desc": "Up pointer",
+      "title": "Up indicator",
+      "name": "chevron-up",
+      "desc": "Directional indicator for user reference",
       "style": "ico__chevronArrow",
       "category": "interface"
     },
     {
-      "title": "Chevron Down",
-      "desc": "Down pointer",
+      "title": "Down indicator",
+      "name": "chevron-down",
+      "desc": "Directional indicator for user reference",
       "style": "ico__chevronArrow",
       "category": "interface"
     },
     {
-      "title": "Step Out",
-      "desc": "Linked item is outside primary domain",
+      "title": "This indicates a link to an external site that may not follow the same accessibility or privacy policies as Alaska Airlines. By selecting a partner link you agree to share your data with these sites.",
+      "name": "step-out",
+      "desc": "Notice indicator to alert user with disabilities that action will result in the browser opening a new context.",
       "AltPngColor": "var(--color-base-orca)",
       "width": "var(--size-icon-square-sml)",
       "height": "var(--size-icon-square-sml)",
       "style": "ico__stepout"
     },
     {
-      "title": "Step Out Lg",
-      "desc": "Linked item is outside primary domain",
+      "title": "This indicates a link to an external site that may not follow the same accessibility or privacy policies as Alaska Airlines. By selecting a partner link you agree to share your data with these sites.",
+      "name": "step-out-lg",
+      "desc": "Notice indicator to alert user with disabilities that action will result in the browser opening a new context.",
       "AltPngColor": "var(--color-base-orca)",
       "style": "ico__stepoutLg"
     },
     {
-      "title": "Classic checkmark",
-      "desc": "Checkmark display indicator",
+      "title": "Checkmark display indicator",
+      "name": "classic-checkmark",
+      "desc": "Indicates that an options has been checked",
       "PngColor": "var(--color-base-galapagos)",
       "width": "var(--size-icon-square-med)",
       "style": "ico__classiccheckmark",
       "category": "interface"
     },
     {
-      "title": "Checkmark lg",
-      "desc": "Checkmark display indicator",
+      "title": "Checkmark display indicator",
+      "name": "checkmark-lg",
+      "desc": "Indicates that an options has been checked",
       "PngColor": "var(--color-base-galapagos)",
       "style": "ico__checkmarkLg",
       "category": "interface"
     },
     {
-      "title": "Checkmark sml",
-      "desc": "Checkmark display indicator",
+      "title": "Checkmark display indicator",
+      "name": "checkmark-sml",
+      "desc": "Indicates that an options has been checked",
       "PngColor": "var(--color-base-galapagos)",
       "style": "ico__checkmarkSml",
       "category": "interface"
     },
     {
       "title": "Close",
-      "desc": "Close options icon",
+      "name": "close",
+      "desc": "Option to close current experience",
       "PngColor": "var(--color-base-orca)",
       "width": "var(--size-icon-square-med)",
       "height": "var(--size-icon-square-med)",
       "style": "ico__close"
     },
     {
-      "title": "Close lg",
-      "desc": "Close options icon",
+      "title": "Close",
+      "name": "close-lg",
+      "desc": "Option to close current experience",
       "PngColor": "var(--color-base-orca)",
       "style": "ico__closeLg"
     },
     {
-      "title": "Close sml",
-      "desc": "Close options icon",
+      "title": "Close",
+      "name": "close-sml",
+      "desc": "Option to close current experience",
       "PngColor": "var(--color-base-orca)",
       "style": "ico__closeSml"
     },
     {
-      "title": "alert",
-      "desc": "Error alert icon",
+      "title": "Error alert",
+      "name": "alert",
+      "desc": "Alerts the user to a important issue",
       "PngColor": "var(--color-background-error)",
       "style": "ico__alert",
       "category": "alert"
     },
     {
-      "title": "credit card",
-      "desc": "generic credit card icon",
+      "title": "Credit Card",
+      "name": "credit-card",
+      "desc": "Default credit card icon",
       "style": "ico__creditCard",
       "category": "payment"
     },
     {
       "title": "Add to calendar",
-      "desc": "Add to calendar icon",
+      "name": "add-to-calendar",
+      "desc": "Add content option to calendar",
       "style": "ico__addToCalendar",
       "category": "interface"
     },
     {
-      "title": "Boarding pass filled",
-      "desc": "Boarding pass icon",
+      "title": "Boarding pass",
+      "name": "boarding-pass-filled",
+      "desc": "Used to indicate boarding pass options",
       "style": "ico__boardingPassFilled",
       "category": "terminal"
     },
     {
-      "title": "Boarding pass stroke",
-      "desc": "Boarding pass icon",
+      "title": "Boarding pass",
+      "name": "boarding-pass-stroke",
+      "desc": "Used to indicate boarding pass options",
       "style": "ico__boardingPassStroke",
       "category": "terminal"
     },
     {
       "title": "Booking filled",
+      "name": "booking-filled",
       "desc": "Booking icon",
       "style": "ico__bookingFilled",
       "category": "terminal"
     },
     {
       "title": "Booking stroke",
+      "name": "booking-stroke",
       "desc": "Booking icon",
       "style": "ico__bookingStroke",
       "category": "terminal"
     },
     {
       "title": "Calendar",
+      "name": "calendar",
       "desc": "Calendar icon",
       "style": "ico__calendar",
       "category": "interface"
     },
     {
       "title": "Radar filled",
+      "name": "radar-filled",
       "desc": "Radar icon",
       "style": "ico__radarFilled",
       "category": "terminal"
     },
     {
       "title": "Radar stroke",
+      "name": "radar-stroke",
       "desc": "Radar icon",
       "style": "ico__radarStroke",
       "category": "terminal"
     },
     {
       "title": "Facebook",
+      "name": "facebook",
       "desc": "Facebook icon",
       "style": "ico__facebook",
       "category": "social"
     },
     {
       "title": "Instagram",
+      "name": "instagram",
       "desc": "Instagram icon",
       "style": "ico__instagram",
       "category": "social"
     },
     {
       "title": "Accessibility",
+      "name": "accessibility",
       "desc": "Accessibility icon",
       "style": "ico__accessibility",
       "category": "interface"
     },
     {
       "title": "Account filled",
+      "name": "account-filled",
       "desc": "Account icon",
       "style": "ico__accountFilled",
       "category": "interface"
     },
     {
       "title": "Account stroke",
+      "name": "account-stroke",
       "desc": "Account icon",
       "style": "ico__accountStroke",
       "category": "interface"
     },
     {
       "title": "Arrow down",
+      "name": "arrow-down",
       "desc": "Arrow icon",
       "style": "ico__arrowDown",
       "category": "interface"
     },
     {
       "title": "Arrow left",
+      "name": "arrow-left",
       "desc": "Arrow icon",
       "style": "ico__arrowLeft",
       "category": "interface"
     },
     {
       "title": "Arrow right",
+      "name": "arrow-right",
       "desc": "Arrow icon",
       "style": "ico__arrowRight",
       "category": "interface"
     },
     {
       "title": "Arrow up",
+      "name": "arrow-up",
       "desc": "Arrow icon",
       "style": "ico__arrowUp",
       "category": "interface"
     },
     {
       "title": "Caret down",
+      "name": "caret-down",
       "desc": "Caret icon",
       "style": "ico__caretDown",
       "category": "interface"
     },
     {
       "title": "Caret left",
+      "name": "caret-left",
       "desc": "Caret icon",
       "style": "ico__caretLeft",
       "category": "interface"
     },
     {
       "title": "Caret right",
+      "name": "caret-right",
       "desc": "Caret icon",
       "style": "ico__caretRight",
       "category": "interface"
     },
     {
       "title": "Caret up",
+      "name": "caret-up",
       "desc": "Caret icon",
       "style": "ico__caretUp",
       "category": "interface"
     },
     {
       "title": "Chain link",
+      "name": "chain-link",
       "desc": "Chain link icon",
       "style": "ico__chainLink",
       "category": "interface"
     },
     {
       "title": "Chat",
+      "name": "chat",
       "desc": "Chat icon",
       "style": "ico__chat",
       "category": "interface"
     },
     {
       "title": "Check filled",
+      "name": "check-filled",
       "desc": "Check icon",
       "style": "ico__checkFilled",
       "category": "interface"
     },
     {
       "title": "Check lg",
+      "name": "check-lg",
       "desc": "Check icon",
       "style": "ico__checkLg",
       "category": "interface"
     },
     {
       "title": "Check sm",
+      "name": "check-sm",
       "desc": "Check icon",
       "style": "ico__checkSm",
       "category": "interface"
     },
     {
       "title": "Check stroke",
+      "name": "check-stroke",
       "desc": "Check icon",
       "style": "ico__checkStroke",
       "category": "interface"
     },
     {
       "title": "Chevron down",
+      "name": "chevron-down",
       "desc": "Chevron icon",
       "style": "ico__chevronDown",
       "category": "interface"
     },
     {
       "title": "Chevron left",
+      "name": "chevron-left",
       "desc": "Chevron icon",
       "style": "ico__chevronLeft",
       "category": "interface"
     },
     {
       "title": "Chevron right",
+      "name": "chevron-right",
       "desc": "Chevron icon",
       "style": "ico__chevronRight",
       "category": "interface"
     },
     {
       "title": "Chevron up",
+      "name": "chevron-up",
       "desc": "Chevron icon",
       "style": "ico__chevronUp",
       "category": "interface"
     },
     {
       "title": "Filter",
+      "name": "filter",
       "desc": "Filter icon",
       "style": "ico__filter",
       "category": "interface"
     },
     {
       "title": "Heart filled",
+      "name": "heart-filled",
       "desc": "Heart icon",
       "style": "ico__heartFilled",
       "category": "interface"
     },
     {
       "title": "Heart stroke",
+      "name": "heart-stroke",
       "desc": "Heart icon",
       "style": "ico__heartStroke",
       "category": "interface"
     },
     {
       "title": "Home filled",
+      "name": "home-filled",
       "desc": "Home icon",
       "style": "ico__homeFilled",
       "category": "interface"
     },
     {
       "title": "Home stroke",
+      "name": "home-stroke",
       "desc": "Home icon",
       "style": "ico__homeStroke",
       "category": "interface"
     },
     {
-      "title": "Link",
-      "desc": "Link icon",
-      "style": "ico__link"
+      "title": "This indicates a link to an external site that may not follow the same accessibility or privacy policies as Alaska Airlines. By selecting a partner link you agree to share your data with these sites.",
+      "name": "external-link",
+      "desc": "Notice indicator to alert user with disabilities that action will result in the browser opening a new context.",
+      "style": "ico__link",
+      "category": "interface"
     },
     {
       "title": "Location filled",
+      "name": "location-filled",
       "desc": "Location icon",
       "style": "ico__locationFilled",
       "category": "interface"
     },
     {
       "title": "Location stroke",
+      "name": "location-stroke",
       "desc": "Location icon",
       "style": "ico__locationStroke",
       "category": "interface"
     },
     {
       "title": "Location finder",
+      "name": "location-finder",
       "desc": "Location finder icon",
       "style": "ico__locationFinder"
     },
     {
       "title": "Location found",
+      "name": "location-found",
       "desc": "Location found icon",
       "style": "ico__locationFound"
     },
     {
       "title": "Mail",
+      "name": "mail",
       "desc": "Mail icon",
       "style": "ico__mail",
       "category": "interface"
     },
     {
       "title": "Minus filled",
+      "name": "minus-filled",
       "desc": "Minus icon",
       "style": "ico__minusFilled",
       "category": "interface"
     },
     {
       "title": "Minus lg",
+      "name": "minus-lg",
       "desc": "Minus icon",
       "style": "ico__minusLg",
       "category": "interface"
     },
     {
       "title": "Minus sm",
+      "name": "minus-sm",
       "desc": "Minus icon",
       "style": "ico__minusSm",
       "category": "interface"
     },
     {
       "title": "Minus stroke",
+      "name": "minus-stroke",
       "desc": "Minus icon",
       "style": "ico__minusStroke",
       "category": "interface"
     },
     {
       "title": "Penguin",
+      "name": "penguin",
       "desc": "Penguin icon",
-      "style": "ico__penguin"
+      "style": "ico__penguin",
+      "category": "interface"
     },
     {
       "title": "Plus filled",
+      "name": "plus-filled",
       "desc": "Plus icon",
       "style": "ico__plusFilled",
       "category": "interface"
     },
     {
       "title": "Plus lg",
+      "name": "plus-lg",
       "desc": "Plus icon",
       "style": "ico__plusLg",
       "category": "interface"
     },
     {
       "title": "Plus sm",
+      "name": "plus-sm",
       "desc": "Plus icon",
       "style": "ico__plusSm",
       "category": "interface"
     },
     {
       "title": "Plus stroke",
+      "name": "plus-stroke",
       "desc": "Plus icon",
       "style": "ico__plusStroke",
       "category": "interface"
     },
     {
       "title": "Printer",
+      "name": "printer",
       "desc": "Printer icon",
       "style": "ico__printer",
       "category": "interface"
     },
     {
       "title": "Search",
+      "name": "search",
       "desc": "Search icon",
       "style": "ico__search",
       "category": "interface"
     },
     {
       "title": "Star filled",
+      "name": "star-filled",
       "desc": "Star icon",
       "style": "ico__starFilled",
       "category": "interface"
     },
     {
       "title": "Star stroke",
+      "name": "star-stroke",
       "desc": "Star icon",
       "style": "ico__starStroke",
       "category": "interface"
     },
     {
       "title": "X lg",
+      "name": "x-lg",
       "desc": "X icon",
       "style": "ico__xLg",
       "category": "interface"
     },
     {
       "title": "X sm",
+      "name": "x-sm",
       "desc": "X icon",
       "style": "ico__xSm",
       "category": "interface"
     },
     {
       "title": "Error",
+      "name": "error",
       "desc": "Error alert icon",
       "style": "ico__error"
     },
     {
       "title": "Information Filled",
+      "name": "information-filled",
       "desc": "Information icon - filled",
       "style": "ico__informationFilled",
       "category": "alert"
     },
     {
       "title": "Information Stroke",
+      "name": "Information-stroke",
       "desc": "Information icon - stroke",
       "style": "ico__informationStroke",
       "category": "alert"
     },
     {
       "title": "Question Filled",
+      "name": "question-filled",
       "desc": "Question icon - filled",
       "style": "ico__questionFilled",
       "category": "alert"
     },
     {
       "title": "Question Stroke",
+      "name": "question-stroke",
       "desc": "Question icon - stroke",
       "style": "ico__questionStroke",
       "category": "alert"
     },
     {
       "title": "Warning Filled",
+      "name": "warning-filled",
       "desc": "Warning icon - filled",
       "style": "ico__warningFilled",
       "category": "alert"
     },
     {
       "title": "Warning Stroke",
+      "name": "warning-stroke",
       "desc": "Warning icon - stroke",
       "style": "ico__warningStroke",
       "category": "alert"
     },
     {
       "title": "CC Alaska",
+      "name": "cc-alaska",
       "desc": "Alaska Credit Card",
       "style": "ico__creditCardAlaska",
       "category": "payment"
     },
     {
       "title": "CC Amex",
+      "name": "cc-amex",
       "desc": "Amex Credit Card",
       "style": "ico__creditCardAmex",
       "category": "payment"
     },
     {
       "title": "CC Discover",
+      "name": "cc-discover",
       "desc": "Discover Credit Card",
       "style": "ico__creditCardDiscover",
       "category": "payment"
     },
     {
       "title": "CC Mastercard",
+      "name": "cc-mastercard",
       "desc": "Mastercard Credit Card",
       "style": "ico__creditCardMastercard",
       "category": "payment"
     },
     {
       "title": "CC Visa",
+      "name": "cc-visa",
       "desc": "Visa Credit Card",
       "style": "ico__creditCardVisa",
       "category": "payment"

@@ -2,13 +2,25 @@ const { icons } = require('../src/data/orion-icons.json');
 const orionIcons = require('../dist/index.js');
 
 icons.forEach(icon => {
-  const subject = orionIcons[icon.title];
+  const subject = orionIcons[icon.name];
 
-  test(`${icon.title} has a "title"`, () => {
+  test(`${icon.name} has a "title"`, () => {
     expect(typeof subject.title).toBe('string');
   });
 
-  test(`${icon.title} has an "svg"`, () => {
+  test(`${icon.name} has a "name"`, () => {
+    expect(typeof subject.name).toBe('string');
+  });
+
+  test(`${icon.name} has a "desc"`, () => {
+    expect(typeof subject.desc).toBe('string');
+  });
+
+  test(`${icon.name} has a "style"`, () => {
+    expect(typeof subject.style).toBe('string');
+  });
+
+  test(`${icon.name} has an "svg"`, () => {
     expect(typeof subject.svg).toBe('string');
   });
 });

@@ -17,7 +17,7 @@ const fs = require('fs');
 const LocalTokens = require('style-dictionary').extend('./scripts/tokensConfig.json');
 const DesignTokens = require('style-dictionary').extend('./scripts/colorTokensConfig.json');
 
-const { titleToFilename, getDistFilename, getDistSubFolder } = require('./utils');
+const { getDistFilename, getDistSubFolder } = require('./utils');
 
 // creates necessary directory on build of not already there
 const icoDir = './dist/icons';
@@ -36,7 +36,7 @@ data.icons.forEach(iconRaw => {
     ...iconRaw
   }
 
-  const filename = titleToFilename(icon.title);
+  const filename = icon.name;
   const distFilename = getDistFilename(icon);
   icon.svg = fs.readFileSync(`${iconsDir}/${filename}.svg`, 'utf8');
   const insertPos = icon.svg.indexOf("svg") + 4;
@@ -57,7 +57,7 @@ data.icons.forEach(iconRaw => {
     fileSys.mkdirSync(publishFolder);
   }
 
-  icons[icon.title] = icon;
+  icons[icon.name] = icon;
   // write the static .js file for the icon
   fs.writeFileSync( `${buildIconsDir}/${distFilename}.js`, `module.exports=${JSON.stringify(icon)};`);
   fs.writeFileSync( `${buildIconsDir}/${distFilename}_es6.js`, `export default ${JSON.stringify(icon)};`);
@@ -76,7 +76,7 @@ const SizeMedIcons = data.icons.filter(function(sizeData) {
 });
 
 SizeMedIcons.forEach(icon => {
-  const filename = titleToFilename(icon.title);
+  const filename = icon.name;
   const distFilename = getDistFilename(icon);
   icon.svg = fs.readFileSync(`${iconsDir}/${filename}.svg`, 'utf8');
   const insertPos = icon.svg.indexOf("svg") + 4;
@@ -94,8 +94,8 @@ SizeMedIcons.forEach(icon => {
   if (!fileSys.existsSync(publishFolder)){
     fileSys.mkdirSync(publishFolder);
   }
-  icons[icon.title] = icon;
-  
+  icons[icon.name] = icon;
+
   // write new SVGs to ./dist
   fs.writeFileSync( `${buildIconsDir}/${distFilename}--24@2x.png`, icon.svg);
   fs.writeFileSync( `${buildIconsDir}/${distFilename}--24@3x.png`, icon.svg);
@@ -111,7 +111,7 @@ const altColorSet = data.icons.filter(function(altData) {
 });
 
 altColorSet.forEach(icon => {
-  const filename = titleToFilename(icon.title);
+  const filename = icon.name;
   const distFilename = getDistFilename(icon);
   icon.svg = fs.readFileSync(`${iconsDir}/${filename}.svg`, 'utf8');
   const insertPos = icon.svg.indexOf("svg") + 4;
@@ -130,8 +130,8 @@ altColorSet.forEach(icon => {
     fileSys.mkdirSync(publishFolder);
   }
 
-  icons[icon.title] = icon;
-  
+  icons[icon.name] = icon;
+
   // write new SVGs to ./dist
   fs.writeFileSync( `${buildIconsDir}/${distFilename}-alt--24@2x.png`, icon.svg);
   fs.writeFileSync( `${buildIconsDir}/${distFilename}-alt--24@3x.png`, icon.svg);
