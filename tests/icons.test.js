@@ -5,11 +5,23 @@ icons.forEach(icon => {
   const filename = getDistFilename(icon);
   const subject = require(`../dist/icons/${filename}.js`);
 
-  test(`${icon.title} has a "title"`, () => {
+  test(`${icon.name} has a "title"`, () => {
     expect(typeof subject.title).toBe('string');
   });
 
-  test(`${icon.title} has an "svg"`, () => {
+  test(`${icon.name} has a "name"`, () => {
+    expect(typeof subject.name).toBe('string');
+  });
+
+  test(`${icon.name} has a "desc"`, () => {
+    expect(typeof subject.desc).toBe('string');
+  });
+
+  test(`${icon.name} has a "style"`, () => {
+    expect(typeof subject.style).toBe('string');
+  });
+
+  test(`${icon.name} has an "svg"`, () => {
     expect(typeof subject.svg).toBe('string');
   });
 });
