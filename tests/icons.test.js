@@ -1,4 +1,4 @@
-const { icons } = require('../src/data/orion-icons.json');
+const { icons } = require('../src/data/icons.json');
 const { getDistFilename } = require('../scripts/utils.js');
 
 icons.forEach(icon => {

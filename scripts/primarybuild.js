@@ -7,7 +7,7 @@
  * Also generates an index.js that exports all icons by title, but is not tree-shakeable
  */
 
-const dataFile = '../src/data/orion-icons.json';
+const dataFile = '../src/data/icons.json';
 const indexFile = `${__dirname}/../dist/index.js`;
 const iconsDir = `${__dirname}/../src/icons`;
 const buildIconsDir = `${__dirname}/../dist/icons`;
@@ -44,7 +44,7 @@ data.icons.forEach(iconRaw => {
   const width = icon.width ? `width: ${icon.width};` : '';
   const elementStyle = `style="${width} ${height} fill: ${icon.color}" `;
 
-  // adds attributes to SVG string based on orion-icons.json data
+  // adds attributes to SVG string based on icons.json data
   icon.svg = [icon.svg.slice(0, insertPos), `class="${icon.style}" `, icon.svg.slice(insertPos)].join('');
   icon.svg = [icon.svg.slice(0, insertPos), elementStyle, icon.svg.slice(insertPos)].join('');
   icon.svg = [icon.svg.slice(0, insertPos), `aria-hidden="${icon.hidden}" `, icon.svg.slice(insertPos)].join('');
@@ -187,28 +187,28 @@ CustomStyleDictionary.registerFormat({
 const componentConfig = CustomStyleDictionary.extend('./scripts/CSSCustomProperty.json');
 componentConfig.buildAllPlatforms();
 
-console.log('')
-console.log('         .         . ')
-console.log('               *       *')
-console.log('')
-console.log('                 * * *')
-console.log('                    !')
-console.log('               *       * ')
-console.log('')
-console.log(" ██████╗ ██████╗ ██╗ ██████╗ ███╗   ██╗")
-console.log("██╔═══██╗██╔══██╗██║██╔═══██╗████╗  ██║")
-console.log("██║   ██║██████╔╝██║██║   ██║██╔██╗ ██║")
-console.log("██║   ██║██╔══██╗██║██║   ██║██║╚██╗██║")
-console.log("╚██████╔╝██║  ██║██║╚██████╔╝██║ ╚████║")
-console.log("╚═════╝ ╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝")
-console.log("                                       ")
-console.log("██╗ ██████╗ ██████╗ ███╗   ██╗███████╗ ")
-console.log("██║██╔════╝██╔═══██╗████╗  ██║██╔════╝ ")
-console.log("██║██║     ██║   ██║██╔██╗ ██║███████╗ ")
-console.log("██║██║     ██║   ██║██║╚██╗██║╚════██║ ")
-console.log("██║╚██████╗╚██████╔╝██║ ╚████║███████║ ")
-console.log("╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝ ")
-console.log('')
+
+console.log("")
+console.log(
+  `
+ █████╗ ██╗   ██╗██████╗  ██████╗
+██╔══██╗██║   ██║██╔══██╗██╔═══██╗
+███████║██║   ██║██████╔╝██║   ██║
+██╔══██║██║   ██║██╔══██╗██║   ██║
+██║  ██║╚██████╔╝██║  ██║╚██████╔╝
+╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝
+
+██╗ ██████╗ ██████╗ ███╗   ██╗███████╗
+██║██╔════╝██╔═══██╗████╗  ██║██╔════╝
+██║██║     ██║   ██║██╔██╗ ██║███████╗
+██║██║     ██║   ██║██║╚██╗██║╚════██║
+██║╚██████╗╚██████╔╝██║ ╚████║███████║
+╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+
+Generating the Icons People Love.
+`
+)
+console.log("")
 
 // write our generic index.js
 fs.writeFileSync(indexFile, `module.exports=${JSON.stringify(icons)};`);
