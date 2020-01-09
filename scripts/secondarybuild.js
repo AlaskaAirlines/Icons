@@ -4,11 +4,25 @@
 const LocalTokens = require('style-dictionary').extend('./scripts/tokensConfig.json');
 LocalTokens.buildPlatform('CSSCustomProperties');
 
-console.log('')
-console.log('         .         . ')
-console.log('               *       *')
-console.log('')
-console.log('                 * * *')
-console.log('                    !')
-console.log('               *       * ')
-console.log('')
+console.log("")
+console.log(
+  `
+██╗ ██████╗ ██████╗ ███╗   ██╗
+██║██╔════╝██╔═══██╗████╗  ██║
+██║██║     ██║   ██║██╔██╗ ██║
+██║██║     ██║   ██║██║╚██╗██║
+██║╚██████╗╚██████╔╝██║ ╚████║
+╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝
+
+████████╗ ██████╗ ██╗  ██╗███████╗███╗   ██╗███████╗
+╚══██╔══╝██╔═══██╗██║ ██╔╝██╔════╝████╗  ██║██╔════╝
+   ██║   ██║   ██║█████╔╝ █████╗  ██╔██╗ ██║███████╗
+   ██║   ██║   ██║██╔═██╗ ██╔══╝  ██║╚██╗██║╚════██║
+   ██║   ╚██████╔╝██║  ██╗███████╗██║ ╚████║███████║
+   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚══════╝
+
+Generating the Tokens that Icons Love.
+
+   `
+)
+console.log("")
