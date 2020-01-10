@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+## [2.0.1](https://github.com/AlaskaAirlines/OrionIcons/compare/v2.0.0...v2.0.1) (2020-01-10)
+
+
+### Bug Fixes
+
+* [#11](https://github.com/AlaskaAirlines/OrionIcons/issues/11) address incorrect icons ([508d1e7](https://github.com/AlaskaAirlines/OrionIcons/commit/508d1e7))
+* [#11](https://github.com/AlaskaAirlines/OrionIcons/issues/11) update icon titles ([41f6d5e](https://github.com/AlaskaAirlines/OrionIcons/commit/41f6d5e))
+* address svg linting issues ([962891d](https://github.com/AlaskaAirlines/OrionIcons/commit/962891d))
+* deprecate icon selectors ([e70db34](https://github.com/AlaskaAirlines/OrionIcons/commit/e70db34))
+* remove unused services ([616d1dc](https://github.com/AlaskaAirlines/OrionIcons/commit/616d1dc))
+* update icon references ([3a85bb9](https://github.com/AlaskaAirlines/OrionIcons/commit/3a85bb9))
+
 # [2.0.0](https://github.com/AlaskaAirlines/OrionIcons/compare/v1.9.0...v2.0.0) (2019-11-19)
 
 
