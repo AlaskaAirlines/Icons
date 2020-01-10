@@ -38,27 +38,26 @@ $iconMap: (
   radarStroke: false
 ) !default;
 
-@import "./tokens/TokenProperties"; // Sass file of custom properties
-@import "./tokens/TokenVariables"; // Sass variables
+@import "../node_modules/@alaskaairux/orion-design-tokens/dist/tokens/SCSSVariables";
 
 
 // Square large
 .ico_squareLarge {
   fill: currentColor;
-  width: $size-icon-square-lg;
-  height: $size-icon-square-lg;
+  width: $auro-size-lg;
+  height: $auro-size-lg;
 }
 
 .ico_squareSmall {
   fill: currentColor;
-  width: $size-icon-square-sml;
-  height: $size-icon-square-sml;
+  width: 0.6rem;
+  height: 0.6rem;
 }
 
 .ico_squareMed {
   fill: currentColor;
-  width: $size-icon-square-med;
-  height: $size-icon-square-med;
+  width: $auro-size-md;
+  height: $auro-size-md;
 }
 
 
@@ -69,7 +68,7 @@ $iconMap: (
 .ico__classiccheckmark {
   @if (map-get($iconMap, classiccheckmark)) {
     fill: currentColor;
-    width: $size-icon-square-med;
+    width: $auro-size-md;
     @warn "selector 'ico__toggleArrow' is deprecated, discontinue use.";
   }
 }

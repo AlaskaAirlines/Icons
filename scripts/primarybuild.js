@@ -14,7 +14,6 @@ const buildIconsDir = `${__dirname}/../dist/icons`;
 const data = require(dataFile);
 const fileSys = require('file-system');
 const fs = require('fs');
-const LocalTokens = require('style-dictionary').extend('./scripts/tokensConfig.json');
 const DesignTokens = require('style-dictionary').extend('./scripts/colorTokensConfig.json');
 
 const { getDistFilename, getDistSubFolder } = require('./utils');
@@ -139,13 +138,9 @@ altColorSet.forEach(icon => {
   // write new SVGs to ./dist
   fs.writeFileSync( `${buildIconsDir}/${distFilename}-alt--24@2x.png`, icon.svg);
   fs.writeFileSync( `${buildIconsDir}/${distFilename}-alt--24@3x.png`, icon.svg);
-
-  // console.log(`${filename}.js / ${filename}.png written to ./dist dir`)
 });
 
 // Standard Style Dictionary build function
-LocalTokens.buildPlatform('SassVariables');
-LocalTokens.buildPlatform('CSSCustomProperties_SassFiletype');
 DesignTokens.buildPlatform('colorTokens');
 
 
@@ -154,30 +149,30 @@ const CustomStyleDictionary = require('style-dictionary');
 const _ = require('lodash');
 
 function variablesWithPrefix(prefix, properties) {
-    return _.map(properties, function(prop) {
-        var to_ret_prop = prefix + prop.name + ': ' + (prop.attributes.category === 'asset' ? '"' + prop.value + '"' : prop.value) + ';';
+  return _.map(properties, function(prop) {
+    var to_ret_prop = prefix + prop.name + ': ' + (prop.attributes.category === 'asset' ? '"' + prop.value + '"' : prop.value) + ';';
 
-        if (prop.comment) to_ret_prop = to_ret_prop.concat(' /* ' + prop.comment + ' */');
-        return to_ret_prop;
-    })
-        .filter(function(strVal) {
-        return !!strVal
-    })
-        .join('\n');
+    if (prop.comment) to_ret_prop = to_ret_prop.concat(' /* ' + prop.comment + ' */');
+    return to_ret_prop;
+  })
+    .filter(function(strVal) {
+    return !!strVal
+  })
+    .join('\n');
 }
 
 function fileHeader(options) {
-    var to_ret = '';
-    // for backward compatibility we need to have the user explicitly hide them
-    var showFileHeader = (options) ? options.showFileHeader : true;
-    if (showFileHeader) {
-        to_ret += '/**\n';
-        to_ret += ' * Do not edit directly\n';
-        to_ret += ' * Generated on ' + new Date().toUTCString() + '\n';
-        to_ret += ' */\n\n';
-    }
+  var to_ret = '';
+  // for backward compatibility we need to have the user explicitly hide them
+  var showFileHeader = (options) ? options.showFileHeader : true;
+  if (showFileHeader) {
+    to_ret += '/**\n';
+    to_ret += ' * Do not edit directly\n';
+    to_ret += ' * Generated on ' + new Date().toUTCString() + '\n';
+    to_ret += ' */\n\n';
+  }
 
-    return to_ret;
+  return to_ret;
 }
 
 CustomStyleDictionary.registerFormat({
