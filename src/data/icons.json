@@ -7,7 +7,10 @@
       "PngColor": "var(--color-type-theme-light-link)",
       "PngSize": 24,
       "width": "var(--size-icon-square-lg)",
-      "height": "var(--size-icon-square-lg)"
+      "height": "var(--size-icon-square-lg)",
+      "xmlns": "http://www.w3.org/2000/svg",
+      "xmlns_xlink": "http://www.w3.org/1999/xlink",
+      "viewBox": "0 0 24 24"
   },
   "icons": [
     {
@@ -17,7 +20,8 @@
       "PngColor": "var(--color-base-orca)",
       "width": "var(--size-icon-square-med)",
       "height": "var(--size-icon-square-med)",
-      "style": "ico__close"
+      "style": "ico__close",
+      "viewBox": "0 0 48 48"
     },
     {
       "title": "Close",
@@ -41,6 +45,7 @@
       "width": "var(--size-icon-square-med)",
       "style": "ico__classiccheckmark",
       "category": "interface",
+      "viewBox": "0 0 48 42",
       "note": "TODO - remove interface category post next release"
     },
     {

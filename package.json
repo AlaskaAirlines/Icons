@@ -31,13 +31,13 @@
     "wc-sass-render": "^1.2.1"
   },
   "scripts": {
-    "jsonlint": "jsonlint src/data/orion-icons.json -q -V .jsonlintschema",
-    "svglint": "svglint src/icons/* --ci",
+    "jsonlint": "jsonlint src/data/icons.json -q -V .jsonlintschema",
+    "svglint": "svglint dist/icons/**/*.svg --ci",
     "primarybuild": "node scripts/primarybuild.js",
     "secondarybuild": "node scripts/secondarybuild.js",
     "sassRender": "sass-render dist/tokens/*.css",
     "copySass": "copyfiles -f ./src/*.scss ./dist",
-    "test": "npm run jsonlint || npm run svglint",
+    "test": "npm-run-all jsonlint svglint",
     "svgTest": "jest",
     "delete": "rm -rf ./dist",
     "png@2x": "convert-svg-to-png --height 48px dist/icons/*24@2x.png",
