@@ -39,7 +39,7 @@ data.icons.forEach(iconRaw => {
   const filename = icon.name;
   const distFilename = getDistFilename(icon);
   icon.svg = fs.readFileSync(`${iconsDir}/${filename}.svg`, 'utf8');
-  const insertPos = icon.svg.indexOf("svg") + 4;
+  const insertPos = icon.svg.indexOf("svg") + 3;
   const height = icon.height ? `height: ${icon.height};` : '';
   const width = icon.width ? `width: ${icon.width};` : '';
   const elementStyle = `style="${width} ${height} fill: ${icon.color}" `;
@@ -49,6 +49,10 @@ data.icons.forEach(iconRaw => {
   icon.svg = [icon.svg.slice(0, insertPos), elementStyle, icon.svg.slice(insertPos)].join('');
   icon.svg = [icon.svg.slice(0, insertPos), `aria-hidden="${icon.hidden}" `, icon.svg.slice(insertPos)].join('');
   icon.svg = [icon.svg.slice(0, insertPos), `role="${icon.role}" `, icon.svg.slice(insertPos)].join('');
+  icon.svg = [icon.svg.slice(0, insertPos), `xmlns="${icon.xmlns}" `, icon.svg.slice(insertPos)].join('');
+  icon.svg = [icon.svg.slice(0, insertPos), `xmlns:xlink="${icon.xmlns_xlink}" `, icon.svg.slice(insertPos)].join('');
+  icon.svg = [icon.svg.slice(0, insertPos), `viewBox="${icon.viewBox}" `, icon.svg.slice(insertPos)].join('');
+  icon.svg = [icon.svg.slice(0, insertPos), ` `, icon.svg.slice(insertPos)].join('');
   icon.svg = icon.svg.replace("iconTitle", `${icon.title}`);
   icon.svg = icon.svg.replace("iconDesc", `${icon.desc}`);
 
