@@ -24,33 +24,6 @@ Icon styles are inheriting from Auro Design Tokens. Any reference to the followi
 @import `./node_modules/@alaskaairux/alaskaairux/orion-icons/dist/tokens/TokenProperties`
 ```
 
-Be sure that you are importing the new Auro tokens. Import the CSS directly: 
-
-```javascript
-import '@alaskaairux/orion-design-tokens/dist/tokens/CSSTokenProperties.css';
-```
-
-Or via Sass import:
-
-```
-@import "~@alaskaairux/orion-design-tokens/dist/tokens/SCSSTokenProperties";
-```
-
-##### HTML will reference variables
-```html
-<svg role="img" aria-hidden="true" style="width: var(--auro-size-lg); height: var(--auro-size-lg); fill: currentColor" class="ico_squareLarge" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <title>Warning</title>
-  <desc>Up pointer</desc>
-  <style></style>
-  <g>
-    <polygon points="15 14 12 10 9 14"></polygon>
-  </g>
-</svg>
-```
-
-If the user support matrix requires support for browsers that do not support CSS Custom Properties, see the fallback Sass solution below.
-
-
 ### Using Sass styles (IE fallback)
 
 For use in situations where CSS custom properties are not supported. In the `dist/` directory is `icons.scss`. Import this Sass file for default shape styles.
@@ -65,6 +38,12 @@ Within React, Sass requires a `~` character prior to the importing library, exam
 
 ```scss
 @import '~@alaskaairux/orion-icons/dist/icons';
+```
+
+Due to dependency on Auro tokens, be sure to import the Sass variables prior to importing the Icons selectors. 
+
+```scss
+@import "~@alaskaairux/orion-design-tokens/dist/tokens/SCSSVariables";
 ```
 
 #### DEPRECATION WARNING! 
@@ -84,22 +63,6 @@ $iconMap: (
 
 @import '~@alaskaairux/orion-icons/dist/icons';
 ```
-
-The use of `icons.scss` has a dependency on the Sass version of Orion Design Tokens, so a typical Sass file may look like the following:
-
-```scss
-@import '~@alaskaairux/orion-design-tokens/dist/tokens/TokenVariables';
-
-$iconMap: (
-  toggleArrow: true,
-  chevronArrow: true,
-  classiccheckmark: true
-);
-
-@import '~@alaskaairux/orion-icons/dist/orion-icons';
-```
-
-This will produce the CSS Custom Properties needed to produce the UI, as well provide a CSS fallback for browsers that do not support CSS Custom Properties.
 
 ### Using Icons/Tokens within a LitElement Custom Element
 
