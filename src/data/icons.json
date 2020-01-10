@@ -6,8 +6,8 @@
       "color": "currentColor",
       "PngColor": "var(--color-type-theme-light-link)",
       "PngSize": 24,
-      "width": "var(--size-icon-square-lg)",
-      "height": "var(--size-icon-square-lg)",
+      "width": "var(--auro-size-lg)",
+      "height": "var(--auro-size-lg)",
       "xmlns": "http://www.w3.org/2000/svg",
       "xmlns_xlink": "http://www.w3.org/1999/xlink",
       "viewBox": "0 0 24 24"
@@ -17,9 +17,9 @@
       "title": "Close",
       "name": "close",
       "desc": "Option to close current experience",
-      "PngColor": "var(--color-base-orca)",
-      "width": "var(--size-icon-square-med)",
-      "height": "var(--size-icon-square-med)",
+      "PngColor": "var(--auro-color-text-primary-on-light)",
+      "width": "var(--auro-size-md)",
+      "height": "var(--auro-size-md)",
       "style": "ico_squareMed",
       "viewBox": "0 0 48 48"
     },
@@ -27,14 +27,14 @@
       "title": "Close",
       "name": "close-lg",
       "desc": "Option to close current experience",
-      "PngColor": "var(--color-base-orca)",
+      "PngColor": "var(--auro-color-text-primary-on-light)",
       "style": "ico_squareLarge"
     },
     {
       "title": "Close",
       "name": "close-sml",
       "desc": "Option to close current experience",
-      "PngColor": "var(--color-base-orca)",
+      "PngColor": "var(--auro-color-text-primary-on-light)",
       "style": "ico_squareLarge"
     },
     {
@@ -42,7 +42,7 @@
       "name": "classic-checkmark",
       "desc": "Indicates that an options has been checked",
       "PngColor": "var(--color-base-galapagos)",
-      "width": "var(--size-icon-square-med)",
+      "width": "var(--auro-size-md)",
       "style": "ico__classiccheckmark",
       "category": "interface",
       "viewBox": "0 0 48 42",
@@ -52,16 +52,16 @@
       "title": "This indicates a link to an external site that may not follow the same accessibility or privacy policies as Alaska Airlines. By selecting a partner link you agree to share your data with these sites.",
       "name": "step-out-lg",
       "desc": "Notice indicator to alert user with disabilities that action will result in the browser opening a new context.",
-      "AltPngColor": "var(--color-base-orca)",
+      "AltPngColor": "var(--auro-color-text-primary-on-light)",
       "style": "ico_squareLarge"
     },
     {
       "title": "This indicates a link to an external site that may not follow the same accessibility or privacy policies as Alaska Airlines. By selecting a partner link you agree to share your data with these sites.",
       "name": "step-out",
       "desc": "Notice indicator to alert user with disabilities that action will result in the browser opening a new context.",
-      "AltPngColor": "var(--color-base-orca)",
-      "width": "var(--size-icon-square-sml)",
-      "height": "var(--size-icon-square-sml)",
+      "AltPngColor": "var(--auro-color-text-primary-on-light)",
+      "width": "0.6rem",
+      "height": "0.6rem",
       "style": "ico_squareSmall",
       "viewBox": "0 0 512 512"
     },
@@ -102,7 +102,7 @@
     },
     {
       "title": "Information Stroke",
-      "name": "Information-stroke",
+      "name": "information-stroke",
       "desc": "Information icon - stroke",
       "style": "ico_squareLarge",
       "category": "alert"

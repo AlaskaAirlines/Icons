@@ -12,7 +12,6 @@ notifactions:
 
 before_script:
   - npm run primarybuild
-  - npm run secondarybuild
   - npm run sassRender
   - npm run png@2x
   - npm run png@3x

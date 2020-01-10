@@ -1,12 +1,10 @@
-<img src="https://resource.alaskaair.net/-/media/2C1969F8FB244C919205CD48429C13AC" alt="Orion Design System Logo" title="Be the change you want to see" width="125" align="right" />
-
 [![Build Status](https://travis-ci.org/AlaskaAirlines/OrionIcons.svg?branch=master)](https://travis-ci.org/AlaskaAirlines/OrionDesignTokens)
 ![npm (scoped)](https://img.shields.io/npm/v/@alaskaairux/orion-icons.svg?color=orange)
 ![NPM](https://img.shields.io/npm/l/@alaskaairux/orion-icons.svg?color=blue)
 
-# Orion SVG Icon Library
+# SVG Icon Library
 
-The focus of this repository is to manage, at scale, the enterprise need for icons in the Orion Design System. Please see all supporting documentation for contributing to, and consuming icons from the Orion SVG Icon Library.
+The focus of this repository is to manage, at scale, the enterprise need for icons in the new Auro Design System and deprecate any legacy items. Please see all supporting documentation for contributing to, and consuming icons from the Orion SVG Icon Library.
 
 ## Supported icons
 
@@ -20,21 +18,27 @@ $ npm i @alaskaairux/orion-icons
 
 ## Icon styles
 
-Embedded with each SVG file are the default styles for that icon. These styles are leveraging CSS Custom Properties, referencing the icons tokens via the CSS in the package is required.
+Icon styles are inheriting from Auro Design Tokens. Any reference to the following import is deprecated and should be discontinued.
 
-##### Import custom properties CSS into JS doc
-```JavaScript
-import `./node_modules/@alaskaairux/orion-icons/dist/tokens/CSSTokenProperties.css`
+```scss
+@import `./node_modules/@alaskaairux/alaskaairux/orion-icons/dist/tokens/TokenProperties`
 ```
 
-##### Import custom properties Sass into Sass doc
-```Sass
-@import `./node_modules/@alaskaairux/alaskaairux/orion-icons/dist/tokens/TokenProperties`
+Be sure that you are importing the new Auro tokens. Import the CSS directly: 
+
+```javascript
+import '@alaskaairux/orion-design-tokens/dist/tokens/CSSTokenProperties.css';
+```
+
+Or via Sass import:
+
+```
+@import "~@alaskaairux/orion-design-tokens/dist/tokens/SCSSTokenProperties";
 ```
 
 ##### HTML will reference variables
 ```html
-<svg role="img" aria-hidden="true" style="width: var(--size-icon-square-lg); height: var(--size-icon-square-lg); fill: currentColor" class="ico__warning" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg role="img" aria-hidden="true" style="width: var(--auro-size-lg); height: var(--auro-size-lg); fill: currentColor" class="ico_squareLarge" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>Warning</title>
   <desc>Up pointer</desc>
   <style></style>
@@ -49,17 +53,25 @@ If the user support matrix requires support for browsers that do not support CSS
 
 ### Using Sass styles (IE fallback)
 
-For use in situations where CSS custom properties are not supported. In the `dist/` directory is `orion-icons.scss`. Import this Sass file for default shape styles.
+For use in situations where CSS custom properties are not supported. In the `dist/` directory is `icons.scss`. Import this Sass file for default shape styles.
+
+__`orion-icons.scss` is deprecated, please reference `icons.scss`.__
 
 ```scss
-@import '@alaskaairux/orion-icons/dist/orion-icons';
+@import '@alaskaairux/orion-icons/dist/icons';
 ```
 
 Within React, Sass requires a `~` character prior to the importing library, example:
 
 ```scss
-@import '~@alaskaairux/orion-icons/dist/orion-icons';
+@import '~@alaskaairux/orion-icons/dist/icons';
 ```
+
+#### DEPRECATION WARNING! 
+
+__NOTE: This process has been deprecated!__ 
+
+__Due to Auro updates, sizes are uniform. There is no longer a need to have individual selectors. If you are using these selectors, simply remove the reference to `$iconMap` to discontinue use.__
 
 By default, no CSS classes are created when importing this file. To opt-in to the icon styles needed, add a config variable map, prior to import, that will set a flag to `true` to output the classes needed. See the following example:
 
@@ -70,21 +82,20 @@ $iconMap: (
   classiccheckmark: true,
 ) ;
 
-@import '~@alaskaairux/orion-icons/dist/orion-icons';
+@import '~@alaskaairux/orion-icons/dist/icons';
 ```
 
-The use of `orion-icons.scss` has a dependency on the Sass version of Orion Design Tokens, so a typical Sass file may look like the following:
+The use of `icons.scss` has a dependency on the Sass version of Orion Design Tokens, so a typical Sass file may look like the following:
 
 ```scss
-@import "~@alaskaairux/orion-design-tokens/dist/tokens/TokenVariables";    <= Sass variables
-@import "~@alaskaairux/orion-design-tokens/dist/tokens/TokenProperties";   <= CSS Custom Properties
+@import '~@alaskaairux/orion-design-tokens/dist/tokens/TokenVariables';
 
-// The following map will override the default settings inside orion-icons.scss
 $iconMap: (
-  toggleArrowHorizontal: true
+  toggleArrow: true,
+  chevronArrow: true,
+  classiccheckmark: true
 );
 
-// Output the requested selectors
 @import '~@alaskaairux/orion-icons/dist/orion-icons';
 ```
 
@@ -161,7 +172,7 @@ const warning = require('@alaskaairux/orion-icons/dist/icons/alert/warning');
 ... will output the following HTML
 
 ```html
-<svg role="img" aria-hidden="true" style="width: var(--size-icon-toggle-arrow-horizontal-width);  fill: var(--color-icon-toggle-arrow)" class="ico__warning" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg role="img" aria-hidden="true" style="fill: currentcolor; width: var(--auro-size-lg);  height: var(auro-size-lg)" class="ico_squareLarge" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>Warning</title>
   <g>
     <polygon points="4 4 0 0 8 0"></polygon>
@@ -169,7 +180,7 @@ const warning = require('@alaskaairux/orion-icons/dist/icons/alert/warning');
 </svg>
 ```
 
-Adding the following line of JavaScript will find and replace the `aria-hidden` attribute in the `aledrt.svg` string ...
+Adding the following line of JavaScript will find and replace the `aria-hidden` attribute in the `warning.svg ` string ...
 
 ```javascript
 warning.svg = warning.svg.replace(/aria-hidden="true"/g, `aria-hidden="false"`);
@@ -178,7 +189,7 @@ warning.svg = warning.svg.replace(/aria-hidden="true"/g, `aria-hidden="false"`);
 ... and then output the following:
 
 ```html
-<svg role="img" aria-hidden="false" style="width: var(--size-icon-toggle-arrow-horizontal-width);  fill: var(--color-icon-toggle-arrow)" class="ico__warning" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg role="img" aria-hidden="false" style="fill: currentcolor; width: var(--auro-size-lg);  height: var(--auro-size-lg)" class="ico_squareLarge" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>Warning</title>
   <g>
     <polygon points="4 4 0 0 8 0"></polygon>
@@ -294,7 +305,7 @@ See [angular-svg-icon](https://www.npmjs.com/package/angular-svg-icon) for more 
 Adding new icons to this repository requires a few steps.
 
 1. Add a new icon `.svg` file to the `src/icons/` directory (see DOs and DON'Ts below)
-1. Add **shape schema** to `./src/data/orion-icons.json` file (see example below)
+1. Add **shape schema** to `./src/data/icons.json` file (see example below)
 1. Submit pull request for approval
 
 ### Test new icon SVG code
@@ -311,7 +322,7 @@ $ open icons.html
 
 ### Icon shape schema
 
-When adding new icons, be sure to follow this example to add the proper data to the `orion-icons.json` file
+When adding new icons, be sure to follow this example to add the proper data to the `icons.json` file
 
 ```javascript
 {
@@ -349,21 +360,18 @@ All new icon pull requests MUST comply with the following specifications. Any pu
 
 Reduce the SVG HTML to only the following attributes;
 
-1. Keep `viewBox`
-1. Keep `xmlns`
-1. Keep `xmlns:xlink`
 1. Set `<title>` specifically to `<title>iconTitle</title>`
-2. Set `<desc>` specifically to `<desc>iconDesc</desc>`
-3. Set `<style></style>`
+1. Set `<desc>` specifically to `<desc>iconDesc</desc>`
+1. Set `<style></style>`
 1. Keep all necessary `<svg>` elements to render output
 
 ```html
-<svg viewBox="0 0 4 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg>
   <title>iconTitle</title>
   <desc>iconDesc</desc>
   <style></style>
   <g>
-    <polygon transform="translate(2.000000, 4.000000) rotate(90.000000) translate(-2.000000, -4.000000) " points="2 6 -2 2 6 2"></polygon>
+    <polygon points="43.9886686 48 24 27.9721836 4.01133144 48 0 44.0611961 19.9886686 23.9666203 0.0679886686 3.93880389 4.14730878 0 24 19.961057 43.8526912 0 47.9320113 3.93880389 27.9433428 23.9666203 48 44.0611961"></polygon>
   </g>
 </svg>
 ```
@@ -400,7 +408,7 @@ The following scripts are available from `./package.json`
 
 | script | Description |
 |----|----|
-| svgTest | runs `jest` to ensure that `index.js` and `./data/orion-icons.json` are formatted correctly |
+| svgTest | runs `jest` to ensure that `index.js` and `./data/icons.json` are formatted correctly |
 | jsonlint | validates that `./data/orion-icons.json` is correctly formatted JSON |
 | svglint | validates all SVGs per spec `./.svglintrc.js`|
 | test | runs jsonlint and svglint |
