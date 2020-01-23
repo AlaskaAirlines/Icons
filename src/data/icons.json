@@ -385,6 +385,16 @@
       "category": "interface"
     },
     {
+      "title": "This indicates a link to an external site that may not follow the same accessibility or privacy policies as Alaska Airlines. By selecting a partner link you agree to share your data with these sites.",
+      "name": "external-link-md",
+      "desc": "Notice indicator to alert user with disabilities that action will result in the browser opening a new context.",
+      "style": "ico_squareMd",
+      "category": "interface",
+      "PngSize": 16,
+      "width": "var(--auro-size-md)",
+      "height": "var(--auro-size-md)"
+    },
+    {
       "title": "Location stroke",
       "name": "location-stroke",
       "desc": "Location icon",

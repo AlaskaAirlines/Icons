@@ -10,7 +10,7 @@
     "url": "https://github.com/AlaskaAirlines/OrionIcons"
   },
   "devDependencies": {
-    "@alaskaairux/orion-design-tokens": "^2.10.2",
+    "@alaskaairux/orion-design-tokens": "^2.10.5",
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^7.6.0",
     "@semantic-release/changelog": "^3.0.4",
