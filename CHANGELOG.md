@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.0.3](https://github.com/AlaskaAirlines/OrionIcons/compare/v2.0.2...v2.0.3) (2020-01-23)
+
+
+### Bug Fixes
+
+* add md size external-link icon ([3ea6009](https://github.com/AlaskaAirlines/OrionIcons/commit/3ea6009))
+
 ## [2.0.2](https://github.com/AlaskaAirlines/OrionIcons/compare/v2.0.1...v2.0.2) (2020-01-10)
 
 
