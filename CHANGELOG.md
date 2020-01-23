@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.0.4](https://github.com/AlaskaAirlines/OrionIcons/compare/v2.0.3...v2.0.4) (2020-01-23)
+
+
+### Bug Fixes
+
+* add sm size external-link icon ([1921c42](https://github.com/AlaskaAirlines/OrionIcons/commit/1921c42))
+
 ## [2.0.3](https://github.com/AlaskaAirlines/OrionIcons/compare/v2.0.2...v2.0.3) (2020-01-23)
 
 
