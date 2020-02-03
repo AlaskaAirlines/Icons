@@ -126,16 +126,14 @@
       "name": "information-filled",
       "desc": "Information icon - filled",
       "style": "ico_squareLarge",
-      "actualcategory": "alert",
-      "category": "broken"
+      "category": "alert"
     },
     {
       "title": "Question Filled",
       "name": "question-filled",
       "desc": "Question icon - filled",
       "style": "ico_squareLarge",
-      "actualcategory": "alert",
-      "category": "broken"
+      "category": "alert"
     },
     {
       "title": "Warning Filled",
