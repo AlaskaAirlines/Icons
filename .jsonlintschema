@@ -12,7 +12,7 @@
             "title": {
               "description": "The icons name",
               "type": "string",
-              "required": true
+              "required": false
             },
             "name": {
               "description": "The icons file name",
@@ -22,12 +22,12 @@
             "desc": {
               "description": "Icon description",
               "type": "string",
-              "required": true
+              "required": false
             },
             "style": {
               "description": "The icon's default CSS class",
               "type": "string",
-              "required": true
+              "required": false
             }
           },
         "required": true
