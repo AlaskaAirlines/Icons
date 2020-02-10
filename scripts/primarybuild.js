@@ -43,7 +43,7 @@ data.icons.forEach(iconRaw => {
   const width = icon.width ? `width: ${icon.width};` : '';
   const elementStyle = `style="${width} ${height} fill: ${icon.color}" `;
 
-  // Scrub out bad data in svg
+  icon.style = icon.style || 'ico_squareMed';
   icon.svg = icon.svg.replace(`<title>iconTitle</title>
   <desc>iconDesc</desc>
   <style></style>`, '');
