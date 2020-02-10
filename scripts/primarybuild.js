@@ -43,6 +43,21 @@ data.icons.forEach(iconRaw => {
   const width = icon.width ? `width: ${icon.width};` : '';
   const elementStyle = `style="${width} ${height} fill: ${icon.color}" `;
 
+  // Scrub out bad data in svg
+  icon.svg = icon.svg.replace(`<title>iconTitle</title>
+  <desc>iconDesc</desc>
+  <style></style>`, '');
+  const altName = filename.replace(/-/g, ' ');
+  icon.title = icon.title || titleCase(altName);
+  icon.desc = icon.desc || `${altName} icon`;
+  const split = icon.svg.split(/(^<svg.*>)/);
+  // Scrub out any pre-existing attributes
+  split[1] = '<svg>';
+  split.splice(2, 0, `
+    <title>${icon.title}</title>
+    <desc>${icon.desc}</desc>`);
+  icon.svg = split.join('');
+
   // adds attributes to SVG string based on icons.json data
   icon.svg = [icon.svg.slice(0, insertPos), `class="${icon.style}" `, icon.svg.slice(insertPos)].join('');
   icon.svg = [icon.svg.slice(0, insertPos), elementStyle, icon.svg.slice(insertPos)].join('');
@@ -52,8 +67,6 @@ data.icons.forEach(iconRaw => {
   icon.svg = [icon.svg.slice(0, insertPos), `xmlns:xlink="${icon.xmlns_xlink}" `, icon.svg.slice(insertPos)].join('');
   icon.svg = [icon.svg.slice(0, insertPos), `viewBox="${icon.viewBox}" `, icon.svg.slice(insertPos)].join('');
   icon.svg = [icon.svg.slice(0, insertPos), ` `, icon.svg.slice(insertPos)].join('');
-  icon.svg = icon.svg.replace("iconTitle", `${icon.title}`);
-  icon.svg = icon.svg.replace("iconDesc", `${icon.desc}`);
 
   const publishFolder = `${buildIconsDir}/${getDistSubFolder(icon.category)}`;
   if (!fileSys.existsSync(publishFolder)){
@@ -173,6 +186,17 @@ function fileHeader(options) {
   }
 
   return to_ret;
+}
+
+function titleCase(str) {
+  var splitStr = str.toLowerCase().split(' ');
+  for (var i = 0; i < splitStr.length; i++) {
+      // You do not need to check if i is larger than splitStr length, as your for does that for you
+      // Assign it back to the array
+      splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+  }
+  // Directly return the joined string
+  return splitStr.join(' '); 
 }
 
 CustomStyleDictionary.registerFormat({
