@@ -502,9 +502,61 @@
       "style": "ico_squareLarge",
       "category": "interface"
     },
+    {
+      "title": "Notification",
+      "name": "notification",
+      "desc": "notification icon",
+      "style": "ico_squareLarge",
+      "category": "interface"
+    },
+    {
+      "title": "Notification active",
+      "name": "notification-active",
+      "desc": "notification active icon",
+      "style": "ico_squareLarge",
+      "category": "interface"
+    },
+    {
+      "title": "Navigation Menu",
+      "name": "navigation-menu",
+      "desc": "navigation menu icon",
+      "style": "ico_squareLarge",
+      "category": "interface"
+    },
 
 
-
+    {
+      "name": "entertainment",
+      "category": "in-flight"
+    },
+    {
+      "name": "flight-cancelled",
+      "category": "in-flight"
+    },
+    {
+      "name": "flight-delayed",
+      "category": "in-flight"
+    },
+    {
+      "name": "flight-on-time",
+      "category": "in-flight"
+    },
+    {
+      "name": "luggage",
+      "category": "in-flight"
+    },
+    {
+      "name": "plug",
+      "category": "in-flight"
+    },
+    {
+      "name": "seat",
+      "category": "in-flight"
+    },
+    {
+      "name": "wifi",
+      "category": "in-flight"
+    },
 
     {
       "title": "Boarding pass",
@@ -548,7 +600,34 @@
       "style": "ico_squareLarge",
       "category": "terminal"
     },
-
+    {
+      "name": "flight-changes",
+      "category": "terminal"
+    },
+    {
+      "name": "plane-diag-fill",
+      "category": "terminal"
+    },
+    {
+      "name": "plane-diag-stroke",
+      "category": "terminal"
+    },
+    {
+      "name": "plane-side-fill",
+      "category": "terminal"
+    },
+    {
+      "name": "plane-side-stroke",
+      "category": "terminal"
+    },
+    {
+      "name": "plane-up-fill",
+      "category": "terminal"
+    },
+    {
+      "name": "plane-up-stroke",
+      "category": "terminal"
+    },
 
 
 
@@ -569,6 +648,14 @@
 
 
 
+    {
+      "name": "cart",
+      "category": "shop"
+    },
+    {
+      "name": "shopping-bag",
+      "category": "shop"
+    },
 
     {
       "title": "Credit Card",
