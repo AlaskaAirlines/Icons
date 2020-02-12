@@ -24,6 +24,7 @@
     "jest": "^24.8.0",
     "jsonlint2": "^1.7.1",
     "lodash": "^4.17.15",
+    "nodemon": "^2.0.2",
     "npm-run-all": "^4.1.5",
     "semantic-release": "^15.13.21",
     "style-dictionary": "^2.8.1",
@@ -42,7 +43,8 @@
     "png@2x": "convert-svg-to-png --height 48px dist/icons/*24@2x.png",
     "png@3x": "convert-svg-to-png --height 72px dist/icons/*24@3x.png",
     "ciBuild": "npm-run-all delete primarybuild sassRender png@2x png@3x copySass svgTest",
-    "devBuild": "npm-run-all delete primarybuild sassRender copySass"
+    "devBuild": "npm-run-all delete primarybuild sassRender copySass",
+    "watch": "nodemon -e svg,scss,js --watch src --exec npm run svgTest"
   },
   "husky": {
     "hooks": {
