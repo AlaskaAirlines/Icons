@@ -21,7 +21,7 @@ $ npm i @alaskaairux/orion-icons
 Icon styles are inheriting from Auro Design Tokens. Any reference to the following import is deprecated and should be discontinued.
 
 ```scss
-@import `./node_modules/@alaskaairux/alaskaairux/orion-icons/dist/tokens/TokenProperties`
+@import `./node_modules/@alaskaairux/orion-icons/dist/tokens/CSSTokenProperties.css`
 ```
 
 ### Using Sass styles (IE fallback)
