@@ -28,7 +28,7 @@ Icon styles are inheriting from Auro Design Tokens. Any reference to the followi
 
 For use in situations where CSS custom properties are not supported. In the `dist/` directory is `icons.scss`. Import this Sass file for default shape styles.
 
-__`orion-icons.scss` is deprecated, please reference `icons.scss`.__
+<span style="color: red">`orion-icons.scss` is deprecated, please reference `icons.scss`.</span>
 
 ```scss
 @import '@alaskaairux/orion-icons/dist/icons';
@@ -46,11 +46,11 @@ Due to dependency on Auro tokens, be sure to import the Sass variables prior to 
 @import "~@alaskaairux/orion-design-tokens/dist/tokens/SCSSVariables";
 ```
 
-#### DEPRECATION WARNING! 
+#### <span style="color: red">DEPRECATION WARNING! </span>
 
-__NOTE: This process has been deprecated!__ 
+<span style="color: red">__NOTE: This process has been deprecated!__ </span>
 
-__Due to Auro updates, sizes are uniform. There is no longer a need to have individual selectors. If you are using these selectors, simply remove the reference to `$iconMap` to discontinue use.__
+<span style="color: red">Due to Auro updates, sizes are uniform. There is no longer a need to have individual selectors. If you are using these selectors, simply remove the reference to `$iconMap` to discontinue use.</span>
 
 By default, no CSS classes are created when importing this file. To opt-in to the icon styles needed, add a config variable map, prior to import, that will set a flag to `true` to output the classes needed. See the following example:
 
@@ -268,6 +268,7 @@ See [angular-svg-icon](https://www.npmjs.com/package/angular-svg-icon) for more 
 Adding new icons to this repository requires a few steps.
 
 1. Add a new icon `.svg` file to the `src/icons/` directory (see DOs and DON'Ts below)
+1. If the icons is to retain its designed color, please place the new icon in the `src/icons/fullColor` directory 
 1. Add **shape schema** to `./src/data/icons.json` file (see example below)
 1. Submit pull request for approval
 
@@ -285,7 +286,9 @@ $ open icons.html
 
 ### Icon shape schema
 
-When adding new icons, be sure to follow this example to add the proper data to the `icons.json` file
+When adding new icons, be sure to follow this example to add the proper data to the `icons.json` file. Any attribute defined in the `"commonProperties"` object may be over-written in the individual `"icons"` object. 
+
+For icons that need to retain their full color spec, be sure to add the `"path": "/icons/fullColor"` attribute to the icon object. 
 
 ```javascript
 {
@@ -296,15 +299,28 @@ When adding new icons, be sure to follow this example to add the proper data to 
       "color": "currentColor",
       "PngColor": "var(--color-type-theme-light-link)",
       "PngSize": 24,
-      "width": "var(--size-icon-square-lg)",
-      "height": "var(--size-icon-square-lg)"
+      "width": "var(--auro-size-lg)",
+      "height": "var(--auro-size-lg)",
+      "xmlns": "http://www.w3.org/2000/svg",
+      "xmlns_xlink": "http://www.w3.org/1999/xlink",
+      "viewBox": "0 0 24 24",
+      "path": "/icons"
   },
   "icons": [
     {
-      "title": "Arrow Up",
-      "desc": "Up pointer",
-      "style": "ico__toggleArrow",
-      "category": "interface"
+      "title": "Error",
+      "name": "error",
+      "desc": "Error alert icon",
+      "style": "ico_squareLarge",
+      "category": "alert"
+    },
+    {
+      "title": "CC Alaska",
+      "name": "cc-alaska",
+      "desc": "Alaska Credit Card",
+      "style": "ico_squareLarge",
+      "category": "payment",
+      "path": "/icons/fullColor"
     }
   ]
 }
@@ -321,18 +337,10 @@ All new icon pull requests MUST comply with the following specifications. Any pu
 
 #### DO
 
-Reduce the SVG HTML to only the following attributes;
-
-1. Set `<title>` specifically to `<title>iconTitle</title>`
-1. Set `<desc>` specifically to `<desc>iconDesc</desc>`
-1. Set `<style></style>`
-1. Keep all necessary `<svg>` elements to render output
+Please reduce the SVG HTML to only the following attributes. The build process will scrub away any unwanted attributes from the SVG file. 
 
 ```html
 <svg>
-  <title>iconTitle</title>
-  <desc>iconDesc</desc>
-  <style></style>
   <g>
     <polygon points="43.9886686 48 24 27.9721836 4.01133144 48 0 44.0611961 19.9886686 23.9666203 0.0679886686 3.93880389 4.14730878 0 24 19.961057 43.8526912 0 47.9320113 3.93880389 27.9433428 23.9666203 48 44.0611961"></polygon>
   </g>
@@ -341,9 +349,7 @@ Reduce the SVG HTML to only the following attributes;
 
 #### DO NOT
 
-Do not include unnecessary specifications, attributes, spaces and returns in the HTML
-
-Never include the following:
+Please do not include unnecessary specifications, attributes, spaces and returns in the HTML as they will be scrubbed away in the build process. Anything not manually removed or scrubbed will fail the svglint tests. 
 
 1. xml version
 1. `width` or `height` hard coded HTML attributes
@@ -371,7 +377,7 @@ The following scripts are available from `./package.json`
 
 | script | Description |
 |----|----|
-| svgTest | runs `jest` to ensure that `index.js` and `./data/icons.json` are formatted correctly |
+| svgjest | runs `jest` to ensure that `index.js` and `./data/icons.json` are formatted correctly |
 | jsonlint | validates that `./data/orion-icons.json` is correctly formatted JSON |
 | svglint | validates all SVGs per spec `./.svglintrc.js`|
 | test | runs jsonlint and svglint |

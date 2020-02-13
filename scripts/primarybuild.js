@@ -9,7 +9,7 @@
 
 const dataFile = '../src/data/icons.json';
 const indexFile = `${__dirname}/../dist/index.js`;
-const iconsDir = `${__dirname}/../src/icons`;
+const iconsDir = `${__dirname}/../src`;
 const buildIconsDir = `${__dirname}/../dist/icons`;
 const data = require(dataFile);
 const fileSys = require('file-system');
@@ -37,26 +37,45 @@ data.icons.forEach(iconRaw => {
 
   const filename = icon.name;
   const distFilename = getDistFilename(icon);
-  icon.svg = fs.readFileSync(`${iconsDir}/${filename}.svg`, 'utf8');
+  icon.svg = fs.readFileSync(`${iconsDir}${icon.path}/${filename}.svg`, 'utf8');
   const insertPos = icon.svg.indexOf("svg") + 3;
   const height = icon.height ? `height: ${icon.height};` : '';
   const width = icon.width ? `width: ${icon.width};` : '';
   const elementStyle = `style="${width} ${height} fill: ${icon.color}" `;
 
-  icon.style = icon.style || 'ico_squareMed';
+  icon.style = icon.style || 'ico_squareLg';
+
+  // If svg has legacy HTML structure, replace with empty string
   icon.svg = icon.svg.replace(`<title>iconTitle</title>
   <desc>iconDesc</desc>
   <style></style>`, '');
+
+  // Build new Title and Description from icon data
   const altName = filename.replace(/-/g, ' ');
   icon.title = icon.title || titleCase(altName);
   icon.desc = icon.desc || `${altName} icon`;
   const split = icon.svg.split(/(^<svg.*>)/);
+
   // Scrub out any pre-existing attributes
   split[1] = '<svg>';
   split.splice(2, 0, `
-    <title>${icon.title}</title>
-    <desc>${icon.desc}</desc>`);
+  <title>${icon.title}</title>
+  <desc>${icon.desc}</desc>`);
   icon.svg = split.join('');
+
+  if (icon.path === '/icons') {
+    // Locate and remove undesired SVG attributes
+    const fill = icon.svg.match(/fill="#......"/);
+    const fillNone = icon.svg.match(/fill="none"/);
+
+    if (fill) {
+      icon.svg = icon.svg.replace(fill, '')
+    }
+
+    if (fillNone) {
+      icon.svg = icon.svg.replace(fillNone, '')
+    }
+  }
 
   // adds attributes to SVG string based on icons.json data
   icon.svg = [icon.svg.slice(0, insertPos), `class="${icon.style}" `, icon.svg.slice(insertPos)].join('');
@@ -80,11 +99,9 @@ data.icons.forEach(iconRaw => {
 
   // write new SVGs to ./dist
   fs.writeFileSync( `${buildIconsDir}/${distFilename}.svg`, icon.svg);
-
-  // console.log(`${filename}.js / ${filename}.svg written to ./dist dir`)
 });
 
-// export 20px PNGs versions of Icons; default colors
+// export PNG versions of Icons; default colors
 // =======================================================================
 const pngIcons = {};
 const SizeMedIcons = data.icons.filter(function(sizeData) {
@@ -191,9 +208,9 @@ function fileHeader(options) {
 function titleCase(str) {
   let splitStr = str.toLowerCase().split(' ');
   for (let i = 0; i < splitStr.length; i++) {
-      splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+      splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
   }
-  return splitStr.join(' '); 
+  return splitStr.join(' ');
 }
 
 CustomStyleDictionary.registerFormat({

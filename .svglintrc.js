@@ -2,7 +2,8 @@ module.exports = {
     rules: {
         elm: {
             "svg": 1,
-            "svg > title": 1
+            "svg > title": 1,
+            "svg > desc": 1
         },
         attr: [{ // ensure that the SVG element has the appropriate attributes
             "role": "img",
@@ -32,11 +33,13 @@ module.exports = {
             "rule::whitelist": true
         }, { // ensure that a g element has the appropriate attributes
             "style": false,
+            "fill": false,
             "id": false,
 
             "rule::selector": "svg g"
         }, { // ensure that a path element has the appropriate attributes
             "style": false,
+            "fill": false,
 
             "rule::selector": "svg path"
         }]
