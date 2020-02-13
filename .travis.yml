@@ -16,7 +16,7 @@ before_script:
   - npm run png@2x
   - npm run png@3x
   - npm run copySass
-  - npm run svgTest
+  - npm run svgjest
 
 after_success:
   - npx semantic-release
