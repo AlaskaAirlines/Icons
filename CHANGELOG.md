@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.1.1](https://github.com/AlaskaAirlines/OrionIcons/compare/v2.1.0...v2.1.1) (2020-02-20)
+
+
+### Bug Fixes
+
+* update process to scrub dirty SVGs ([9851abf](https://github.com/AlaskaAirlines/OrionIcons/commit/9851abf))
+
 # [2.1.0](https://github.com/AlaskaAirlines/OrionIcons/compare/v2.0.4...v2.1.0) (2020-02-11)
 
 
