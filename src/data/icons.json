@@ -624,7 +624,16 @@
       "name": "plane-up-stroke",
       "category": "terminal"
     },
-
+    {
+      "title": "One Way Arrow",
+      "name": "one-way-arrow",
+      "category": "terminal"
+    },
+    {
+      "title": "Round Trip Arrows",
+      "name": "round-trip-arrows",
+      "category": "terminal"
+    },
 
 
     {
