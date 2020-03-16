@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.1.2](https://github.com/AlaskaAirlines/OrionIcons/compare/v2.1.1...v2.1.2) (2020-03-16)
+
+
+### Bug Fixes
+
+* [#21](https://github.com/AlaskaAirlines/OrionIcons/issues/21) add new icons, round trip and one way ([35000a9](https://github.com/AlaskaAirlines/OrionIcons/commit/35000a9))
+
 ## [2.1.1](https://github.com/AlaskaAirlines/OrionIcons/compare/v2.1.0...v2.1.1) (2020-02-20)
 
 
