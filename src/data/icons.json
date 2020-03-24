@@ -339,6 +339,13 @@
       "category": "interface"
     },
     {
+      "title": "Global Language",
+      "name": "global-language",
+      "desc": "global language icon",
+      "style": "ico_squareLarge",
+      "category": "interface"
+    },
+    {
       "title": "Filter",
       "name": "filter",
       "desc": "Filter icon",
@@ -551,6 +558,10 @@
     },
     {
       "name": "wifi",
+      "category": "in-flight"
+    },
+    {
+      "name": "wifi-disabled",
       "category": "in-flight"
     },
 
