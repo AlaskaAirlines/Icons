@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.1.3](https://github.com/AlaskaAirlines/OrionIcons/compare/v2.1.2...v2.1.3) (2020-03-25)
+
+
+### Bug Fixes
+
+* [#26](https://github.com/AlaskaAirlines/OrionIcons/issues/26) add global language and wifi disabled icons ([7c0551b](https://github.com/AlaskaAirlines/OrionIcons/commit/7c0551b))
+
 ## [2.1.2](https://github.com/AlaskaAirlines/OrionIcons/compare/v2.1.1...v2.1.2) (2020-03-16)
 
 
