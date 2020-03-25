@@ -561,7 +561,10 @@
       "category": "in-flight"
     },
     {
+      "title": "Wifi Disabled",
       "name": "wifi-disabled",
+      "desc": "wifi disabled icon",
+      "style": "ico_squareLarge",
       "category": "in-flight"
     },
 
