@@ -4,21 +4,19 @@
       "hidden": "true",
       "role": "img",
       "color": "currentColor",
-      "PngColor": "var(--color-type-theme-light-link)",
-      "PngSize": 24,
+      "desc": "",
       "width": "var(--auro-size-lg)",
       "height": "var(--auro-size-lg)",
       "xmlns": "http://www.w3.org/2000/svg",
       "xmlns_xlink": "http://www.w3.org/1999/xlink",
       "viewBox": "0 0 24 24",
-      "path": "/icons"
+      "path": "/icons",
+      "style": "ico_squareLarge"
   },
   "icons": [
     {
-      "title": "Close",
       "name": "close",
-      "desc": "Option to close current experience",
-      "PngColor": "var(--auro-color-text-primary-on-light)",
+      "desc": "option to close current experience",
       "width": "var(--auro-size-md)",
       "height": "var(--auro-size-md)",
       "style": "ico_squareMed",
@@ -27,22 +25,17 @@
     {
       "title": "Close",
       "name": "close-lg",
-      "desc": "Option to close current experience",
-      "PngColor": "var(--auro-color-text-primary-on-light)",
-      "style": "ico_squareLarge"
+      "desc": "option to close current experience"
     },
     {
       "title": "Close",
       "name": "close-sml",
-      "desc": "Option to close current experience",
-      "PngColor": "var(--auro-color-text-primary-on-light)",
-      "style": "ico_squareLarge"
+      "desc": "option to close current experience"
     },
     {
       "title": "Checkmark display indicator",
       "name": "classic-checkmark",
-      "desc": "Indicates that an options has been checked",
-      "PngColor": "var(--color-base-galapagos)",
+      "desc": "Indicate when an option has been checked",
       "width": "var(--auro-size-md)",
       "style": "ico__classiccheckmark",
       "category": "interface",
@@ -52,95 +45,76 @@
     {
       "title": "This indicates a link to an external site that may not follow the same accessibility or privacy policies as Alaska Airlines. By selecting a partner link you agree to share your data with these sites.",
       "name": "step-out-lg",
-      "desc": "Notice indicator to alert user with disabilities that action will result in the browser opening a new context.",
-      "AltPngColor": "var(--auro-color-text-primary-on-light)",
-      "style": "ico_squareLarge"
+      "desc": "Notice indicator to alert user with disabilities that action will result in the browser opening a new context."
     },
     {
       "title": "This indicates a link to an external site that may not follow the same accessibility or privacy policies as Alaska Airlines. By selecting a partner link you agree to share your data with these sites.",
       "name": "step-out",
       "desc": "Notice indicator to alert user with disabilities that action will result in the browser opening a new context.",
-      "AltPngColor": "var(--auro-color-text-primary-on-light)",
       "width": "0.6rem",
       "height": "0.6rem",
       "style": "ico_squareSmall",
       "viewBox": "0 0 512 512"
     },
     {
-      "title": "Caret down",
       "name": "caret-down",
-      "desc": "Caret icon",
-      "style": "ico_squareLarge"
+      "desc": "Action indicator; content exposed below"
     },
     {
-      "title": "Caret left",
       "name": "caret-left",
-      "desc": "Caret icon",
-      "style": "ico_squareLarge"
+      "desc": "Action indicator; content exposed to the left"
     },
     {
-      "title": "Caret right",
       "name": "caret-right",
-      "desc": "Caret icon",
-      "style": "ico_squareLarge"
+      "desc": "Action indicator; content exposed to the right"
     },
     {
-      "title": "Caret up",
       "name": "caret-up",
-      "desc": "Caret icon",
-      "style": "ico_squareLarge"
+      "desc": "Action indicator; content exposed above"
     },
 
 
 
 
     {
-      "title": "Error",
       "name": "error",
-      "desc": "Error alert icon",
-      "style": "ico_squareLarge",
+      "desc": "Error alert indicator",
       "category": "alert"
     },
     {
-      "title": "Information Stroke",
+      "title": "Information",
       "name": "information-stroke",
-      "desc": "Information icon - stroke",
-      "style": "ico_squareLarge",
+      "desc": "Important information indicator",
       "category": "alert"
     },
     {
-      "title": "Question Stroke",
+      "title": "Question",
       "name": "question-stroke",
-      "desc": "Question icon - stroke",
-      "style": "ico_squareLarge",
+      "desc": "Alert user of option to learn more about relative content",
       "category": "alert"
     },
     {
-      "title": "Warning Stroke",
+      "title": "Warning",
       "name": "warning-stroke",
-      "desc": "Warning icon - stroke",
-      "style": "ico_squareLarge",
+      "desc": "Alerts user of troubling or concerning situation",
       "category": "alert"
     },
     {
-      "title": "Information Filled",
+      "title": "Information",
       "name": "information-filled",
-      "desc": "Information icon - filled",
-      "style": "ico_squareLarge",
+      "desc": "Important information indicator",
       "category": "alert"
     },
     {
-      "title": "Question Filled",
+      "title": "Question",
       "name": "question-filled",
-      "desc": "Question icon - filled",
-      "style": "ico_squareLarge",
+      "desc": "Alert user of option to learn more about relative content",
       "category": "alert"
     },
     {
-      "title": "Warning Filled",
+      "title": "Warning",
       "name": "warning-filled",
-      "desc": "Warning icon - filled",
-      "style": "ico_squareLarge",
+      "desc": "Alerts user of troubling or concerning situation",
       "category": "alert"
     },
 
@@ -150,241 +124,185 @@
     {
       "title": "Up pointer",
       "name": "arrow-up",
-      "desc": "Directional pointer for user reference",
-      "style": "ico_squareLarge",
+      "desc": "Directional pointer; up",
       "category": "interface"
     },
     {
       "title": "Down pointer",
       "name": "arrow-down",
-      "desc": "Directional pointer for user reference",
-      "style": "ico_squareLarge",
+      "desc": "Directional pointer; down",
       "category": "interface"
     },
     {
       "title": "Left pointer",
       "name": "arrow-left",
-      "desc": "Directional pointer for user reference",
-      "style": "ico_squareLarge",
+      "desc": "Directional pointer; left",
       "category": "interface"
     },
     {
       "title": "Right pointer",
       "name": "arrow-right",
-      "desc": "Directional pointer for user reference",
-      "style": "ico_squareLarge",
+      "desc": "Directional pointer; right",
       "category": "interface"
     },
     {
       "title": "Left indicator",
       "name": "chevron-left",
-      "desc": "Directional indicator for user reference",
-      "style": "ico_squareLarge",
+      "desc": "Directional indicator; left",
       "category": "interface"
     },
     {
       "title": "Right indicator",
       "name": "chevron-right",
-      "desc": "Directional indicator for user reference",
-      "style": "ico_squareLarge",
+      "desc": "Directional indicator; right",
       "category": "interface"
     },
     {
       "title": "Up indicator",
       "name": "chevron-up",
-      "desc": "Directional indicator for user reference",
-      "style": "ico_squareLarge",
+      "desc": "Directional indicator; up",
       "category": "interface"
     },
     {
       "title": "Down indicator",
       "name": "chevron-down",
-      "desc": "Directional indicator for user reference",
-      "style": "ico_squareLarge",
+      "desc": "Directional indicator; down",
       "category": "interface"
     },
     {
-      "title": "Location filled",
+      "title": "Location",
       "name": "location-filled",
-      "desc": "Location icon",
-      "style": "ico_squareLarge",
+      "desc": "Pointer of specific location",
       "category": "interface"
     },
     {
-      "title": "Location found",
       "name": "location-found",
-      "desc": "Location found icon",
-      "style": "ico_squareLarge",
+      "desc": "Target indicator",
       "category": "interface"
     },
     {
-      "title": "Penguin",
       "name": "penguin",
-      "desc": "Penguin icon",
-      "style": "ico_squareLarge",
+      "desc": "Easter egg",
       "category": "interface"
     },
     {
-      "title": "Location finder",
       "name": "location-finder",
-      "desc": "Location finder icon",
-      "style": "ico_squareLarge",
+      "desc": "Target indicator",
       "category": "interface"
     },
     {
-      "title": "Chain link",
       "name": "chain-link",
-      "desc": "Chain link icon",
-      "style": "ico_squareLarge",
+      "desc": "Indication of hyperlink",
       "category": "interface"
     },
     {
-      "title": "Plus filled",
+      "title": "Plus",
       "name": "plus-filled",
-      "desc": "Plus icon",
-      "style": "ico_squareLarge",
+      "desc": "Indicates plus option",
       "category": "interface"
     },
     {
-      "title": "Plus stroke",
+      "title": "Plus",
       "name": "plus-stroke",
-      "desc": "Plus icon",
-      "style": "ico_squareLarge",
+      "desc": "Indicates plus option",
       "category": "interface"
     },
     {
       "title": "Checkmark display indicator",
       "name": "checkmark-lg",
-      "desc": "Indicates that an options has been checked",
-      "PngColor": "var(--color-base-galapagos)",
-      "style": "ico_squareLarge",
+      "desc": "Indicate option has been checked",
       "category": "interface"
     },
     {
       "title": "Checkmark display indicator",
       "name": "checkmark-sml",
-      "desc": "Indicates that an options has been checked",
-      "PngColor": "var(--color-base-galapagos)",
-      "style": "ico_squareLarge",
+      "desc": "Indicate option has been checked",
       "category": "interface"
     },
     {
-      "title": "Add to calendar",
       "name": "add-to-calendar",
       "desc": "Add content option to calendar",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Calendar",
       "name": "calendar",
-      "desc": "Calendar icon",
-      "style": "ico_squareLarge",
+      "desc": "Indicates calendar option",
       "category": "interface"
     },
     {
-      "title": "Accessibility",
       "name": "accessibility",
-      "desc": "Accessibility icon",
-      "style": "ico_squareLarge",
+      "desc": "Indicates accessible content",
       "category": "interface"
     },
     {
-      "title": "Account filled",
+      "title": "Account",
       "name": "account-filled",
-      "desc": "Account icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Account stroke",
+      "title": "Account",
       "name": "account-stroke",
-      "desc": "Account icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Chat",
       "name": "chat",
-      "desc": "Chat icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Check filled",
+      "title": "Check",
       "name": "check-filled",
-      "desc": "Check icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Check lg",
+      "title": "Check",
       "name": "check-lg",
-      "desc": "Check icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Check sm",
+      "title": "Check",
       "name": "check-sm",
-      "desc": "Check icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Check stroke",
+      "title": "Check",
       "name": "check-stroke",
-      "desc": "Check icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Global Language",
       "name": "global-language",
-      "desc": "global language icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Filter",
       "name": "filter",
-      "desc": "Filter icon",
-      "style": "ico_squareLarge",
+      "desc": "Indicates that content can be filtered",
       "category": "interface"
     },
     {
-      "title": "Heart filled",
+      "title": "Heart",
       "name": "heart-filled",
-      "desc": "Heart icon",
-      "style": "ico_squareLarge",
+      "desc": "Indicates favorited item",
       "category": "interface"
     },
     {
-      "title": "Heart stroke",
+      "title": "Heart",
       "name": "heart-stroke",
-      "desc": "Heart icon",
-      "style": "ico_squareLarge",
+      "desc": "Indicates favorited item",
       "category": "interface"
     },
     {
-      "title": "Home filled",
+      "title": "Home",
       "name": "home-filled",
-      "desc": "Home icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Home stroke",
+      "title": "Home",
       "name": "home-stroke",
-      "desc": "Home icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
       "title": "This indicates a link to an external site that may not follow the same accessibility or privacy policies as Alaska Airlines. By selecting a partner link you agree to share your data with these sites.",
       "name": "external-link",
       "desc": "Notice indicator to alert user with disabilities that action will result in the browser opening a new context.",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
@@ -408,122 +326,78 @@
       "height": "var(--auro-size-sm)"
     },
     {
-      "title": "Location stroke",
+      "title": "Location",
       "name": "location-stroke",
-      "desc": "Location icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Mail",
       "name": "mail",
-      "desc": "Mail icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Minus filled",
+      "title": "Minus",
       "name": "minus-filled",
-      "desc": "Minus icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Minus lg",
+      "title": "Minus",
       "name": "minus-lg",
-      "desc": "Minus icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Minus sm",
+      "title": "Minus",
       "name": "minus-sm",
-      "desc": "Minus icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Minus stroke",
+      "title": "Minus",
       "name": "minus-stroke",
-      "desc": "Minus icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Plus lg",
       "name": "plus-lg",
-      "desc": "Plus icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Plus sm",
       "name": "plus-sm",
-      "desc": "Plus icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Printer",
       "name": "printer",
-      "desc": "Printer icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Search",
       "name": "search",
-      "desc": "Search icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Star filled",
+      "title": "Star",
       "name": "star-filled",
-      "desc": "Star icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Star stroke",
+      "title": "Star",
       "name": "star-stroke",
-      "desc": "Star icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "X lg",
       "name": "x-lg",
-      "desc": "X icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "X sm",
       "name": "x-sm",
-      "desc": "X icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Notification",
       "name": "notification",
-      "desc": "notification icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Notification active",
       "name": "notification-active",
-      "desc": "notification active icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
     {
-      "title": "Navigation Menu",
       "name": "navigation-menu",
-      "desc": "navigation menu icon",
-      "style": "ico_squareLarge",
       "category": "interface"
     },
 
@@ -561,53 +435,37 @@
       "category": "in-flight"
     },
     {
-      "title": "Wifi Disabled",
       "name": "wifi-disabled",
-      "desc": "wifi disabled icon",
-      "style": "ico_squareLarge",
       "category": "in-flight"
     },
 
     {
       "title": "Boarding pass",
       "name": "boarding-pass-filled",
-      "desc": "Used to indicate boarding pass options",
-      "style": "ico_squareLarge",
+      "desc": "indicates boarding pass options",
       "category": "terminal"
     },
     {
       "title": "Boarding pass",
       "name": "boarding-pass-stroke",
-      "desc": "Used to indicate boarding pass options",
-      "style": "ico_squareLarge",
+      "desc": "indicates boarding pass options",
       "category": "terminal"
     },
     {
-      "title": "Booking filled",
       "name": "booking-filled",
-      "desc": "Booking icon",
-      "style": "ico_squareLarge",
       "category": "terminal"
     },
     {
-      "title": "Booking stroke",
       "name": "booking-stroke",
-      "desc": "Booking icon",
-      "style": "ico_squareLarge",
       "category": "terminal"
     },
     {
-      "title": "Radar filled",
       "name": "radar-filled",
-      "desc": "Radar icon",
-      "style": "ico_squareLarge",
       "category": "terminal"
     },
     {
       "title": "Radar stroke",
       "name": "radar-stroke",
-      "desc": "Radar icon",
-      "style": "ico_squareLarge",
       "category": "terminal"
     },
     {
@@ -639,29 +497,25 @@
       "category": "terminal"
     },
     {
-      "title": "One Way Arrow",
       "name": "one-way-arrow",
+      "desc": "indication of one way flight option",
       "category": "terminal"
     },
     {
-      "title": "Round Trip Arrows",
       "name": "round-trip-arrows",
+      "desc": "indicate round-trip flight opton",
       "category": "terminal"
     },
 
 
     {
-      "title": "Facebook",
       "name": "facebook",
-      "desc": "Facebook icon",
-      "style": "ico_squareLarge",
+      "desc": "Facebook social media icon",
       "category": "social"
     },
     {
-      "title": "Instagram",
       "name": "instagram",
-      "desc": "Instagram icon",
-      "style": "ico_squareLarge",
+      "desc": "Instagram social media icon",
       "category": "social"
     },
 
@@ -669,59 +523,49 @@
 
     {
       "name": "cart",
+      "desc": "icon used to indicate items related to purchases",
       "category": "shop"
     },
     {
       "name": "shopping-bag",
+      "desc": "icon used to indicate items related to purchases",
       "category": "shop"
     },
 
 
 
     {
-      "title": "Credit Card",
       "name": "credit-card",
       "desc": "Default credit card icon",
-      "style": "ico_squareLarge",
       "category": "payment"
     },
     {
-      "title": "CC Alaska",
       "name": "cc-alaska",
       "desc": "Alaska Credit Card",
-      "style": "ico_squareLarge",
       "category": "payment",
       "path": "/icons/fullColor"
     },
     {
-      "title": "CC Amex",
       "name": "cc-amex",
       "desc": "Amex Credit Card",
-      "style": "ico_squareLarge",
       "category": "payment",
       "path": "/icons/fullColor"
     },
     {
-      "title": "CC Discover",
       "name": "cc-discover",
       "desc": "Discover Credit Card",
-      "style": "ico_squareLarge",
       "category": "payment",
       "path": "/icons/fullColor"
     },
     {
-      "title": "CC Mastercard",
       "name": "cc-mastercard",
       "desc": "Mastercard Credit Card",
-      "style": "ico_squareLarge",
       "category": "payment",
       "path": "/icons/fullColor"
     },
     {
-      "title": "CC Visa",
       "name": "cc-visa",
       "desc": "Visa Credit Card",
-      "style": "ico_squareLarge",
       "category": "payment",
       "path": "/icons/fullColor"
     }
