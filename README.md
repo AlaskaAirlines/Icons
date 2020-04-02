@@ -288,23 +288,43 @@ $ open icons.html
 
 When adding new icons, be sure to follow this example to add the proper data to the `icons.json` file. Any attribute defined in the `"commonProperties"` object may be over-written in the individual `"icons"` object. 
 
-For icons that need to retain their full color spec, be sure to add the `"path": "/icons/fullColor"` attribute to the icon object. 
+#### Default attributes for each SVG
+
+| key | type | default | description | 
+|---|---|---|---|
+| color | string | `currentcolor` | sets CSS property of `color` to `currentcolor` |
+| height | string | `var(--auro-size-lg)` | sets CSS property of `height` to `var(--auro-size-lg)` |
+| hidden | boolean | `true` | sets HTML attribute `hidden` to `true` for a11y |
+| path | string | `/icons` | sets path for pre-build icon; icons that require full color spec, use `"path": "/icons/fullColor"` |
+| role | string | `img` | sets aria role to `img` |
+| viewbox | string | `0 0 24 24` | sets SVG attribute to default shape |
+| width | string | `var(--auro-size-lg)` | sets CSS property of `width` to `var(--auro-size-lg)` |
+| xmlns | string | `http://www.w3.org/2000/svg` | sets xmlns SVG attribute |
+| xmlns_xlink | string | `http://www.w3.org/1999/xlink` | sets xmlns SVG attribute |
+
+#### Required attributes for each SVG
+
+| key | type | default | description | 
+|---|---|---|---|
+| title | string |  | The `<title>` element provides an accessible, short-text description of any SVG, may appear as a tool-tip in the browser |
+| name | string |  | The name of the svg file |
+|  |  |  |  |
+|  |  |  |  |
 
 ```javascript
 {
   "commonProperties":
   {
-      "hidden": "true",
-      "role": "img",
       "color": "currentColor",
-      "PngColor": "var(--color-type-theme-light-link)",
-      "PngSize": 24,
-      "width": "var(--auro-size-lg)",
       "height": "var(--auro-size-lg)",
+      "hidden": "true",
+      "path": "/icons"
+      "role": "img",
+      "viewBox": "0 0 24 24",
+      "width": "var(--auro-size-lg)",
       "xmlns": "http://www.w3.org/2000/svg",
       "xmlns_xlink": "http://www.w3.org/1999/xlink",
-      "viewBox": "0 0 24 24",
-      "path": "/icons"
+      
   },
   "icons": [
     {

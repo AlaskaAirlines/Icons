@@ -10,37 +10,34 @@
     "url": "https://github.com/AlaskaAirlines/OrionIcons"
   },
   "devDependencies": {
-    "@alaskaairux/orion-design-tokens": "^2.10.5",
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^7.6.0",
     "@semantic-release/changelog": "^3.0.4",
     "@semantic-release/git": "^7.0.16",
     "@semantic-release/npm": "^5.1.13",
-    "concurrently": "^4.1.0",
-    "convert-svg-to-png": "^0.5.0",
-    "copyfiles": "^2.1.0",
+    "chalk": "^3.0.0",
+    "copyfiles": "^2.2.0",
     "file-system": "^2.2.2",
     "husky": "^2.3.0",
     "jest": "^24.8.0",
     "jsonlint2": "^1.7.1",
-    "lodash": "^4.17.15",
     "nodemon": "^2.0.2",
     "npm-run-all": "^4.1.5",
     "semantic-release": "^15.13.21",
     "svglint": "^1.0.4"
   },
   "scripts": {
+    "postinstall": "node packageScripts/postinstall.js",
     "jsonlint": "jsonlint src/data/icons.json -q -V .jsonlintschema",
+    "copySass": "copyfiles -f ./src/*.scss ./dist",
     "svglint": "svglint dist/icons/*.svg dist/icons/alert/*.svg dist/icons/in-flight/*.svg dist/icons/interface/*.svg dist/icons/shop/*.svg dist/icons/social/*.svg dist/icons/terminal/*.svg --ci",
-    "primarybuild": "node scripts/primarybuild.js",
+    "generate": "node scripts/generate.js",
     "test": "npm-run-all svgjest jsonlint svglint",
     "svgjest": "jest",
     "sweep": "rm -rf ./dist",
-    "png@2x": "convert-svg-to-png --height 48px dist/icons/*24@2x.png",
-    "png@3x": "convert-svg-to-png --height 72px dist/icons/*24@3x.png",
-    "ciBuild": "npm-run-all sweep primarybuild test png@2x png@3x svgjest",
-    "devBuild": "npm-run-all sweep primarybuild test",
-    "watch": "nodemon -e svg,js --watch src --exec npm-run-all primarybuild test"
+    "ciBuild": "npm-run-all sweep generate test copySass svgjest",
+    "devBuild": "npm-run-all sweep generate test",
+    "watch": "nodemon -e svg,js --watch src --exec npm-run-all generate test"
   },
   "husky": {
     "hooks": {
