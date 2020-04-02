@@ -94,13 +94,13 @@ In this case, the Orion Icons should be noted as a peer dependency with install 
 
 Icons fall into a series of use categories, these are:
 
-```
-├── alert
-├── interface
-├── payment
-├── social
-├── terminal
-```
+| category | description |
+|---|---|
+| alert |Icons used specifically to alert users as to the state of awareness|
+| interface |Icons used to create interface enhancements| 
+|payment|Icons specifically to be used in a transaction flow|
+|social|Icons for use with social media|
+|terminal|Icons related to terminal experiences|
 
 For the purposes of backwards compatibility, legacy icons will **NOT** be categorized and deprecated. 
 
@@ -286,7 +286,7 @@ $ open icons.html
 
 ### Icon shape schema
 
-When adding new icons, be sure to follow this example to add the proper data to the `icons.json` file. Any attribute defined in the `"commonProperties"` object may be over-written in the individual `"icons"` object. 
+When adding new icons, be sure to follow the example below to add the proper data to the `icons.json` file. Any attribute defined in the `"commonProperties"` object may be over-written in the individual `"icons"` object. 
 
 #### Default attributes for each SVG
 
@@ -297,6 +297,7 @@ When adding new icons, be sure to follow this example to add the proper data to 
 | hidden | boolean | `true` | sets HTML attribute `hidden` to `true` for a11y |
 | path | string | `/icons` | sets path for pre-build icon; icons that require full color spec, use `"path": "/icons/fullColor"` |
 | role | string | `img` | sets aria role to `img` |
+| style | string | `ico_squareLarge` | value is applied to SVG as CSS class attribute |
 | viewbox | string | `0 0 24 24` | sets SVG attribute to default shape |
 | width | string | `var(--auro-size-lg)` | sets CSS property of `width` to `var(--auro-size-lg)` |
 | xmlns | string | `http://www.w3.org/2000/svg` | sets xmlns SVG attribute |
@@ -306,47 +307,49 @@ When adding new icons, be sure to follow this example to add the proper data to 
 
 | key | type | default | description | 
 |---|---|---|---|
-| title | string |  | The `<title>` element provides an accessible, short-text description of any SVG, may appear as a tool-tip in the browser |
 | name | string |  | The name of the svg file |
-|  |  |  |  |
-|  |  |  |  |
+| category | string |  | Defines categorical placement of the icon |
 
+#### Optional attributes for each SVG
+
+| key | type | default | description | 
+|---|---|---|---|
+| desc | string |  | The `<desc>` element provides an accessible, long-text description of any SVG |
+| title | string |  | The `<title>` element provides an accessible, short-text description of any SVG, may appear as a tool-tip in the browser; can be derived from the file name |
 ```javascript
 {
   "commonProperties":
   {
-      "color": "currentColor",
-      "height": "var(--auro-size-lg)",
       "hidden": "true",
-      "path": "/icons"
       "role": "img",
-      "viewBox": "0 0 24 24",
+      "color": "currentColor",
       "width": "var(--auro-size-lg)",
+      "height": "var(--auro-size-lg)",
       "xmlns": "http://www.w3.org/2000/svg",
       "xmlns_xlink": "http://www.w3.org/1999/xlink",
-      
+      "viewBox": "0 0 24 24",
+      "path": "/icons",
+      "style": "ico_squareLarge"
   },
   "icons": [
     {
-      "title": "Error",
-      "name": "error",
-      "desc": "Error alert icon",
-      "style": "ico_squareLarge",
-      "category": "alert"
+      "name": "close",
+      "desc": "Option to close current experience",
+      "width": "var(--auro-size-md)",
+      "height": "var(--auro-size-md)",
+      "style": "ico_squareMed",
+      "viewBox": "0 0 48 48"
     },
     {
-      "title": "CC Alaska",
-      "name": "cc-alaska",
-      "desc": "Alaska Credit Card",
-      "style": "ico_squareLarge",
-      "category": "payment",
-      "path": "/icons/fullColor"
+      "title": "Close",
+      "name": "close-lg",
+      "desc": "Option to close current experience"
     }
   ]
 }
 ```
 
-**Discouraged**: For `color` and `width` do not use hard-coded values. To be compliant you must use Orion Design Token references.
+**Discouraged**: For `color` and `width` do not use hard-coded values. To be compliant you must use Auro Design Token references.
 
 ### Icon guidelines
 
@@ -390,21 +393,6 @@ Please do not include unnecessary specifications, attributes, spaces and returns
     </g>
 </svg>
 ```
-
-## npm API
-
-The following scripts are available from `./package.json`
-
-| script | Description |
-|----|----|
-| svgjest | runs `jest` to ensure that `index.js` and `./data/icons.json` are formatted correctly |
-| jsonlint | validates that `./data/orion-icons.json` is correctly formatted JSON |
-| svglint | validates all SVGs per spec `./.svglintrc.js`|
-| test | runs jsonlint and svglint |
-| copySass | build step to copy resource |
-| newbuild | to execute `./scripts/build.js` |
-| png@2x | build PNG files from SVGs |
-
 
 ## Thanks!
 
