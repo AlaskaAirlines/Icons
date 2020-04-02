@@ -11,10 +11,7 @@ notifactions:
   email: false
 
 before_script:
-  - npm run primarybuild
-  - npm run sassRender
-  - npm run png@2x
-  - npm run png@3x
+  - npm run generate
   - npm run copySass
   - npm run svgjest
 
