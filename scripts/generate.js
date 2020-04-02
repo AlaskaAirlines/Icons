@@ -39,7 +39,6 @@ const icons = {};
 console.log(`Generating Icons
 `)
 
-//console.log(data.icons);
 data.icons.forEach((iconRaw, index) => {
   let count = index + 1;
   let icon = {
@@ -47,25 +46,22 @@ data.icons.forEach((iconRaw, index) => {
     ...iconRaw
   }
 
-  const filename = icon.name;
+  const iconName = icon.name;
   const distFilename = getDistFilename(icon);
-  icon.svg = fs.readFileSync(`${iconsDir}${icon.path}/${filename}.svg`, 'utf8');
+  icon.svg = fs.readFileSync(`${iconsDir}${icon.path}/${iconName}.svg`, 'utf8');
   const insertPos = icon.svg.indexOf("svg") + 3;
   const height = icon.height ? `height: ${icon.height};` : '';
   const width = icon.width ? `width: ${icon.width};` : '';
   const elementStyle = `style="${width} ${height} fill: ${icon.color}" `;
-
-  icon.style = icon.style || 'ico_squareLarge';
 
   // If svg has legacy HTML structure, replace with empty string
   icon.svg = icon.svg.replace(`<title>iconTitle</title>
   <desc>iconDesc</desc>
   <style></style>`, '');
 
-  // Build new Title and Description from icon data
-  const altName = filename.replace(/-/g, ' ');
-  icon.title = icon.title || titleCase(altName);
-  icon.desc = icon.desc || `${altName} icon`;
+  // Build new Title from icon file name
+  const titleName = iconName.replace(/-/g, ' ');
+  icon.title = icon.title || titleCase(titleName);
   const split = icon.svg.split(/(^<svg.*>)/);
 
   // Scrub out any pre-existing attributes
