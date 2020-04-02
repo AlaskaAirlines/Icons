@@ -27,24 +27,20 @@
     "nodemon": "^2.0.2",
     "npm-run-all": "^4.1.5",
     "semantic-release": "^15.13.21",
-    "style-dictionary": "^2.8.1",
-    "svglint": "^1.0.4",
-    "wc-sass-render": "^1.2.1"
+    "svglint": "^1.0.4"
   },
   "scripts": {
     "jsonlint": "jsonlint src/data/icons.json -q -V .jsonlintschema",
     "svglint": "svglint dist/icons/*.svg dist/icons/alert/*.svg dist/icons/in-flight/*.svg dist/icons/interface/*.svg dist/icons/shop/*.svg dist/icons/social/*.svg dist/icons/terminal/*.svg --ci",
     "primarybuild": "node scripts/primarybuild.js",
-    "sassRender": "sass-render dist/tokens/*.css",
-    "copySass": "copyfiles -f ./src/*.scss ./dist",
     "test": "npm-run-all svgjest jsonlint svglint",
     "svgjest": "jest",
-    "delete": "rm -rf ./dist",
+    "sweep": "rm -rf ./dist",
     "png@2x": "convert-svg-to-png --height 48px dist/icons/*24@2x.png",
     "png@3x": "convert-svg-to-png --height 72px dist/icons/*24@3x.png",
-    "ciBuild": "npm-run-all delete primarybuild test sassRender png@2x png@3x copySass svgjest",
-    "devBuild": "npm-run-all delete primarybuild test sassRender copySass",
-    "watch": "nodemon -e svg,scss,js --watch src --exec npm-run-all primarybuild test"
+    "ciBuild": "npm-run-all sweep primarybuild test png@2x png@3x svgjest",
+    "devBuild": "npm-run-all sweep primarybuild test",
+    "watch": "nodemon -e svg,js --watch src --exec npm-run-all primarybuild test"
   },
   "husky": {
     "hooks": {

@@ -14,7 +14,6 @@ const buildIconsDir = `${__dirname}/../dist/icons`;
 const data = require(dataFile);
 const fileSys = require('file-system');
 const fs = require('fs');
-const DesignTokens = require('style-dictionary').extend('./scripts/colorTokensConfig.json');
 
 const { getDistFilename, getDistSubFolder } = require('./utils');
 
@@ -116,7 +115,8 @@ SizeMedIcons.forEach(icon => {
   const elementStyle = `style="fill: ${icon.PngColor}" `;
   const iconStyle = `
   <style xmlns="http://www.w3.org/2000/svg" type="text/css"><![CDATA[
-    @import url("../../dist/tokens/colorToken.css");
+    @import url("..node_modules/@alaskaairux/orion-design-tokens/dist/tokens/CSSCustomProperties--orionColors.css");
+    @import url("..node_modules/@alaskaairux/orion-design-tokens/dist/tokens/CSSCustomProperties--auroColors.css");
   ]]></style>
   `
 
@@ -133,7 +133,7 @@ SizeMedIcons.forEach(icon => {
   fs.writeFileSync( `${buildIconsDir}/${distFilename}--24@2x.png`, icon.svg);
   fs.writeFileSync( `${buildIconsDir}/${distFilename}--24@3x.png`, icon.svg);
 
-  // console.log(`${filename}.js / ${filename}.png written to ./dist dir`)
+  console.log(`${filename}.js / ${filename}.png written to ./dist dir`)
 });
 
 // export 20px PNGs versions of Icons; alt colors
@@ -151,7 +151,8 @@ altColorSet.forEach(icon => {
   const elementStyle = `style="fill: ${icon.AltPngColor}" `;
   const iconStyle = `
   <style xmlns="http://www.w3.org/2000/svg" type="text/css"><![CDATA[
-    @import url("../../dist/tokens/colorToken.css");
+    @import url("..node_modules/@alaskaairux/orion-design-tokens/dist/tokens/CSSCustomProperties--orionColors.css");
+    @import url("..node_modules/@alaskaairux/orion-design-tokens/dist/tokens/CSSCustomProperties--auroColors.css");
   ]]></style>
   `
 
@@ -170,41 +171,6 @@ altColorSet.forEach(icon => {
   fs.writeFileSync( `${buildIconsDir}/${distFilename}-alt--24@3x.png`, icon.svg);
 });
 
-// Standard Style Dictionary build function
-DesignTokens.buildPlatform('colorTokens');
-
-
-// Custom Style Dictionary build function
-const CustomStyleDictionary = require('style-dictionary');
-const _ = require('lodash');
-
-function variablesWithPrefix(prefix, properties) {
-  return _.map(properties, function(prop) {
-    var to_ret_prop = prefix + prop.name + ': ' + (prop.attributes.category === 'asset' ? '"' + prop.value + '"' : prop.value) + ';';
-
-    if (prop.comment) to_ret_prop = to_ret_prop.concat(' /* ' + prop.comment + ' */');
-    return to_ret_prop;
-  })
-    .filter(function(strVal) {
-    return !!strVal
-  })
-    .join('\n');
-}
-
-function fileHeader(options) {
-  var to_ret = '';
-  // for backward compatibility we need to have the user explicitly hide them
-  var showFileHeader = (options) ? options.showFileHeader : true;
-  if (showFileHeader) {
-    to_ret += '/**\n';
-    to_ret += ' * Do not edit directly\n';
-    to_ret += ' * Generated on ' + new Date().toUTCString() + '\n';
-    to_ret += ' */\n\n';
-  }
-
-  return to_ret;
-}
-
 function titleCase(str) {
   let splitStr = str.toLowerCase().split(' ');
   for (let i = 0; i < splitStr.length; i++) {
@@ -212,17 +178,6 @@ function titleCase(str) {
   }
   return splitStr.join(' ');
 }
-
-CustomStyleDictionary.registerFormat({
-  name: 'custom/css/variables',
-  formatter: function(dictionary, platform) {
-    return fileHeader(this.options) + ':host {\n' + variablesWithPrefix(' --', dictionary.allProperties) + '\n}\n';
-  }
-});
-
-// Build custom platform(s)
-const componentConfig = CustomStyleDictionary.extend('./scripts/CSSCustomProperty.json');
-componentConfig.buildAllPlatforms();
 
 
 console.log("")
