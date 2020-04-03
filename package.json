@@ -29,13 +29,16 @@
   "scripts": {
     "postinstall": "node packageScripts/postinstall.js",
     "jsonlint": "jsonlint src/data/icons.json -q -V .jsonlintschema",
+    "copyStyles": "npm-run-all copySass copyCss copyCssJs",
     "copySass": "copyfiles -f ./src/*.scss ./dist",
+    "copyCss": "copyfiles -f ./src/tokens/*.css ./dist/tokens",
+    "copyCssJs": "copyfiles -f ./src/tokens/*.js ./dist/tokens",
     "svglint": "svglint dist/icons/*.svg dist/icons/alert/*.svg dist/icons/in-flight/*.svg dist/icons/interface/*.svg dist/icons/shop/*.svg dist/icons/social/*.svg dist/icons/terminal/*.svg --ci",
     "generate": "node scripts/generate.js",
     "test": "npm-run-all svgjest jsonlint svglint",
     "svgjest": "jest",
     "sweep": "rm -rf ./dist",
-    "ciBuild": "npm-run-all sweep generate test copySass svgjest",
+    "ciBuild": "npm-run-all sweep generate test copyStyles svgjest",
     "devBuild": "npm-run-all sweep generate test",
     "watch": "nodemon -e svg,js --watch src --exec npm-run-all generate test"
   },

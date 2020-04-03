@@ -12,7 +12,7 @@ notifactions:
 
 before_script:
   - npm run generate
-  - npm run copySass
+  - npm run copyStyles
   - npm run svgjest
 
 after_success:
