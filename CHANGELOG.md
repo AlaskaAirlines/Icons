@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+## [2.1.4](https://github.com/AlaskaAirlines/OrionIcons/compare/v2.1.3...v2.1.4) (2020-04-03)
+
+
+### Bug Fixes
+
+* [#19](https://github.com/AlaskaAirlines/OrionIcons/issues/19) remove dependency on style dictionary ([aa8eca2](https://github.com/AlaskaAirlines/OrionIcons/commit/aa8eca2))
+* resolve [#28](https://github.com/AlaskaAirlines/OrionIcons/issues/28) update data file per refactor ([7820d29](https://github.com/AlaskaAirlines/OrionIcons/commit/7820d29))
+
 ## [2.1.3](https://github.com/AlaskaAirlines/OrionIcons/compare/v2.1.2...v2.1.3) (2020-03-25)
 
 
