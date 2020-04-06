@@ -40,7 +40,7 @@ Within React, Sass requires a `~` character prior to the importing library, exam
 @import '~@alaskaairux/orion-icons/dist/icons';
 ```
 
-Due to dependency on Auro tokens, be sure to import the Sass variables prior to importing the Icons selectors. 
+Due to dependency on Auro tokens, be sure to import the Sass variables prior to importing the Icons selectors.
 
 ```scss
 @import "~@alaskaairux/orion-design-tokens/dist/tokens/SCSSVariables";
@@ -90,19 +90,19 @@ It is not necessary to load the Icon CSS custom properties within the scope of t
 
 In this case, the Orion Icons should be noted as a peer dependency with install instructions at the global level.
 
-## Categories 
+## Categories
 
 Icons fall into a series of use categories, these are:
 
 | category | description |
 |---|---|
 | alert |Icons used specifically to alert users as to the state of awareness|
-| interface |Icons used to create interface enhancements| 
+| interface |Icons used to create interface enhancements|
 |payment|Icons specifically to be used in a transaction flow|
 |social|Icons for use with social media|
 |terminal|Icons related to terminal experiences|
 
-For the purposes of backwards compatibility, legacy icons will **NOT** be categorized and deprecated. 
+For the purposes of backwards compatibility, legacy icons will **NOT** be categorized and deprecated.
 
 ## Node application dependency
 
@@ -268,7 +268,7 @@ See [angular-svg-icon](https://www.npmjs.com/package/angular-svg-icon) for more 
 Adding new icons to this repository requires a few steps.
 
 1. Add a new icon `.svg` file to the `src/icons/` directory (see DOs and DON'Ts below)
-1. If the icons is to retain its designed color, please place the new icon in the `src/icons/fullColor` directory 
+1. If the icons are to retain designed color specs, please place the new icon in the `src/icons/fullColor` directory
 1. Add **shape schema** to `./src/data/icons.json` file (see example below)
 1. Submit pull request for approval
 
@@ -286,11 +286,11 @@ $ open icons.html
 
 ### Icon shape schema
 
-When adding new icons, be sure to follow the example below to add the proper data to the `icons.json` file. Any attribute defined in the `"commonProperties"` object may be over-written in the individual `"icons"` object. 
+When adding new icons, be sure to follow the example below to add the proper data to the `icons.json` file. Any attribute defined in the `"commonProperties"` object may be over-written in the individual `"icons"` object.
 
 #### Default attributes for each SVG
 
-| key | type | default | description | 
+| key | type | default | description |
 |---|---|---|---|
 | color | string | `currentcolor` | sets CSS property of `color` to `currentcolor` |
 | height | string | `var(--auro-size-lg)` | sets CSS property of `height` to `var(--auro-size-lg)` |
@@ -305,14 +305,14 @@ When adding new icons, be sure to follow the example below to add the proper dat
 
 #### Required attributes for each SVG
 
-| key | type | default | description | 
+| key | type | default | description |
 |---|---|---|---|
 | name | string |  | The name of the svg file |
 | category | string |  | Defines categorical placement of the icon |
 
 #### Optional attributes for each SVG
 
-| key | type | default | description | 
+| key | type | default | description |
 |---|---|---|---|
 | desc | string |  | The `<desc>` element provides an accessible, long-text description of any SVG |
 | title | string |  | The `<title>` element provides an accessible, short-text description of any SVG, may appear as a tool-tip in the browser; can be derived from the file name |
@@ -360,7 +360,7 @@ All new icon pull requests MUST comply with the following specifications. Any pu
 
 #### DO
 
-Please reduce the SVG HTML to only the following attributes. The build process will scrub away any unwanted attributes from the SVG file. 
+Please reduce the SVG HTML to only the following attributes. The build process will scrub away any unwanted attributes from the SVG file.
 
 ```html
 <svg>
@@ -372,7 +372,7 @@ Please reduce the SVG HTML to only the following attributes. The build process w
 
 #### DO NOT
 
-Please do not include unnecessary specifications, attributes, spaces and returns in the HTML as they will be scrubbed away in the build process. Anything not manually removed or scrubbed will fail the svglint tests. 
+Please do not include unnecessary specifications, attributes, spaces and returns in the HTML as they will be scrubbed away in the build process. Anything not manually removed or scrubbed will fail the svglint tests.
 
 1. xml version
 1. `width` or `height` hard coded HTML attributes
