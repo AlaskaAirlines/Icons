@@ -15,16 +15,7 @@ All currently supported icons are located in the `icons/` directory.
 ```bash
 $ npm i @alaskaairux/orion-icons
 ```
-
-## Icon styles
-
-Icon styles are inheriting from Auro Design Tokens. Any reference to the following import is deprecated and should be discontinued.
-
-```scss
-@import `./node_modules/@alaskaairux/orion-icons/dist/tokens/CSSTokenProperties.css`
-```
-
-### Using Sass styles (IE fallback)
+## Using Sass styles (IE fallback)
 
 For use in situations where CSS custom properties are not supported. In the `dist/` directory is `icons.scss`. Import this Sass file for default shape styles.
 
