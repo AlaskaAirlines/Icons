@@ -1,5 +1,20 @@
 # Semantic Release Automated Changelog
 
+# [3.0.0](https://github.com/AlaskaAirlines/Icons/compare/v2.1.5...v3.0.0) (2020-04-09)
+
+
+### Performance Improvements
+
+* **auroicons:** update package to rep name change ([945d997](https://github.com/AlaskaAirlines/Icons/commit/945d997cd30665cc617cb99823ae8fa0ad87b326))
+
+
+### BREAKING CHANGES
+
+* **auroicons:** this commit will create a new namespace for the auro icons,
+anyone using the deprecated orion icons package will not be updated.
+
+this update will also remove all deprecated icons from the repo
+
 ## [2.1.5](https://github.com/AlaskaAirlines/OrionIcons/compare/v2.1.4...v2.1.5) (2020-04-09)
 
 
