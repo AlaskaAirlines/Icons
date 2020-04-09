@@ -15,68 +15,6 @@
   },
   "icons": [
     {
-      "name": "close",
-      "desc": "option to close current experience",
-      "width": "var(--auro-size-md)",
-      "height": "var(--auro-size-md)",
-      "style": "ico_squareMed",
-      "viewBox": "0 0 48 48"
-    },
-    {
-      "title": "Close",
-      "name": "close-lg",
-      "desc": "option to close current experience"
-    },
-    {
-      "title": "Close",
-      "name": "close-sml",
-      "desc": "option to close current experience"
-    },
-    {
-      "title": "Checkmark display indicator",
-      "name": "classic-checkmark",
-      "desc": "Indicate when an option has been checked",
-      "width": "var(--auro-size-md)",
-      "style": "ico__classiccheckmark",
-      "category": "interface",
-      "viewBox": "0 0 48 42",
-      "note": "TODO - remove interface category post next release"
-    },
-    {
-      "title": "This indicates a link to an external site that may not follow the same accessibility or privacy policies as Alaska Airlines. By selecting a partner link you agree to share your data with these sites.",
-      "name": "step-out-lg",
-      "desc": "Notice indicator to alert user with disabilities that action will result in the browser opening a new context."
-    },
-    {
-      "title": "This indicates a link to an external site that may not follow the same accessibility or privacy policies as Alaska Airlines. By selecting a partner link you agree to share your data with these sites.",
-      "name": "step-out",
-      "desc": "Notice indicator to alert user with disabilities that action will result in the browser opening a new context.",
-      "width": "0.6rem",
-      "height": "0.6rem",
-      "style": "ico_squareSmall",
-      "viewBox": "0 0 512 512"
-    },
-    {
-      "name": "caret-down",
-      "desc": "Action indicator; content exposed below"
-    },
-    {
-      "name": "caret-left",
-      "desc": "Action indicator; content exposed to the left"
-    },
-    {
-      "name": "caret-right",
-      "desc": "Action indicator; content exposed to the right"
-    },
-    {
-      "name": "caret-up",
-      "desc": "Action indicator; content exposed above"
-    },
-
-
-
-
-    {
       "name": "error",
       "desc": "Error alert indicator",
       "category": "alert"
@@ -117,10 +55,6 @@
       "desc": "Alerts user of troubling or concerning situation",
       "category": "alert"
     },
-
-
-
-
     {
       "title": "Up pointer",
       "name": "arrow-up",
@@ -400,8 +334,6 @@
       "name": "navigation-menu",
       "category": "interface"
     },
-
-
     {
       "name": "entertainment",
       "category": "in-flight"
@@ -438,7 +370,6 @@
       "name": "wifi-disabled",
       "category": "in-flight"
     },
-
     {
       "title": "Boarding pass",
       "name": "boarding-pass-filled",
@@ -506,8 +437,6 @@
       "desc": "indicate round-trip flight opton",
       "category": "terminal"
     },
-
-
     {
       "name": "facebook",
       "desc": "Facebook social media icon",
@@ -518,9 +447,6 @@
       "desc": "Instagram social media icon",
       "category": "social"
     },
-
-
-
     {
       "name": "cart",
       "desc": "icon used to indicate items related to purchases",
@@ -531,9 +457,6 @@
       "desc": "icon used to indicate items related to purchases",
       "category": "shop"
     },
-
-
-
     {
       "name": "credit-card",
       "desc": "Default credit card icon",
