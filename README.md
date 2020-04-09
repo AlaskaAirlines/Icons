@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/AlaskaAirlines/OrionIcons.svg?branch=master)](https://travis-ci.org/AlaskaAirlines/OrionDesignTokens)
-![npm (scoped)](https://img.shields.io/npm/v/@alaskaairux/orion-icons.svg?color=orange)
-![NPM](https://img.shields.io/npm/l/@alaskaairux/orion-icons.svg?color=blue)
+![npm (scoped)](https://img.shields.io/npm/v/@alaskaairux/icons.svg?color=orange)
+![NPM](https://img.shields.io/npm/l/@alaskaairux/icons.svg?color=blue)
 
 # SVG Icon Library
 
@@ -13,46 +13,26 @@ All currently supported icons are located in the `icons/` directory.
 ## Install
 
 ```bash
-$ npm i @alaskaairux/orion-icons
+$ npm i @alaskaairux/icons
 ```
 ## Using Sass styles (IE fallback)
 
 For use in situations where CSS custom properties are not supported. In the `dist/` directory is `icons.scss`. Import this Sass file for default shape styles.
 
-<span style="color: red">`orion-icons.scss` is deprecated, please reference `icons.scss`.</span>
-
 ```scss
-@import '@alaskaairux/orion-icons/dist/icons';
+@import '@alaskaairux/icons/dist/icons';
 ```
 
 Within React, Sass requires a `~` character prior to the importing library, example:
 
 ```scss
-@import '~@alaskaairux/orion-icons/dist/icons';
+@import '~@alaskaairux/icons/dist/icons';
 ```
 
 Due to dependency on Auro tokens, be sure to import the Sass variables prior to importing the Icons selectors.
 
 ```scss
 @import "~@alaskaairux/orion-design-tokens/dist/tokens/SCSSVariables";
-```
-
-#### <span style="color: red">DEPRECATION WARNING! </span>
-
-<span style="color: red">__NOTE: This process has been deprecated!__ </span>
-
-<span style="color: red">Due to Auro updates, sizes are uniform. There is no longer a need to have individual selectors. If you are using these selectors, simply remove the reference to `$iconMap` to discontinue use.</span>
-
-By default, no CSS classes are created when importing this file. To opt-in to the icon styles needed, add a config variable map, prior to import, that will set a flag to `true` to output the classes needed. See the following example:
-
-```scss
-$iconMap: (
-  toggleArrow: true,
-  chevronArrow: true,
-  classiccheckmark: true,
-) ;
-
-@import '~@alaskaairux/orion-icons/dist/icons';
 ```
 
 ### Using Icons/Tokens within a LitElement Custom Element
@@ -62,7 +42,7 @@ When using Icons within the scope of a LitElement Custom Element, the `CSSTokenP
 Add the following line to the head of the Custom Element document:
 
 ```javascript
-import iconProperties from '@alaskaairux/orion-icons/dist/tokens/CSSTokenProperties-css.js';
+import iconProperties from '@alaskaairux/icons/dist/tokens/CSSTokenProperties-css.js';
 ```
 
 Within the `render()`, then within the `return html` template literal, add the following:
@@ -104,7 +84,7 @@ Via a node.js dependency or other node like dependency management architecture, 
 It is suggested that developers list individual dependencies per UI component, like so:
 
 ```javascript
-const warning = require('@alaskaairux/orion-icons/dist/icons/alert/warning');
+const warning = require('@alaskaairux/icons/dist/icons/alert/warning');
 ```
 
 Within the UI component a developer can reference the object assigned to the newly created variable to get the specific icon's SVG code:
@@ -120,7 +100,7 @@ This will return the icon's SVG HTML inline.
 Using either method, the SVG is captured as an object that can be manipulated. For example, calling the `warning.js` file as shown below ...
 
 ```javascript
-const warning = require('@alaskaairux/orion-icons/dist/icons/alert/warning');
+const warning = require('@alaskaairux/icons/dist/icons/alert/warning');
 ```
 
 ... will output the following HTML
@@ -155,7 +135,7 @@ warning.svg = warning.svg.replace(/aria-hidden="true"/g, `aria-hidden="false"`);
 
 When using other JavaScript development frameworks, the process above may not parse to HTML. To address this, there are a few techniques that could be used.
 
-Within the npm, `@alaskaairux/orion-icons/dist/icons/`, developers may access the SVGs directly for consumption into the development environment.
+Within the npm, `@alaskaairux/icons/dist/icons/`, developers may access the SVGs directly for consumption into the development environment.
 
 ### JS versions of SVGs
 
@@ -180,7 +160,7 @@ In most cases, the default exported JS file will work. But in some cases, the ES
 Lit-element requires the ES6 module export syntax for use, so an example dependency reference would be:
 
 ```javascript
-import warning from '@alaskaairux/orion-icons/dist/icons/alert/warning_es6.js';
+import warning from '@alaskaairux/icons/dist/icons/alert/warning_es6.js';
 ```
 
 Parsing out the SVG HTML to become DOM requires lines of code within the scope of the new custom element class, for example:
@@ -203,7 +183,7 @@ Now that the SVG DOM is assigned to the `this.svg` variable, rendering this with
 React supports a standard for linking to assets and using them within the context of a component.
 
 ```javascript
-import warning from '@alaskaairux/orion-icons/dist/icons/alert/warning.svg';
+import warning from '@alaskaairux/icons/dist/icons/alert/warning.svg';
 ```
 
 Within the component's `render()` function, passing in the new variable into the `src` attribute of an `<img>` element will render the asset.
@@ -217,7 +197,7 @@ Within the component's `render()` function, passing in the new variable into the
 Using `svg-react-loader` in combination with webpack will render the SVG inline from the designated resource location.
 
 ```javascript
-import warning from '-!svg-react-loader!@alaskaairux/orion-icons/dist/icons/alert/warning.svg';
+import warning from '-!svg-react-loader!@alaskaairux/icons/dist/icons/alert/warning.svg';
 ```
 
 Within the component's `render()` function, simply reference the new component that is generated via `svg-react-loader`.
@@ -237,14 +217,14 @@ With SVG React Loader, users are also able to over-ride attributes within the SV
 The above syntax may cause issues with your eslint configurations. The following error may appear:
 
 ```bash
-Unexpected '!' in '-!svg-react-loader?name=Icon!@alaskaairux/orion-icons/dist/icons/alert/warning.svg'. Do not use import syntax to configure webpack loaders
+Unexpected '!' in '-!svg-react-loader?name=Icon!@alaskaairux/icons/dist/icons/alert/warning.svg'. Do not use import syntax to configure webpack loaders
 ```
 
 In this event, adding the following comments within the component may address the issue:
 
 ```javascript
 // eslint-disable-next-line import/no-webpack-loader-syntax
-import Arrowdown from '-!svg-react-loader?name=Icon!@alaskaairux/orion-icons/dist/icons/alert/warning.svg';
+import Arrowdown from '-!svg-react-loader?name=Icon!@alaskaairux/icons/dist/icons/alert/warning.svg';
 ```
 
 ### Angular SVG Icon

@@ -1,13 +1,13 @@
 {
-  "name": "@alaskaairux/orion-icons",
-  "description": "Orion Design System icons",
+  "name": "@alaskaairux/icons",
+  "description": "Alaska Air and Auro Design System Icons",
   "version": "2.1.5",
   "main": "dist/index.js",
   "author": "Alaska Design and Research",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AlaskaAirlines/OrionIcons"
+    "url": "https://github.com/AlaskaAirlines/Icons"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
@@ -82,7 +82,7 @@
   },
   "keywords": [
     "alaska airlines",
-    "orion design system",
+    "auro design system",
     "icons"
   ],
   "contributors": [
