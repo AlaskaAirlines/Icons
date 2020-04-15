@@ -1,14 +1,10 @@
-[![Build Status](https://travis-ci.org/AlaskaAirlines/OrionIcons.svg?branch=master)](https://travis-ci.org/AlaskaAirlines/OrionDesignTokens)
+[![Build Status](https://travis-ci.org/AlaskaAirlines/Icons.svg?branch=master)](https://travis-ci.org/AlaskaAirlines/OrionDesignTokens)
 ![npm (scoped)](https://img.shields.io/npm/v/@alaskaairux/icons.svg?color=orange)
 ![NPM](https://img.shields.io/npm/l/@alaskaairux/icons.svg?color=blue)
 
 # SVG Icon Library
 
 The focus of this repository is to manage, at scale, the enterprise need for icons in the new Auro Design System and deprecate any legacy items. Please see all supporting documentation for contributing to, and consuming icons from the Orion SVG Icon Library.
-
-## Supported icons
-
-All currently supported icons are located in the `icons/` directory.
 
 ## Install
 
@@ -51,15 +47,11 @@ Within the `render()`, then within the `return html` template literal, add the f
 ${iconProperties}
 ```
 
-This will inset the Token output within the scope of the shadow DOM Custom Element and render the appropriate values per the CSS Custom Properties.
-
-In this case, Orion Icons are a direct dependency of the custom element.
+This will insert the Token output within the scope of the shadow DOM Custom Element and render the appropriate values per the CSS Custom Properties.
 
 #### Using Icon Properties outside the shadow DOM
 
-It is not necessary to load the Icon CSS custom properties within the scope of the shadow DOM. As long as the variables are made available from the global scope of the project, the CSS custom properties will pierce the shadow DOM and style the icons.
-
-In this case, the Orion Icons should be noted as a peer dependency with install instructions at the global level.
+When using an icon, it is not necessary to load the Icon CSS custom properties within the scope of the shadow DOM. As long as the variables are made available from the global scope of the project, the CSS custom properties will pierce the shadow DOM and style the icons.
 
 ## Categories
 
@@ -67,13 +59,13 @@ Icons fall into a series of use categories, these are:
 
 | category | description |
 |---|---|
-| alert |Icons used specifically to alert users as to the state of awareness|
-| interface |Icons used to create interface enhancements|
-|payment|Icons specifically to be used in a transaction flow|
-|social|Icons for use with social media|
-|terminal|Icons related to terminal experiences|
-
-For the purposes of backwards compatibility, legacy icons will **NOT** be categorized and deprecated.
+| alert | Icons used specifically to alert users as to the state of awareness |
+| in-flight | icons reserved for 'day of travel' user experiences |
+| interface | Icons used to create interface enhancements |
+| payment | Icons specifically to be used in a transaction flow |
+| shop | icons for use with shopping experiences |
+| social | Icons for use with social media |
+| terminal | Icons related to terminal experiences |
 
 ## Node application dependency
 
@@ -227,13 +219,6 @@ In this event, adding the following comments within the component may address th
 import Arrowdown from '-!svg-react-loader?name=Icon!@alaskaairux/icons/dist/icons/alert/warning.svg';
 ```
 
-### Angular SVG Icon
-
-For use with Angular projects, `angular-svg-icon` renders a component that will render the SVG inline from the designated resource location.
-
-See [angular-svg-icon](https://www.npmjs.com/package/angular-svg-icon) for more information.
-
-
 ## Adding Icons
 
 Adding new icons to this repository requires a few steps.
@@ -280,13 +265,18 @@ When adding new icons, be sure to follow the example below to add the proper dat
 |---|---|---|---|
 | name | string |  | The name of the svg file |
 | category | string |  | Defines categorical placement of the icon |
+| desc | string |  | The `<desc>` element provides an accessible, long-text description of any SVG |
 
 #### Optional attributes for each SVG
 
 | key | type | default | description |
 |---|---|---|---|
-| desc | string |  | The `<desc>` element provides an accessible, long-text description of any SVG |
 | title | string |  | The `<title>` element provides an accessible, short-text description of any SVG, may appear as a tool-tip in the browser; can be derived from the file name |
+
+The `title` attribute is needed when you may want a simpler name than the file name. In the example data below, there is the `information-stroke.svg`, but the name `information-stroke` is meaningless if rendered to the browser. Updating the title to simply be `information` will address that. 
+
+#### Example data
+
 ```javascript
 {
   "commonProperties":
@@ -304,17 +294,15 @@ When adding new icons, be sure to follow the example below to add the proper dat
   },
   "icons": [
     {
-      "name": "close",
-      "desc": "Option to close current experience",
-      "width": "var(--auro-size-md)",
-      "height": "var(--auro-size-md)",
-      "style": "ico_squareMed",
-      "viewBox": "0 0 48 48"
+      "name": "error",
+      "desc": "Error alert indicator",
+      "category": "alert"
     },
     {
-      "title": "Close",
-      "name": "close-lg",
-      "desc": "Option to close current experience"
+      "title": "Information",
+      "name": "information-stroke",
+      "desc": "Important information indicator",
+      "category": "alert"
     }
   ]
 }
