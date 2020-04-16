@@ -491,6 +491,11 @@
       "desc": "Visa Credit Card",
       "category": "payment",
       "path": "/icons/fullColor"
+    },
+    {
+      "name": "food-and-drink",
+      "desc": "icon used for food and drink",
+      "category": "in-flight"
     }
   ]
 }
