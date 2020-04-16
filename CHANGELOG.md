@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [3.1.0](https://github.com/AlaskaAirlines/Icons/compare/v3.0.0...v3.1.0) (2020-04-16)
+
+
+### Features
+
+* add 'food-and-drink' icon ([353829d](https://github.com/AlaskaAirlines/Icons/commit/353829d3419ebe7cd28fd5835bbca33c23a7eaf1))
+
 # [3.0.0](https://github.com/AlaskaAirlines/Icons/compare/v2.1.5...v3.0.0) (2020-04-09)
 
 
