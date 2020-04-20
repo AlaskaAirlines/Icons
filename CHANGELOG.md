@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [3.1.1](https://github.com/AlaskaAirlines/Icons/compare/v3.1.0...v3.1.1) (2020-04-20)
+
+
+### Bug Fixes
+
+* update docs to clearify new work ([cf64cf4](https://github.com/AlaskaAirlines/Icons/commit/cf64cf4d2b93ae4559b74733afee7f2087a18872))
+
 # [3.1.0](https://github.com/AlaskaAirlines/Icons/compare/v3.0.0...v3.1.0) (2020-04-16)
 
 
