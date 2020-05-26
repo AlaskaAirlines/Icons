@@ -1,6 +1,6 @@
-# SVG Icon Library
+# Auro Icon Library
 
-The focus of this repository is to manage, at scale, the enterprise need for icons in the new Auro Design System and deprecate any legacy items. Please see all supporting documentation for contributing to, and consuming icons from the Orion SVG Icon Library.
+The focus of this repository is to manage, at scale, the enterprise need for icons in the new Auro Design System and deprecate any legacy items. Please see all supporting documentation for contributing to, and consuming icons from this SVG icon library.
 
 ## Install
 
