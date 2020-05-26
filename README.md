@@ -1,17 +1,17 @@
-[![Build Status](https://travis-ci.org/AlaskaAirlines/Icons.svg?branch=master)](https://travis-ci.org/AlaskaAirlines/OrionDesignTokens)
-![npm (scoped)](https://img.shields.io/npm/v/@alaskaairux/icons.svg?color=orange)
-![NPM](https://img.shields.io/npm/l/@alaskaairux/icons.svg?color=blue)
-
 # SVG Icon Library
 
 The focus of this repository is to manage, at scale, the enterprise need for icons in the new Auro Design System and deprecate any legacy items. Please see all supporting documentation for contributing to, and consuming icons from the Orion SVG Icon Library.
 
 ## Install
 
+[![Build Status](https://img.shields.io/travis/AlaskaAirlines/Icons.svg?branch=master&style=for-the-badge)](https://travis-ci.org/github/AlaskaAirlines/Icons)
+[![See it on NPM!](https://img.shields.io/npm/v/@alaskaairux/icons.svg?style=for-the-badge&color=orange)](https://www.npmjs.com/package/@alaskaairux/icons)
+[![License](https://img.shields.io/npm/l/@alaskaairux/icons.svg?color=blue&style=for-the-badge)](https://www.apache.org/licenses/LICENSE-2.0)
+
 ```bash
 $ npm i @alaskaairux/icons
 ```
-## Using Sass styles (IE fallback)
+## Sass styles for IE fallback
 
 For use in situations where CSS custom properties are not supported. In the `dist/` directory is `icons.scss`. Import this Sass file for default shape styles.
 
@@ -31,7 +31,7 @@ Due to dependency on Auro tokens, be sure to import the Sass variables prior to 
 @import "~@alaskaairux/orion-design-tokens/dist/tokens/SCSSVariables";
 ```
 
-### Using Icons/Tokens within a LitElement Custom Element
+## Using Icons/Tokens within a LitElement Custom Element
 
 When using Icons within the scope of a LitElement Custom Element, the `CSSTokenProperties.css` file can to be referenced within the scope of the shadow DOM. To do this, the CSS needs to be wrapped in a JavaScript module.
 
@@ -49,11 +49,11 @@ ${iconProperties}
 
 This will insert the Token output within the scope of the shadow DOM Custom Element and render the appropriate values per the CSS Custom Properties.
 
-#### Using Icon Properties outside the shadow DOM
+### Using Icon Properties outside the shadow DOM
 
 When using an icon, it is not necessary to load the Icon CSS custom properties within the scope of the shadow DOM. As long as the variables are made available from the global scope of the project, the CSS custom properties will pierce the shadow DOM and style the icons.
 
-## Categories
+## Icon categories
 
 Icons fall into a series of use categories, these are:
 
@@ -69,7 +69,7 @@ Icons fall into a series of use categories, these are:
 
 ## Node application dependency
 
-Via a node.js dependency or other node like dependency management architecture, developer can choose from two different scenarios for the rendering of the SVG. This technique will render the SVG inline from the designated resource location.
+Via a node.js dependency or other node like dependency management architecture, developers can choose from two different scenarios for the rendering of the SVG. This technique will render the SVG inline from the designated resource location.
 
 ### Individual icon request
 
@@ -133,13 +133,13 @@ Within the npm, `@alaskaairux/icons/dist/icons/`, developers may access the SVGs
 
 This repo output two types of JS wrapped SVGs for easy inclusion with front-end frameworks.
 
-##### Default style - iconName.js
+#### Default style - iconName.js
 
 ```javascript
 module.exports={ ... }
 ```
 
-##### ES6 style - iconName_es6.js
+#### ES6 style - iconName_es6.js
 
 ```javascript
 export default { ... }
@@ -204,7 +204,7 @@ With SVG React Loader, users are also able to over-ride attributes within the SV
 <warning role="group" aria-hidden="false"/>
 ```
 
-##### Note:
+### Note: eslint support
 
 The above syntax may cause issues with your eslint configurations. The following error may appear:
 
@@ -219,7 +219,7 @@ In this event, adding the following comments within the component may address th
 import Arrowdown from '-!svg-react-loader?name=Icon!@alaskaairux/icons/dist/icons/alert/warning.svg';
 ```
 
-## Adding Icons
+## Adding new icons
 
 Adding new icons to this repository requires a few steps.
 
