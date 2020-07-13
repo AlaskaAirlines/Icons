@@ -335,6 +335,11 @@
       "category": "interface"
     },
     {
+      "name": "food-and-drink",
+      "desc": "icon used for food and drink",
+      "category": "in-flight"
+    },
+    {
       "name": "entertainment",
       "category": "in-flight"
     },
@@ -493,139 +498,134 @@
       "path": "/icons/fullColor"
     },
     {
-      "name": "food-and-drink",
-      "desc": "icon used for food and drink",
-      "category": "in-flight"
-    },
-    {
-      "name": "7H",
+      "name": "logo-7H",
       "desc": "Ravn Alaska",
-      "category": "airline"
+      "category": "logos",
+      "path": "/icons/logos",
+      "width": "auto",
+      "height": "auto",
+      "viewBox": "0 0 50.329418 24.648584",
+      "style": ""
     },
     {
-      "name": "AA",
-      "desc": "American Airlines",
-      "category": "airline"
-    },
-    {
-      "name": "AF",
-      "desc": "Air France",
-      "category": "airline"
-    },
-    {
-      "name": "AM",
-      "desc": "AeroMexico",
-      "category": "airline"
-    },
-    {
-      "name": "AS",
+      "name": "logo-AS",
       "desc": "Alaska Airlines",
-      "category": "airline"
+      "category": "logos",
+      "path": "/icons/logos",
+      "width": "auto",
+      "height": "auto",
+      "viewBox": "0 0 301 91.905731",
+      "style": ""
     },
     {
-      "name": "AY",
-      "desc": "FinnAir",
-      "category": "airline"
+      "name": "logo-AA",
+      "desc": "American Airlines",
+      "category": "logos",
+      "path": "/icons/logos",
+      "width": "auto",
+      "height": "auto",
+      "viewBox": "0 0 400 300",
+      "style": ""
     },
     {
-      "name": "BA",
-      "desc": "British Airways",
-      "category": "airline"
-    },
-    {
-      "name": "CX",
+      "name": "logo-CX",
       "desc": "Cathay Pacific",
-      "category": "airline"
+      "category": "logos",
+      "path": "/icons/logos",
+      "width": "auto",
+      "height": "auto",
+      "viewBox": "0 0 430 60",
+      "style": ""
     },
     {
-      "name": "DE",
-      "desc": "Condor",
-      "category": "airline"
-    },
-    {
-      "name": "DL",
-      "desc": "Delta Airlines",
-      "category": "airline"
-    },
-    {
-      "name": "EI",
-      "desc": "Aer Lingus",
-      "category": "airline"
-    },
-    {
-      "name": "EK",
+      "name": "logo-EK",
       "desc": "Emirates",
-      "category": "airline"
+      "category": "logos",
+      "path": "/icons/logos",
+      "width": "auto",
+      "height": "auto",
+      "viewBox": "0 0 328 166",
+      "style": ""
     },
     {
-      "name": "EV",
-      "desc": "Eva Air",
-      "category": "airline"
-    },
-    {
-      "name": "FI",
-      "desc": "Icelandair",
-      "category": "airline"
-    },
-    {
-      "name": "FJ",
+      "name": "logo-FJ",
       "desc": "Fiji Airways",
-      "category": "airline"
+      "category": "logos",
+      "path": "/icons/logos",
+      "width": "auto",
+      "height": "auto",
+      "viewBox": "0 0 1000 437.70996",
+      "style": ""
     },
     {
-      "name": "HA",
-      "desc": "Hawaiian Airlines",
-      "category": "airline"
-    },
-    {
-      "name": "HU",
-      "desc": "Hainan Airlines",
-      "category": "airline"
-    },
-    {
-      "name": "JL",
-      "desc": "Japan Airlines",
-      "category": "airline"
-    },
-    {
-      "name": "KE",
+      "name": "logo-KE",
       "desc": "Korean Airlines",
-      "category": "airline"
+      "category": "logos",
+      "path": "/icons/logos",
+      "width": "auto",
+      "height": "auto",
+      "viewBox": "0 0 319.23459 37.385811",
+      "style": ""
     },
     {
-      "name": "LA",
+      "name": "logo-KL",
+      "desc": "KLM",
+      "category": "logos",
+      "path": "/icons/logos",
+      "width": "auto",
+      "height": "auto",
+      "viewBox": "0 0 350 204",
+      "style": ""
+    },
+    {
+      "name": "logo-LA",
       "desc": "LATAM",
-      "category": "airline"
+      "category": "logos",
+      "path": "/icons/logos",
+      "width": "auto",
+      "height": "auto",
+      "viewBox": "0 0 2670 630.00001",
+      "style": ""
     },
     {
-      "name": "LH",
+      "name": "logo-LH",
       "desc": "Lufthansa",
-      "category": "airline"
-    },    
-    {
-      "name": "LP",
-      "desc": "LATAM Peru",
-      "category": "airline"
+      "category": "logos",
+      "path": "/icons/logos",
+      "width": "auto",
+      "height": "auto",
+      "viewBox": "0 0 400 300",
+      "style": ""
     },
     {
-      "name": "OO",
+      "name": "logo-OO",
       "desc": "SkyWest",
-      "category": "airline"
+      "category": "logos",
+      "path": "/icons/logos",
+      "width": "auto",
+      "height": "auto",
+      "viewBox": "-0.72468 -0.72468 110.04136 25.60536",
+      "style": ""
     },
     {
-      "name": "QF",
+      "name": "logo-QF",
       "desc": "Qantas",
-      "category": "airline"
+      "category": "logos",
+      "path": "/icons/logos",
+      "width": "auto",
+      "height": "auto",
+      "viewBox": "0 0 400 300",
+      "style": ""
     },
     {
-      "name": "QX",
-      "desc": "Horizon Air",
-      "category": "airline"
-    },
-    {
-      "name": "SQ",
+      "name": "logo-SQ",
       "desc": "Singapore Airlines",
-      "category": "airline"
+      "category": "logos",
+      "path": "/icons/logos",
+      "width": "auto",
+      "height": "auto",
+      "viewBox": "0 0 350 128.381",
+      "style": ""
     }
   ]
 }
