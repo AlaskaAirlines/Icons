@@ -496,6 +496,136 @@
       "name": "food-and-drink",
       "desc": "icon used for food and drink",
       "category": "in-flight"
+    },
+    {
+      "name": "7H",
+      "desc": "Ravn Alaska",
+      "category": "airline"
+    },
+    {
+      "name": "AA",
+      "desc": "American Airlines",
+      "category": "airline"
+    },
+    {
+      "name": "AF",
+      "desc": "Air France",
+      "category": "airline"
+    },
+    {
+      "name": "AM",
+      "desc": "AeroMexico",
+      "category": "airline"
+    },
+    {
+      "name": "AS",
+      "desc": "Alaska Airlines",
+      "category": "airline"
+    },
+    {
+      "name": "AY",
+      "desc": "FinnAir",
+      "category": "airline"
+    },
+    {
+      "name": "BA",
+      "desc": "British Airways",
+      "category": "airline"
+    },
+    {
+      "name": "CX",
+      "desc": "Cathay Pacific",
+      "category": "airline"
+    },
+    {
+      "name": "DE",
+      "desc": "Condor",
+      "category": "airline"
+    },
+    {
+      "name": "DL",
+      "desc": "Delta Airlines",
+      "category": "airline"
+    },
+    {
+      "name": "EI",
+      "desc": "Aer Lingus",
+      "category": "airline"
+    },
+    {
+      "name": "EK",
+      "desc": "Emirates",
+      "category": "airline"
+    },
+    {
+      "name": "EV",
+      "desc": "Eva Air",
+      "category": "airline"
+    },
+    {
+      "name": "FI",
+      "desc": "Icelandair",
+      "category": "airline"
+    },
+    {
+      "name": "FJ",
+      "desc": "Fiji Airways",
+      "category": "airline"
+    },
+    {
+      "name": "HA",
+      "desc": "Hawaiian Airlines",
+      "category": "airline"
+    },
+    {
+      "name": "HU",
+      "desc": "Hainan Airlines",
+      "category": "airline"
+    },
+    {
+      "name": "JL",
+      "desc": "Japan Airlines",
+      "category": "airline"
+    },
+    {
+      "name": "KE",
+      "desc": "Korean Airlines",
+      "category": "airline"
+    },
+    {
+      "name": "LA",
+      "desc": "LATAM",
+      "category": "airline"
+    },
+    {
+      "name": "LH",
+      "desc": "Lufthansa",
+      "category": "airline"
+    },    
+    {
+      "name": "LP",
+      "desc": "LATAM Peru",
+      "category": "airline"
+    },
+    {
+      "name": "OO",
+      "desc": "SkyWest",
+      "category": "airline"
+    },
+    {
+      "name": "QF",
+      "desc": "Qantas",
+      "category": "airline"
+    },
+    {
+      "name": "QX",
+      "desc": "Horizon Air",
+      "category": "airline"
+    },
+    {
+      "name": "SQ",
+      "desc": "Singapore Airlines",
+      "category": "airline"
     }
   ]
 }
