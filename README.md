@@ -66,6 +66,7 @@ Icons fall into a series of use categories, these are:
 | shop | icons for use with shopping experiences |
 | social | Icons for use with social media |
 | terminal | Icons related to terminal experiences |
+| airline | Icons depicting partner airline brands |
 
 ## Node application dependency
 
