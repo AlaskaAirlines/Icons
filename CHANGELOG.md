@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [3.2.2](https://github.com/AlaskaAirlines/Icons/compare/v3.2.1...v3.2.2) (2020-07-14)
+
+
+### Bug Fixes
+
+* address incorrect colors with svgs ([f7f5b49](https://github.com/AlaskaAirlines/Icons/commit/f7f5b493c220da980f9d525e24c7fc88ce274b5f))
+
 ## [3.2.1](https://github.com/AlaskaAirlines/Icons/compare/v3.2.0...v3.2.1) (2020-07-14)
 
 
