@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [3.2.3](https://github.com/AlaskaAirlines/Icons/compare/v3.2.2...v3.2.3) (2020-07-15)
+
+
+### Bug Fixes
+
+* add AA and AS glyphs to logos ([5642701](https://github.com/AlaskaAirlines/Icons/commit/5642701b3434e6a1c76d7a4eeab0c64d640d72f8))
+
 ## [3.2.2](https://github.com/AlaskaAirlines/Icons/compare/v3.2.1...v3.2.2) (2020-07-14)
 
 
