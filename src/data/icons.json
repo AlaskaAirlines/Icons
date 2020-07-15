@@ -773,6 +773,28 @@
       "height": "auto",
       "viewBox": "0 0 652 652",
       "style": ""
+    },
+    {
+      "name": "glyph-AA",
+      "title": "American Airlines",
+      "desc": "Logo image for American Airlines",
+      "category": "logos",
+      "path": "/icons/logos",
+      "width": "100%",
+      "height": "auto",
+      "viewBox": "0 0 20 20",
+      "style": ""
+    },
+    {
+      "name": "glyph-AS",
+      "title": "Alaska Airlines",
+      "desc": "Logo image for Alaska Airlines",
+      "category": "logos",
+      "path": "/icons/logos",
+      "width": "100%",
+      "height": "auto",
+      "viewBox": "0 0 20 20",
+      "style": ""
     }
   ]
 }
