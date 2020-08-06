@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [3.3.0](https://github.com/AlaskaAirlines/Icons/compare/v3.2.3...v3.3.0) (2020-08-06)
+
+
+### Features
+
+* add new hide/view password icons ([f3597e2](https://github.com/AlaskaAirlines/Icons/commit/f3597e2d29a457771717c5521629e7f6736e2bb2))
+
 ## [3.2.3](https://github.com/AlaskaAirlines/Icons/compare/v3.2.2...v3.2.3) (2020-07-15)
 
 
