@@ -68,6 +68,18 @@
       "category": "interface"
     },
     {
+      "title": "View password",
+      "name": "view-password",
+      "desc": "Icon indicates that the password is currently hidden",
+      "category": "interface"
+    },
+    {
+      "title": "Hide password",
+      "name": "hide-password",
+      "desc": "Icon indicates that the password is currently visible",
+      "category": "interface"
+    },
+    {
       "title": "Left pointer",
       "name": "arrow-left",
       "desc": "Directional pointer; left",
