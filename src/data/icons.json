@@ -510,6 +510,17 @@
       "path": "/icons/fullColor"
     },
     {
+      "name": "fc-upgrade-available",
+      "desc": "First Class Upgrade Available",
+      "category": "payment",
+      "path": "/icons"
+    },
+    {
+      "name": "fc-upgrade-unavailable",
+      "desc": "First Class Upgrade Unavailable",
+      "category": "payment",
+      "path": "/icons"
+    },    {
       "name": "logo-7H",
       "title": "Ravn Alaska",
       "desc": "Logo image for Ravn Alaska",
