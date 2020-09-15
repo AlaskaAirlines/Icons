@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+# [3.4.0](https://github.com/AlaskaAirlines/Icons/compare/v3.3.0...v3.4.0) (2020-09-15)
+
+
+### Bug Fixes
+
+* update new AA logo ([f9de907](https://github.com/AlaskaAirlines/Icons/commit/f9de9077f8ee00f067245db2b448b9d05b6b1468))
+
+
+### Features
+
+* change american logo ([3690711](https://github.com/AlaskaAirlines/Icons/commit/36907113be4769216acbb9d38f2d866807be152d))
+
 # [3.3.0](https://github.com/AlaskaAirlines/Icons/compare/v3.2.3...v3.3.0) (2020-08-06)
 
 
