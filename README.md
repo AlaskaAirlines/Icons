@@ -171,6 +171,14 @@ Now that the SVG DOM is assigned to the `this.svg` variable, rendering this with
 <p>${this.svg}</p>
 ```
 
+### Web Component 
+
+The easiest use of Auro Icons is to use the auro-icon web component. See the following HTML with attribute API examples. See the  [Auro site](https://auro.alaskaair.com/components/auro/icon) for more details on use. 
+
+```html
+<auro-icon category="" name="" [optional state]>[optional description]</auro-icon>
+```
+
 ### React
 
 React supports a standard for linking to assets and using them within the context of a component.
