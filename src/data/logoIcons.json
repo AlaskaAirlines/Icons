@@ -1,0 +1,180 @@
+{
+  "commonProperties":
+  {
+      "hidden": "true",
+      "category": "logos",
+      "role": "img",
+      "color": "currentColor",
+      "desc": "",
+      "width": "100%",
+      "height": "auto",
+      "xmlns": "http://www.w3.org/2000/svg",
+      "xmlns_xlink": "http://www.w3.org/1999/xlink",
+      "path": "/icons/logos",
+      "style": ""
+  },
+  "icons": [
+    {
+      "name": "logo-7H",
+      "title": "Ravn Alaska",
+      "desc": "Logo image for Ravn Alaska",
+      "viewBox": "0 0 50.329418 24.648584"
+    },
+    {
+      "name": "logo-AS",
+      "title": "Alaska Airlines",
+      "desc": "Logo image for Alaska Airlines",
+      "viewBox": "0 0 301 91.905731"
+    },
+    {
+      "name": "logo-AA",
+      "title": "American Airlines",
+      "desc": "Logo image for American Airlines",
+      "viewBox": "0 -0.438 302.1115902939018 142.2640366546909"
+    },
+    {
+      "name": "logo-CX",
+      "title": "Cathay Pacific",
+      "desc": "Logo image for Cathay Pacific",
+      "viewBox": "0 0 430 60"
+    },
+    {
+      "name": "logo-EK",
+      "title": "Emirates",
+      "desc": "Logo image for Emirates",
+      "viewBox": "0 0 328 166"
+    },
+    {
+      "name": "logo-FJ",
+      "title": "Fiji Airways",
+      "desc": "Logo image for Fiji Airways",
+      "viewBox": "0 0 1000 437.70996"
+    },
+    {
+      "name": "logo-KE",
+      "title": "Korean Airlines",
+      "desc": "Logo image for Korean Airlines",
+      "viewBox": "0 0 319.23459 37.385811"
+    },
+    {
+      "name": "logo-KL",
+      "title": "KLM",
+      "desc": "Logo image for KLM",
+      "viewBox": "0 0 350 204"
+    },
+    {
+      "name": "logo-LA",
+      "title": "LATAM",
+      "desc": "Logo image for LATAM",
+      "viewBox": "0 0 2670 630.00001"
+    },
+    {
+      "name": "logo-LH",
+      "title": "Lufthansa",
+      "desc": "Logo image for Lufthansa",
+      "viewBox": "0 0 400 300"
+    },
+    {
+      "name": "logo-OO",
+      "title": "SkyWest",
+      "desc": "Logo image for SkyWest",
+      "viewBox": "-0.72468 -0.72468 110.04136 25.60536"
+    },
+    {
+      "name": "logo-QF",
+      "title": "Qantas",
+      "desc": "Logo image for Qantas",
+      "viewBox": "0 0 400 300"
+    },
+    {
+      "name": "logo-SQ",
+      "title": "Singapore Airlines",
+      "desc": "Logo image for Singapore Airlines",
+      "viewBox": "0 0 350 128.381"
+    },
+    {
+      "name": "logo-JL",
+      "title": "Japan Airlines",
+      "desc": "Logo image for Japan Airlines",
+      "viewBox": "0 0 652 652"
+    },
+    {
+      "name": "logo-HA",
+      "title": "Hawaiian Airlines",
+      "desc": "Logo image for Hawaiian Airlines",
+      "viewBox": "0 0 652 652"
+    },
+    {
+      "name": "logo-EV",
+      "title": "Eva Air",
+      "desc": "Logo image for Eva Air",
+      "viewBox": "0 0 192.756 192.756"
+    },
+    {
+      "name": "logo-HU",
+      "title": "Hainan Airlines",
+      "desc": "Logo image for Hainan Airlines",
+      "viewBox": "0 0 560 400"
+    },
+    {
+      "name": "logo-AF",
+      "title": "Air France",
+      "desc": "Logo image for Air France",
+      "viewBox": "0 0 652 652"
+    },
+    {
+      "name": "logo-AM",
+      "title": "AeroMexico",
+      "desc": "Logo image for AeroMexico",
+      "viewBox": "0 0 652 652"
+    },
+    {
+      "name": "logo-AY",
+      "title": "FinnAir",
+      "desc": "Logo image for FinnAir",
+      "viewBox": "0 0 400 300"
+    },
+    {
+      "name": "logo-BA",
+      "title": "British Airways",
+      "desc": "Logo image for British Airways",
+      "viewBox": "0 0 652 652"
+    },
+    {
+      "name": "logo-DE",
+      "title": "Condor",
+      "desc": "Logo image for Condor",
+      "viewBox": "0 0 652 652"
+    },
+    {
+      "name": "logo-DL",
+      "title": "Delta Airlines",
+      "desc": "Logo image for Delta Airlines",
+      "viewBox": "0 0 400 300"
+    },
+    {
+      "name": "logo-EI",
+      "title": "Aer Lingus",
+      "desc": "Logo image for Aer Lingus",
+      "viewBox": "0 0 652 652"
+    },
+    {
+      "name": "logo-FI",
+      "title": "Icelandair",
+      "desc": "Logo image for Icelandair",
+      "viewBox": "0 0 652 652"
+    },
+    {
+      "name": "glyph-AA",
+      "title": "American Airlines",
+      "desc": "Logo image for American Airlines",
+      "viewBox": "0 0 20 20"
+    },
+    {
+      "name": "glyph-AS",
+      "title": "Alaska Airlines",
+      "desc": "Logo image for Alaska Airlines",
+      "viewBox": "0 0 20 20"
+    }
+  ]
+}
