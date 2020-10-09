@@ -2,8 +2,8 @@ const { icons } = require('../src/data/icons.json');
 const { getDistFilename } = require('../scripts/utils.js');
 
 icons.forEach(icon => {
-  const filename = getDistFilename(icon);
-  const subject = require(`../dist/icons/${filename}.js`);
+  let filename = getDistFilename(icon);
+  let subject = require(`../dist/icons/${filename}.js`);
 
   test(`${icon.name} has a "title"`, () => {
     expect(typeof subject.title).toBe('string');

@@ -66,7 +66,6 @@ Icons fall into a series of use categories, these are:
 | shop | icons for use with shopping experiences |
 | social | Icons for use with social media |
 | terminal | Icons related to terminal experiences |
-| logos | Icons depicting partner airline logos |
 
 ## Node application dependency
 
@@ -84,6 +83,22 @@ Within the UI component a developer can reference the object assigned to the new
 
 ```javascript
 <button>Click Me ${warning.svg}</button>
+```
+
+This will return the icon's SVG HTML inline.
+
+### Individual logo request
+
+It is suggested that developers list individual dependencies per UI component, like so:
+
+```javascript
+const alaskaLogo = require('@alaskaairux/icons/dist/logos/glyph-AS');
+```
+
+Within the UI component a developer can reference the object assigned to the newly created variable to get the specific logo's SVG code:
+
+```javascript
+<div>${alaskaLogo.svg}</div>
 ```
 
 This will return the icon's SVG HTML inline.

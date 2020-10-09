@@ -1,0 +1,24 @@
+{
+  "commonProperties":
+  {
+      "hidden": "true",
+      "category": "restricted",
+      "role": "img",
+      "color": "currentColor",
+      "desc": "",
+      "width": "100%",
+      "height": "auto",
+      "xmlns": "http://www.w3.org/2000/svg",
+      "xmlns_xlink": "http://www.w3.org/1999/xlink",
+      "path": "/icons/restricted",
+      "style": ""
+  },
+  "icons": [
+    {
+      "name": "AS",
+      "title": "Alaska Airlines",
+      "desc": "Logo image for Alaska Airlines",
+      "viewBox": "0 -0.438 302.1115902939018 142.2640366546909"
+    }
+  ]
+}

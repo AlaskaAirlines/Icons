@@ -8,13 +8,18 @@
  */
 
 const dataFile = '../src/data/icons.json';
+const restrictedDataFile = '../src/data/restrictedIcons.json';
+const logoDataFile = '../src/data/logoIcons.json';
 const indexFile = `${__dirname}/../dist/index.js`;
 const iconsDir = `${__dirname}/../src`;
-const buildIconsDir = `${__dirname}/../dist/icons`;
-const data = require(dataFile);
+const iconData = require(dataFile);
+const restrictedIconData = require(restrictedDataFile);
+const logoData = require(logoDataFile);
 const fileSys = require('file-system');
 const chalk = require('chalk');
 const fs = require('fs');
+
+let buildIconsDir = `${__dirname}/../dist/icons`;
 
 const { getDistFilename, getDistSubFolder } = require('./utils');
 
@@ -36,81 +41,91 @@ function titleCase(str) {
 // =======================================================================
 const icons = {};
 
-console.log(`Generating Icons
-`)
+console.log(`Generating Icons`)
 
-data.icons.forEach((iconRaw, index) => {
-  let count = index + 1;
-  let icon = {
-    ...data.commonProperties,
-    ...iconRaw
-  }
-
-  const iconName = icon.name;
-  const distFilename = getDistFilename(icon);
-  icon.svg = fs.readFileSync(`${iconsDir}${icon.path}/${iconName}.svg`, 'utf8');
-  const insertPos = icon.svg.indexOf("svg") + 3;
-  const height = icon.height ? `height: ${icon.height};` : '';
-  const width = icon.width ? `width: ${icon.width};` : '';
-  const elementStyle = `style="${width} ${height} fill: ${icon.color}" `;
-
-  // If svg has legacy HTML structure, replace with empty string
-  icon.svg = icon.svg.replace(`<title>iconTitle</title>
-  <desc>iconDesc</desc>
-  <style></style>`, '');
-
-  // Build new Title from icon file name
-  const titleName = iconName.replace(/-/g, ' ');
-  icon.title = icon.title || titleCase(titleName);
-  const split = icon.svg.split(/(^<svg.*>)/);
-
-  // Scrub out any pre-existing attributes
-  split[1] = '<svg>';
-  split.splice(2, 0, `
-  <title>${icon.title}</title>
-  <desc>${icon.desc}</desc>`);
-  icon.svg = split.join('');
-
-  if (icon.path === '/icons') {
-    // Locate and remove undesired SVG attributes
-    const fill = icon.svg.match(/fill="#......"/);
-    const fillNone = icon.svg.match(/fill="none"/);
-
-    if (fill) {
-      icon.svg = icon.svg.replace(fill, '')
+function runGenerator(data) {
+  data.icons.forEach((iconRaw, index) => {
+    let count = index + 1;
+    let icon = {
+      ...data.commonProperties,
+      ...iconRaw
     }
 
-    if (fillNone) {
-      icon.svg = icon.svg.replace(fillNone, '')
+    const iconName = icon.name;
+    const distFilename = getDistFilename(icon);
+    icon.svg = fs.readFileSync(`${iconsDir}${icon.path}/${iconName}.svg`, 'utf8');
+    const insertPos = icon.svg.indexOf("svg") + 3;
+    const height = icon.height ? `height: ${icon.height};` : '';
+    const width = icon.width ? `width: ${icon.width};` : '';
+    const elementStyle = `style="${width} ${height} fill: ${icon.color}" `;
+
+    // Build new Title from icon file name
+    const titleName = iconName.replace(/-/g, ' ');
+    icon.title = icon.title || titleCase(titleName);
+    const split = icon.svg.split(/(^<svg.*>)/);
+
+    // Scrub out any pre-existing attributes
+    split[1] = '<svg>';
+    split.splice(2, 0, `
+    <title>${icon.title}</title>
+    <desc>${icon.desc}</desc>`);
+    icon.svg = split.join('');
+
+    if (icon.path === '/icons') {
+      // Locate and remove undesired SVG attributes
+      const fill = icon.svg.match(/fill="#......"/);
+      const fillNone = icon.svg.match(/fill="none"/);
+
+      if (fill) {
+        icon.svg = icon.svg.replace(fill, '')
+      }
+
+      if (fillNone) {
+        icon.svg = icon.svg.replace(fillNone, '')
+      }
     }
-  }
 
-  // adds attributes to SVG string based on icons.json data
-  icon.svg = [icon.svg.slice(0, insertPos), `class="${icon.style}" `, icon.svg.slice(insertPos)].join('');
-  icon.svg = [icon.svg.slice(0, insertPos), elementStyle, icon.svg.slice(insertPos)].join('');
-  icon.svg = [icon.svg.slice(0, insertPos), `aria-hidden="${icon.hidden}" `, icon.svg.slice(insertPos)].join('');
-  icon.svg = [icon.svg.slice(0, insertPos), `role="${icon.role}" `, icon.svg.slice(insertPos)].join('');
-  icon.svg = [icon.svg.slice(0, insertPos), `xmlns="${icon.xmlns}" `, icon.svg.slice(insertPos)].join('');
-  icon.svg = [icon.svg.slice(0, insertPos), `xmlns:xlink="${icon.xmlns_xlink}" `, icon.svg.slice(insertPos)].join('');
-  icon.svg = [icon.svg.slice(0, insertPos), `viewBox="${icon.viewBox}" `, icon.svg.slice(insertPos)].join('');
-  icon.svg = [icon.svg.slice(0, insertPos), ` `, icon.svg.slice(insertPos)].join('');
+    // adds attributes to SVG string based on icons.json data
+    icon.svg = [icon.svg.slice(0, insertPos), `class="${icon.style}" `, icon.svg.slice(insertPos)].join('');
+    icon.svg = [icon.svg.slice(0, insertPos), elementStyle, icon.svg.slice(insertPos)].join('');
+    icon.svg = [icon.svg.slice(0, insertPos), `aria-hidden="${icon.hidden}" `, icon.svg.slice(insertPos)].join('');
+    icon.svg = [icon.svg.slice(0, insertPos), `role="${icon.role}" `, icon.svg.slice(insertPos)].join('');
+    icon.svg = [icon.svg.slice(0, insertPos), `xmlns="${icon.xmlns}" `, icon.svg.slice(insertPos)].join('');
+    icon.svg = [icon.svg.slice(0, insertPos), `xmlns:xlink="${icon.xmlns_xlink}" `, icon.svg.slice(insertPos)].join('');
+    icon.svg = [icon.svg.slice(0, insertPos), `viewBox="${icon.viewBox}" `, icon.svg.slice(insertPos)].join('');
+    icon.svg = [icon.svg.slice(0, insertPos), ` `, icon.svg.slice(insertPos)].join('');
 
-  const publishFolder = `${buildIconsDir}/${getDistSubFolder(icon.category)}`;
-  if (!fileSys.existsSync(publishFolder)){
-    fileSys.mkdirSync(publishFolder);
-  }
+    if (icon.category === 'restricted') {
+      buildIconsDir = `${__dirname}/../dist`;
+    }
 
-  icons[icon.name] = icon;
-  // write the static .js file for the icon
-  fs.writeFileSync( `${buildIconsDir}/${distFilename}.js`, `module.exports=${JSON.stringify(icon)};`);
-  fs.writeFileSync( `${buildIconsDir}/${distFilename}_es6.js`, `export default ${JSON.stringify(icon)};`);
+    if (icon.category === 'logos') {
+      buildIconsDir = `${__dirname}/../dist`;
+    }
 
-  // write new SVGs to ./dist
-  fs.writeFileSync( `${buildIconsDir}/${distFilename}.svg`, icon.svg);
+    const publishFolder = `${buildIconsDir}/${getDistSubFolder(icon.category)}`;
+    if (!fileSys.existsSync(publishFolder)){
+      fileSys.mkdirSync(publishFolder);
+    }
 
-  console.log(chalk.hex('#ffd200')(`- ${count}: `) + chalk.hex('#f26135')(`${distFilename}.svg
-  `))
-});
+    icons[icon.name] = icon;
+    // write the static .js file for the icon
+    fs.writeFileSync( `${buildIconsDir}/${distFilename}.js`, `module.exports=${JSON.stringify(icon)};`);
+    fs.writeFileSync( `${buildIconsDir}/${distFilename}_es6.js`, `export default ${JSON.stringify(icon)};`);
+
+    // write new SVGs to ./dist
+    fs.writeFileSync( `${buildIconsDir}/${distFilename}.svg`, icon.svg);
+
+    console.log(chalk.hex('#ffd200')(`- ${count}: `) + chalk.hex('#f26135')(`${distFilename}.svg
+    `))
+  });
+}
+
+runGenerator(iconData);
+runGenerator(restrictedIconData);
+runGenerator(logoData);
+
+
 
 console.log(chalk.hex('#f26135')(`
  _______                   __           __ __
