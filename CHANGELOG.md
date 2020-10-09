@@ -1,5 +1,25 @@
 # Semantic Release Automated Changelog
 
+# [4.0.0](https://github.com/AlaskaAirlines/Icons/compare/v3.4.0...v4.0.0) (2020-10-09)
+
+
+### Bug Fixes
+
+* update Alaska logos ([9e5ec73](https://github.com/AlaskaAirlines/Icons/commit/9e5ec73802182cf70a85c74b19afc0c9e9ee0af9))
+* update base svg html ([436800e](https://github.com/AlaskaAirlines/Icons/commit/436800ef34f27eec50c0e7078b833412bf68219f))
+
+
+### Code Refactoring
+
+* remove logos from base icons dist ([3afaacb](https://github.com/AlaskaAirlines/Icons/commit/3afaacb77669ad0f52867e2babdff6a606daa64a))
+
+
+### BREAKING CHANGES
+
+* This update refactors how icons are being distributed.
+Logos are now in a new directory away from the default dist icons.
+A new category for RESTRICTED icons has been created.
+
 # [3.4.0](https://github.com/AlaskaAirlines/Icons/compare/v3.3.0...v3.4.0) (2020-09-15)
 
 
