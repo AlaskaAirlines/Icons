@@ -24,7 +24,13 @@
       "name": "logo-AS",
       "title": "Alaska Airlines",
       "desc": "Logo image for Alaska Airlines",
-      "viewBox": "0 0 301 91.905731"
+      "viewBox": "0 180 652 200"
+    },
+    {
+      "name": "logo-AS-tagline",
+      "title": "Alaska Airlines",
+      "desc": "Logo image for Alaska Airlines with tagline",
+      "viewBox": "0 180 652 300"
     },
     {
       "name": "logo-AA",
