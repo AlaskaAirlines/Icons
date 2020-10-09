@@ -18,7 +18,13 @@
       "name": "AS",
       "title": "Alaska Airlines",
       "desc": "Logo image for Alaska Airlines",
-      "viewBox": "0 -0.438 302.1115902939018 142.2640366546909"
+      "viewBox": "0 180 652 200"
+    },
+    {
+      "name": "AS-tagline",
+      "title": "Alaska Airlines",
+      "desc": "Logo image for Alaska Airlines",
+      "viewBox": "0 180 652 300"
     }
   ]
 }
