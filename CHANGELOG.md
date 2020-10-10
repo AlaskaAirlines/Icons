@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.0.1](https://github.com/AlaskaAirlines/Icons/compare/v4.0.0...v4.0.1) (2020-10-10)
+
+
+### Bug Fixes
+
+* adjust SVG viewBox for AS logos ([e60ecdf](https://github.com/AlaskaAirlines/Icons/commit/e60ecdfa0bab6d1190bdeb796f04a84a6723be3d))
+
 # [4.0.0](https://github.com/AlaskaAirlines/Icons/compare/v3.4.0...v4.0.0) (2020-10-09)
 
 
