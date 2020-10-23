@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.0.2](https://github.com/AlaskaAirlines/Icons/compare/v4.0.1...v4.0.2) (2020-10-23)
+
+
+### Bug Fixes
+
+* add new icons ([a1c73d2](https://github.com/AlaskaAirlines/Icons/commit/a1c73d2639180ed9bc8388a3649e6e87804047b5))
+
 ## [4.0.1](https://github.com/AlaskaAirlines/Icons/compare/v4.0.0...v4.0.1) (2020-10-10)
 
 
