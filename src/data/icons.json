@@ -347,6 +347,16 @@
       "category": "interface"
     },
     {
+      "name": "boarding",
+      "desc": "icon used to indicate boarding options",
+      "category": "in-flight"
+    },
+    {
+      "name": "elite",
+      "desc": "icon used to indicate elite passenger status",
+      "category": "in-flight"
+    },
+    {
       "name": "food-and-drink",
       "desc": "icon used for food and drink",
       "category": "in-flight"
