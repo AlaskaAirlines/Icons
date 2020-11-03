@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.0.3](https://github.com/AlaskaAirlines/Icons/compare/v4.0.2...v4.0.3) (2020-11-03)
+
+
+### Bug Fixes
+
+* address broken plus-stroke and plus-filled icons ([a2b8882](https://github.com/AlaskaAirlines/Icons/commit/a2b88821ca3e12c112f123ca6276f5bf4fc022d0))
+
 ## [4.0.2](https://github.com/AlaskaAirlines/Icons/compare/v4.0.1...v4.0.2) (2020-10-23)
 
 
