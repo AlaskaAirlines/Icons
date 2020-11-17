@@ -518,6 +518,24 @@
       "desc": "Visa Credit Card",
       "category": "payment",
       "path": "/icons/fullColor"
+    },
+    {
+      "title": "First Class legroom",
+      "name": "first-class-legroom",
+      "desc": "Indicates additional legroom for First Class cabin",
+      "category": "in-flight"
+    },
+    {
+      "title": "Premium Class legroom",
+      "name": "premium-class-legroom",
+      "desc": "Indicates additional legroom for Premium Class cabin",
+      "category": "in-flight"
+    },
+    {
+      "title": "Wine and spirits",
+      "name": "wine-and-spirits",
+      "desc": "Indicates alcoholic beverage are available",
+      "category": "in-flight"
     }
   ]
 }
