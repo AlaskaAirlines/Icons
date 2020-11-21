@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.0.4](https://github.com/AlaskaAirlines/Icons/compare/v4.0.3...v4.0.4) (2020-11-21)
+
+
+### Bug Fixes
+
+* add three new in-flight icons ([94572ab](https://github.com/AlaskaAirlines/Icons/commit/94572abe010509c6cfaf191857cb7e217a7273e9))
+
 ## [4.0.3](https://github.com/AlaskaAirlines/Icons/compare/v4.0.2...v4.0.3) (2020-11-03)
 
 
