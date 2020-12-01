@@ -536,6 +536,12 @@
       "name": "wine-and-spirits",
       "desc": "Indicates alcoholic beverage are available",
       "category": "in-flight"
+    },
+    {
+      "title": "Change Planes",
+      "name": "change-planes",
+      "desc": "Indicates a change of planes in a flight itinerary",
+      "category": "terminal"
     }
   ]
 }
