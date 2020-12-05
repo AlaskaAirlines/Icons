@@ -21,10 +21,58 @@
       "viewBox": "0 180 652 200"
     },
     {
+      "name": "AS-400",
+      "title": "Alaska Airlines",
+      "desc": "Logo image for Alaska Airlines",
+      "viewBox": "0 0 396 121"
+    },
+    {
+      "name": "AS-300",
+      "title": "Alaska Airlines",
+      "desc": "Logo image for Alaska Airlines",
+      "viewBox": "0 0 144 45"
+    },
+    {
+      "name": "AS-200",
+      "title": "Alaska Airlines",
+      "desc": "Logo image for Alaska Airlines",
+      "viewBox": "0 0 83 26"
+    },
+    {
+      "name": "AS-100",
+      "title": "Alaska Airlines",
+      "desc": "Logo image for Alaska Airlines",
+      "viewBox": "0 0 57 17"
+    },
+    {
       "name": "AS-tagline",
       "title": "Alaska Airlines",
       "desc": "Logo image for Alaska Airlines",
       "viewBox": "0 170 652 300"
+    },
+    {
+      "name": "AS-tagline-100",
+      "title": "Alaska Airlines",
+      "desc": "Logo image for Alaska Airlines",
+      "viewBox": "0 0 57 24"
+    },
+    {
+      "name": "AS-tagline-200",
+      "title": "Alaska Airlines",
+      "desc": "Logo image for Alaska Airlines",
+      "viewBox": "0 0 83 35"
+    },
+    {
+      "name": "AS-tagline-300",
+      "title": "Alaska Airlines",
+      "desc": "Logo image for Alaska Airlines",
+      "viewBox": "0 0 144 63"
+    },
+    {
+      "name": "AS-tagline-400",
+      "title": "Alaska Airlines",
+      "desc": "Logo image for Alaska Airlines",
+      "viewBox": "0 0 396 171"
     }
   ]
 }
