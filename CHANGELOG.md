@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.0.5](https://github.com/AlaskaAirlines/Icons/compare/v4.0.4...v4.0.5) (2020-12-05)
+
+
+### Bug Fixes
+
+* update alaska logos to follow restricted guidlines ([cbd1344](https://github.com/AlaskaAirlines/Icons/commit/cbd1344879cbba187fff78cfe82f7337234f4cc4))
+
 ## [4.0.4](https://github.com/AlaskaAirlines/Icons/compare/v4.0.3...v4.0.4) (2020-11-21)
 
 
