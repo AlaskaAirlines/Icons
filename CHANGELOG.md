@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.0.7](https://github.com/AlaskaAirlines/Icons/compare/v4.0.6...v4.0.7) (2020-12-07)
+
+
+### Bug Fixes
+
+* update alaska logos to have default color ([66506e1](https://github.com/AlaskaAirlines/Icons/commit/66506e1471452709f6e8e26c43e7ab4f4ad7b86e))
+
 ## [4.0.6](https://github.com/AlaskaAirlines/Icons/compare/v4.0.5...v4.0.6) (2020-12-05)
 
 
