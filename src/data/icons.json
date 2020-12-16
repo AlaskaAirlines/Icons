@@ -536,6 +536,12 @@
       "name": "wine-and-spirits",
       "desc": "Indicates alcoholic beverage are available",
       "category": "in-flight"
+    },
+    {
+      "title": "Lounge",
+      "name": "lounge",
+      "desc": "Represents the Alaska Lounge or partner lounge access.",
+      "category": "terminal"
     }
   ]
 }
