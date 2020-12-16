@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.1.0](https://github.com/AlaskaAirlines/Icons/compare/v4.0.7...v4.1.0) (2020-12-16)
+
+
+### Features
+
+* adds lounge icon ([960e95c](https://github.com/AlaskaAirlines/Icons/commit/960e95c48a9cabd626136417b9f3f2d2bdb5170e))
+
 ## [4.0.7](https://github.com/AlaskaAirlines/Icons/compare/v4.0.6...v4.0.7) (2020-12-07)
 
 
