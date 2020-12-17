@@ -25,33 +25,50 @@ const getFile = (filePath) => {
 
 const buildElements = (sortedIcons) => {
 
-    let allCategories = '';
+  let allCategories = '';
 
-    for(let category in sortedIcons) {
-      let iconPaths = sortedIcons[category];
-      let elements = "";
+  for(let category in sortedIcons) {
+    let iconPaths = sortedIcons[category];
+    let elements = "";
 
-      iconPaths.forEach(i => {
-          const file = getFile(i);
-          elements += `
-            <div class="block" title="${file}">
-              <img src="../dist/icons/${category}/${file}" alt="">
-              <p>${file}</p>
-            </div>
-          `
-      });
+    iconPaths.forEach(i => {
+      const file = getFile(i);
+      elements += `
+        <div class="block" title="${file}">
+          <img src="../dist/icons/${category}/${file}" alt="">
+          <p>${file}</p>
+        </div>
+      `
+    });
 
-      allCategories += `
-        <section>
-          <h2 class="icon-category">${category}</h2>
-          <div class="iconsWrapper">
-            ${elements}
-          </div>
-        </section>
-      `;
-    }
+    allCategories += `
+      <section>
+        <h2 class="icon-category">${category}</h2>
+        <div class="iconsWrapper">
+          ${elements}
+        </div>
+      </section>
+    `;
+  }
 
-    return allCategories;
+  return allCategories;
+}
+
+const buildLogos = (logos) => {
+
+  let elements = "";
+
+  logos.forEach(i => {
+    const file = getFile(i);
+    elements += `
+      <div class="block block--large" title="${i}">
+        <img src="../dist/logos/${file}" alt="">
+        <p>${i}</p>
+      </div>
+    `
+  });
+
+  return elements;
 }
 
 const getCategory = (iconPath) => {
@@ -71,6 +88,13 @@ const getCategory = (iconPath) => {
     const currentPath = path.join(__dirname, '../dist')
 
     if(file.includes('.svg')) icons.push(file.split(currentPath)[1]);
+  }
+
+  const logos = [];
+  for await (const file of getFiles('./dist/logos')) {
+    const currentPath = path.join(__dirname, '../dist/logos/')
+
+    if(file.includes('.svg')) logos.push(file.split(currentPath)[1]);
   }
 
   const sortedIcons = {};
@@ -103,6 +127,10 @@ const getCategory = (iconPath) => {
       text-align: center;
     }
 
+    .block--large {
+      width: 200px;
+    }
+
     .iconsWrapper {
       display: flex;
       flex-wrap: wrap;
@@ -113,6 +141,12 @@ const getCategory = (iconPath) => {
 <body>
   <section>
     ${buildElements(sortedIcons)}
+  </section>
+  <section>
+    <h2 class="icon-category">Logos</h2>
+    <div class="iconsWrapper">
+      ${buildLogos(logos)}
+    </div>
   </section>
 </body>
 </html>
