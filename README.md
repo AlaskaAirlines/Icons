@@ -252,18 +252,6 @@ Adding new icons to this repository requires a few steps.
 1. Add **shape schema** to `./src/data/icons.json` file (see example below)
 1. Submit pull request for approval
 
-### Test new icon SVG code
-
-Be sure to test your new SVG code. There is a template HTML file in this project. Please follow the directions below to copy the file and run a local server. DO NOT edit the template file.
-
-From the root of the project, run:
-
-```bash
-$ cd validate
-$ cp icons.template icons.html
-$ open icons.html
-```
-
 ### Icon shape schema
 
 When adding new icons, be sure to follow the example below to add the proper data to the `icons.json` file. Any attribute defined in the `"commonProperties"` object may be over-written in the individual `"icons"` object.
@@ -333,6 +321,17 @@ The `title` attribute is needed when you may want a simpler name than the file n
 ```
 
 **Discouraged**: For `color` and `width` do not use hard-coded values. To be compliant you must use Auro Design Token references.
+
+### Test new icon SVG code
+
+Once the new icon has been added to the icons directory and the icon data JSON file has been updated, run the following commands. 
+
+```
+$ npm run generate
+$ npm run serve
+```
+
+As update are made, simply run `$ npm run generate` to generate a new series of icons and rebuild the demo page. 
 
 ### Icon guidelines
 
