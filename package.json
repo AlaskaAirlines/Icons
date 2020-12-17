@@ -15,6 +15,7 @@
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
     "@semantic-release/npm": "^7.0.9",
+    "@web/dev-server": "0.0.29",
     "copyfiles": "^2.4.1",
     "file-system": "^2.2.2",
     "husky": "^4.3.4",
@@ -33,13 +34,16 @@
     "copyCss": "copyfiles -f ./src/tokens/*.css ./dist/tokens",
     "copyCssJs": "copyfiles -f ./src/tokens/*.js ./dist/tokens",
     "svglint": "svglint dist/icons/*.svg dist/icons/alert/*.svg dist/icons/in-flight/*.svg dist/icons/interface/*.svg dist/icons/shop/*.svg dist/icons/social/*.svg dist/icons/terminal/*.svg --ci",
-    "generate": "node scripts/generate.js",
+    "generator": "node scripts/generate.js",
+    "generate": "npm-run-all generator demoBuild",
     "test": "npm-run-all svgjest jsonlint svglint",
     "svgjest": "jest",
     "sweep": "rm -rf ./dist",
-    "ciBuild": "npm-run-all sweep generate test copyStyles svgjest",
-    "devBuild": "npm-run-all sweep generate test",
-    "watch": "nodemon -e svg,js --watch src --exec npm-run-all generate test"
+    "demoBuild": "node scripts/buildDemo.js ",
+    "ciBuild": "npm-run-all sweep generate test copyStyles svgjest demoBuild",
+    "devBuild": "npm-run-all sweep generate demoBuild test",
+    "watch": "nodemon -e svg,js --watch src --exec npm-run-all generate test",
+    "serve": "web-dev-server --open demo/ --node-resolve --watch"
   },
   "husky": {
     "hooks": {
