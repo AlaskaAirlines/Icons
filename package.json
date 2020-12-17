@@ -35,7 +35,7 @@
     "copyCssJs": "copyfiles -f ./src/tokens/*.js ./dist/tokens",
     "svglint": "svglint dist/icons/*.svg dist/icons/alert/*.svg dist/icons/in-flight/*.svg dist/icons/interface/*.svg dist/icons/shop/*.svg dist/icons/social/*.svg dist/icons/terminal/*.svg --ci",
     "generator": "node scripts/generate.js",
-    "generate": "npm-run-all generator demoBuild",
+    "generate": "npm-run-all sweep generator demoBuild",
     "test": "npm-run-all svgjest jsonlint svglint",
     "svgjest": "jest",
     "sweep": "rm -rf ./dist",
