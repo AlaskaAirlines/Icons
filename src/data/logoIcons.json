@@ -171,16 +171,95 @@
       "viewBox": "0 0 652 652"
     },
     {
-      "name": "glyph-AA",
+      "name": "tail-AA",
       "title": "American Airlines",
       "desc": "Logo image for American Airlines",
-      "viewBox": "0 0 20 20"
+      "viewBox": "0 0 856 830"
     },
     {
-      "name": "glyph-AS",
+      "name": "tail-AS",
       "title": "Alaska Airlines",
       "desc": "Logo image for Alaska Airlines",
-      "viewBox": "0 0 20 20"
+      "viewBox": "0 0 856 830"
+    },
+    {
+      "name": "tail-AT",
+      "title": "Royal Air Maroc",
+      "desc": "Logo image for Royal Air Maroc",
+      "viewBox": "0 0 856 830"
+    },
+    {
+      "name": "tail-BA",
+      "title": "British Airways",
+      "desc": "Logo image for British Airways",
+      "viewBox": "0 0 856 830"
+    },
+    {
+      "name": "tail-CX",
+      "title": "Cathay Pacific Airways",
+      "desc": "Logo image for Cathay Pacific Airways",
+      "viewBox": "0 0 856 830"
+    },
+    {
+      "name": "tail-FI",
+      "title": "Finnair",
+      "desc": "Logo image for Finnair",
+      "viewBox": "0 0 856 830"
+    },
+    {
+      "name": "tail-FJ",
+      "title": "Fiji Airways",
+      "desc": "Logo image for Fiji Airways",
+      "viewBox": "0 0 856 830"
+    },
+    {
+      "name": "tail-IB",
+      "title": "Iberia",
+      "desc": "Logo image for Iberia",
+      "viewBox": "0 0 856 830"
+    },
+    {
+      "name": "tail-JL",
+      "title": "Japan Airlines",
+      "desc": "Logo image for Japan Airlines",
+      "viewBox": "0 0 856 830"
+    },
+    {
+      "name": "tail-MH",
+      "title": "Malaysia Airlines",
+      "desc": "Logo image for Malaysia Airlines",
+      "viewBox": "0 0 856 830"
+    },
+    {
+      "name": "tail-QF",
+      "title": "Qantas",
+      "desc": "Logo image for Qantas",
+      "viewBox": "0 0 856 830"
+    },
+    {
+      "name": "tail-QR",
+      "title": "Qatar Airways",
+      "desc": "Logo image for Qatar Airways",
+      "viewBox": "0 0 856 830"
+    },
+    {
+      "name": "tail-RJ",
+      "title": "Royal Jordanian",
+      "desc": "Logo image for Royal Jordanian",
+      "viewBox": "0 0 856 830"
+    },
+    {
+      "name": "tail-S7",
+      "title": "S7 Airlines",
+      "desc": "Logo image for S7 Airlines",
+      "viewBox": "0 0 856 830"
+    },
+    {
+      "name": "tail-UL",
+      "title": "SriLankan Airlines",
+      "desc": "Logo image for SriLankan Airlines",
+      "viewBox": "0 0 856 830"
     }
+    
   ]
 }
