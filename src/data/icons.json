@@ -404,6 +404,10 @@
       "category": "in-flight"
     },
     {
+      "name": "lap-infant",
+      "category": "in-flight"
+    },
+    {
       "title": "Boarding pass",
       "name": "boarding-pass-filled",
       "desc": "indicates boarding pass options",
