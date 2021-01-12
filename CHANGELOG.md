@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.2.1](https://github.com/AlaskaAirlines/Icons/compare/v4.2.0...v4.2.1) (2021-01-12)
+
+
+### Bug Fixes
+
+* add new Government Approval icon ([28faecd](https://github.com/AlaskaAirlines/Icons/commit/28faecda9f8f0a4a95d6cefa166ee33c9cabda75))
+
 # [4.2.0](https://github.com/AlaskaAirlines/Icons/compare/v4.1.0...v4.2.0) (2021-01-05)
 
 
