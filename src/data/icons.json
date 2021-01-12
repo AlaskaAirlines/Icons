@@ -56,6 +56,12 @@
       "category": "alert"
     },
     {
+      "title": "Government Approval",
+      "name": "gov-approval",
+      "desc": "Flight awaiting Government approval",
+      "category": "Interface"
+    },
+    {
       "title": "Up pointer",
       "name": "arrow-up",
       "desc": "Directional pointer; up",
