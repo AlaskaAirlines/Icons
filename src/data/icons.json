@@ -59,7 +59,7 @@
       "title": "Government Approval",
       "name": "gov-approval",
       "desc": "Flight awaiting Government approval",
-      "category": "Interface"
+      "category": "interface"
     },
     {
       "title": "Up pointer",
