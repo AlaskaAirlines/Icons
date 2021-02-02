@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.3.0](https://github.com/AlaskaAirlines/Icons/compare/v4.2.3...v4.3.0) (2021-02-02)
+
+
+### Features
+
+* add new Oneworld SVG logo ([eba86b3](https://github.com/AlaskaAirlines/Icons/commit/eba86b38fd0de7e02f60a01a7146c15eced32c34))
+
 ## [4.2.3](https://github.com/AlaskaAirlines/Icons/compare/v4.2.2...v4.2.3) (2021-02-02)
 
 
