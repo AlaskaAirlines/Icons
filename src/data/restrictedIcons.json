@@ -73,6 +73,13 @@
       "title": "Alaska Airlines",
       "desc": "Logo image for Alaska Airlines",
       "viewBox": "0 0 396 171"
+    },
+    {
+      "name": "oneworld",
+      "title": "Oneworld",
+      "desc": "Logo image for Oneworld Alliance",
+      "viewBox": "0 0 24 24",
+      "color": "transparent"
     }
   ]
 }
