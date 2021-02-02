@@ -71,6 +71,23 @@ const buildLogos = (logos) => {
   return elements;
 }
 
+const buildRestricted = (logos) => {
+
+  let elements = "";
+
+  logos.forEach(i => {
+    const file = getFile(i);
+    elements += `
+      <div class="block block--large" title="${i}">
+        <img src="../dist/restricted/${file}" alt="">
+        <p>${i}</p>
+      </div>
+    `
+  });
+
+  return elements;
+}
+
 const getCategory = (iconPath) => {
 
   const iconAndDist = iconPath.split('icons/')[1];
@@ -95,6 +112,13 @@ const getCategory = (iconPath) => {
     const currentPath = path.join(__dirname, '../dist/logos/')
 
     if(file.includes('.svg')) logos.push(file.split(currentPath)[1]);
+  }
+
+  const restricted = [];
+  for await (const file of getFiles('./dist/restricted')) {
+    const currentPath = path.join(__dirname, '../dist/restricted/')
+
+    if(file.includes('.svg')) restricted.push(file.split(currentPath)[1]);
   }
 
   const sortedIcons = {};
@@ -146,6 +170,13 @@ const getCategory = (iconPath) => {
     <h2 class="icon-category">Logos</h2>
     <div class="iconsWrapper">
       ${buildLogos(logos)}
+    </div>
+  </section>
+
+  <section>
+    <h2 class="icon-category">Restricted</h2>
+    <div class="iconsWrapper">
+      ${buildRestricted(restricted)}
     </div>
   </section>
 </body>
