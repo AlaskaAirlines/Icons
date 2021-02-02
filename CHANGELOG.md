@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.3.1](https://github.com/AlaskaAirlines/Icons/compare/v4.3.0...v4.3.1) (2021-02-02)
+
+
+### Bug Fixes
+
+* move OW logo from restricted to logos dir ([4da93fd](https://github.com/AlaskaAirlines/Icons/commit/4da93fd3c07a2477b0033ea9223654ddfa0034c5))
+
 # [4.3.0](https://github.com/AlaskaAirlines/Icons/compare/v4.2.3...v4.3.0) (2021-02-02)
 
 
