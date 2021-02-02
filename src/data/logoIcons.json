@@ -265,6 +265,12 @@
       "title": "Oneworld",
       "desc": "Logo image for Oneworld Alliance",
       "viewBox": "0 0 24 24"
+    },
+    {
+      "name": "oneworld-title",
+      "title": "Oneworld Title",
+      "desc": "Logo title for Oneworld Alliance",
+      "viewBox": "0 0 24 24"
     }
   ]
 }
