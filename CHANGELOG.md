@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.4.0](https://github.com/AlaskaAirlines/Icons/compare/v4.3.2...v4.4.0) (2021-02-04)
+
+
+### Features
+
+* [#61](https://github.com/AlaskaAirlines/Icons/issues/61) add new tail logos ([60dac88](https://github.com/AlaskaAirlines/Icons/commit/60dac88fe068287983e3598548d19cf9ef2da73c))
+
 ## [4.3.2](https://github.com/AlaskaAirlines/Icons/compare/v4.3.1...v4.3.2) (2021-02-02)
 
 
