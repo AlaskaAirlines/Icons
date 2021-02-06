@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.4.1](https://github.com/AlaskaAirlines/Icons/compare/v4.4.0...v4.4.1) (2021-02-06)
+
+
+### Bug Fixes
+
+* update oneworld title logo to use correct wordmark logo ([3cf782a](https://github.com/AlaskaAirlines/Icons/commit/3cf782aa90bb91c6c2cbbcfe97bcc9e6895421e4))
+
 # [4.4.0](https://github.com/AlaskaAirlines/Icons/compare/v4.3.2...v4.4.0) (2021-02-04)
 
 
