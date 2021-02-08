@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.4.2](https://github.com/AlaskaAirlines/Icons/compare/v4.4.1...v4.4.2) (2021-02-08)
+
+
+### Bug Fixes
+
+* [#65](https://github.com/AlaskaAirlines/Icons/issues/65) address missing tail and resolve naming issue ([46a993a](https://github.com/AlaskaAirlines/Icons/commit/46a993a8a7ff2aa6a003ed44d8231016a0ffca31))
+
 ## [4.4.1](https://github.com/AlaskaAirlines/Icons/compare/v4.4.0...v4.4.1) (2021-02-06)
 
 
