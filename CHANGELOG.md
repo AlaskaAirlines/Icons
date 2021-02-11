@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.4.3](https://github.com/AlaskaAirlines/Icons/compare/v4.4.2...v4.4.3) (2021-02-11)
+
+
+### Bug Fixes
+
+* update lap-infant icon ([da1077f](https://github.com/AlaskaAirlines/Icons/commit/da1077ffdecfadc960e7ca5d179c441e7c0d11ce))
+
 ## [4.4.2](https://github.com/AlaskaAirlines/Icons/compare/v4.4.1...v4.4.2) (2021-02-08)
 
 
