@@ -186,9 +186,9 @@ Now that the SVG DOM is assigned to the `this.svg` variable, rendering this with
 <p>${this.svg}</p>
 ```
 
-### Web Component 
+### Web Component
 
-The easiest use of Auro Icons is to use the auro-icon web component. See the following HTML with attribute API examples. See the  [Auro site](https://auro.alaskaair.com/components/auro/icon) for more details on use. 
+The easiest use of Auro Icons is to use the auro-icon web component. See the following HTML with attribute API examples. See the  [Auro site](https://auro.alaskaair.com/components/auro/icon) for more details on use.
 
 ```html
 <auro-icon category="" name="" [optional state]>[optional description]</auro-icon>
@@ -285,7 +285,7 @@ When adding new icons, be sure to follow the example below to add the proper dat
 |---|---|---|---|
 | title | string |  | The `<title>` element provides an accessible, short-text description of any SVG, may appear as a tool-tip in the browser; can be derived from the file name |
 
-The `title` attribute is needed when you may want a simpler name than the file name. In the example data below, there is the `information-stroke.svg`, but the name `information-stroke` is meaningless if rendered to the browser. Updating the title to simply be `information` will address that. 
+The `title` attribute is needed when you may want a simpler name than the file name. In the example data below, there is the `information-stroke.svg`, but the name `information-stroke` is meaningless if rendered to the browser. Updating the title to simply be `information` will address that.
 
 #### Example data
 
@@ -324,14 +324,14 @@ The `title` attribute is needed when you may want a simpler name than the file n
 
 ### Test new icon SVG code
 
-Once the new icon has been added to the icons directory and the icon data JSON file has been updated, run the following commands. 
+Once the new icon has been added to the icons directory and the icon data JSON file has been updated, run the following commands.
 
 ```
 $ npm run generate
 $ npm run serve
 ```
 
-As update are made, simply run `$ npm run generate` to generate a new series of icons and rebuild the demo page. 
+As update are made, simply run `$ npm run generate` to generate a new series of icons and rebuild the demo page.
 
 ### Icon guidelines
 

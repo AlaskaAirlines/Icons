@@ -73,6 +73,12 @@
       "title": "Alaska Airlines",
       "desc": "Logo image for Alaska Airlines",
       "viewBox": "0 0 396 171"
+    },
+    {
+      "name": "AS-tagline-oneworld",
+      "title": "Alaska Airlines",
+      "desc": "Logo image for Alaska Airlines with Oneworld logo",
+      "viewBox": "0 0 633 176"
     }
   ]
 }
