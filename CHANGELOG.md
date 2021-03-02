@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.4.4](https://github.com/AlaskaAirlines/Icons/compare/v4.4.3...v4.4.4) (2021-03-02)
+
+
+### Bug Fixes
+
+* add delta tail logo icon ([069344b](https://github.com/AlaskaAirlines/Icons/commit/069344b83ba8193b3ac0dc7a5942b207682f441e))
+
 ## [4.4.3](https://github.com/AlaskaAirlines/Icons/compare/v4.4.2...v4.4.3) (2021-02-11)
 
 
