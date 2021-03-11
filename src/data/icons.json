@@ -552,6 +552,12 @@
       "name": "lounge",
       "desc": "Represents the Alaska Lounge or partner lounge access.",
       "category": "terminal"
+    },
+    {
+      "title": "This content from Alaska Airlines will open in a new tab or window.",
+      "name": "new-window",
+      "desc": "Notice indicator to alert users that action will result in the browser opening a new tab or window.",
+      "category": "interface"
     }
   ]
 }
