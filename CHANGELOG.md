@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+# [4.5.0](https://github.com/AlaskaAirlines/Icons/compare/v4.4.4...v4.5.0) (2021-03-30)
+
+
+### Bug Fixes
+
+* update tails to corrected design ([a698447](https://github.com/AlaskaAirlines/Icons/commit/a69844743cba8f6a18fe883415fc6c58e233d42c))
+
+
+### Features
+
+* add support for easy-to-publish demo page ([c3ae401](https://github.com/AlaskaAirlines/Icons/commit/c3ae401a475701fa34098c6edc6bb1a43c0250cb))
+
 ## [4.4.4](https://github.com/AlaskaAirlines/Icons/compare/v4.4.3...v4.4.4) (2021-03-02)
 
 
