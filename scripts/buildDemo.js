@@ -35,7 +35,7 @@ const buildElements = (sortedIcons) => {
       const file = getFile(i);
       elements += `
         <div class="block" title="${file}">
-          <img src="../dist/icons/${category}/${file}" alt="">
+          <img src="./dist/icons/${category}/${file}" alt="">
           <p>${file}</p>
         </div>
       `
@@ -62,7 +62,7 @@ const buildLogos = (logos) => {
     const file = getFile(i);
     elements += `
       <div class="block block--large" title="${i}">
-        <img src="../dist/logos/${file}" alt="">
+        <img src="./dist/logos/${file}" alt="">
         <p>${i}</p>
       </div>
     `
@@ -79,7 +79,7 @@ const buildRestricted = (logos) => {
     const file = getFile(i);
     elements += `
       <div class="block block--large" title="${i}">
-        <img src="../dist/restricted/${file}" alt="">
+        <img src="./dist/restricted/${file}" alt="">
         <p>${i}</p>
       </div>
     `
