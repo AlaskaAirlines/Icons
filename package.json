@@ -31,7 +31,7 @@
     "jsonlint": "jsonlint src/data/icons.json -q -V .jsonlintschema",
     "copyStyles": "npm-run-all copySass copyCss copyCssJs",
     "copySass": "copyfiles -f ./src/*.scss ./dist",
-    "copyDist": "copyfiles -f ./dist ./demo/dist",
+    "copyDist": "copyfiles -V './dist/**/*.svg' ./demo/",
     "copyCss": "copyfiles -f ./src/tokens/*.css ./dist/tokens",
     "copyCssJs": "copyfiles -f ./src/tokens/*.js ./dist/tokens",
     "svglint": "svglint dist/icons/*.svg dist/icons/alert/*.svg dist/icons/in-flight/*.svg dist/icons/interface/*.svg dist/icons/shop/*.svg dist/icons/social/*.svg dist/icons/terminal/*.svg --ci",
