@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+# [4.6.0](https://github.com/AlaskaAirlines/Icons/compare/v4.5.0...v4.6.0) (2021-04-01)
+
+
+### Bug Fixes
+
+* update demo build script ([6bdce30](https://github.com/AlaskaAirlines/Icons/commit/6bdce30683ccb2329e4d576f667a44acf78cc06d))
+
+
+### Features
+
+* add new-window.svg ([624bf75](https://github.com/AlaskaAirlines/Icons/commit/624bf750ded20b458fd65780bc9e635912a330aa))
+
 # [4.5.0](https://github.com/AlaskaAirlines/Icons/compare/v4.4.4...v4.5.0) (2021-03-30)
 
 
