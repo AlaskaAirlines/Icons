@@ -29,26 +29,26 @@
   "scripts": {
     "postinstall": "node packageScripts/postinstall.js",
     "jsonlint": "jsonlint src/data/icons.json -q -V .jsonlintschema",
-    "copyStyles": "npm-run-all copySass copyCss copyCssJs",
-    "copySass": "copyfiles -f ./src/*.scss ./dist",
-    "copyDist": "copyfiles -V './dist/**/*.svg' ./demo/",
-    "copyCss": "copyfiles -f ./src/tokens/*.css ./dist/tokens",
-    "copyCssJs": "copyfiles -f ./src/tokens/*.js ./dist/tokens",
+    "copy:styles": "npm-run-all copy:sass copy:css copy:cssJs",
+    "copy:sass": "copyfiles -f ./src/*.scss ./dist",
+    "copy:dist": "copyfiles -V './dist/**/*.svg' ./demo/",
+    "copy:css": "copyfiles -f ./src/tokens/*.css ./dist/tokens",
+    "copy:cssJs": "copyfiles -f ./src/tokens/*.js ./dist/tokens",
     "svglint": "svglint dist/icons/*.svg dist/icons/alert/*.svg dist/icons/in-flight/*.svg dist/icons/interface/*.svg dist/icons/shop/*.svg dist/icons/social/*.svg dist/icons/terminal/*.svg --ci",
     "generator": "node scripts/generate.js",
-    "generate": "npm-run-all sweep generator demoBuild copyDist",
+    "generate": "npm-run-all sweep generator build:demo copy:dist",
     "test": "npm-run-all svgjest jsonlint svglint",
     "svgjest": "jest",
     "sweep": "rm -rf ./dist",
-    "demoBuild": "node scripts/buildDemo.js ",
-    "ciBuild": "npm-run-all sweep generate test copyStyles svgjest demoBuild",
-    "devBuild": "npm-run-all sweep generate demoBuild test",
+    "build:demo": "node scripts/buildDemo.js ",
+    "build": "npm-run-all sweep generate test copy:styles svgjest build:demo",
+    "build:dev": "npm-run-all sweep generate build:demo test",
     "watch": "nodemon -e svg,js --watch src --exec npm-run-all generate test",
     "serve": "web-dev-server --open demo/ --node-resolve --watch"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test postinstall",
+      "pre-commit": "npm-run-all generator test postinstall",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },

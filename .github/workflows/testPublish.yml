@@ -25,8 +25,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm run generate
-      - run: npm run copyStyles
-      - run: npm run svgjest
+      - run: npm run copy:styles
       - run: npm test
 
   release:
@@ -43,8 +42,8 @@ jobs:
           node-version: 14
       - run: npm ci
       - run: npm run generate
-      - run: npm run copyStyles
-      - run: npm run svgjest
+      - run: npm run copy:styles
+      - run: npm test
       - uses: cycjimmy/semantic-release-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
