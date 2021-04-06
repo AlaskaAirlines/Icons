@@ -107,7 +107,7 @@ In this example, the color and size is changed using CSS.
 <div class="icon"></div>
 ```
 
-## Working with litElement
+## Embed with litElement
 
 When working with HTML custom elements and litElement, you can inject the dependency of the icon into the scope of your element. For example, using the `chevron-right` icon. Also note that there are slightly different JS wrappers for the icons, e.g. in this context we want to use the `ES6` version.
 
@@ -136,4 +136,6 @@ Last, use this function and the named icon in your HTML template. Notice the ass
 
 ## The npm and your framework
 
-Another option is to simply install the npm package as a dependency to your project. Doing this, it's up to your framework on how that works. React, Angular and Vue all have their own opinions on how to do this.
+The Auro Icon library, in its entirety, can be installed into the scope if your app. Simply follow the [install instructions](https://auro.alaskaair.com/icons/install).
+
+Doing this, it's up to your framework on how that works. React, Angular and Vue all have their own opinions on how to do this.
