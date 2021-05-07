@@ -3,6 +3,7 @@ name: New icon(s) request
 about: Request new icon(s) be added to library
 title: ''
 labels: 'Status: Proposal'
+assignees: blackfalcon
 
 ---
 
@@ -10,7 +11,7 @@ labels: 'Status: Proposal'
 
 > Please fill out the table below with the desired information per icon
 
-<!-- see the table below for a list of available categories 
+<!-- see the table below for a list of available categories
 | category  | description |
 |-----------|-------------|
 | alert     | Icons used specifically to alert users as to the state of awareness |
