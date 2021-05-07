@@ -59,6 +59,73 @@
       "title": "Government Approval",
       "name": "gov-approval",
       "desc": "Flight awaiting Government approval",
+      "category": "interface",
+      "status": "deprecated"
+    },
+    {
+      "title": "Discount code applied",
+      "name": "discount-code-applied",
+      "desc": "A confirmation that a code has been applied",
+      "category": "interface"
+    },
+    {
+      "title": "First class upgrade available",
+      "name": "first-class-upgrade-available",
+      "desc": "Denotes that there is an immediate upgrade to FC available",
+      "category": "interface"
+    },
+    {
+      "title": "First class upgrade waitlist",
+      "name": "first-class-upgrade-waitlist",
+      "desc": "Denotes that guests can join a waitlist to upgrade to FC",
+      "category": "interface"
+    },
+    {
+      "title": "Free same day change",
+      "name": "free-same-day-change",
+      "desc": " Some short, frequent flights aka 'shuttle flights' allow for free same day changes",
+      "category": "interface"
+    },
+    {
+      "title": "Mixed cabin itinerary",
+      "name": "mixed-cabin-itinerary",
+      "desc": "A guest will be in different cabins for different segments of the trip",
+      "category": "interface"
+    },
+    {
+      "title": "Not recommended for standby",
+      "name": "not-recommended-for-standby",
+      "desc": "Viewable by travelers with guest passes to fly standby - this route has a low chance of standby availability",
+      "category": "interface"
+    },
+    {
+      "title": "Premium class upgrade available",
+      "name": "premium-class-upgrade-available",
+      "desc": "Denotes that there is an immediate upgrade to PC available",
+      "category": "interface"
+    },
+    {
+      "title": "Premium class upgrade waitlist",
+      "name": "premium-class-upgrade-waitlist",
+      "desc": "Denotes that guests can join a waitlist to upgrade to PC",
+      "category": "interface"
+    },
+    {
+      "title": "Recommended for standby travel but monitor",
+      "name": "recommended-for-standby-travel-but-monitor",
+      "desc": "Viewable by travelers with guest passes to fly standby - this route has a medium chance of standby availability",
+      "category": "interface"
+    },
+    {
+      "title": "Recommended for standby",
+      "name": "recommended-for-standby",
+      "desc": "Viewable by travelers with guest passes to fly standby - this route has a high chance of standby availability",
+      "category": "interface"
+    },
+    {
+      "title": "Route pending government approval",
+      "name": "route-pending-government-approval",
+      "desc": "A new route that is waiting for official government approval",
       "category": "interface"
     },
     {
