@@ -51,6 +51,8 @@ function runGenerator(data) {
       ...iconRaw
     }
 
+    const iconStatus = icon.status;
+
     const iconName = icon.name;
     const distFilename = getDistFilename(icon);
     icon.svg = fs.readFileSync(`${iconsDir}${icon.path}/${iconName}.svg`, 'utf8');
@@ -84,6 +86,7 @@ function runGenerator(data) {
         icon.svg = icon.svg.replace(fillNone, '')
       }
     }
+
 
     // adds attributes to SVG string based on icons.json data
     icon.svg = [icon.svg.slice(0, insertPos), `class="${icon.style}" `, icon.svg.slice(insertPos)].join('');
