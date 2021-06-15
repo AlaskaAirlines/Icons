@@ -420,6 +420,30 @@
       "category": "interface"
     },
     {
+      "title": "Contract fare",
+      "name": "contract-fare",
+      "desc": "tbd",
+      "category": "interface"
+    },
+    {
+      "title": "Government fare",
+      "name": "government-fare",
+      "desc": "tbd",
+      "category": "interface"
+    },
+    {
+      "title": "Government mixed fare",
+      "name": "government-mixed-fare",
+      "desc": "tbd",
+      "category": "interface"
+    },
+    {
+      "title": "Contract mixed fare",
+      "name": "contract-mixed-fare",
+      "desc": "tbd",
+      "category": "interface"
+    },
+    {
       "name": "boarding",
       "desc": "icon used to indicate boarding options",
       "category": "in-flight"
