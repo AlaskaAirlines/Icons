@@ -1,5 +1,18 @@
 # Semantic Release Automated Changelog
 
+# [4.7.0](https://github.com/AlaskaAirlines/Icons/compare/v4.6.0...v4.7.0) (2021-06-18)
+
+
+### Bug Fixes
+
+* **fs icons:** update icon descriptions ([76c930f](https://github.com/AlaskaAirlines/Icons/commit/76c930f5e41fc85c92ac8aab0a45a81dd5644fb4))
+
+
+### Features
+
+* **fs icons:** add easybiz interface icons ([7fe74ad](https://github.com/AlaskaAirlines/Icons/commit/7fe74ad4bc5312234e0c722e6b946038efee6c27))
+* **fs icons:** add new flight search icons [#83](https://github.com/AlaskaAirlines/Icons/issues/83) ([5873336](https://github.com/AlaskaAirlines/Icons/commit/5873336f385c71352464fcaead4ec42802c83801))
+
 # [4.6.0](https://github.com/AlaskaAirlines/Icons/compare/v4.5.0...v4.6.0) (2021-04-01)
 
 

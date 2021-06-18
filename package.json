@@ -1,7 +1,7 @@
 {
   "name": "@alaskaairux/icons",
   "description": "Alaska Air and Auro Design System Icons",
-  "version": "4.6.0",
+  "version": "4.7.0",
   "main": "dist/index.js",
   "author": "Alaska Design and Research",
   "license": "Apache-2.0",
