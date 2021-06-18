@@ -422,25 +422,25 @@
     {
       "title": "Contract fare",
       "name": "contract-fare",
-      "desc": "tbd",
+      "desc": "A fare rate for companies that have a contract with Alaska Air",
       "category": "interface"
     },
     {
       "title": "Government fare",
       "name": "government-fare",
-      "desc": "tbd",
+      "desc": "A fare rate only visible only to government employees",
       "category": "interface"
     },
     {
       "title": "Government mixed fare",
       "name": "government-mixed-fare",
-      "desc": "tbd",
+      "desc": "Some segments of this journey include government fare rates, others do not",
       "category": "interface"
     },
     {
       "title": "Contract mixed fare",
       "name": "contract-mixed-fare",
-      "desc": "tbd",
+      "desc": "Some segments of this journey include contract fare rates, others do not",
       "category": "interface"
     },
     {
