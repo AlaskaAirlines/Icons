@@ -649,6 +649,48 @@
       "name": "new-window",
       "desc": "Notice indicator to alert users that action will result in the browser opening a new tab or window.",
       "category": "interface"
+    },
+    {
+      "title": "sun",
+      "name": "sun",
+      "desc": "Indicates destination options",
+      "category": "destination"
+    },
+    {
+      "title": "hotel optiond",
+      "name": "hotel",
+      "desc": "Indicates hotel options",
+      "category": "destination"
+    },
+    {
+      "title": "mask information",
+      "name": "mask",
+      "desc": "Indicates mask related information",
+      "category": "health"
+    },
+    {
+      "title": "pre-travel testing and Covid-19 related information",
+      "name": "covid-test",
+      "desc": "Indicates pre-travel testing and Covid-19 related information",
+      "category": "health"
+    },
+    {
+      "title": "air",
+      "name": "air",
+      "desc": "Indicates airflow",
+      "category": "health"
+    },
+    {
+      "title": "health informnation",
+      "name": "health",
+      "desc": "Indicates health related information",
+      "category": "health"
+    },
+    {
+      "title": "cleaning information",
+      "name": "spraybottle",
+      "desc": "Indicates that there is information about cleaning",
+      "category": "health"
     }
   ]
 }
