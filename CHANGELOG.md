@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.8.0](https://github.com/AlaskaAirlines/Icons/compare/v4.7.0...v4.8.0) (2021-06-29)
+
+
+### Features
+
+* **health-destination:** add new icons [#82](https://github.com/AlaskaAirlines/Icons/issues/82) ([bcda01b](https://github.com/AlaskaAirlines/Icons/commit/bcda01b6dfb6e918e91610c91b65ac1d97c08bb5))
+
 # [4.7.0](https://github.com/AlaskaAirlines/Icons/compare/v4.6.0...v4.7.0) (2021-06-18)
 
 
