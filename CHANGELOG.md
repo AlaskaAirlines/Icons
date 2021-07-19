@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.8.1](https://github.com/AlaskaAirlines/Icons/compare/v4.8.0...v4.8.1) (2021-07-19)
+
+
+### Bug Fixes
+
+* **width:** set baseline min-width of icons [#93](https://github.com/AlaskaAirlines/Icons/issues/93) ([7c5384d](https://github.com/AlaskaAirlines/Icons/commit/7c5384de3282d89fe53e1b10c64b000a4f086ad3))
+
 # [4.8.0](https://github.com/AlaskaAirlines/Icons/compare/v4.7.0...v4.8.0) (2021-06-29)
 
 
