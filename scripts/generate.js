@@ -57,8 +57,8 @@ function runGenerator(data) {
     const distFilename = getDistFilename(icon);
     icon.svg = fs.readFileSync(`${iconsDir}${icon.path}/${iconName}.svg`, 'utf8');
     const insertPos = icon.svg.indexOf("svg") + 3;
+    const width = icon.width ? `min-width: ${icon.width};` : '';
     const height = icon.height ? `height: ${icon.height};` : '';
-    const width = icon.width ? `width: ${icon.width};` : '';
     const elementStyle = `style="${width} ${height} fill: ${icon.color}" `;
 
     // Build new Title from icon file name
