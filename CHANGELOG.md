@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.8.2](https://github.com/AlaskaAirlines/Icons/compare/v4.8.1...v4.8.2) (2021-07-27)
+
+
+### Bug Fixes
+
+* **icon:** update spot color for notification-active.svg ([8c6b481](https://github.com/AlaskaAirlines/Icons/commit/8c6b48160bc9bbbbafa0e6d38196b34badbbf634))
+
 ## [4.8.1](https://github.com/AlaskaAirlines/Icons/compare/v4.8.0...v4.8.1) (2021-07-19)
 
 
