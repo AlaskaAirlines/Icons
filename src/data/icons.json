@@ -299,13 +299,13 @@
     {
       "title": "Heart",
       "name": "heart-filled",
-      "desc": "Indicates favorited item",
+      "desc": "Indicates favored item",
       "category": "interface"
     },
     {
       "title": "Heart",
       "name": "heart-stroke",
-      "desc": "Indicates favorited item",
+      "desc": "Indicates item to be favored",
       "category": "interface"
     },
     {
@@ -562,7 +562,7 @@
     },
     {
       "name": "round-trip-arrows",
-      "desc": "indicate round-trip flight opton",
+      "desc": "indicate round-trip flight option",
       "category": "terminal"
     },
     {
@@ -657,7 +657,7 @@
       "category": "destination"
     },
     {
-      "title": "hotel optiond",
+      "title": "hotel option",
       "name": "hotel",
       "desc": "Indicates hotel options",
       "category": "destination"
@@ -681,7 +681,7 @@
       "category": "health"
     },
     {
-      "title": "health informnation",
+      "title": "health information",
       "name": "health",
       "desc": "Indicates health related information",
       "category": "health"
