@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.8.3](https://github.com/AlaskaAirlines/Icons/compare/v4.8.2...v4.8.3) (2021-07-28)
+
+
+### Bug Fixes
+
+* **typos:** update icon data ([f71f021](https://github.com/AlaskaAirlines/Icons/commit/f71f021fb6ce6213e966425e9a749174c9fd9e1e))
+
 ## [4.8.2](https://github.com/AlaskaAirlines/Icons/compare/v4.8.1...v4.8.2) (2021-07-27)
 
 
