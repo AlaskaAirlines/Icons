@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.8.4](https://github.com/AlaskaAirlines/Icons/compare/v4.8.3...v4.8.4) (2021-08-20)
+
+
+### Bug Fixes
+
+* **style:** remove width definition from fallback Sass ([c089c87](https://github.com/AlaskaAirlines/Icons/commit/c089c8762fa159de1073b280915dea170fb275d2))
+
 ## [4.8.3](https://github.com/AlaskaAirlines/Icons/compare/v4.8.2...v4.8.3) (2021-07-28)
 
 
