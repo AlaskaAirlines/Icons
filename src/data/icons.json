@@ -577,12 +577,17 @@
     },
     {
       "name": "cart",
-      "desc": "icon used to indicate items related to purchases",
+      "desc": "indicate items related to purchases",
       "category": "shop"
     },
     {
       "name": "shopping-bag",
-      "desc": "icon used to indicate items related to purchases",
+      "desc": "indicate items related to purchases",
+      "category": "shop"
+    },
+    {
+      "name": "gift",
+      "desc": "indicate when a guest receives or has earned a gift such as a complimentary food item",
       "category": "shop"
     },
     {
