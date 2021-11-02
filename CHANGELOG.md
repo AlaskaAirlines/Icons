@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.9.0](https://github.com/AlaskaAirlines/Icons/compare/v4.8.4...v4.9.0) (2021-11-02)
+
+
+### Features
+
+* **gift:** add new shop icon for gift [#100](https://github.com/AlaskaAirlines/Icons/issues/100) ([0214a9e](https://github.com/AlaskaAirlines/Icons/commit/0214a9e6be067dddcb156ef80b851d0b0483d009))
+
 ## [4.8.4](https://github.com/AlaskaAirlines/Icons/compare/v4.8.3...v4.8.4) (2021-08-20)
 
 
