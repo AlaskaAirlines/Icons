@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.9.1](https://github.com/AlaskaAirlines/Icons/compare/v4.9.0...v4.9.1) (2021-11-12)
+
+
+### Bug Fixes
+
+* update food and drink icon [#85](https://github.com/AlaskaAirlines/Icons/issues/85) ([c14146e](https://github.com/AlaskaAirlines/Icons/commit/c14146e43834dd877883b98e9b413029ebebf717))
+
 # [4.9.0](https://github.com/AlaskaAirlines/Icons/compare/v4.8.4...v4.9.0) (2021-11-02)
 
 
