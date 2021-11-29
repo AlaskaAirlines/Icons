@@ -6,7 +6,7 @@
   "author": "Alaska Design and Research",
   "license": "Apache-2.0",
   "engines": {
-    "node": "<=12.22.6"
+    "node": ">=12.22.6"
   },
   "repository": {
     "type": "git",
