@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.9.2](https://github.com/AlaskaAirlines/Icons/compare/v4.9.1...v4.9.2) (2021-11-29)
+
+
+### Bug Fixes
+
+* **node:** update engine version reference ([145ab1b](https://github.com/AlaskaAirlines/Icons/commit/145ab1b2158d67a08885adc2b0d352ae179c85d4))
+
 ## [4.9.1](https://github.com/AlaskaAirlines/Icons/compare/v4.9.0...v4.9.1) (2021-11-12)
 
 
