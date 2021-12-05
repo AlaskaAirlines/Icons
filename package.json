@@ -109,6 +109,7 @@
   ],
   "dependencies": {
     "chalk": "^4.1.2",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "svgo": "^2.8.0"
   }
 }
