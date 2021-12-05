@@ -18,6 +18,7 @@ const logoData = require(logoDataFile);
 const fileSys = require('file-system');
 const chalk = require('chalk');
 const fs = require('fs');
+const { optimize } = require('svgo');
 
 let buildIconsDir = `${__dirname}/../dist/icons`;
 
@@ -87,7 +88,6 @@ function runGenerator(data) {
       }
     }
 
-
     // adds attributes to SVG string based on icons.json data
     icon.svg = [icon.svg.slice(0, insertPos), `class="${icon.style}" `, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), elementStyle, icon.svg.slice(insertPos)].join('');
@@ -97,6 +97,25 @@ function runGenerator(data) {
     icon.svg = [icon.svg.slice(0, insertPos), `xmlns:xlink="${icon.xmlns_xlink}" `, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), `viewBox="${icon.viewBox}" `, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), ` `, icon.svg.slice(insertPos)].join('');
+
+    // optimize SVG
+    icon.svg = optimize(icon.svg, {
+      plugins: [
+        {
+          name: 'preset-default',
+          params: {
+            overrides: {
+              removeDesc: false,            // keep <desc>
+              removeTitle: false,           // keep <title>
+              removeUnusedNS: false,        // keep xmlns:xlink=
+              removeUnknownsAndDefaults: {
+                keepRoleAttr: true,         // keep role=
+              }
+            },
+          },
+        },
+      ],
+    }).data;
 
     if (icon.category === 'restricted') {
       buildIconsDir = `${__dirname}/../dist`;
