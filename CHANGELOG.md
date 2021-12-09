@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.10.0](https://github.com/AlaskaAirlines/Icons/compare/v4.9.2...v4.10.0) (2021-12-09)
+
+
+### Features
+
+* **performance:** update generate.js build step to include svgo to optimize svg output ([dc7b3bc](https://github.com/AlaskaAirlines/Icons/commit/dc7b3bc8cdf4f370a71ebf2eef5af414edd3e895))
+
 ## [4.9.2](https://github.com/AlaskaAirlines/Icons/compare/v4.9.1...v4.9.2) (2021-11-29)
 
 
