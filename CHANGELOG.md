@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.10.1](https://github.com/AlaskaAirlines/Icons/compare/v4.10.0...v4.10.1) (2021-12-10)
+
+
+### Bug Fixes
+
+* **npmignore:** remove unnecessary resources from package ([b1e12d4](https://github.com/AlaskaAirlines/Icons/commit/b1e12d43edeb301619c5530e3cb2200933a6f39e))
+
 # [4.10.0](https://github.com/AlaskaAirlines/Icons/compare/v4.9.2...v4.10.0) (2021-12-09)
 
 
