@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.10.2](https://github.com/AlaskaAirlines/Icons/compare/v4.10.1...v4.10.2) (2022-04-14)
+
+
+### Bug Fixes
+
+* **perf:** update aa tail icon to be less complex ([7eb5ffc](https://github.com/AlaskaAirlines/Icons/commit/7eb5ffc83e1351b7f8b72abcb3338f78d50ec9de))
+
 ## [4.10.1](https://github.com/AlaskaAirlines/Icons/compare/v4.10.0...v4.10.1) (2021-12-10)
 
 
