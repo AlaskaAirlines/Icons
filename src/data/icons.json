@@ -696,6 +696,48 @@
       "name": "spraybottle",
       "desc": "Indicates that there is information about cleaning",
       "category": "health"
+    },
+    {
+      "title": "clock",
+      "name": "clock-filled",
+      "desc": "Clock face with hands",
+      "category": "interface"
+    },
+    {
+      "title": "clock",
+      "name": "clock-stroke",
+      "desc": "Clock face with hands",
+      "category": "interface"
+    },
+    {
+      "title": "pin trip",
+      "name": "pin-trip",
+      "desc": "Pin icon showing travel from point to point",
+      "category": "interface"
+    },
+    {
+      "title": "rising sun",
+      "name": "rising-sun",
+      "desc": "Half sun with rays",
+      "category": "destination"
+    },
+    {
+      "title": "sparkle filled",
+      "name": "sparkle-filled",
+      "desc": "3 sparkles",
+      "category": "interface"
+    },
+    {
+      "title": "sparkle stroke",
+      "name": "sparkle-stroke",
+      "desc": "3 sparkles",
+      "category": "interface"
+    },
+    {
+      "title": "tag",
+      "name": "tag",
+      "desc": "Tag with aurora line at bottom",
+      "category": "interface"
     }
   ]
 }
