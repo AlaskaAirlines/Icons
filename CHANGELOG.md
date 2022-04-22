@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.11.0](https://github.com/AlaskaAirlines/Icons/compare/v4.10.2...v4.11.0) (2022-04-22)
+
+
+### Features
+
+* **upsell:** add new icons [#115](https://github.com/AlaskaAirlines/Icons/issues/115) ([733c3cc](https://github.com/AlaskaAirlines/Icons/commit/733c3cc19f94a3805297141d55627bb67efc0894))
+
 ## [4.10.2](https://github.com/AlaskaAirlines/Icons/compare/v4.10.1...v4.10.2) (2022-04-14)
 
 
