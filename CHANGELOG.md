@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.11.1](https://github.com/AlaskaAirlines/Icons/compare/v4.11.0...v4.11.1) (2022-04-22)
+
+
+### Bug Fixes
+
+* **sparkle stroke:** remove offending icon [#118](https://github.com/AlaskaAirlines/Icons/issues/118) ([c756dbf](https://github.com/AlaskaAirlines/Icons/commit/c756dbfcaebacba03a7bb837e3d54d168c8e7501))
+
 # [4.11.0](https://github.com/AlaskaAirlines/Icons/compare/v4.10.2...v4.11.0) (2022-04-22)
 
 
