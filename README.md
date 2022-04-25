@@ -11,47 +11,6 @@ The focus of this repository is to manage, at scale, the enterprise need for ico
 ```bash
 $ npm i @alaskaairux/icons
 ```
-## Sass styles for IE fallback
-
-For use in situations where CSS custom properties are not supported. In the `dist/` directory is `icons.scss`. Import this Sass file for default shape styles.
-
-```scss
-@import '@alaskaairux/icons/dist/icons';
-```
-
-Within React, Sass requires a `~` character prior to the importing library, example:
-
-```scss
-@import '~@alaskaairux/icons/dist/icons';
-```
-
-Due to dependency on Auro tokens, be sure to import the Sass variables prior to importing the Icons selectors.
-
-```scss
-@import "~@alaskaairux/orion-design-tokens/dist/tokens/SCSSVariables";
-```
-
-## Using Icons/Tokens within a LitElement Custom Element
-
-When using Icons within the scope of a LitElement Custom Element, the `CSSTokenProperties.css` file can to be referenced within the scope of the shadow DOM. To do this, the CSS needs to be wrapped in a JavaScript module.
-
-Add the following line to the head of the Custom Element document:
-
-```javascript
-import iconProperties from '@alaskaairux/icons/dist/tokens/CSSTokenProperties-css.js';
-```
-
-Within the `render()`, then within the `return html` template literal, add the following:
-
-```javascript
-${iconProperties}
-```
-
-This will insert the Token output within the scope of the shadow DOM Custom Element and render the appropriate values per the CSS Custom Properties.
-
-### Using Icon Properties outside the shadow DOM
-
-When using an icon, it is not necessary to load the Icon CSS custom properties within the scope of the shadow DOM. As long as the variables are made available from the global scope of the project, the CSS custom properties will pierce the shadow DOM and style the icons.
 
 ## Icon categories
 
@@ -67,77 +26,6 @@ Icons fall into a series of use categories, these are:
 | social | Icons for use with social media |
 | terminal | Icons related to terminal experiences |
 
-## Node application dependency
-
-Via a node.js dependency or other node like dependency management architecture, developers can choose from two different scenarios for the rendering of the SVG. This technique will render the SVG inline from the designated resource location.
-
-### Individual icon request
-
-It is suggested that developers list individual dependencies per UI component, like so:
-
-```javascript
-const warning = require('@alaskaairux/icons/dist/icons/alert/warning');
-```
-
-Within the UI component a developer can reference the object assigned to the newly created variable to get the specific icon's SVG code:
-
-```javascript
-<button>Click Me ${warning.svg}</button>
-```
-
-This will return the icon's SVG HTML inline.
-
-### Individual logo request
-
-It is suggested that developers list individual dependencies per UI component, like so:
-
-```javascript
-const alaskaLogo = require('@alaskaairux/icons/dist/logos/glyph-AS');
-```
-
-Within the UI component a developer can reference the object assigned to the newly created variable to get the specific logo's SVG code:
-
-```javascript
-<div>${alaskaLogo.svg}</div>
-```
-
-This will return the icon's SVG HTML inline.
-
-### Altering the SVG output
-
-Using either method, the SVG is captured as an object that can be manipulated. For example, calling the `warning.js` file as shown below ...
-
-```javascript
-const warning = require('@alaskaairux/icons/dist/icons/alert/warning');
-```
-
-... will output the following HTML
-
-```html
-<svg role="img" aria-hidden="true" style="fill: currentcolor; width: var(--auro-size-lg);  height: var(auro-size-lg)" class="ico_squareLarge" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <title>Warning</title>
-  <g>
-    <polygon points="4 4 0 0 8 0"></polygon>
-  </g>
-</svg>
-```
-
-Adding the following line of JavaScript will find and replace the `aria-hidden` attribute in the `warning.svg ` string ...
-
-```javascript
-warning.svg = warning.svg.replace(/aria-hidden="true"/g, `aria-hidden="false"`);
-```
-
-... and then output the following:
-
-```html
-<svg role="img" aria-hidden="false" style="fill: currentcolor; width: var(--auro-size-lg);  height: var(--auro-size-lg)" class="ico_squareLarge" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <title>Warning</title>
-  <g>
-    <polygon points="4 4 0 0 8 0"></polygon>
-  </g>
-</svg>
-```
 
 ## JavaScript framework support
 
@@ -167,9 +55,11 @@ In most cases, the default exported JS file will work. But in some cases, the ES
 
 Lit-element requires the ES6 module export syntax for use, so an example dependency reference would be:
 
-```javascript
+```js
 import warning from '@alaskaairux/icons/dist/icons/alert/warning_es6.js';
 ```
+
+#### Non-directive use 
 
 Parsing out the SVG HTML to become DOM requires lines of code within the scope of the new custom element class, for example:
 
@@ -184,6 +74,30 @@ Now that the SVG DOM is assigned to the `this.svg` variable, rendering this with
 
 ```html
 <p>${this.svg}</p>
+```
+
+#### Directive use 
+
+In the head of your component file, import the [Lit Element directive](https://lit.dev/docs/templates/directives/#unsafesvg). 
+
+```js
+// Lit2.0
+import { unsafeSVG } from 'lit/directives/unsafe-svg.js';
+
+// Legacy Lit Element
+import { unsafeSVG } from 'lit-html/directives/unsafe-svg.js';
+```
+
+Import your icon SVG reference 
+
+```js
+import warning from '@alaskaairux/icons/dist/icons/alert/warning_es6.js';
+```
+
+Use in HTML template 
+
+```html
+<p>${unsafeSVG(warning.svg)}</p>
 ```
 
 ### Web Component
