@@ -27,7 +27,8 @@
     "nodemon": "^2.0.15",
     "npm-run-all": "^4.1.5",
     "semantic-release": "^17.4.7",
-    "svglint": "^2.1.0"
+    "svglint": "^2.1.0",
+    "typescript": "^4.6.3"
   },
   "scripts": {
     "postinstall": "node packageScripts/postinstall.js",
@@ -39,7 +40,7 @@
     "copy:cssJs": "copyfiles -f ./src/tokens/*.js ./dist/tokens",
     "svglint": "svglint dist/icons/*.svg dist/icons/alert/*.svg dist/icons/in-flight/*.svg dist/icons/interface/*.svg dist/icons/shop/*.svg dist/icons/social/*.svg dist/icons/terminal/*.svg --ci",
     "generator": "node scripts/generate.js",
-    "generate": "npm-run-all sweep generator build:demo copy:dist",
+    "generate": "npm-run-all sweep generator build:demo copy:dist types",
     "test": "npm-run-all svgjest jsonlint svglint",
     "svgjest": "jest",
     "sweep": "rm -rf ./dist",
@@ -47,7 +48,8 @@
     "build": "npm-run-all sweep generate test copy:styles svgjest build:demo",
     "build:dev": "npm-run-all sweep generate build:demo test",
     "watch": "nodemon -e svg,js --watch src --exec npm-run-all generate test",
-    "serve": "web-dev-server --open demo/ --node-resolve --watch"
+    "serve": "web-dev-server --open demo/ --node-resolve --watch",
+    "types": "tsc"
   },
   "husky": {
     "hooks": {
