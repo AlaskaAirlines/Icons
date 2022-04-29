@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.12.0](https://github.com/AlaskaAirlines/Icons/compare/v4.11.1...v4.12.0) (2022-04-29)
+
+
+### Features
+
+* support TypeScript [#121](https://github.com/AlaskaAirlines/Icons/issues/121) ([6016704](https://github.com/AlaskaAirlines/Icons/commit/6016704a8b9ed462f10af7ec1ee6087f7211e12e))
+
 ## [4.11.1](https://github.com/AlaskaAirlines/Icons/compare/v4.11.0...v4.11.1) (2022-04-22)
 
 
