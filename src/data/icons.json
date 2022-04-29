@@ -728,6 +728,12 @@
       "category": "interface"
     },
     {
+      "title": "sparkle stroke",
+      "name": "sparkle-stroke",
+      "desc": "3 sparkles",
+      "category": "interface"
+    },
+    {
       "title": "tag",
       "name": "tag",
       "desc": "Tag with aurora line at bottom",
