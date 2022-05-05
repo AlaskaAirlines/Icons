@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.13.0](https://github.com/AlaskaAirlines/Icons/compare/v4.12.0...v4.13.0) (2022-05-05)
+
+
+### Features
+
+* **icon:** add sparkle-stroke icon [#118](https://github.com/AlaskaAirlines/Icons/issues/118) ([afd3442](https://github.com/AlaskaAirlines/Icons/commit/afd34424543eab32fd03981bbe9445128c183bc4))
+
 # [4.12.0](https://github.com/AlaskaAirlines/Icons/compare/v4.11.1...v4.12.0) (2022-04-29)
 
 
