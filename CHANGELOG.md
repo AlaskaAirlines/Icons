@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+# [4.14.0](https://github.com/AlaskaAirlines/Icons/compare/v4.13.0...v4.14.0) (2022-06-18)
+
+
+### Features
+
+* **icon:** add new tail icon for Air Tahiti Nui ([cea309b](https://github.com/AlaskaAirlines/Icons/commit/cea309b25fefb48c9a4ae8e074124447167bbcff))
+* **metadata:** add TN meta data ([fff3f8e](https://github.com/AlaskaAirlines/Icons/commit/fff3f8ebce69a108ec88958666d15430e55076eb))
+
 # [4.13.0](https://github.com/AlaskaAirlines/Icons/compare/v4.12.0...v4.13.0) (2022-05-05)
 
 
