@@ -444,6 +444,12 @@
       "category": "interface"
     },
     {
+      "title": "QR code",
+      "name": "qr-code",
+      "desc": "indicates availability of a QR code",
+      "category": "interface"
+    },
+    {
       "name": "boarding",
       "desc": "icon used to indicate boarding options",
       "category": "in-flight"
