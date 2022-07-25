@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.15.0](https://github.com/AlaskaAirlines/Icons/compare/v4.14.0...v4.15.0) (2022-07-25)
+
+
+### Features
+
+* **icon:** add qr icon [#131](https://github.com/AlaskaAirlines/Icons/issues/131) ([cc31cd7](https://github.com/AlaskaAirlines/Icons/commit/cc31cd72f8c1bc6ac278c3d6f0c966c693140a35))
+
 # [4.14.0](https://github.com/AlaskaAirlines/Icons/compare/v4.13.0...v4.14.0) (2022-06-18)
 
 
