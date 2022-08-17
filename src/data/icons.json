@@ -450,6 +450,18 @@
       "category": "interface"
     },
     {
+      "title": "Phone",
+      "name": "phone",
+      "desc": "mobile smart phone",
+      "category": "interface"
+    },
+    {
+      "title": "Settings",
+      "name": "settings",
+      "desc": "gear",
+      "category": "interface"
+    },
+    {
       "name": "boarding",
       "desc": "icon used to indicate boarding options",
       "category": "in-flight"
@@ -572,6 +584,11 @@
       "category": "terminal"
     },
     {
+      "name": "check-in",
+      "desc": "checkmark in pin icon",
+      "category": "terminal"
+    },
+    {
       "name": "facebook",
       "desc": "Facebook social media icon",
       "category": "social"
@@ -594,6 +611,11 @@
     {
       "name": "gift",
       "desc": "indicate when a guest receives or has earned a gift such as a complimentary food item",
+      "category": "shop"
+    },
+    {
+      "name": "receipt",
+      "desc": "receipt with placeholder content",
       "category": "shop"
     },
     {
@@ -656,6 +678,12 @@
       "category": "terminal"
     },
     {
+      "title": "Flight pass",
+      "name": "flight-pass",
+      "desc": "Pass with plane and 3 dots",
+      "category": "terminal"
+    },
+    {
       "title": "This content from Alaska Airlines will open in a new tab or window.",
       "name": "new-window",
       "desc": "Notice indicator to alert users that action will result in the browser opening a new tab or window.",
@@ -671,6 +699,18 @@
       "title": "hotel option",
       "name": "hotel",
       "desc": "Indicates hotel options",
+      "category": "destination"
+    },
+    {
+      "title": "Car rental",
+      "name": "car-rental",
+      "desc": "Car with a key above",
+      "category": "destination"
+    },
+    {
+      "title": "Ride",
+      "name": "ride",
+      "desc": "bus",
       "category": "destination"
     },
     {
