@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+# [4.16.0](https://github.com/AlaskaAirlines/Icons/compare/v4.15.0...v4.16.0) (2022-09-01)
+
+
+### Features
+
+* add mokulele and condor tails [#133](https://github.com/AlaskaAirlines/Icons/issues/133) ([ef7f487](https://github.com/AlaskaAirlines/Icons/commit/ef7f48747324a0c01ee5173563bd0dba68d646a4))
+* **app team:** add icons [#134](https://github.com/AlaskaAirlines/Icons/issues/134) ([43a10f0](https://github.com/AlaskaAirlines/Icons/commit/43a10f09ce12613102179dacb312c210bc03b6f2))
+
 # [4.15.0](https://github.com/AlaskaAirlines/Icons/compare/v4.14.0...v4.15.0) (2022-07-25)
 
 
