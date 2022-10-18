@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.16.1](https://github.com/AlaskaAirlines/Icons/compare/v4.16.0...v4.16.1) (2022-10-18)
+
+
+### Bug Fixes
+
+* update LATAM tail icons [#142](https://github.com/AlaskaAirlines/Icons/issues/142) ([af3a0ca](https://github.com/AlaskaAirlines/Icons/commit/af3a0ca68fa06da20de4a96978fda8b9418c2d8d))
+
 # [4.16.0](https://github.com/AlaskaAirlines/Icons/compare/v4.15.0...v4.16.0) (2022-09-01)
 
 
