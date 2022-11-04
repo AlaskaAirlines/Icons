@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.17.0](https://github.com/AlaskaAirlines/Icons/compare/v4.16.1...v4.17.0) (2022-11-04)
+
+
+### Features
+
+* **logo:** add EL-AL logo [#146](https://github.com/AlaskaAirlines/Icons/issues/146) ([5e3aac3](https://github.com/AlaskaAirlines/Icons/commit/5e3aac3c6169f5b99b6fdbe72d66d7eee6891d09))
+
 ## [4.16.1](https://github.com/AlaskaAirlines/Icons/compare/v4.16.0...v4.16.1) (2022-10-18)
 
 
