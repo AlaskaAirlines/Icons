@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.17.1](https://github.com/AlaskaAirlines/Icons/compare/v4.17.0...v4.17.1) (2022-11-21)
+
+
+### Performance Improvements
+
+* **deps:** remove unnecessary package fs ([89edb25](https://github.com/AlaskaAirlines/Icons/commit/89edb259242865a4430c280f6527586a1f8d004b))
+
 # [4.17.0](https://github.com/AlaskaAirlines/Icons/compare/v4.16.1...v4.17.0) (2022-11-04)
 
 
