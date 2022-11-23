@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.18.0](https://github.com/AlaskaAirlines/Icons/compare/v4.17.1...v4.18.0) (2022-11-23)
+
+
+### Features
+
+* **lyft:** add new icon [#155](https://github.com/AlaskaAirlines/Icons/issues/155) ([01838ad](https://github.com/AlaskaAirlines/Icons/commit/01838adb90d5c34857f42d1f7bf5227667db3d25))
+
 ## [4.17.1](https://github.com/AlaskaAirlines/Icons/compare/v4.17.0...v4.17.1) (2022-11-21)
 
 
