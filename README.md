@@ -162,7 +162,7 @@ import Arrowdown from '-!svg-react-loader?name=Icon!@alaskaairux/icons/dist/icon
 
 Adding new icons to this repository requires a few steps.
 
-1. Node.js minimum version `12.x`
+1. Node.js minimum version `14.x`
 1. Add a new icon `.svg` file to the `src/icons/` directory (see Guidelines below)
 1. If the icons are to retain designed color specs, please place the new icon in the `src/icons/fullColor` directory
 1. Add **shape schema** to `./src/data/icons.json` file (see example below)
