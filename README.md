@@ -25,6 +25,7 @@ Icons fall into a series of use categories, these are:
 | shop | icons for use with shopping experiences |
 | social | Icons for use with social media |
 | terminal | Icons related to terminal experiences |
+| partnership | Icons related to business partnerships and Alaska Airlines |
 
 
 ## JavaScript framework support
@@ -59,7 +60,7 @@ Lit-element requires the ES6 module export syntax for use, so an example depende
 import warning from '@alaskaairux/icons/dist/icons/alert/warning_es6.js';
 ```
 
-#### Non-directive use 
+#### Non-directive use
 
 Parsing out the SVG HTML to become DOM requires lines of code within the scope of the new custom element class, for example:
 
@@ -76,9 +77,9 @@ Now that the SVG DOM is assigned to the `this.svg` variable, rendering this with
 <p>${this.svg}</p>
 ```
 
-#### Directive use 
+#### Directive use
 
-In the head of your component file, import the [Lit Element directive](https://lit.dev/docs/templates/directives/#unsafesvg). 
+In the head of your component file, import the [Lit Element directive](https://lit.dev/docs/templates/directives/#unsafesvg).
 
 ```js
 // Lit2.0
@@ -88,13 +89,13 @@ import { unsafeSVG } from 'lit/directives/unsafe-svg.js';
 import { unsafeSVG } from 'lit-html/directives/unsafe-svg.js';
 ```
 
-Import your icon SVG reference 
+Import your icon SVG reference
 
 ```js
 import warning from '@alaskaairux/icons/dist/icons/alert/warning_es6.js';
 ```
 
-Use in HTML template 
+Use in HTML template
 
 ```html
 <p>${unsafeSVG(warning.svg)}</p>
