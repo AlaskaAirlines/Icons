@@ -517,6 +517,54 @@
       "category": "in-flight"
     },
     {
+      "title": "passenger",
+      "name": "passenger",
+      "desc": "Avatar within a circle stroke",
+      "category": "in-flight"
+    },
+    {
+      "title": "multipax",
+      "name": "multipax",
+      "desc": "Two avatars within a circle stroke",
+      "category": "in-flight"
+    },
+    {
+      "title": "diverted",
+      "name": "diverted",
+      "desc": "An arrow pointed to the right with a straight dotted line",
+      "category": "terminal"
+    },
+    {
+      "title": "arrival",
+      "name": "arrival-filled",
+      "desc": "An arrow pointed downwards and contained within a filled rectangle",
+      "category": "terminal"
+    },
+    {
+      "title": "arrival",
+      "name": "arrival-stroke",
+      "desc": "An arrow pointed downwards and framed within a rectangle stroke",
+      "category": "terminal"
+    },
+    {
+      "title": "departure",
+      "name": "departure-filled",
+      "desc": "An arrow pointed upwards and contained within a filled rectangle",
+      "category": "terminal"
+    },
+    {
+      "title": "departure",
+      "name": "departure-stroke",
+      "desc": "An arrow pointed upwards and framed within a rectangle stroke",
+      "category": "terminal"
+    },
+    {
+      "title": "Flight Details",
+      "name": "flight-details",
+      "desc": "Paragraph wireframe with an upper corner plane drawing",
+      "category": "terminal"
+    },
+    {
       "title": "Boarding pass",
       "name": "boarding-pass-filled",
       "desc": "indicates boarding pass options",
