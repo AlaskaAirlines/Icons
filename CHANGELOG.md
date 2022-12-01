@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.19.0](https://github.com/AlaskaAirlines/Icons/compare/v4.18.0...v4.19.0) (2022-12-01)
+
+
+### Features
+
+* **icons:** add new terminal and in-flight icons [#161](https://github.com/AlaskaAirlines/Icons/issues/161) ([dfe47ef](https://github.com/AlaskaAirlines/Icons/commit/dfe47efa4bf7d979098fa0259dba381f7b09558c))
+
 # [4.18.0](https://github.com/AlaskaAirlines/Icons/compare/v4.17.1...v4.18.0) (2022-11-23)
 
 
