@@ -1,10 +1,10 @@
 {
   "commonProperties":
   {
-      "hidden": "true",
       "category": "logos",
       "role": "img",
       "color": "currentColor",
+      "title": "",
       "desc": "",
       "width": "100%",
       "height": "auto",
@@ -16,362 +16,302 @@
   "icons": [
     {
       "name": "logo-7H",
-      "title": "Ravn Alaska",
-      "desc": "Logo image for Ravn Alaska",
+      "title": "Logo image for Ravn Alaska",
       "viewBox": "0 0 50.329418 24.648584"
     },
     {
       "name": "logo-AS",
-      "title": "Alaska Airlines",
-      "desc": "Logo image for Alaska Airlines",
+      "title": "Logo image for Alaska Airlines",
       "viewBox": "0 0 144 45"
     },
     {
       "name": "logo-AS-tagline",
-      "title": "Alaska Airlines",
-      "desc": "Logo image for Alaska Airlines with tagline",
+      "title": "Logo image for Alaska Airlines with tagline",
       "viewBox": "0 0 144 63"
     },
     {
       "name": "logo-AA",
-      "title": "American Airlines",
-      "desc": "Logo image for American Airlines",
+      "title": "Logo image for American Airlines",
       "viewBox": "0 -0.438 302.1115902939018 142.2640366546909"
     },
     {
       "name": "logo-CX",
-      "title": "Cathay Pacific",
-      "desc": "Logo image for Cathay Pacific",
+      "title": "Logo image for Cathay Pacific",
       "viewBox": "0 0 430 60"
     },
     {
       "name": "logo-EK",
-      "title": "Emirates",
-      "desc": "Logo image for Emirates",
+      "title": "Logo image for Emirates",
       "viewBox": "0 0 328 166"
     },
     {
       "name": "logo-FJ",
-      "title": "Fiji Airways",
-      "desc": "Logo image for Fiji Airways",
+      "title": "Logo image for Fiji Airways",
       "viewBox": "0 0 1000 437.70996"
     },
     {
       "name": "logo-KE",
-      "title": "Korean Airlines",
-      "desc": "Logo image for Korean Airlines",
+      "title": "Logo image for Korean Airlines",
       "viewBox": "0 0 319.23459 37.385811"
     },
     {
       "name": "logo-KL",
-      "title": "KLM",
-      "desc": "Logo image for KLM",
+      "title": "Logo image for KLM",
       "viewBox": "0 0 350 204"
     },
     {
       "name": "logo-LA",
-      "title": "LATAM",
-      "desc": "Logo image for LATAM",
+      "title": "Logo image for LATAM",
       "viewBox": "0 0 2670 630.00001"
     },
     {
       "name": "logo-LH",
-      "title": "Lufthansa",
-      "desc": "Logo image for Lufthansa",
+      "title": "Logo image for Lufthansa",
       "viewBox": "0 0 400 300"
     },
     {
       "name": "logo-OO",
-      "title": "SkyWest",
-      "desc": "Logo image for SkyWest",
+      "title": "Logo image for SkyWest",
       "viewBox": "-0.72468 -0.72468 110.04136 25.60536"
     },
     {
       "name": "logo-QF",
-      "title": "Qantas",
-      "desc": "Logo image for Qantas",
+      "title": "Logo image for Qantas",
       "viewBox": "0 0 400 300"
     },
     {
       "name": "logo-SQ",
-      "title": "Singapore Airlines",
-      "desc": "Logo image for Singapore Airlines",
+      "title": "Logo image for Singapore Airlines",
       "viewBox": "0 0 350 128.381"
     },
     {
       "name": "logo-JL",
-      "title": "Japan Airlines",
-      "desc": "Logo image for Japan Airlines",
+      "title": "Logo image for Japan Airlines",
       "viewBox": "0 0 652 652"
     },
     {
       "name": "logo-HA",
-      "title": "Hawaiian Airlines",
-      "desc": "Logo image for Hawaiian Airlines",
+      "title": "Logo image for Hawaiian Airlines",
       "viewBox": "0 0 652 652"
     },
     {
       "name": "logo-EV",
-      "title": "Eva Air",
-      "desc": "Logo image for Eva Air",
+      "title": "Logo image for Eva Air",
       "viewBox": "0 0 192.756 192.756"
     },
     {
       "name": "logo-HU",
-      "title": "Hainan Airlines",
-      "desc": "Logo image for Hainan Airlines",
+      "title": "Logo image for Hainan Airlines",
       "viewBox": "0 0 560 400"
     },
     {
       "name": "logo-AF",
-      "title": "Air France",
-      "desc": "Logo image for Air France",
+      "title": "Logo image for Air France",
       "viewBox": "0 0 652 652"
     },
     {
       "name": "logo-AM",
-      "title": "AeroMexico",
-      "desc": "Logo image for AeroMexico",
+      "title": "Logo image for AeroMexico",
       "viewBox": "0 0 652 652"
     },
     {
       "name": "logo-AY",
-      "title": "FinnAir",
-      "desc": "Logo image for FinnAir",
+      "title": "Logo image for FinnAir",
       "viewBox": "0 0 400 300"
     },
     {
       "name": "logo-BA",
-      "title": "British Airways",
-      "desc": "Logo image for British Airways",
+      "title": "Logo image for British Airways",
       "viewBox": "0 0 652 652"
     },
     {
       "name": "logo-DE",
-      "title": "Condor",
-      "desc": "Logo image for Condor",
+      "title": "Logo image for Condor",
       "viewBox": "0 0 652 652"
     },
     {
       "name": "logo-DL",
-      "title": "Delta Airlines",
-      "desc": "Logo image for Delta Airlines",
+      "title": "Logo image for Delta Airlines",
       "viewBox": "0 0 400 300"
     },
     {
       "name": "logo-EI",
-      "title": "Aer Lingus",
-      "desc": "Logo image for Aer Lingus",
+      "title": "Logo image for Aer Lingus",
       "viewBox": "0 0 652 652"
     },
     {
       "name": "logo-FI",
-      "title": "Icelandair",
-      "desc": "Logo image for Icelandair",
+      "title": "Logo image for Icelandair",
       "viewBox": "0 0 652 652"
     },
     {
       "name": "logo-ELAL",
-      "title": "Israel Airlines",
-      "desc": "Logo image for Israel Airlines",
+      "title": "Logo image for Israel Airlines",
       "viewBox": "0 0 242 35"
     },
     {
       "name": "tail-AA",
-      "title": "American Airlines",
-      "desc": "Logo image for American Airlines",
+      "title": "Airplane tail image for American Airlines",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-AS",
-      "title": "Alaska Airlines",
-      "desc": "Logo image for Alaska Airlines",
+      "title": "Airplane tail image for Alaska Airlines",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-AT",
-      "title": "Royal Air Maroc",
-      "desc": "Logo image for Royal Air Maroc",
+      "title": "Airplane tail image for Royal Air Maroc",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-BA",
-      "title": "British Airways",
-      "desc": "Logo image for British Airways",
+      "title": "Airplane tail image for British Airways",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-CX",
-      "title": "Cathay Pacific Airways",
-      "desc": "Logo image for Cathay Pacific Airways",
+      "title": "Airplane tail image for Cathay Pacific Airways",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-FI",
-      "title": "Finnair",
-      "desc": "Logo image for Finnair",
+      "title": "Airplane tail image for Finnair",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-FJ",
-      "title": "Fiji Airways",
-      "desc": "Logo image for Fiji Airways",
+      "title": "Airplane tail image for Fiji Airways",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-IB",
-      "title": "Iberia",
-      "desc": "Logo image for Iberia",
+      "title": "Airplane tail image for Iberia",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-JL",
-      "title": "Japan Airlines",
-      "desc": "Logo image for Japan Airlines",
+      "title": "Airplane tail image for Japan Airlines",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-MH",
-      "title": "Malaysia Airlines",
-      "desc": "Logo image for Malaysia Airlines",
+      "title": "Airplane tail image for Malaysia Airlines",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-QF",
-      "title": "Qantas",
-      "desc": "Logo image for Qantas",
+      "title": "Airplane tail image for Qantas",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-QR",
-      "title": "Qatar Airways",
-      "desc": "Logo image for Qatar Airways",
+      "title": "Airplane tail image for Qatar Airways",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-RJ",
-      "title": "Royal Jordanian",
-      "desc": "Logo image for Royal Jordanian",
+      "title": "Airplane tail image for Royal Jordanian",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-S7",
-      "title": "S7 Airlines",
-      "desc": "Logo image for S7 Airlines",
+      "title": "Airplane tail image for S7 Airlines",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-TN",
-      "title": "Air Tahiti Nui Airlines",
-      "desc": "Logo image for Air Tahiti Nui",
+      "title": "Airplane tail image for Air Tahiti Nui",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-UL",
-      "title": "SriLankan Airlines",
-      "desc": "Logo image for SriLankan Airlines",
+      "title": "Airplane tail image for SriLankan Airlines",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-DE",
-      "title": "Condor",
-      "desc": "Logo image for Condor",
+      "title": "Airplane tail image for Condor",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-EI",
-      "title": "Aer Lingus",
-      "desc": "Logo image for Aer Lingus",
+      "title": "Airplane tail image for Aer Lingus",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-EK",
-      "title": "Emirates Airline",
-      "desc": "Logo image for Emirates Airline",
+      "title": "Airplane tail image for Emirates Airline",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-FI",
-      "title": "Icelandair",
-      "desc": "Logo image for Icelandair",
+      "title": "Airplane tail image for Icelandair",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-AY",
-      "title": "Finnair",
-      "desc": "Logo image for Finnair",
+      "title": "Airplane tail image for Finnair",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-HA",
-      "title": "Hawaiian Airlines",
-      "desc": "Logo image for Hawaiian Airlines",
+      "title": "Airplane tail image for Hawaiian Airlines",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-HU",
-      "title": "Hainan Airlines",
-      "desc": "Logo image for Hainan Airlines",
+      "title": "Airplane tail image for Hainan Airlines",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-KE",
-      "title": "Korean Airlines",
-      "desc": "Logo image for Korean Airlines",
+      "title": "Airplane tail image for Korean Airlines",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-LA",
-      "title": "LATAM",
-      "desc": "Logo image for LATAM",
+      "title": "Airplane tail image for LATAM",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-LP",
-      "title": "LATAM",
-      "desc": "Logo image for LATAM Airlines Peru",
+      "title": "Airplane tail image for LATAM Airlines Peru",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-LY",
-      "title": "EL AL",
-      "desc": "Logo image for El Al Israel Airlines",
+      "title": "Airplane tail image for El Al Israel Airlines",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-SQ",
-      "title": "Singapore Airlines",
-      "desc": "Logo image for Singapore Airlines",
+      "title": "Airplane tail image for Singapore Airlines",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-UA",
-      "title": "United Airlines",
-      "desc": "Logo image for United Airlines",
+      "title": "Airplane tail image for United Airlines",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-DL",
-      "title": "Delta",
-      "desc": "Logo image for Delta",
+      "title": "Airplane tail image for Delta",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "tail-9X",
-      "title": "Mokulele",
-      "desc": "Logo image for Mokulele Airlines",
+      "title": "Airplane tail image for Mokulele Airlines",
       "viewBox": "0 0 856 830"
     },
     {
       "name": "oneworld",
-      "title": "Oneworld",
-      "desc": "Logo image for Oneworld Alliance",
+      "title": "Airplane tail image for Oneworld Alliance",
       "viewBox": "0 0 24 24"
     },
     {
       "name": "oneworld-wordmark",
-      "title": "Oneworld wordmark",
-      "desc": "Logo wordmark for Oneworld Alliance",
+      "title": "Airplane tail wordmark for Oneworld Alliance",
       "viewBox": "0 0 843 149"
     }
   ]
