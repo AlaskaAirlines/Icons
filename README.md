@@ -158,6 +158,78 @@ In this event, adding the following comments within the component may address th
 import Arrowdown from '-!svg-react-loader?name=Icon!@alaskaairux/icons/dist/icons/alert/warning.svg';
 ```
 
+## Node application dependency
+
+Via a node.js dependency or other node like dependency management architecture, a developer can choose from two different scenarios for the rendering of the SVG. This technique will render the SVG inline from the designated resource location.
+
+### Individual icon request
+
+It is suggested that developers list individual dependencies per UI component, like so:
+
+```javascript
+const arrowDown = require('@alaskaairux/orion-icons/dist/icons/arrowdown');
+```
+
+Within the UI component a developer can reference the object assigned to the newly created variable to get the specific icon's SVG code:
+
+```javascript
+<button>Click Me ${arrowDown.svg}</button>
+```
+
+This will return the icon's SVG HTML inline.
+
+### Full library dependency
+
+If there are several icons within a view, developers may opt to include all available icons. **Be aware**, as this npm grows, so will this type of dependency. It's strongly suggested that dependencies are individually declared.
+
+To require the full library as a dependency of the UI, do the following:
+
+```javascript
+const auroIcons = require('@alaskaairux/icons/dist');
+```
+
+Then within UI component, a developer can render a specific icon from the output array, like so:
+
+```js
+<button>Click Me ${auroIcons['Arrow Down'].svg}</button>
+```
+
+This will return the icon's SVG HTML inline.
+
+### Altering the SVG output
+
+Using either method, the SVG is captured as an object that can be manipulated. For example, calling the `arrow-down.js` file as shown below ...
+
+```js
+const arrowDown = require('@alaskaairux/icons/dist/icons/arrow-down');
+```
+
+... will output the following HTML
+
+```html
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="ico_squareLarge" role="img" style="min-width:var(--auro-size-lg);height:var(--auro-size-lg);fill:currentColor" viewBox="0 0 24 24">
+  <title>Directional pointer; down</title>
+  <desc/>
+  <path d="m11.47 19.78-5.25-5.25a.75.75 0 0 1 .976-1.133l.084.073 3.97 3.97V4.75a.75.75 0 0 1 .648-.743L12 4a.75.75 0 0 1 .743.648l.007.102v12.69l3.97-3.97a.75.75 0 0 1 .976-.073l.084.073a.75.75 0 0 1 .073.976l-.073.084-5.25 5.25a.75.75 0 0 1-.976.073l-.084-.073-5.25-5.25 5.25 5.25Z"/>
+</svg>
+```
+
+Adding the following line of JavaScript will find and update the `aria-hidden` attribute in the `arrowDown.svg` string ...
+
+```javascript
+arrowDown.svg = arrowDown.svg.replace(/role="img"/g, `role="img" aria-hidden="true"`);
+```
+
+... and then output the following:
+
+```html
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="ico_squareLarge" role="img" aria-hidden="true" style="min-width:var(--auro-size-lg);height:var(--auro-size-lg);fill:currentColor" viewBox="0 0 24 24">
+  <title>Directional pointer; down</title>
+  <desc/>
+  <path d="m11.47 19.78-5.25-5.25a.75.75 0 0 1 .976-1.133l.084.073 3.97 3.97V4.75a.75.75 0 0 1 .648-.743L12 4a.75.75 0 0 1 .743.648l.007.102v12.69l3.97-3.97a.75.75 0 0 1 .976-.073l.084.073a.75.75 0 0 1 .073.976l-.073.084-5.25 5.25a.75.75 0 0 1-.976.073l-.084-.073-5.25-5.25 5.25 5.25Z"/>
+</svg>
+```
+
 ## Adding new icons
 
 Adding new icons to this repository requires a few steps.
@@ -178,7 +250,6 @@ When adding new icons, be sure to follow the example below to add the proper dat
 |---|---|---|---|
 | color | string | `currentcolor` | sets CSS property of `color` to `currentcolor` |
 | height | string | `var(--auro-size-lg)` | sets CSS property of `height` to `var(--auro-size-lg)` |
-| hidden | boolean | `true` | sets HTML attribute `hidden` to `true` for a11y |
 | path | string | `/icons` | sets path for pre-build icon; icons that require full color spec, use `"path": "/icons/fullColor"` |
 | role | string | `img` | sets aria role to `img` |
 | style | string | `ico_squareLarge` | value is applied to SVG as CSS class attribute |
@@ -193,13 +264,13 @@ When adding new icons, be sure to follow the example below to add the proper dat
 |---|---|---|---|
 | name | string |  | The name of the svg file |
 | category | string |  | Defines categorical placement of the icon |
-| desc | string |  | The `<desc>` element provides an accessible, long-text description of any SVG |
+| title | string |  | The `<title>` element provides an accessible, short-text description of any SVG, may appear as a tool-tip in the browser; can be derived from the file name |
 
 #### Optional attributes for each SVG
 
 | key | type | default | description |
 |---|---|---|---|
-| title | string |  | The `<title>` element provides an accessible, short-text description of any SVG, may appear as a tool-tip in the browser; can be derived from the file name |
+| desc | string |  | The `<desc>` element provides an accessible, long-text description of any SVG |
 
 The `title` attribute is needed when you may want a simpler name than the file name. In the example data below, there is the `information-stroke.svg`, but the name `information-stroke` is meaningless if rendered to the browser. Updating the title to simply be `information` will address that.
 
@@ -209,9 +280,10 @@ The `title` attribute is needed when you may want a simpler name than the file n
 {
   "commonProperties":
   {
-      "hidden": "true",
       "role": "img",
       "color": "currentColor",
+      "title": "",
+      "desc": "",
       "width": "var(--auro-size-lg)",
       "height": "var(--auro-size-lg)",
       "xmlns": "http://www.w3.org/2000/svg",
@@ -223,15 +295,14 @@ The `title` attribute is needed when you may want a simpler name than the file n
   "icons": [
     {
       "name": "error",
-      "desc": "Error alert indicator",
+      "title": "Error alert indicator",
       "category": "alert"
     },
     {
-      "title": "Information",
       "name": "information-stroke",
-      "desc": "Important information indicator",
+      "title": "Important information indicator",
       "category": "alert"
-    }
+    },
   ]
 }
 ```
