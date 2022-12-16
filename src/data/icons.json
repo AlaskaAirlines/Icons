@@ -1,9 +1,9 @@
 {
   "commonProperties":
   {
-      "hidden": "true",
       "role": "img",
       "color": "currentColor",
+      "title": "",
       "desc": "",
       "width": "var(--auro-size-lg)",
       "height": "var(--auro-size-lg)",
@@ -16,250 +16,210 @@
   "icons": [
     {
       "name": "error",
-      "desc": "Error alert indicator",
+      "title": "Error alert indicator",
       "category": "alert"
     },
     {
-      "title": "Information",
       "name": "information-stroke",
-      "desc": "Important information indicator",
+      "title": "Important information indicator",
       "category": "alert"
     },
     {
-      "title": "Question",
       "name": "question-stroke",
-      "desc": "Alert user of option to learn more about relative content",
+      "title": "Alert user of option to learn more about relative content",
       "category": "alert"
     },
     {
-      "title": "Warning",
       "name": "warning-stroke",
-      "desc": "Alerts user of troubling or concerning situation",
+      "title": "Alerts user of troubling or concerning situation",
       "category": "alert"
     },
     {
-      "title": "Information",
       "name": "information-filled",
-      "desc": "Important information indicator",
+      "title": "Important information indicator",
       "category": "alert"
     },
     {
-      "title": "Question",
       "name": "question-filled",
-      "desc": "Alert user of option to learn more about relative content",
+      "title": "Alert user of option to learn more about relative content",
       "category": "alert"
     },
     {
-      "title": "Warning",
       "name": "warning-filled",
-      "desc": "Alerts user of troubling or concerning situation",
+      "title": "Alert user of troubling or concerning situation",
       "category": "alert"
     },
     {
-      "title": "Government Approval",
       "name": "gov-approval",
-      "desc": "Flight awaiting Government approval",
+      "title": "Flight awaiting Government approval",
       "category": "interface",
       "status": "deprecated"
     },
     {
-      "title": "Discount code applied",
       "name": "discount-code-applied",
-      "desc": "A confirmation that a code has been applied",
+      "title": "Confirmation that a code has been applied",
       "category": "interface"
     },
     {
-      "title": "First class upgrade available",
       "name": "first-class-upgrade-available",
-      "desc": "Denotes that there is an immediate upgrade to FC available",
+      "title": "Denotes that there is an immediate upgrade to FC available",
       "category": "interface"
     },
     {
-      "title": "First class upgrade waitlist",
       "name": "first-class-upgrade-waitlist",
-      "desc": "Denotes that guests can join a waitlist to upgrade to FC",
+      "title": "Denotes that guests can join a waitlist to upgrade to FC",
       "category": "interface"
     },
     {
-      "title": "Free same day change",
       "name": "free-same-day-change",
-      "desc": " Some short, frequent flights aka 'shuttle flights' allow for free same day changes",
+      "title": " Some short, frequent flights aka 'shuttle flights' allow for free same day changes",
       "category": "interface"
     },
     {
-      "title": "Mixed cabin itinerary",
       "name": "mixed-cabin-itinerary",
-      "desc": "A guest will be in different cabins for different segments of the trip",
+      "title": "A guest will be in different cabins for different segments of the trip",
       "category": "interface"
     },
     {
-      "title": "Not recommended for standby",
       "name": "not-recommended-for-standby",
-      "desc": "Viewable by travelers with guest passes to fly standby - this route has a low chance of standby availability",
+      "title": "Viewable by travelers with guest passes to fly standby - this route has a low chance of standby availability",
       "category": "interface"
     },
     {
-      "title": "Premium class upgrade available",
       "name": "premium-class-upgrade-available",
-      "desc": "Denotes that there is an immediate upgrade to PC available",
+      "title": "Denotes that there is an immediate upgrade to Premium class available",
       "category": "interface"
     },
     {
-      "title": "Premium class upgrade waitlist",
       "name": "premium-class-upgrade-waitlist",
-      "desc": "Denotes that guests can join a waitlist to upgrade to PC",
+      "title": "Denotes that guests can join a waitlist to upgrade to Premium class",
       "category": "interface"
     },
     {
-      "title": "Recommended for standby travel but monitor",
       "name": "recommended-for-standby-travel-but-monitor",
-      "desc": "Viewable by travelers with guest passes to fly standby - this route has a medium chance of standby availability",
+      "title": "Viewable by travelers with guest passes to fly standby - this route has a medium chance of standby availability",
       "category": "interface"
     },
     {
-      "title": "Recommended for standby",
       "name": "recommended-for-standby",
-      "desc": "Viewable by travelers with guest passes to fly standby - this route has a high chance of standby availability",
+      "title": "Viewable by travelers with guest passes to fly standby - this route has a high chance of standby availability",
       "category": "interface"
     },
     {
-      "title": "Route pending government approval",
       "name": "route-pending-government-approval",
-      "desc": "A new route that is waiting for official government approval",
+      "title": "A new route that is waiting for official government approval",
       "category": "interface"
     },
     {
-      "title": "Up pointer",
       "name": "arrow-up",
-      "desc": "Directional pointer; up",
+      "title": "Directional pointer; up",
       "category": "interface"
     },
     {
-      "title": "Down pointer",
       "name": "arrow-down",
-      "desc": "Directional pointer; down",
+      "title": "Directional pointer; down",
       "category": "interface"
     },
     {
-      "title": "View password",
       "name": "view-password",
-      "desc": "Icon indicates that the password is currently hidden",
+      "title": "Password is currently hidden",
       "category": "interface"
     },
     {
-      "title": "Hide password",
       "name": "hide-password",
-      "desc": "Icon indicates that the password is currently visible",
+      "title": "Password is currently visible",
       "category": "interface"
     },
     {
-      "title": "Left pointer",
       "name": "arrow-left",
-      "desc": "Directional pointer; left",
+      "title": "Directional pointer; left",
       "category": "interface"
     },
     {
-      "title": "Right pointer",
       "name": "arrow-right",
-      "desc": "Directional pointer; right",
+      "title": "Directional pointer; right",
       "category": "interface"
     },
     {
-      "title": "Left indicator",
       "name": "chevron-left",
-      "desc": "Directional indicator; left",
+      "title": "Directional indicator; left",
       "category": "interface"
     },
     {
-      "title": "Right indicator",
       "name": "chevron-right",
-      "desc": "Directional indicator; right",
+      "title": "Directional indicator; right",
       "category": "interface"
     },
     {
-      "title": "Up indicator",
       "name": "chevron-up",
-      "desc": "Directional indicator; up",
+      "title": "Directional indicator; up",
       "category": "interface"
     },
     {
-      "title": "Down indicator",
       "name": "chevron-down",
-      "desc": "Directional indicator; down",
+      "title": "Directional indicator; down",
       "category": "interface"
     },
     {
-      "title": "Location",
       "name": "location-filled",
-      "desc": "Pointer of specific location",
+      "title": "Pointer of specific location",
       "category": "interface"
     },
     {
+      "title": "Target indicator",
       "name": "location-found",
-      "desc": "Target indicator",
       "category": "interface"
     },
     {
-      "name": "penguin",
-      "desc": "Easter egg",
-      "category": "interface"
-    },
-    {
+      "title": "Target indicator",
       "name": "location-finder",
-      "desc": "Target indicator",
       "category": "interface"
     },
     {
+      "title": "Indication of hyperlink",
       "name": "chain-link",
-      "desc": "Indication of hyperlink",
       "category": "interface"
     },
     {
-      "title": "Plus",
       "name": "plus-filled",
-      "desc": "Indicates plus option",
+      "title": "Indicates plus option",
       "category": "interface"
     },
     {
-      "title": "Plus",
       "name": "plus-stroke",
-      "desc": "Indicates plus option",
+      "title": "Indicates plus option",
       "category": "interface"
     },
     {
-      "title": "Checkmark display indicator",
       "name": "checkmark-lg",
-      "desc": "Indicate option has been checked",
+      "title": "Option has been checked",
       "category": "interface"
     },
     {
-      "title": "Checkmark display indicator",
       "name": "checkmark-sml",
-      "desc": "Indicate option has been checked",
+      "title": "Option has been checked",
       "category": "interface"
     },
     {
+      "title": "Add content option to calendar",
       "name": "add-to-calendar",
-      "desc": "Add content option to calendar",
       "category": "interface"
     },
     {
+      "title": "Indicates calendar option",
       "name": "calendar",
-      "desc": "Indicates calendar option",
       "category": "interface"
     },
     {
       "name": "accessibility",
-      "desc": "Indicates accessible content",
+      "title": "Indicates accessible content",
       "category": "interface"
     },
     {
-      "title": "Account",
       "name": "account-filled",
       "category": "interface"
     },
     {
-      "title": "Account",
       "name": "account-stroke",
       "category": "interface"
     },
@@ -268,22 +228,18 @@
       "category": "interface"
     },
     {
-      "title": "Check",
       "name": "check-filled",
       "category": "interface"
     },
     {
-      "title": "Check",
       "name": "check-lg",
       "category": "interface"
     },
     {
-      "title": "Check",
       "name": "check-sm",
       "category": "interface"
     },
     {
-      "title": "Check",
       "name": "check-stroke",
       "category": "interface"
     },
@@ -293,41 +249,35 @@
     },
     {
       "name": "filter",
-      "desc": "Indicates that content can be filtered",
+      "title": "Indicates that content can be filtered",
       "category": "interface"
     },
     {
-      "title": "Heart",
       "name": "heart-filled",
-      "desc": "Indicates favored item",
+      "title": "Indicates favored item",
       "category": "interface"
     },
     {
-      "title": "Heart",
       "name": "heart-stroke",
-      "desc": "Indicates item to be favored",
+      "title": "Indicates item to be favored",
       "category": "interface"
     },
     {
-      "title": "Home",
       "name": "home-filled",
       "category": "interface"
     },
     {
-      "title": "Home",
       "name": "home-stroke",
       "category": "interface"
     },
     {
       "title": "This indicates a link to an external site that may not follow the same accessibility or privacy policies as Alaska Airlines. By selecting a partner link you agree to share your data with these sites.",
       "name": "external-link",
-      "desc": "Notice indicator to alert user with disabilities that action will result in the browser opening a new context.",
       "category": "interface"
     },
     {
       "title": "This indicates a link to an external site that may not follow the same accessibility or privacy policies as Alaska Airlines. By selecting a partner link you agree to share your data with these sites.",
       "name": "external-link-md",
-      "desc": "Notice indicator to alert user with disabilities that action will result in the browser opening a new context.",
       "style": "ico_squareMd",
       "category": "interface",
       "PngSize": 16,
@@ -337,7 +287,6 @@
     {
       "title": "This indicates a link to an external site that may not follow the same accessibility or privacy policies as Alaska Airlines. By selecting a partner link you agree to share your data with these sites.",
       "name": "external-link-sm",
-      "desc": "Notice indicator to alert user with disabilities that action will result in the browser opening a new context.",
       "style": "ico_squareSml",
       "category": "interface",
       "PngSize": 12,
@@ -345,7 +294,6 @@
       "height": "var(--auro-size-sm)"
     },
     {
-      "title": "Location",
       "name": "location-stroke",
       "category": "interface"
     },
@@ -354,22 +302,18 @@
       "category": "interface"
     },
     {
-      "title": "Minus",
       "name": "minus-filled",
       "category": "interface"
     },
     {
-      "title": "Minus",
       "name": "minus-lg",
       "category": "interface"
     },
     {
-      "title": "Minus",
       "name": "minus-sm",
       "category": "interface"
     },
     {
-      "title": "Minus",
       "name": "minus-stroke",
       "category": "interface"
     },
@@ -390,12 +334,10 @@
       "category": "interface"
     },
     {
-      "title": "Star",
       "name": "star-filled",
       "category": "interface"
     },
     {
-      "title": "Star",
       "name": "star-stroke",
       "category": "interface"
     },
@@ -420,60 +362,53 @@
       "category": "interface"
     },
     {
-      "title": "Contract fare",
       "name": "contract-fare",
-      "desc": "A fare rate for companies that have a contract with Alaska Air",
+      "title": "A fare rate for companies that have a contract with Alaska Air",
       "category": "interface"
     },
     {
-      "title": "Government fare",
       "name": "government-fare",
-      "desc": "A fare rate only visible only to government employees",
+      "title": "A fare rate only visible only to government employees",
       "category": "interface"
     },
     {
-      "title": "Government mixed fare",
       "name": "government-mixed-fare",
-      "desc": "Some segments of this journey include government fare rates, others do not",
+      "title": "Some segments of this journey include government fare rates, others do not",
       "category": "interface"
     },
     {
-      "title": "Contract mixed fare",
       "name": "contract-mixed-fare",
-      "desc": "Some segments of this journey include contract fare rates, others do not",
+      "title": "Some segments of this journey include contract fare rates, others do not",
       "category": "interface"
     },
     {
-      "title": "QR code",
       "name": "qr-code",
-      "desc": "indicates availability of a QR code",
+      "title": "indicates availability of a QR code",
       "category": "interface"
     },
     {
-      "title": "Phone",
       "name": "phone",
-      "desc": "mobile smart phone",
+      "title": "mobile smart phone",
       "category": "interface"
     },
     {
-      "title": "Settings",
       "name": "settings",
-      "desc": "gear",
+      "title": "Indicates settings option",
       "category": "interface"
     },
     {
       "name": "boarding",
-      "desc": "icon used to indicate boarding options",
+      "title": "Indicate boarding options",
       "category": "in-flight"
     },
     {
       "name": "elite",
-      "desc": "icon used to indicate elite passenger status",
+      "title": "Indicate elite passenger status",
       "category": "in-flight"
     },
     {
       "name": "food-and-drink",
-      "desc": "icon used for food and drink",
+      "title": "Food and drink",
       "category": "in-flight"
     },
     {
@@ -517,63 +452,53 @@
       "category": "in-flight"
     },
     {
-      "title": "passenger",
+      "title": "Indication of passenger",
       "name": "passenger",
-      "desc": "Avatar within a circle stroke",
       "category": "in-flight"
     },
     {
-      "title": "multipax",
       "name": "multipax",
-      "desc": "Two avatars within a circle stroke",
+      "title": "Indication of multiple passengers",
       "category": "in-flight"
     },
     {
-      "title": "diverted",
       "name": "diverted",
-      "desc": "An arrow pointed to the right with a straight dotted line",
+      "title": "Indicates a diversion of original intent",
       "category": "terminal"
     },
     {
-      "title": "arrival",
       "name": "arrival-filled",
-      "desc": "An arrow pointed downwards and contained within a filled rectangle",
+      "title": "Indicates arrival to destination",
       "category": "terminal"
     },
     {
-      "title": "arrival",
       "name": "arrival-stroke",
-      "desc": "An arrow pointed downwards and framed within a rectangle stroke",
+      "title": "Indicates arrival to destination",
       "category": "terminal"
     },
     {
-      "title": "departure",
       "name": "departure-filled",
-      "desc": "An arrow pointed upwards and contained within a filled rectangle",
+      "title": "Indicates a point of departure",
       "category": "terminal"
     },
     {
-      "title": "departure",
       "name": "departure-stroke",
-      "desc": "An arrow pointed upwards and framed within a rectangle stroke",
+      "title": "Indicates a point of departure",
       "category": "terminal"
     },
     {
-      "title": "Flight Details",
       "name": "flight-details",
-      "desc": "Paragraph wireframe with an upper corner plane drawing",
+      "title": "Find flight details here",
       "category": "terminal"
     },
     {
-      "title": "Boarding pass",
       "name": "boarding-pass-filled",
-      "desc": "indicates boarding pass options",
+      "title": "Indicates boarding pass options",
       "category": "terminal"
     },
     {
-      "title": "Boarding pass",
       "name": "boarding-pass-stroke",
-      "desc": "indicates boarding pass options",
+      "title": "Indicates boarding pass options",
       "category": "terminal"
     },
     {
@@ -589,7 +514,6 @@
       "category": "terminal"
     },
     {
-      "title": "Radar stroke",
       "name": "radar-stroke",
       "category": "terminal"
     },
@@ -623,220 +547,191 @@
     },
     {
       "name": "one-way-arrow",
-      "desc": "indication of one way flight option",
+      "title": "indication of one way flight option",
       "category": "terminal"
     },
     {
       "name": "round-trip-arrows",
-      "desc": "indicate round-trip flight option",
+      "title": "indicate round-trip flight option",
       "category": "terminal"
     },
     {
       "name": "check-in",
-      "desc": "checkmark in pin icon",
+      "title": "checkmark in pin icon",
       "category": "terminal"
     },
     {
       "name": "facebook",
-      "desc": "Facebook social media icon",
+      "title": "Facebook social media icon",
       "category": "social"
     },
     {
       "name": "instagram",
-      "desc": "Instagram social media icon",
+      "title": "Instagram social media icon",
       "category": "social"
     },
     {
       "name": "cart",
-      "desc": "indicate items related to purchases",
+      "title": "indicate items related to purchases",
       "category": "shop"
     },
     {
       "name": "shopping-bag",
-      "desc": "indicate items related to purchases",
+      "title": "indicate items related to purchases",
       "category": "shop"
     },
     {
       "name": "gift",
-      "desc": "indicate when a guest receives or has earned a gift such as a complimentary food item",
+      "title": "indicate when a guest receives or has earned a gift such as a complimentary food item",
       "category": "shop"
     },
     {
       "name": "receipt",
-      "desc": "receipt with placeholder content",
+      "title": "receipt with placeholder content",
       "category": "shop"
     },
     {
       "name": "credit-card",
-      "desc": "Default credit card icon",
+      "title": "Default credit card icon",
       "category": "payment"
     },
     {
       "name": "cc-alaska",
-      "desc": "Alaska Credit Card",
+      "title": "Alaska Credit Card",
       "category": "payment",
       "path": "/icons/fullColor"
     },
     {
       "name": "cc-amex",
-      "desc": "Amex Credit Card",
+      "title": "Amex Credit Card",
       "category": "payment",
       "path": "/icons/fullColor"
     },
     {
       "name": "cc-discover",
-      "desc": "Discover Credit Card",
+      "title": "Discover Credit Card",
       "category": "payment",
       "path": "/icons/fullColor"
     },
     {
       "name": "cc-mastercard",
-      "desc": "Mastercard Credit Card",
+      "title": "Mastercard Credit Card",
       "category": "payment",
       "path": "/icons/fullColor"
     },
     {
       "name": "cc-visa",
-      "desc": "Visa Credit Card",
+      "title": "Visa Credit Card",
       "category": "payment",
       "path": "/icons/fullColor"
     },
     {
-      "title": "First Class legroom",
       "name": "first-class-legroom",
-      "desc": "Indicates additional legroom for First Class cabin",
+      "title": "Indicates additional legroom for First Class cabin",
       "category": "in-flight"
     },
     {
-      "title": "Premium Class legroom",
       "name": "premium-class-legroom",
-      "desc": "Indicates additional legroom for Premium Class cabin",
+      "title": "Indicates additional legroom for Premium Class cabin",
       "category": "in-flight"
     },
     {
-      "title": "Wine and spirits",
       "name": "wine-and-spirits",
-      "desc": "Indicates alcoholic beverage are available",
+      "title": "Indicates alcoholic beverage are available",
       "category": "in-flight"
     },
     {
-      "title": "Lounge",
       "name": "lounge",
-      "desc": "Represents the Alaska Lounge or partner lounge access.",
+      "title": "Represents the Alaska Lounge or partner lounge access",
       "category": "terminal"
     },
     {
-      "title": "Flight pass",
       "name": "flight-pass",
-      "desc": "Pass with plane and 3 dots",
+      "title": "Pass with plane and 3 dots",
       "category": "terminal"
     },
     {
-      "title": "This content from Alaska Airlines will open in a new tab or window.",
       "name": "new-window",
-      "desc": "Notice indicator to alert users that action will result in the browser opening a new tab or window.",
+      "title": "Notice indicator to alert users that action will result in the browser opening a new tab or window.",
       "category": "interface"
     },
     {
-      "title": "sun",
       "name": "sun",
-      "desc": "Indicates destination options",
+      "title": "Indicates destination options",
       "category": "destination"
     },
     {
-      "title": "hotel option",
       "name": "hotel",
-      "desc": "Indicates hotel options",
+      "title": "Indicates hotel options",
       "category": "destination"
     },
     {
-      "title": "Car rental",
       "name": "car-rental",
-      "desc": "Car with a key above",
+      "title": "Indicates car rental options",
       "category": "destination"
     },
     {
-      "title": "Ride",
       "name": "ride",
-      "desc": "bus",
+      "title": "Indicates options for transportation",
       "category": "destination"
     },
     {
-      "title": "mask information",
       "name": "mask",
-      "desc": "Indicates mask related information",
+      "title": "Indicates mask related information",
       "category": "health"
     },
     {
-      "title": "pre-travel testing and Covid-19 related information",
       "name": "covid-test",
-      "desc": "Indicates pre-travel testing and Covid-19 related information",
+      "title": "Indicates pre-travel testing and Covid-19 related information",
       "category": "health"
     },
     {
-      "title": "air",
       "name": "air",
-      "desc": "Indicates airflow",
+      "title": "Indicates airflow",
       "category": "health"
     },
     {
-      "title": "health information",
       "name": "health",
-      "desc": "Indicates health related information",
+      "title": "Indicates health related information",
       "category": "health"
     },
     {
-      "title": "cleaning information",
       "name": "spraybottle",
-      "desc": "Indicates that there is information about cleaning",
+      "title": "Indicates that there is information about cleaning",
       "category": "health"
     },
     {
-      "title": "clock",
       "name": "clock-filled",
-      "desc": "Clock face with hands",
       "category": "interface"
     },
     {
-      "title": "clock",
       "name": "clock-stroke",
-      "desc": "Clock face with hands",
       "category": "interface"
     },
     {
-      "title": "pin trip",
       "name": "pin-trip",
-      "desc": "Pin icon showing travel from point to point",
+      "title": "Indication of selected trip options",
       "category": "interface"
     },
     {
-      "title": "rising sun",
       "name": "rising-sun",
-      "desc": "Half sun with rays",
       "category": "destination"
     },
     {
-      "title": "sparkle filled",
       "name": "sparkle-filled",
-      "desc": "3 sparkles",
       "category": "interface"
     },
     {
-      "title": "sparkle stroke",
       "name": "sparkle-stroke",
-      "desc": "3 sparkles",
       "category": "interface"
     },
     {
-      "title": "tag",
       "name": "tag",
-      "desc": "Tag with aurora line at bottom",
       "category": "interface"
     },
     {
-      "title": "lyft partnership icon",
       "name": "lyft",
-      "desc": "lyft partnership icon",
+      "title": "Alaska and Lyft partnership",
       "category": "partnership"
     }
   ]
