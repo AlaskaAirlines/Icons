@@ -7,7 +7,7 @@ module.exports = {
         },
         attr: [{ // ensure that the SVG element has the appropriate attributes
             "role": "img",
-            "aria-hidden": true,
+            "aria-hidden": false,
             "aria-labelledby": false,
             "viewBox": true,
             "class": true,
