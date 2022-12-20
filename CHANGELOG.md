@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+# [4.20.0](https://github.com/AlaskaAirlines/Icons/compare/v4.19.0...v4.20.0) (2022-12-20)
+
+
+### Features
+
+* **a11y:** update data for logo icons [#165](https://github.com/AlaskaAirlines/Icons/issues/165) ([d8c8783](https://github.com/AlaskaAirlines/Icons/commit/d8c8783fe052612a11a9250b910860840323ae79))
+* **a11y:** update to new spec [#137](https://github.com/AlaskaAirlines/Icons/issues/137), [#165](https://github.com/AlaskaAirlines/Icons/issues/165) ([eb0f586](https://github.com/AlaskaAirlines/Icons/commit/eb0f586e24f3f0f5ea7b33162dd1572f81fd8b55))
+
 # [4.19.0](https://github.com/AlaskaAirlines/Icons/compare/v4.18.0...v4.19.0) (2022-12-01)
 
 
