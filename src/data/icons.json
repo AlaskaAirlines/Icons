@@ -733,6 +733,11 @@
       "name": "lyft",
       "title": "Alaska and Lyft partnership",
       "category": "partnership"
+    },
+    {
+      "name": "penguin",
+      "desc": "Deprecated, please remove dependencies",
+      "category": "interface"
     }
   ]
 }
