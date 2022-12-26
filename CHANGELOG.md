@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.20.1](https://github.com/AlaskaAirlines/Icons/compare/v4.20.0...v4.20.1) (2022-12-26)
+
+
+### Bug Fixes
+
+* return penguin icon back to release [#170](https://github.com/AlaskaAirlines/Icons/issues/170) ([72d52bb](https://github.com/AlaskaAirlines/Icons/commit/72d52bb39183322390ddb4db75441df6bd68d245))
+
 # [4.20.0](https://github.com/AlaskaAirlines/Icons/compare/v4.19.0...v4.20.0) (2022-12-20)
 
 
