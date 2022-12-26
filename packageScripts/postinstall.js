@@ -23,6 +23,7 @@ console.log(chalk.hex('#f26135')(`
 
        The following icon(s) have been deprecated`) + chalk.hex('#f26135')(`
            - interface/gov-approval.svg
+           - interface/penguin.svg
 
        Deprecated icon(s) will be removed with the
         next MAJOR release. You have been warned.
