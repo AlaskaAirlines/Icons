@@ -1,17 +1,17 @@
 ---
 name: New icon(s) request
 about: Request new icon(s) be added to library
-title: ''
-labels: 'Status: Proposal'
-assignees: blackfalcon
+title: '[issue summary]'
+labels: 'Icons, Type: Bug, not-reviewed'
 
 ---
 
 # Add new icon(s) to the library
 
-> Please fill out the table below with the desired information per icon
+> Please fill out the table below with the desired information per icon. This information must be included with the icon request before it can be accepted.
 
-<!-- see the table below for a list of available categories
+see the table below for a list of available categories
+
 | category  | description |
 |-----------|-------------|
 | alert     | Icons used specifically to alert users as to the state of awareness |
@@ -21,16 +21,28 @@ assignees: blackfalcon
 | shop      | icons for use with shopping experiences |
 | social    | Icons for use with social media |
 | terminal  | Icons related to terminal experiences |
--->
+| partnership  | Icons related to business partnerships and Alaska Airlines |
 
-| name | category | description |
-|---|---|---|
-| <!-- icon name --> | <!-- icon category --> | <!-- icon description --> |
+- **Name:** What is the name of the icon? Please update the name of the file to match.
+- **Category:** What category of icons will this new icon be listed?
+- **Title:** An OPTIONAL description of the icon. ††
+- **Description:** Alternative text of the icon that will be read back to assistive technologies.
+
+<small>†† The title is only needed if there is text that you wish to appear in the native browser tooltip functionality. See an example with the [external link](https://auro.alaskaair.com/icons) icon in the **interface** section.</small>
+
+| name | category | title | description |
+|---|---|---|---|
+| <!-- icon name --> | <!-- icon category --> | <!-- icon title -->  | <!-- icon description --> |
+
+
 
 ## Icon art
 
 <!-- To check off a box, simply add an 'x' within the square brackets -->
+<!-- DO THIS -->
 <!-- - [x] ... -->
+<!-- DO NOT DO THIS -->
+<!-- - [ x] ... -->
 
 > The icon(s) per this request, has the new art been completed?
 
