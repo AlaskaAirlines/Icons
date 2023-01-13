@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+## [4.20.2](https://github.com/AlaskaAirlines/Icons/compare/v4.20.1...v4.20.2) (2023-01-13)
+
+
+### Bug Fixes
+
+* **a11y:** update alt strings to desc [#173](https://github.com/AlaskaAirlines/Icons/issues/173) ([ea7eec5](https://github.com/AlaskaAirlines/Icons/commit/ea7eec50a9badb2d5e303b1ab533e1625fba1be4))
+* **a11y:** update generator to new output spec [#173](https://github.com/AlaskaAirlines/Icons/issues/173) ([d629ff8](https://github.com/AlaskaAirlines/Icons/commit/d629ff8d6a99bfc75645a25c733c19dc100e2438))
+
 ## [4.20.1](https://github.com/AlaskaAirlines/Icons/compare/v4.20.0...v4.20.1) (2022-12-26)
 
 
