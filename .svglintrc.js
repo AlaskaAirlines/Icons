@@ -3,12 +3,9 @@ module.exports = {
         elm: {
             "svg": 1,
             "svg > title": 1,
-            "svg > desc": 1
         },
         attr: [{ // ensure that the SVG element has the appropriate attributes
             "role": "img",
-            "aria-hidden": false,
-            "aria-labelledby": false,
             "viewBox": true,
             "class": true,
             "version": false,
@@ -25,12 +22,7 @@ module.exports = {
             "x": false,
             "y": false,
 
-            "rule::selector": "svg",
-            "rule::whitelist": true
-        }, { // ensure that the title element has the appropriate attributes
-
-            "rule::selector": "svg > title",
-            "rule::whitelist": true
+            "rule::selector": "svg"
         }, { // ensure that a g element has the appropriate attributes
             "style": false,
             "fill": false,
