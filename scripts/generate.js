@@ -52,7 +52,7 @@ function runGenerator(data) {
       ...iconRaw
     }
 
-    const iconStatus = icon.status;
+    // const iconStatus = icon.status;
 
     const iconName = icon.name;
     const distFilename = getDistFilename(icon);
@@ -61,6 +61,10 @@ function runGenerator(data) {
     const width = icon.width ? `min-width: ${icon.width};` : '';
     const height = icon.height ? `height: ${icon.height};` : '';
     const elementStyle = `style="${width} ${height} fill: ${icon.color}" `;
+    const ariaHidden = !icon.desc ? `aria-hidden="true"` : undefined;
+    const labeledByTitle = icon.title ? `${icon.name}__title ` : "";
+    const labeledByDesc = icon.desc ? `${icon.name}__desc` : "";
+    const labeledBy = icon.desc ? `aria-labeledby="${labeledByTitle}${labeledByDesc}" ` : undefined;
 
     // Build new Title from icon file name
     const titleName = iconName.replace(/-/g, ' ');
@@ -70,8 +74,8 @@ function runGenerator(data) {
     // Scrub out any pre-existing attributes
     split[1] = '<svg>';
     split.splice(2, 0, `
-    <title>${icon.title}</title>
-    <desc>${icon.desc}</desc>`);
+    <title ${icon.title ? `id="${icon.name}__title"` : ""}>${icon.title}</title>
+    ${icon.desc ? `<desc id="${icon.name}__desc">${icon.desc}</desc>` : "" }`);
     icon.svg = split.join('');
 
     if (icon.path === '/icons') {
@@ -89,15 +93,17 @@ function runGenerator(data) {
     }
 
     // adds attributes to SVG string based on icons.json data
-    icon.svg = [icon.svg.slice(0, insertPos), `class="${icon.style}" `, icon.svg.slice(insertPos)].join('');
+    icon.svg = [icon.svg.slice(0, insertPos), ariaHidden, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), elementStyle, icon.svg.slice(insertPos)].join('');
+    icon.svg = [icon.svg.slice(0, insertPos), labeledBy, icon.svg.slice(insertPos)].join('');
+    icon.svg = [icon.svg.slice(0, insertPos), `class="${icon.style}" `, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), `role="${icon.role}" `, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), `xmlns="${icon.xmlns}" `, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), `xmlns:xlink="${icon.xmlns_xlink}" `, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), `viewBox="${icon.viewBox}" `, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), ` `, icon.svg.slice(insertPos)].join('');
 
-    // optimize SVG
+    //optimize SVG
     icon.svg = optimize(icon.svg, {
       plugins: [
         {
@@ -105,6 +111,10 @@ function runGenerator(data) {
           params: {
             overrides: {
               removeDesc: false,            // keep <desc>
+              cleanupIds: false,
+
+              sortDefsChildren: false,
+
               removeTitle: false,           // keep <title>
               removeUnusedNS: false,        // keep xmlns:xlink=
               removeUnknownsAndDefaults: {
