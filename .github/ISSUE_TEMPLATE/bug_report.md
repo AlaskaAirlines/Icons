@@ -2,7 +2,7 @@
 name: Bug report
 about: Create a report to help us improve
 title: '[issue summary] Please verify code version before submitting new issue'
-labels: 'Icons, Type: Bug, not-reviewed'
+labels: 'icons, Type: Bug, not-reviewed'
 ---
 
 ## Describe the bug

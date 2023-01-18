@@ -2,7 +2,7 @@
 name: Feature request
 about: Suggest an idea for this project
 title: '[feature summary]'
-labels: 'Icons, Type: Feature, not-reviewed'
+labels: 'icons, Type: Feature, not-reviewed'
 ---
 
 ## Is your feature request related to a problem? Please describe.

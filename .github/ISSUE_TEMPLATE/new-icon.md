@@ -2,7 +2,7 @@
 name: New icon(s) request
 about: Request new icon(s) be added to library
 title: '[issue summary]'
-labels: 'Icons, Type: Bug, not-reviewed'
+labels: 'icons, Type: Content or data, not-reviewed'
 
 ---
 
