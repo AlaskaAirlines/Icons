@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.21.0](https://github.com/AlaskaAirlines/Icons/compare/v4.20.3...v4.21.0) (2023-02-03)
+
+
+### Features
+
+* **logo:** add new Ravn Alaska tail logo [#179](https://github.com/AlaskaAirlines/Icons/issues/179) ([e9aa7b4](https://github.com/AlaskaAirlines/Icons/commit/e9aa7b4f7d2bf43e540d02473c3558495b2ca51e))
+
 ## [4.20.3](https://github.com/AlaskaAirlines/Icons/compare/v4.20.2...v4.20.3) (2023-01-24)
 
 
