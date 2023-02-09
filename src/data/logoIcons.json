@@ -17,7 +17,7 @@
     {
       "name": "logo-7H",
       "title": "Logo image for Ravn Alaska",
-      "viewBox": "0 0 50.329418 24.648584"
+      "viewBox": "0 0 532.7 161.77"
     },
     {
       "name": "logo-AS",
@@ -318,6 +318,11 @@
       "name": "oneworld-wordmark",
       "title": "Airplane tail wordmark for Oneworld Alliance",
       "viewBox": "0 0 843 149"
+    },
+    {
+      "name": "ravn-logomark",
+      "title": "Airplane tail wordmark for Ravn Alaska",
+      "viewBox": "0 0 927.52 660.73"
     }
   ]
 }
