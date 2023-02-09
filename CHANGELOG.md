@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.21.1](https://github.com/AlaskaAirlines/Icons/compare/v4.21.0...v4.21.1) (2023-02-09)
+
+
+### Bug Fixes
+
+* **tail:** correct IATA for Ravn [#179](https://github.com/AlaskaAirlines/Icons/issues/179) ([95a570e](https://github.com/AlaskaAirlines/Icons/commit/95a570e844547f5b289be6219ea6a956d6a643ec))
+
 # [4.21.0](https://github.com/AlaskaAirlines/Icons/compare/v4.20.3...v4.21.0) (2023-02-03)
 
 
