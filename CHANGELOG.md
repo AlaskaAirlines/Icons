@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.21.2](https://github.com/AlaskaAirlines/Icons/compare/v4.21.1...v4.21.2) (2023-02-15)
+
+
+### Performance Improvements
+
+* **ravn:** update and add ravn logos [#177](https://github.com/AlaskaAirlines/Icons/issues/177) ([b43b0d7](https://github.com/AlaskaAirlines/Icons/commit/b43b0d79855e91e978adf08a104976339d866c63))
+
 ## [4.21.1](https://github.com/AlaskaAirlines/Icons/compare/v4.21.0...v4.21.1) (2023-02-09)
 
 
