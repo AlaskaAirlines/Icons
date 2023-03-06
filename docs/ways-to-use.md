@@ -79,6 +79,7 @@ In this example, the color and size is changed using CSS.
   height: 50px;
   background-color: red;
   -webkit-mask-image: url('https://unpkg.com/@alaskaairux/icons@latest/dist/icons/interface/heart-filled.svg');
+  mask-image: url('https://unpkg.com/@alaskaairux/icons@latest/dist/icons/interface/heart-filled.svg');
 }
 </style>
 
@@ -101,6 +102,7 @@ In this example, the color and size is changed using CSS.
     height: 50px;
     background-color: red;
     -webkit-mask-image: url('https://unpkg.com/@alaskaairux/icons@latest/dist/icons/interface/heart-filled.svg');
+    mask-image: url('https://unpkg.com/@alaskaairux/icons@latest/dist/icons/interface/heart-filled.svg');
   }
 </style>
 
