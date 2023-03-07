@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+# [4.22.0](https://github.com/AlaskaAirlines/Icons/compare/v4.21.2...v4.22.0) (2023-03-07)
+
+
+### Features
+
+* **M5:** add new airline tail design [#183](https://github.com/AlaskaAirlines/Icons/issues/183) ([15a3af8](https://github.com/AlaskaAirlines/Icons/commit/15a3af82f6f5be98d3a51718d941e6f8c5563c5e))
+
+
+### Performance Improvements
+
+* remove unnecessary code from SVGs ([6c2c039](https://github.com/AlaskaAirlines/Icons/commit/6c2c0397b7a4d435c6288cba9170e4221b0f1f31))
+
 ## [4.21.2](https://github.com/AlaskaAirlines/Icons/compare/v4.21.1...v4.21.2) (2023-02-15)
 
 
