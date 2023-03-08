@@ -29,16 +29,16 @@ see the table below for a list of available categories
 - **Name:** What is the name of the icon? Please update the name of the file to match. PLEASE reference other similar icons for a naming convention.
 - **Category:** What category of icons will this new icon be listed?
 - **Title:** An OPTIONAL description of the icon. ††
-- **Description:** Alternative text of the icon that will be read back to assistive technologies.
+- **Description:** Alternative text of the icon that will be read back to the user via assistive technologies.
 
 <small>†† The title is only needed if there is text that you wish to appear in the native browser tooltip functionality. See an example with the [external link](https://auro.alaskaair.com/icons) icon in the **interface** section.</small>
 
 <!-- DO NOT DELETE from template. Please only add content into the empty content blocks. -->
 <!-- The [] brackets are only there for reference. Not required to be retained. -->
 
-| name | category | title | description |
+| name | category | accessibility description |
 |---|---|---|---|
-| [icon name] | [icon category] | [icon title] | [icon description ] |
+| [icon name] | [icon category] | [accessibility icon description] |
 
 
 
