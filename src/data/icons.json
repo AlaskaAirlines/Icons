@@ -754,6 +754,36 @@
       "name": "youtube",
       "desc": "Youtube's logo.",
       "category": "social"
+    },
+    {
+      "name": "lock-filled",
+      "desc": "Closed lock.",
+      "category": "interface"
+    },
+    {
+      "name": "lock-stroke",
+      "desc": "Closed lock.",
+      "category": "interface"
+    },
+    {
+      "name": "unlock-filled",
+      "desc": "Open lock.",
+      "category": "interface"
+    },
+    {
+      "name": "unlock-stroke",
+      "desc": "Open lock.",
+      "category": "interface"
+    },
+    {
+      "name": "x-filled",
+      "desc": "Indicates close action.",
+      "category": "interface"
+    },
+    {
+      "name": "x-stroke",
+      "desc": "Indicates close action.",
+      "category": "interface"
     }
   ]
 }
