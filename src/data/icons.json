@@ -744,6 +744,16 @@
       "name": "penguin",
       "desc": "Deprecated, please remove dependencies.",
       "category": "interface"
+    },
+    {
+      "name": "twitter",
+      "desc": "Twitter's logo.",
+      "category": "social"
+    },
+    {
+      "name": "youtube",
+      "desc": "Youtube's logo.",
+      "category": "social"
     }
   ]
 }
