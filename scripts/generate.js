@@ -62,9 +62,9 @@ function runGenerator(data) {
     const height = icon.height ? `height: ${icon.height};` : '';
     const elementStyle = `style="${width} ${height} fill: ${icon.color}" `;
     const ariaHidden = !icon.desc ? `aria-hidden="true"` : undefined;
-    const labeledByTitle = icon.title ? `${icon.name}__title ` : "";
-    const labeledByDesc = icon.desc ? `${icon.name}__desc` : "";
-    const labeledBy = icon.desc ? `aria-labeledby="${labeledByTitle}${labeledByDesc}" ` : undefined;
+    const labelledByTitle = icon.title ? `${icon.name}__title ` : "";
+    const labelledByDesc = icon.desc ? `${icon.name}__desc` : "";
+    const labelledBy = icon.desc ? `aria-labelledby="${labelledByTitle}${labelledByDesc}" ` : undefined;
 
     // Build new Title from icon file name
     const titleName = iconName.replace(/-/g, ' ');
@@ -95,7 +95,7 @@ function runGenerator(data) {
     // adds attributes to SVG string based on icons.json data
     icon.svg = [icon.svg.slice(0, insertPos), ariaHidden, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), elementStyle, icon.svg.slice(insertPos)].join('');
-    icon.svg = [icon.svg.slice(0, insertPos), labeledBy, icon.svg.slice(insertPos)].join('');
+    icon.svg = [icon.svg.slice(0, insertPos), labelledBy, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), `class="${icon.style}" `, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), `role="${icon.role}" `, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), `xmlns="${icon.xmlns}" `, icon.svg.slice(insertPos)].join('');
