@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.22.1](https://github.com/AlaskaAirlines/Icons/compare/v4.22.0...v4.22.1) (2023-03-20)
+
+
+### Bug Fixes
+
+* **attribute:** address misspelling in SVG attribute [#189](https://github.com/AlaskaAirlines/Icons/issues/189) ([de0ea8f](https://github.com/AlaskaAirlines/Icons/commit/de0ea8f69522eeb43a207e56c0fd6214e8ae1069))
+
 # [4.22.0](https://github.com/AlaskaAirlines/Icons/compare/v4.21.2...v4.22.0) (2023-03-07)
 
 
