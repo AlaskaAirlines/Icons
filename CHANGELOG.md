@@ -1,5 +1,18 @@
 # Semantic Release Automated Changelog
 
+# [4.23.0](https://github.com/AlaskaAirlines/Icons/compare/v4.22.1...v4.23.0) (2023-03-22)
+
+
+### Features
+
+* **icon:** add interface icons [#186](https://github.com/AlaskaAirlines/Icons/issues/186) ([1c9e5e2](https://github.com/AlaskaAirlines/Icons/commit/1c9e5e2574facbe4e8246731d4f6abef668be238))
+* **icon:** add twitter and youtube icons [#187](https://github.com/AlaskaAirlines/Icons/issues/187) ([a0cb528](https://github.com/AlaskaAirlines/Icons/commit/a0cb528d26f676636cf882b151cfa18f7de0c679))
+
+
+### Performance Improvements
+
+* **node:** update actions and dependencies for node 16 ([78967c4](https://github.com/AlaskaAirlines/Icons/commit/78967c465cde296b97c7ca5cdf344231bc35ba4f))
+
 ## [4.22.1](https://github.com/AlaskaAirlines/Icons/compare/v4.22.0...v4.22.1) (2023-03-20)
 
 
