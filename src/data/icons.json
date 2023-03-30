@@ -784,6 +784,66 @@
       "name": "x-stroke",
       "desc": "Indicates close action.",
       "category": "interface"
+    },
+    {
+      "name": "dashboard-stroke",
+      "desc": "Four stroke rectangles arranges inside a square",
+      "category": "interface"
+    },
+    {
+      "name": "dashboard-filled",
+      "desc": "Four filled rectangles arranges inside a square",
+      "category": "interface"
+    },
+    {
+      "name": "guest-stroke",
+      "desc": "Two person stroke, one behind other",
+      "category": "interface"
+    },
+    {
+      "name": "guest-filled",
+      "desc": "Two person filled, one behind other",
+      "category": "interface"
+    },
+    {
+      "name": "ticket-stroke",
+      "desc": "Airline ticket",
+      "category": "interface"
+    },
+    {
+      "name": "ticket-filled",
+      "desc": "Airline ticket",
+      "category": "interface"
+    },
+    {
+      "name": "reservation-stroke",
+      "desc": "Calendar with airplane",
+      "category": "interface"
+    },
+    {
+      "name": "reservation-filled",
+      "desc": "Calendar with airplane",
+      "category": "interface"
+    },
+    {
+      "name": "more-stroke",
+      "desc": "Circle with three dots inside it",
+      "category": "interface"
+    },
+    {
+      "name": "more-filled",
+      "desc": "Circle with three dots inside it",
+      "category": "interface"
+    },
+    {
+      "name": "profile-stroke",
+      "desc": "Person inside circle",
+      "category": "interface"
+    },
+    {
+      "name": "profile-filled",
+      "desc": "Person inside circle",
+      "category": "interface"
     }
   ]
 }
