@@ -844,6 +844,11 @@
       "name": "profile-filled",
       "desc": "Person inside circle",
       "category": "interface"
+    },
+    {
+      "name": "id",
+      "desc": "Guests' identity document",
+      "category": "interface"
     }
   ]
 }
