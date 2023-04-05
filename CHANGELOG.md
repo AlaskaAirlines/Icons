@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+# [4.24.0](https://github.com/AlaskaAirlines/Icons/compare/v4.23.0...v4.24.0) (2023-04-05)
+
+
+### Features
+
+* **icon:** add id icon [#196](https://github.com/AlaskaAirlines/Icons/issues/196) ([0b7147a](https://github.com/AlaskaAirlines/Icons/commit/0b7147a2d4532ee44e744791faa27acb557b3cbc))
+* **icon:** add ITS icons [#192](https://github.com/AlaskaAirlines/Icons/issues/192) ([e8a16a1](https://github.com/AlaskaAirlines/Icons/commit/e8a16a1556cd56500ab6a71dbac4374982034c4d))
+
 # [4.23.0](https://github.com/AlaskaAirlines/Icons/compare/v4.22.1...v4.23.0) (2023-03-22)
 
 
