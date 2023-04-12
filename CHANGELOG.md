@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.24.1](https://github.com/AlaskaAirlines/Icons/compare/v4.24.0...v4.24.1) (2023-04-12)
+
+
+### Performance Improvements
+
+* **icons:** update facebook icon 197 ([777c74a](https://github.com/AlaskaAirlines/Icons/commit/777c74a34b2526801f8d14e7105e1f7ed3a4ba9e))
+
 # [4.24.0](https://github.com/AlaskaAirlines/Icons/compare/v4.23.0...v4.24.0) (2023-04-05)
 
 
