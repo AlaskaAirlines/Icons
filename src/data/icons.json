@@ -849,6 +849,11 @@
       "name": "id",
       "desc": "Guests' identity document",
       "category": "interface"
+    },
+    {
+      "name": "clear",
+      "desc": "Alaska and Clear partnerhip",
+      "category": "partnership"
     }
   ]
 }
