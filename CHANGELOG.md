@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.25.0](https://github.com/AlaskaAirlines/Icons/compare/v4.24.1...v4.25.0) (2023-04-14)
+
+
+### Features
+
+* **icons:** add clear parternship icon [#199](https://github.com/AlaskaAirlines/Icons/issues/199) ([b7cd273](https://github.com/AlaskaAirlines/Icons/commit/b7cd2738244260f6ba215e31240117877cd12e3c))
+
 ## [4.24.1](https://github.com/AlaskaAirlines/Icons/compare/v4.24.0...v4.24.1) (2023-04-12)
 
 
