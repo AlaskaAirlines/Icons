@@ -467,6 +467,11 @@
       "category": "in-flight"
     },
     {
+      "name": "club49",
+      "desc": "Alaska Airlines Club 49 program",
+      "category": "programs"
+    },
+    {
       "name": "diverted",
       "desc": "Indicates a diversion of original intent.",
       "category": "terminal"

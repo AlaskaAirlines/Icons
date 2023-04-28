@@ -25,7 +25,8 @@ Icons fall into a series of use categories, these are:
 | shop | icons for use with shopping experiences |
 | social | Icons for use with social media |
 | terminal | Icons related to terminal experiences |
-| partnership | Icons related to business partnerships and Alaska Airlines |
+| partnership | Icons related to business partnerships |
+| programs | Icons related to Alaska Airlines programs |
 
 
 ## JavaScript framework support

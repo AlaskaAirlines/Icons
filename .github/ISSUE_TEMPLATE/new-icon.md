@@ -23,7 +23,8 @@ see the table below for a list of available categories
 | shop      | icons for use with shopping experiences |
 | social    | Icons for use with social media |
 | terminal  | Icons related to terminal experiences |
-| partnership  | Icons related to business partnerships and Alaska Airlines |
+| partnership | Icons related to business partnerships |
+| programs | Icons related to Alaska Airlines programs |
 | logo  | Logo SVGs, e.g. tails or company logos |
 
 - **Name:** What is the name of the icon? Please update the name of the file to match. PLEASE reference other similar icons for a naming convention.
