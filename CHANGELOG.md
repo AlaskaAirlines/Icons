@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.27.0](https://github.com/AlaskaAirlines/Icons/compare/v4.26.0...v4.27.0) (2023-05-01)
+
+
+### Features
+
+* **club49:** new icon for Alaska club49 program [#203](https://github.com/AlaskaAirlines/Icons/issues/203) ([649ddee](https://github.com/AlaskaAirlines/Icons/commit/649ddee29c59797cb6b11900d4a08a8400a50648))
+
 # [4.26.0](https://github.com/AlaskaAirlines/Icons/compare/v4.25.0...v4.26.0) (2023-04-23)
 
 
