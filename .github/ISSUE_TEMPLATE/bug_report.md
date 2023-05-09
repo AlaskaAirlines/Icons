@@ -1,8 +1,10 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: '[issue summary] Please verify code version before submitting new issue'
-labels: 'icons, Type: Bug, not-reviewed'
+title: "[issue summary] Please verify code version before submitting new issue"
+labels: 'icons, not-reviewed, Type: Bug'
+assignees: ''
+
 ---
 
 ## Describe the bug
@@ -54,4 +56,3 @@ Are you able to reproduce this issue on the [Auro doc site](https://auro.alaskaa
 ## Additional context
 
 <!-- Add any other context about the problem here. -->
-

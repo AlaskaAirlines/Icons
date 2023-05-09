@@ -1,8 +1,9 @@
 ---
 name: New icon(s) request
 about: Request new icon(s) be added to library
-title: '[issue summary]'
-labels: 'icons, Type: Content or data, not-reviewed'
+title: "[issue summary]"
+labels: 'icons, not-reviewed, Type: Content or data'
+assignees: ''
 
 ---
 
@@ -38,7 +39,7 @@ see the table below for a list of available categories
 <!-- The [] brackets are only there for reference. Not required to be retained. -->
 
 | name | category | accessibility description |
-|---|---|---|---|
+|---|---|---|
 | [icon name] | [icon category] | [accessibility icon description] |
 
 

@@ -1,8 +1,10 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: '[feature summary]'
-labels: 'icons, Type: Feature, not-reviewed'
+title: "[feature summary]"
+labels: 'icons, not-reviewed, Type: Feature'
+assignees: ''
+
 ---
 
 ## Is your feature request related to a problem? Please describe.
