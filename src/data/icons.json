@@ -859,6 +859,26 @@
       "name": "clear",
       "desc": "Alaska and Clear partnerhip",
       "category": "partnership"
+    },
+    {
+      "name": "back-to-top",
+      "desc": "Arrow with line on top",
+      "category": "interface"
+    },
+    {
+      "name": "copy-paste",
+      "desc": "Two layered squares",
+      "category": "interface"
+    },
+    {
+      "name": "linkedin",
+      "desc": "LinkedIn's logo",
+      "category": "social"
+    },
+    {
+      "name": "tiktok",
+      "desc": "Tiktok's logo",
+      "category": "social"
     }
   ]
 }
