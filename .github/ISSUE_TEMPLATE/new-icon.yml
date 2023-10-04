@@ -1,0 +1,59 @@
+name: New icon
+description: Request new icon(s) be added to library
+title: '[issue summary]'
+labels:
+  - 'Type: Content or data, not-reviewed'
+  - not-reviewed
+  - 'icons'
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Add new icon(s) to the library
+
+        Please fill out the table below with the desired information per icon. This information must be included with the icon request before it can be accepted.
+
+        See the table below for a list of available categories
+  - type: markdown
+    attributes:
+      value: |
+        | category  | description |
+        |-----------|-------------|
+        | alert     | Icons used specifically to alert users as to the state of awareness |
+        | in-flight | icons reserved for 'day of travel' user experiences |
+        | interface | Icons used to create interface enhancements |
+        | payment   | Icons specifically to be used in a transaction flow |
+        | shop      | icons for use with shopping experiences |
+        | social    | Icons for use with social media |
+        | terminal  | Icons related to terminal experiences |
+        | partnership  | Icons related to business partnerships and Alaska Airlines |
+        | logo  | Logo SVGs, e.g. tails or company logos |
+
+        - **Name:** What is the name of the icon? Please update the name of the file to match. PLEASE reference other similar icons for a naming convention.
+        - **Category:** What category of icons will this new icon be listed?
+        - **Title:** An OPTIONAL description of the icon. ††
+        - **Description:** Alternative text of the icon that will be read back to the user via assistive technologies.
+
+        †† The title is only needed if there is text that you wish to appear in the native browser tooltip functionality. See an example with the [external link](https://auro.alaskaair.com/icons) icon in the **interface** section.
+  - type: textarea
+    id: details
+    attributes:
+      label: Icon attributes
+      description: Please list out all icon related attributes
+      placeholder: |
+        1. Icon name
+        2. Icon category
+        3. Accessibility icon description
+  - type: dropdown
+    id: art
+    attributes:
+      label: The icon(s) per this request, has the new art been completed?
+      multiple: true
+      options:
+        - Yes, art has been added to the Figma docs
+        - No, still needs to be done
+  - type: textarea
+    id: upload
+    attributes:
+      label: Attach exported SVG files to this issue
+      description: DO NOT upload the icon(s) directly. ALWAYS compress the file(s) and upload the .zip file.
