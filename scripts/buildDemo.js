@@ -127,15 +127,15 @@ const getCategory = (iconPath) => {
   <meta charset="utf-8">
 
   <title>Icons demo page</title>
-  <link rel="stylesheet" href="https://unpkg.com/@alaskaairux/design-tokens@latest/dist/tokens/CSSCustomProperties.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@aurodesignsystem/design-tokens@latest/dist/tokens/CSSCustomProperties.css">
 
   <style>
     .block {
-      font-size: 12px;
+      font-size: var(--ds-size-150);
       padding: 10px 20px;
-      margin: 0 1rem 1rem 1rem;
+      margin: 0 var(--ds-size-200) var(--ds-size-200) var(--ds-size-200);
       width: 100px;
-      background-color: var(--auro-color-base-gray-100);
+      background-color: var(--ds-color-brand-gray-100);
       border-radius: 10px;
       text-align: center;
     }
