@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.28.1](https://github.com/AlaskaAirlines/Icons/compare/v4.28.0...v4.28.1) (2023-10-10)
+
+
+### Performance Improvements
+
+* update icon size token ref [#211](https://github.com/AlaskaAirlines/Icons/issues/211) ([c55579f](https://github.com/AlaskaAirlines/Icons/commit/c55579f1492e66f0226d0f854196810d2fc83298))
+
 # [4.28.0](https://github.com/AlaskaAirlines/Icons/compare/v4.27.0...v4.28.0) (2023-06-12)
 
 
