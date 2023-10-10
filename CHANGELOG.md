@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.28.2](https://github.com/AlaskaAirlines/Icons/compare/v4.28.1...v4.28.2) (2023-10-10)
+
+
+### Bug Fixes
+
+* revert commit from CSS change [#211](https://github.com/AlaskaAirlines/Icons/issues/211) ([7df5824](https://github.com/AlaskaAirlines/Icons/commit/7df5824d68bcde910f39373a7721c262796945e2))
+
 ## [4.28.1](https://github.com/AlaskaAirlines/Icons/compare/v4.28.0...v4.28.1) (2023-10-10)
 
 
