@@ -41,7 +41,7 @@ $iconMap: (
 // Square large
 .ico_squareLarge {
   fill: currentColor;
-  height: $auro-size-lg;
+  height: var(--auro-size-lg, var(--ds-size-300, 1.5rem))
 }
 
 .ico_squareSmall {
@@ -52,11 +52,12 @@ $iconMap: (
 .ico_squareMed {
   fill: currentColor;
   height: $auro-size-md;
+  height: var(--auro-size-md, var(--ds-size-200, 1rem));
 }
 
 .ico_squareSml {
   fill: currentColor;
-  height: $auro-size-sm;
+  height: var(--auro-size-sm, var(--ds-size-150, 0.75rem));
 }
 
 
@@ -67,7 +68,7 @@ $iconMap: (
 .ico__classiccheckmark {
   @if (map-get($iconMap, classiccheckmark)) {
     fill: currentColor;
-    width: $auro-size-md;
+    width: var(--auro-size-md, var(--ds-size-200, 1rem));
     @warn "selector 'ico__toggleArrow' is deprecated, discontinue use.";
   }
 }
