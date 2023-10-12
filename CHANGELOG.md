@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.29.0](https://github.com/AlaskaAirlines/Icons/compare/v4.28.2...v4.29.0) (2023-10-12)
+
+
+### Features
+
+* **icon:** add new tail icon UP [#215](https://github.com/AlaskaAirlines/Icons/issues/215) ([72954fd](https://github.com/AlaskaAirlines/Icons/commit/72954fdb5c71ab04ecc95cc0fa445032f6a92e2c))
+
 ## [4.28.2](https://github.com/AlaskaAirlines/Icons/compare/v4.28.1...v4.28.2) (2023-10-10)
 
 
