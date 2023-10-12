@@ -51,7 +51,6 @@ $iconMap: (
 
 .ico_squareMed {
   fill: currentColor;
-  height: $auro-size-md;
   height: var(--auro-size-md, var(--ds-size-200, 1rem));
 }
 
