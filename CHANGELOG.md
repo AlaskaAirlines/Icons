@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.29.2](https://github.com/AlaskaAirlines/Icons/compare/v4.29.1...v4.29.2) (2023-10-12)
+
+
+### Performance Improvements
+
+* remove unnecessary style property ([4c483d0](https://github.com/AlaskaAirlines/Icons/commit/4c483d006a038941d6ee8b47f292f455d114d81a))
+
 ## [4.29.1](https://github.com/AlaskaAirlines/Icons/compare/v4.29.0...v4.29.1) (2023-10-12)
 
 
