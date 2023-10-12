@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.29.1](https://github.com/AlaskaAirlines/Icons/compare/v4.29.0...v4.29.1) (2023-10-12)
+
+
+### Performance Improvements
+
+* update SVGs to support new token name spec [#211](https://github.com/AlaskaAirlines/Icons/issues/211) ([e737da2](https://github.com/AlaskaAirlines/Icons/commit/e737da21109aa35a0fe928a134d47a4410e0e1c9))
+
 # [4.29.0](https://github.com/AlaskaAirlines/Icons/compare/v4.28.2...v4.29.0) (2023-10-12)
 
 
