@@ -339,6 +339,11 @@
       "name": "ravn-logomark",
       "title": "Airplane tail wordmark for Ravn Alaska",
       "viewBox": "0 0 927.52 660.73"
+    },
+    {
+      "name": "tail-UP",
+      "title": "Airplane tail image for Bahamasair",
+      "viewBox": "0 0 856 830"
     }
   ]
 }
