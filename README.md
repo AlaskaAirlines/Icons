@@ -168,7 +168,7 @@ Via a node.js dependency or other node like dependency management architecture, 
 It is suggested that developers list individual dependencies per UI component, like so:
 
 ```javascript
-const arrowDown = require('@alaskaairux/orion-icons/dist/icons/arrowdown');
+const arrowDown = require('@alaskaairux/icons/dist/icons/arrowdown');
 ```
 
 Within the UI component a developer can reference the object assigned to the newly created variable to get the specific icon's SVG code:
