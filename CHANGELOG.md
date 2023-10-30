@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.29.3](https://github.com/AlaskaAirlines/Icons/compare/v4.29.2...v4.29.3) (2023-10-30)
+
+
+### Performance Improvements
+
+* update repo to support Node 18 ([10496f4](https://github.com/AlaskaAirlines/Icons/commit/10496f4a0e5851237672c8d267f1a3eca1744b73))
+
 ## [4.29.2](https://github.com/AlaskaAirlines/Icons/compare/v4.29.1...v4.29.2) (2023-10-12)
 
 
