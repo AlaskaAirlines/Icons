@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.30.0](https://github.com/AlaskaAirlines/Icons/compare/v4.29.3...v4.30.0) (2023-11-02)
+
+
+### Features
+
+* adding porter tail logo ([a083148](https://github.com/AlaskaAirlines/Icons/commit/a0831480dd7e49f2a4a56c36fcc7111a9bcfe29a))
+
 ## [4.29.3](https://github.com/AlaskaAirlines/Icons/compare/v4.29.2...v4.29.3) (2023-10-30)
 
 
