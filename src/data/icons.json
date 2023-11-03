@@ -5,8 +5,8 @@
       "color": "currentColor",
       "title": "",
       "desc": "",
-      "width": "var(--auro-size-lg, var(--ds-size-300, 1.5rem))",
-      "height": "var(--auro-size-lg, var(--ds-size-300, 1.5rem))",
+      "width": "var(--ds-size-300, $ds-size-300)",
+      "height": "var(--ds-size-300, $ds-size-300)",
       "xmlns": "http://www.w3.org/2000/svg",
       "xmlns_xlink": "http://www.w3.org/1999/xlink",
       "viewBox": "0 0 24 24",
@@ -285,8 +285,8 @@
       "style": "ico_squareMd",
       "category": "interface",
       "PngSize": 16,
-      "width": "var(--auro-size-md)",
-      "height": "var(--auro-size-md)"
+      "width": "var(--ds-size-200, $ds-size-200)",
+      "height": "var(--ds-size-200, $ds-size-200)"
     },
     {
       "title": "Link to external site.",
@@ -295,8 +295,8 @@
       "style": "ico_squareSml",
       "category": "interface",
       "PngSize": 12,
-      "width": "var(--auro-size-sm)",
-      "height": "var(--auro-size-sm)"
+      "width": "var(--ds-size-150, $ds-size-150)",
+      "height": "var(--ds-size-150, $ds-size-150)"
     },
     {
       "name": "location-stroke",
