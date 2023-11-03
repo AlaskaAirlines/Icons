@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.30.1](https://github.com/AlaskaAirlines/Icons/compare/v4.30.0...v4.30.1) (2023-11-03)
+
+
+### Performance Improvements
+
+* update icon to support fallback color ([392da0e](https://github.com/AlaskaAirlines/Icons/commit/392da0e027f5bf8728de71c74b7354f968c892b3))
+
 # [4.30.0](https://github.com/AlaskaAirlines/Icons/compare/v4.29.3...v4.30.0) (2023-11-02)
 
 
