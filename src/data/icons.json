@@ -15,7 +15,7 @@
   },
   "icons": [
     {
-      "name": "error",
+      "name": "error-stroke",
       "desc": "Error alert indicator.",
       "category": "alert"
     },
@@ -32,6 +32,11 @@
     {
       "name": "warning-stroke",
       "desc": "Alerts user of troubling or concerning situation.",
+      "category": "alert"
+    },
+    {
+      "name": "error-filled",
+      "desc": "Triangle with exclamation mark.",
       "category": "alert"
     },
     {
@@ -56,21 +61,6 @@
       "status": "deprecated"
     },
     {
-      "name": "discount-code-applied",
-      "desc": "Confirmation that a code has been applied.",
-      "category": "interface"
-    },
-    {
-      "name": "first-class-upgrade-available",
-      "desc": "Denotes that there is an immediate upgrade to FC available.",
-      "category": "interface"
-    },
-    {
-      "name": "first-class-upgrade-waitlist",
-      "desc": "Denotes that guests can join a waitlist to upgrade to FC.",
-      "category": "interface"
-    },
-    {
       "name": "free-same-day-change",
       "desc": "Some short, frequent flights aka 'shuttle flights' allow for free same day changes.",
       "category": "interface"
@@ -81,19 +71,14 @@
       "category": "interface"
     },
     {
-      "name": "not-recommended-for-standby",
+      "name": "not-recommended-for-standby-filled",
+      "desc": "Red frown face.",
+      "category": "interface-sell"
+    },
+    {
+      "name": "not-recommended-for-standby-stroke",
       "desc": "Viewable by travelers with guest passes to fly standby - this route has a low chance of standby availability.",
-      "category": "interface"
-    },
-    {
-      "name": "premium-class-upgrade-available",
-      "desc": "Denotes that there is an immediate upgrade to Premium class available.",
-      "category": "interface"
-    },
-    {
-      "name": "premium-class-upgrade-waitlist",
-      "desc": "Denotes that guests can join a waitlist to upgrade to Premium class.",
-      "category": "interface"
+      "category": "interface-sell"
     },
     {
       "name": "recommended-for-standby-travel-but-monitor",
@@ -101,14 +86,19 @@
       "category": "interface"
     },
     {
-      "name": "recommended-for-standby",
-      "desc": "Viewable by travelers with guest passes to fly standby - this route has a high chance of standby availability.",
-      "category": "interface"
+      "name": "recommended-for-standby-travel-but-watch-filled",
+      "desc": "Yellow neutral face.",
+      "category": "interface-sell"
     },
     {
-      "name": "route-pending-government-approval",
-      "desc": "A new route that is waiting for official government approval.",
-      "category": "interface"
+      "name": "recommended-for-standby-filled",
+      "desc": "Green smiley face.",
+      "category": "interface-sell"
+    },
+    {
+      "name": "recommended-for-standby-stroke",
+      "desc": "Viewable by travelers with guest passes to fly standby - this route has a high chance of standby availability.",
+      "category": "interface-sell"
     },
     {
       "name": "arrow-up",
@@ -121,13 +111,23 @@
       "category": "interface"
     },
     {
-      "name": "view-password",
+      "name": "view-password-filled",
+      "desc": "Eye.",
+      "category": "interface"
+    },
+    {
+      "name": "view-password-stroke",
       "title": "Toggle password visibility.",
       "desc": "Password is currently hidden. Toggle to show password.",
       "category": "interface"
     },
     {
-      "name": "hide-password",
+      "name": "hide-password-filled",
+      "desc": "Eye with a line in the middle.",
+      "category": "interface"
+    },
+    {
+      "name": "hide-password-stroke",
       "title": "Toggle password visibility.",
       "desc": "Password is currently visible. Toggle to hide password.",
       "category": "interface"
@@ -168,8 +168,13 @@
       "category": "interface"
     },
     {
+      "name": "location-found-filled",
       "desc": "Target indicator.",
-      "name": "location-found",
+      "category": "interface"
+    },
+    {
+      "name": "location-found-stroke",
+      "desc": "Target circle with a dot in the center.",
       "category": "interface"
     },
     {
@@ -203,13 +208,23 @@
       "category": "interface"
     },
     {
-      "desc": "Add content option to calendar.",
-      "name": "add-to-calendar",
+      "name": "add-to-calendar-filled",
+      "desc": "Rectangle calendar with a plus sign.",
       "category": "interface"
     },
     {
+      "name": "add-to-calendar-stroke",
+      "desc": "Add content option to calendar.",
+      "category": "interface"
+    },
+    {
+      "name": "calendar-filled",
+      "desc": "Rectangular calendar.",
+      "category": "interface"
+    },
+    {
+      "name": "calendar-stroke",
       "desc": "Indicates calendar option.",
-      "name": "calendar",
       "category": "interface"
     },
     {
@@ -250,7 +265,12 @@
       "category": "interface"
     },
     {
-      "name": "filter",
+      "name": "filter-filled",
+      "desc": "Marker sign.",
+      "category": "interface"
+    },
+    {
+      "name": "filter-stroke",
       "desc": "Indicates that content can be filtered.",
       "category": "interface"
     },
@@ -331,11 +351,21 @@
       "category": "interface"
     },
     {
-      "name": "printer",
+      "name": "printer-filled",
+      "desc": "A printer.",
       "category": "interface"
     },
     {
-      "name": "search",
+      "name": "printer-stroke",
+      "category": "interface"
+    },
+    {
+      "name": "search-filled",
+      "desc": "Magnifying glass with dark circle in the middle.",
+      "category": "interface"
+    },
+    {
+      "name": "search-stroke",
       "category": "interface"
     },
     {
@@ -355,11 +385,21 @@
       "category": "interface"
     },
     {
-      "name": "notification",
+      "name": "notification-filled",
+      "desc": "A bell.",
       "category": "interface"
     },
     {
-      "name": "notification-active",
+      "name": "notification-stroke",
+      "category": "interface"
+    },
+    {
+      "name": "notification-active-filled",
+      "desc": "A bell with red dot.",
+      "category": "interface"
+    },
+    {
+      "name": "notification-active-stroke",
       "category": "interface"
     },
     {
@@ -367,24 +407,44 @@
       "category": "interface"
     },
     {
-      "name": "contract-fare",
+      "name": "contract-fare-filled",
+      "desc": "Two blue rectangles with a white dollar symbol in the middle.",
+      "category": "easybiz"
+    },
+    {
+      "name": "contract-fare-stroke",
       "desc": "A fare rate for companies that have a contract with Alaska Air.",
-      "category": "interface"
+      "category": "easybiz"
     },
     {
-      "name": "government-fare",
+      "name": "government-fare-filled",
       "desc": "A fare rate only visible only to government employees.",
-      "category": "interface"
+      "category": "easybiz"
     },
     {
-      "name": "government-mixed-fare",
+      "name": "government-fare-stroke",
+      "desc": "Blue dome building.",
+      "category": "easybiz"
+    },
+    {
+      "name": "government-mixed-fare-filled",
       "desc": "Some segments of this journey include government fare rates, others do not.",
-      "category": "interface"
+      "category": "easybiz"
     },
     {
-      "name": "contract-mixed-fare",
+      "name": "government-mixed-fare-stroke",
+      "desc": "Yellow dome building.",
+      "category": "easybiz"
+    },
+    {
+      "name": "contract-mixed-fare-filled",
+      "desc": "Two gold rectangles with a white stroke in the middle.",
+      "category": "easybiz"
+    },
+    {
+      "name": "contract-mixed-fare-stroke",
       "desc": "Some segments of this journey include contract fare rates, others do not.",
-      "category": "interface"
+      "category": "easybiz"
     },
     {
       "name": "qr-code",
@@ -392,12 +452,22 @@
       "category": "interface"
     },
     {
-      "name": "phone",
+      "name": "phone-filled",
+      "desc": "Rectangle phone.",
+      "category": "interface"
+    },
+    {
+      "name": "phone-stroke",
       "desc": "Mobile smart phone.",
       "category": "interface"
     },
     {
-      "name": "settings",
+      "name": "settings-filled",
+      "desc": "A cog gear.",
+      "category": "interface"
+    },
+    {
+      "name": "settings-stroke",
       "desc": "Indicates settings option.",
       "category": "interface"
     },
@@ -407,17 +477,27 @@
       "category": "in-flight"
     },
     {
+      "name": "carry-on-filled",
+      "desc": "Backpack with front zipper.",
+      "category": "in-flight"
+    },
+    {
       "name": "elite",
       "desc": "Indicate elite passenger status.",
       "category": "in-flight"
     },
     {
-      "name": "food-and-drink",
-      "desc": "Indicates food and drink options.",
+      "name": "entertainment-filled",
+      "desc": "A rectangle with triangle inside.",
       "category": "in-flight"
     },
     {
-      "name": "entertainment",
+      "name": "entertainment-stroke",
+      "category": "in-flight"
+    },
+    {
+      "name": "food-and-drink",
+      "desc": "Indicates food and drink options.",
       "category": "in-flight"
     },
     {
@@ -433,15 +513,30 @@
       "category": "in-flight"
     },
     {
-      "name": "luggage",
+      "name": "luggage-filled",
+      "desc": "A rectangle with wheels and handle.",
       "category": "in-flight"
     },
     {
-      "name": "plug",
+      "name": "luggage-stroke",
       "category": "in-flight"
     },
     {
-      "name": "seat",
+      "name": "plug-filled",
+      "desc": "Rectangle with two lines.",
+      "category": "in-flight"
+    },
+    {
+      "name": "plug-stroke",
+      "category": "in-flight"
+    },
+    {
+      "name": "seat-filled",
+      "desc": "Airline seat.",
+      "category": "in-flight"
+    },
+    {
+      "name": "seat-stroke",
       "category": "in-flight"
     },
     {
@@ -457,12 +552,22 @@
       "category": "in-flight"
     },
     {
-      "desc": "Indication of passenger.",
-      "name": "passenger",
+      "name": "passenger-filled",
+      "desc": "Circle with a single passenger outline.",
       "category": "in-flight"
     },
     {
-      "name": "multipax",
+      "name": "passenger-stroke",
+      "desc": "Indication of passenger.",
+      "category": "in-flight"
+    },
+    {
+      "name": "multipax-filled",
+      "desc": "Circle with two passengers.",
+      "category": "in-flight"
+    },
+    {
+      "name": "multipax-stroke",
       "desc": "Indication of multiple passengers.",
       "category": "in-flight"
     },
@@ -581,29 +686,54 @@
       "category": "social"
     },
     {
-      "name": "cart",
+      "name": "cart-filled",
+      "desc": "A shopping cart.",
+      "category": "shop"
+    },
+    {
+      "name": "cart-stroke",
       "desc": "Indicate items related to purchases.",
       "category": "shop"
     },
     {
-      "name": "shopping-bag",
+      "name": "shopping-bag-filled",
+      "desc": "Shopping bag with a handle.",
+      "category": "shop"
+    },
+    {
+      "name": "shopping-bag-stroke",
       "desc": "Indicate items related to purchases.",
       "category": "shop"
     },
     {
-      "name": "gift",
+      "name": "gift-filled",
+      "desc": "Gift box with a bow.",
+      "category": "shop"
+    },
+    {
+      "name": "gift-stroke",
       "desc": "Indicate when a guest receives or has earned a gift such as a complimentary food item.",
       "category": "shop"
     },
     {
-      "name": "receipt",
+      "name": "receipt-filled",
+      "desc": "Receipt paper.",
+      "category": "shop"
+    },
+    {
+      "name": "receipt-stroke",
       "desc": "Receipt with placeholder content.",
       "category": "shop"
     },
     {
-      "name": "credit-card",
+      "name": "credit-card-filled",
+      "desc": "Credit card.",
+      "category": "shop"
+    },
+    {
+      "name": "credit-card-stroke",
       "desc": "Default credit card icon.",
-      "category": "payment"
+      "category": "shop"
     },
     {
       "name": "cc-alaska",
@@ -646,7 +776,12 @@
       "category": "in-flight"
     },
     {
-      "name": "wine-and-spirits",
+      "name": "wine-and-spirits-filled",
+      "desc": "Wine glass.",
+      "category": "in-flight"
+    },
+    {
+      "name": "wine-and-spirits-stroke",
       "desc": "Indicates alcoholic beverage are available.",
       "category": "in-flight"
     },
@@ -656,23 +791,43 @@
       "category": "terminal"
     },
     {
-      "name": "flight-pass",
-      "desc": "Pass with plane and 3 dots.",
-      "category": "terminal"
+      "name": "flight-pass-filled",
+      "desc": "Rectangle with airplane in the middle and three circles on top.",
+      "category": "easybiz"
     },
     {
-      "name": "new-window",
+      "name": "flight-pass-stroke",
+      "desc": "Pass with plane and 3 dots.",
+      "category": "easybiz"
+    },
+    {
+      "name": "new-window-filled",
+      "desc": "Two rectangle with plus sign.",
+      "category": "interface"
+    },
+    {
+      "name": "new-window-stroke",
       "title": "Link will open a new tab or window.",
       "desc": "Notice indicator to alert users that action will result in the browser opening a new tab or window.",
       "category": "interface"
     },
     {
-      "name": "sun",
+      "name": "sun-filled",
       "desc": "Indicates destination options.",
       "category": "destination"
     },
     {
-      "name": "hotel",
+      "name": "sun-stroke",
+      "desc": "Full circle surrounded with lines.",
+      "category": "destination"
+    },
+    {
+      "name": "hotel-filled",
+      "desc": "Two rectangles with windows.",
+      "category": "destination"
+    },
+    {
+      "name": "hotel-stroke",
       "desc": "Indicates hotel options.",
       "category": "destination"
     },
@@ -687,12 +842,27 @@
       "category": "destination"
     },
     {
-      "name": "mask",
+      "name": "mask-filled",
+      "desc": "Face mask.",
+      "category": "health"
+    },
+    {
+      "name": "mask-stroke",
       "desc": "Indicates mask related information.",
       "category": "health"
     },
     {
-      "name": "covid-test",
+      "name": "clean-filled",
+      "desc": "Sanitizing spray.",
+      "category": "health"
+    },
+    {
+      "name": "covid-test-filled",
+      "desc": "Test tube.",
+      "category": "health"
+    },
+    {
+      "name": "covid-test-stroke",
       "desc": "Indicates pre-travel testing and Covid-19 related information.",
       "category": "health"
     },
@@ -704,6 +874,11 @@
     {
       "name": "health",
       "desc": "Indicates health related information.",
+      "category": "health"
+    },
+    {
+      "name": "medical-filled",
+      "desc": "Circle with a cross in the middle.",
       "category": "health"
     },
     {
@@ -720,12 +895,22 @@
       "category": "interface"
     },
     {
-      "name": "pin-trip",
+      "name": "pin-trip-filled",
       "desc": "Indication of selected trip options.",
       "category": "interface"
     },
     {
-      "name": "rising-sun",
+      "name": "pin-trip-stroke",
+      "desc": "Drop pin with circles.",
+      "category": "interface"
+    },
+    {
+      "name": "rising-sun-filled",
+      "category": "destination"
+    },
+    {
+      "name": "rising-sun-stroke",
+      "desc": "Semi-circle with lines.",
       "category": "destination"
     },
     {
@@ -737,8 +922,73 @@
       "category": "interface"
     },
     {
-      "name": "tag",
+      "name": "tag-filled",
       "category": "interface"
+    },
+    {
+      "name": "tag-stroke",
+      "desc": "Bag tag.",
+      "category": "interface"
+    },
+    {
+      "name": "discount-code-applied-filled",
+      "desc": "Confirmation that a code has been applied.",
+      "category": "interface-sell"
+    },
+    {
+      "name": "discount-code-applied-stroke",
+      "desc": "Green clover with a checkmark.",
+      "category": "interface-sell"
+    },
+    {
+      "name": "first-class-upgrade-available-filled",
+      "desc": "Purple start with a letter 'P'.",
+      "category": "interface-sell"
+    },
+    {
+      "name": "first-class-upgrade-available-stroke",
+      "desc": "Denotes that there is an immediate upgrade to FC available.",
+      "category": "interface-sell"
+    },
+    {
+      "name": "first-class-upgrade-waitlist-filled",
+      "desc": "A clock ribbon.",
+      "category": "interface-sell"
+    },
+    {
+      "name": "first-class-upgrade-waitlist-stroke",
+      "desc": "Denotes that guests can join a waitlist to upgrade to FC.",
+      "category": "interface-sell"
+    },
+    {
+      "name": "premium-class-upgrade-available-filled",
+      "desc": "Denotes that there is an immediate upgrade to Premium class available.",
+      "category": "interface-sell"
+    },
+    {
+      "name": "premium-class-upgrade-available-stroke",
+      "desc": "Denotes that there is an immediate upgrade to Premium class available.",
+      "category": "interface-sell"
+    },
+    {
+      "name": "premium-class-upgrade-waitlist-filled",
+      "desc": "Gold start with watch face.",
+      "category": "interface-sell"
+    },
+    {
+      "name": "premium-class-upgrade-waitlist-stroke",
+      "desc": "Denotes that guests can join a waitlist to upgrade to Premium class.",
+      "category": "interface-sell"
+    },
+    {
+      "name": "route-pending-government-approval-filled",
+      "desc": "A new route that is waiting for official government approval.",
+      "category": "interface-sell"
+    },
+    {
+      "name": "route-pending-government-approval-stroke",
+      "desc": "Dome building.",
+      "category": "interface-sell"
     },
     {
       "name": "lyft",
@@ -851,8 +1101,13 @@
       "category": "interface"
     },
     {
-      "name": "id",
-      "desc": "Guests' identity document",
+      "name": "id-filled",
+      "desc": "Rectangle with id silhouette inside.",
+      "category": "interface"
+    },
+    {
+      "name": "id-stroke",
+      "desc": "Guests' identity document.",
       "category": "interface"
     },
     {
