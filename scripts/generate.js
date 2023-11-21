@@ -78,20 +78,6 @@ function runGenerator(data) {
     ${icon.desc ? `<desc id="${icon.name}__desc">${icon.desc}</desc>` : "" }`);
     icon.svg = split.join('');
 
-    if (icon.path === '/icons') {
-      // Locate and remove undesired SVG attributes
-      const fill = icon.svg.match(/fill="#......"/);
-      const fillNone = icon.svg.match(/fill="none"/);
-
-      if (fill) {
-        icon.svg = icon.svg.replace(fill, '')
-      }
-
-      if (fillNone) {
-        icon.svg = icon.svg.replace(fillNone, '')
-      }
-    }
-
     // adds attributes to SVG string based on icons.json data
     icon.svg = [icon.svg.slice(0, insertPos), ariaHidden, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), elementStyle, icon.svg.slice(insertPos)].join('');
@@ -147,8 +133,8 @@ function runGenerator(data) {
     // write new SVGs to ./dist
     fs.writeFileSync( `${buildIconsDir}/${distFilename}.svg`, icon.svg);
 
-    console.log(chalk.hex('#ffd200')(`- ${count}: `) + chalk.hex('#f26135')(`${distFilename}.svg
-    `))
+    // console.log(chalk.hex('#ffd200')(`- ${count}: `) + chalk.hex('#f26135')(`${distFilename}.svg
+    // `))
   });
 }
 
