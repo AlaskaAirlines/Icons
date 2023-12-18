@@ -729,6 +729,11 @@
       "category": "destination"
     },
     {
+      "name": "rising-sun-stroke",
+      "desc": "Semi-circle with lines.",
+      "category": "destination"
+    },
+    {
       "name": "sparkle-filled",
       "category": "interface"
     },
