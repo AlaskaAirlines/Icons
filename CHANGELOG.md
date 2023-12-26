@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+# [4.31.0](https://github.com/AlaskaAirlines/Icons/compare/v4.30.1...v4.31.0) (2023-12-26)
+
+
+### Features
+
+* **icon:** add icon to library [#226](https://github.com/AlaskaAirlines/Icons/issues/226) ([b297979](https://github.com/AlaskaAirlines/Icons/commit/b297979862d2377bc2ea4c1b360da29c06be7d47))
+
+
+### Performance Improvements
+
+* **icon:** edit fill attribute for icon ([48fb47a](https://github.com/AlaskaAirlines/Icons/commit/48fb47a8206ed477b8a39d68ac40f52695b541f7))
+
 ## [4.30.1](https://github.com/AlaskaAirlines/Icons/compare/v4.30.0...v4.30.1) (2023-11-03)
 
 
