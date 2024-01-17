@@ -884,6 +884,11 @@
       "name": "tiktok",
       "desc": "Tiktok's logo",
       "category": "social"
+    },
+    {
+      "name": "lavatory",
+      "desc": "Toilet",
+      "category": "in-flight"
     }
   ]
 }
