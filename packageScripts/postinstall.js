@@ -2,6 +2,11 @@
 
 const chalk = require('chalk');
 const pjson = require('../package.json');
+const iconsData = require('../src/data/icons.json');
+
+const deprecatedIcons = iconsData.icons.filter((icon) => {
+  return icon.deprecated;
+})
 
 console.log(chalk.hex('#f26135')(`
 
@@ -21,9 +26,12 @@ console.log(chalk.hex('#f26135')(`
         Thanks for installing the latest version
                 of `) + chalk.hex('#ffd200').bold(`Auro Icons v${pjson.version}.
 
-       The following icon(s) have been deprecated`) + chalk.hex('#f26135')(`
-           - interface/gov-approval.svg
-           - interface/penguin.svg
+       The following icon(s) have been deprecated
+       `) + chalk.hex('#f26135')(`
+       \t${deprecatedIcons.map((icon) => {
+                return `- ${icon.category}/${icon.name}.svg \n \t`
+                }).join('')
+       }
 
        Deprecated icon(s) will be removed with the
         next MAJOR release. You have been warned.
