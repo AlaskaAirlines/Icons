@@ -42,7 +42,7 @@ function titleCase(str) {
 // =======================================================================
 const icons = {};
 
-console.log(`Generating Icons`)
+console.log(chalk.hex('#f26135')(`Generating Icons ... \n`))
 
 function runGenerator(data) {
   data.icons.forEach((iconRaw, index) => {
@@ -146,9 +146,7 @@ function runGenerator(data) {
 
     // write new SVGs to ./dist
     fs.writeFileSync( `${buildIconsDir}/${distFilename}.svg`, icon.svg);
-
-    console.log(chalk.hex('#ffd200')(`- ${count}: `) + chalk.hex('#f26135')(`${distFilename}.svg
-    `))
+    process.stdout.write(`- `);
   });
 }
 
