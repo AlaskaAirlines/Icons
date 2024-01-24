@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.34.0](https://github.com/AlaskaAirlines/Icons/compare/v4.33.0...v4.34.0) (2024-01-24)
+
+
+### Features
+
+* add deprecated flag to icons data [#224](https://github.com/AlaskaAirlines/Icons/issues/224) ([7cf7255](https://github.com/AlaskaAirlines/Icons/commit/7cf7255ed21ddfe63f46e0990b8f43975233e264)), closes [#225](https://github.com/AlaskaAirlines/Icons/issues/225)
+
 # [4.33.0](https://github.com/AlaskaAirlines/Icons/compare/v4.32.0...v4.33.0) (2024-01-24)
 
 
