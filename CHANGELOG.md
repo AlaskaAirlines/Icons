@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+# [4.33.0](https://github.com/AlaskaAirlines/Icons/compare/v4.32.0...v4.33.0) (2024-01-24)
+
+
+### Features
+
+* **tail:** update icelandair tail [#229](https://github.com/AlaskaAirlines/Icons/issues/229) ([5767c05](https://github.com/AlaskaAirlines/Icons/commit/5767c05f81ee0dac1dcfeef01351bda9071b4823))
+
+
+### Performance Improvements
+
+* update to support node policy ([f80e2a6](https://github.com/AlaskaAirlines/Icons/commit/f80e2a690abe90f64cc7450cf3a811448a2e6649))
+
 # [4.32.0](https://github.com/AlaskaAirlines/Icons/compare/v4.31.0...v4.32.0) (2024-01-18)
 
 
