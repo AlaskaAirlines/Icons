@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.34.1](https://github.com/AlaskaAirlines/Icons/compare/v4.34.0...v4.34.1) (2024-01-25)
+
+
+### Performance Improvements
+
+* update ./data to be in npm release ([24b5add](https://github.com/AlaskaAirlines/Icons/commit/24b5addb17f50052e0b01dc420d932ed92779dac))
+
 # [4.34.0](https://github.com/AlaskaAirlines/Icons/compare/v4.33.0...v4.34.0) (2024-01-24)
 
 
