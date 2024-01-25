@@ -2,7 +2,6 @@
 .gitignore
 .jsonlintschema
 .svglintrc.js
-.travis.yml
 scripts/
 tests/
 validate/
@@ -13,3 +12,4 @@ src/**/*
 
 # overrides
 !src/icons
+!src/data/*.json
