@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.34.2](https://github.com/AlaskaAirlines/Icons/compare/v4.34.1...v4.34.2) (2024-01-27)
+
+
+### Performance Improvements
+
+* update type and dependencies ([9f91a54](https://github.com/AlaskaAirlines/Icons/commit/9f91a54a61f615d05a1f6386a224039efe9e52f8))
+
 ## [4.34.1](https://github.com/AlaskaAirlines/Icons/compare/v4.34.0...v4.34.1) (2024-01-25)
 
 
