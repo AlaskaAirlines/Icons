@@ -1070,6 +1070,12 @@
       "desc": "Toilet",
       "category": "in-flight",
       "deprecated": false
+    },
+    {
+      "name": "download",
+      "desc": "Arrow pointing downwards",
+      "category": "interface",
+      "deprecated": false
     }
   ]
 }
