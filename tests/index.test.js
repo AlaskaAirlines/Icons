@@ -1,8 +1,8 @@
 const { icons } = require('../src/data/icons.json');
-const orionIcons = require('../dist/index.js');
+const auroIcons = require('../dist/index_es5.js');
 
 icons.forEach(icon => {
-  const subject = orionIcons[icon.name];
+  const subject = auroIcons[icon.name];
 
   test(`${icon.name} has a "title"`, () => {
     expect(typeof subject.title).toBe('string');

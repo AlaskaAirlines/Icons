@@ -10,7 +10,8 @@
 const dataFile = '../src/data/icons.json';
 const restrictedDataFile = '../src/data/restrictedIcons.json';
 const logoDataFile = '../src/data/logoIcons.json';
-const indexFile = `${__dirname}/../dist/index.js`;
+const indexFileES5 = `${__dirname}/../dist/index_es5.js`;
+const indexFileES6 = `${__dirname}/../dist/index.js`;
 const iconsDir = `${__dirname}/../src`;
 const iconData = require(dataFile);
 const restrictedIconData = require(restrictedDataFile);
@@ -171,4 +172,5 @@ Generating the Icons People Love.
 `))
 
 // write our generic index.js
-fs.writeFileSync(indexFile, `module.exports=${JSON.stringify(icons)};`);
+fs.writeFileSync(indexFileES5, `module.exports=${JSON.stringify(icons)};`);
+fs.writeFileSync(indexFileES6, `export default ${JSON.stringify(icons)};`);
