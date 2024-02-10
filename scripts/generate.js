@@ -147,7 +147,7 @@ function runGenerator(data) {
     fs.writeFileSync( `${buildIconsDir}/${distFilename}_es6.js`, `export default ${JSON.stringify(icon)};`);
 
     // restrict new extension to only "type": "icon"
-    if (icon.type === 'icon') {
+    if (icon.type === 'icon' || icon.type === 'restricted') {
       fs.writeFileSync( `${buildIconsDir}/${distFilename}.mjs`, `export default ${JSON.stringify(icon)};`);
     }
 
