@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.36.0](https://github.com/AlaskaAirlines/Icons/compare/v4.35.1...v4.36.0) (2024-02-10)
+
+
+### Features
+
+* add support for .mjs ES6 file type ([3ad4080](https://github.com/AlaskaAirlines/Icons/commit/3ad40809a46cb13149366efbc0784b9b9e6d0c7f))
+
 ## [4.35.1](https://github.com/AlaskaAirlines/Icons/compare/v4.35.0...v4.35.1) (2024-02-10)
 
 
