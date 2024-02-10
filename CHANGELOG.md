@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.36.1](https://github.com/AlaskaAirlines/Icons/compare/v4.36.0...v4.36.1) (2024-02-10)
+
+
+### Performance Improvements
+
+* add support for restricted icons ([cbb5c84](https://github.com/AlaskaAirlines/Icons/commit/cbb5c84438ec3bc752a4e4f10e68777b30802842))
+
 # [4.36.0](https://github.com/AlaskaAirlines/Icons/compare/v4.35.1...v4.36.0) (2024-02-10)
 
 
