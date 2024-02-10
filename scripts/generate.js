@@ -141,9 +141,15 @@ function runGenerator(data) {
     }
 
     icons[icon.name] = icon;
+
     // write the static .js file for the icon
     fs.writeFileSync( `${buildIconsDir}/${distFilename}.js`, `module.exports=${JSON.stringify(icon)};`);
     fs.writeFileSync( `${buildIconsDir}/${distFilename}_es6.js`, `export default ${JSON.stringify(icon)};`);
+
+    // restrict new extension to only "type": "icon"
+    if (icon.type === 'icon') {
+      fs.writeFileSync( `${buildIconsDir}/${distFilename}.mjs`, `export default ${JSON.stringify(icon)};`);
+    }
 
     // write new SVGs to ./dist
     fs.writeFileSync( `${buildIconsDir}/${distFilename}.svg`, icon.svg);

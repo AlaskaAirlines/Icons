@@ -11,7 +11,8 @@
       "xmlns": "http://www.w3.org/2000/svg",
       "xmlns_xlink": "http://www.w3.org/1999/xlink",
       "path": "/icons/logos",
-      "style": ""
+      "style": "",
+      "type": "logo"
   },
   "icons": [
     {
@@ -309,7 +310,7 @@
       "title": "Airplane tail image for Mokulele Airlines",
       "viewBox": "0 0 856 830"
     },
-    
+
     {
       "name": "tail-M5",
       "title": "Airplane tail image for Kenmore Air",

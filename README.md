@@ -39,13 +39,17 @@ Within the npm, `@alaskaairux/icons/dist/icons/`, developers may access the SVGs
 
 This repo output two types of JS wrapped SVGs for easy inclusion with front-end frameworks.
 
-#### Default style - iconName.js
+#### ES5 style - iconName.js
+
+**Note:** the ES5 `iconName.js` version has been deprecated. Please update to the newly supported `.mjs` file type.
 
 ```javascript
 module.exports={ ... }
 ```
 
-#### ES6 style - iconName_es6.js
+#### ES6 style - iconName.mjs
+
+**Note:** the `iconName_es6.js` file type is deprecated, be sure to update all references to `.mjs`.
 
 ```javascript
 export default { ... }
@@ -58,7 +62,7 @@ In most cases, the default exported JS file will work. But in some cases, the ES
 Lit-element requires the ES6 module export syntax for use, so an example dependency reference would be:
 
 ```js
-import warning from '@alaskaairux/icons/dist/icons/alert/warning_es6.js';
+import warning from '@alaskaairux/icons/dist/icons/alert/warning.mjs';
 ```
 
 #### Non-directive use
@@ -84,16 +88,16 @@ In the head of your component file, import the [Lit Element directive](https://l
 
 ```js
 // Lit2.0
-import { unsafeSVG } from 'lit/directives/unsafe-svg.js';
+import { unsafeSVG } from 'lit/directives/unsafe-svg.mjs';
 
 // Legacy Lit Element
-import { unsafeSVG } from 'lit-html/directives/unsafe-svg.js';
+import { unsafeSVG } from 'lit-html/directives/unsafe-svg.mjs';
 ```
 
 Import your icon SVG reference
 
 ```js
-import warning from '@alaskaairux/icons/dist/icons/alert/warning_es6.js';
+import warning from '@alaskaairux/icons/dist/icons/alert/warning.mjs';
 ```
 
 Use in HTML template
@@ -235,7 +239,7 @@ arrowDown.svg = arrowDown.svg.replace(/role="img"/g, `role="img" aria-hidden="tr
 
 Adding new icons to this repository requires a few steps.
 
-1. Node.js minimum version `14.x`
+1. Node.js minimum version `20.x`
 1. Add a new icon `.svg` file to the `src/icons/` directory (see Guidelines below)
 1. If the icons are to retain designed color specs, please place the new icon in the `src/icons/fullColor` directory
 1. Add **shape schema** to `./src/data/icons.json` file (see example below)
@@ -291,7 +295,8 @@ The `title` attribute is needed when you may want a simpler name than the file n
       "xmlns_xlink": "http://www.w3.org/1999/xlink",
       "viewBox": "0 0 24 24",
       "path": "/icons",
-      "style": "ico_squareLarge"
+      "style": "ico_squareLarge",
+      "type": "icon"
   },
   "icons": [
     {
