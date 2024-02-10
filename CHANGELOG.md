@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.35.1](https://github.com/AlaskaAirlines/Icons/compare/v4.35.0...v4.35.1) (2024-02-10)
+
+
+### Performance Improvements
+
+* update default export to be ES6 ([0c86410](https://github.com/AlaskaAirlines/Icons/commit/0c864107474d0b1836d47024c6076afde4f957e7))
+
 # [4.35.0](https://github.com/AlaskaAirlines/Icons/compare/v4.34.2...v4.35.0) (2024-02-10)
 
 
