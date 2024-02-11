@@ -42,7 +42,7 @@ This repo output two types of JS wrapped SVGs for easy inclusion with front-end 
 
 #### ES5 style - iconName.js
 
-**Note:** the ES5 `iconName.js` version has been deprecated. Please update to the newly supported `.mjs` file type.
+**Note:** for icon SVGs, the ES5 `iconName.js` versions have been deprecated. Please update to the newly supported `iconName..mjs` file type. This currently does not apply to SVG logos or tails.
 
 ```javascript
 module.exports={ ... }
@@ -50,13 +50,11 @@ module.exports={ ... }
 
 #### ES6 style - iconName.mjs
 
-**Note:** the `iconName_es6.js` file type is deprecated, be sure to update all references to `.mjs`.
+**Note:** the `iconName_es6.js` file type is deprecated, be sure to update all references to `iconName.mjs`. This currently does not apply to SVG logos or tails.
 
 ```javascript
 export default { ... }
 ```
-
-In most cases, the default exported JS file will work. But in some cases, the ES6 style module export is required. Simply point to the resource needed for use.
 
 ### Lit-element
 

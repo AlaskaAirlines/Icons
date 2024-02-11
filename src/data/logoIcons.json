@@ -329,12 +329,14 @@
     {
       "name": "oneworld",
       "title": "Airplane tail image for Oneworld Alliance",
-      "viewBox": "0 0 24 24"
+      "viewBox": "0 0 24 24",
+      "esm": true
     },
     {
       "name": "oneworld-wordmark",
       "title": "Airplane tail wordmark for Oneworld Alliance",
-      "viewBox": "0 0 843 149"
+      "viewBox": "0 0 843 149",
+      "esm": true
     },
     {
       "name": "tail-PD",
