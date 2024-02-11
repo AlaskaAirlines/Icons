@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.36.2](https://github.com/AlaskaAirlines/Icons/compare/v4.36.1...v4.36.2) (2024-02-11)
+
+
+### Performance Improvements
+
+* add ESM icons ([3bf3f54](https://github.com/AlaskaAirlines/Icons/commit/3bf3f54db6866341e30ac4d2ba376b9573e19e07))
+
 ## [4.36.1](https://github.com/AlaskaAirlines/Icons/compare/v4.36.0...v4.36.1) (2024-02-10)
 
 
