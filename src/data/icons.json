@@ -482,6 +482,12 @@
       "deprecated": false
     },
     {
+      "name": "document-stroke",
+      "desc": "Icon of a piece of paper.",
+      "category": "interface",
+      "deprecated": false
+    },
+    {
       "name": "boarding",
       "desc": "Indicate boarding options.",
       "category": "in-flight",
