@@ -29,7 +29,7 @@ body:
         | partnership  | Icons related to business partnerships and Alaska Airlines |
         | logo  | Logo SVGs, e.g. tails or company logos |
 
-        - **Name:** What is the name of the icon? Please update the name of the file to match. PLEASE reference other similar icons for a naming convention.
+        - **Name:** What is the name of the icon? Please update the name of the file to match. Depending on icon style, please be sure to use `-stroke` or `-fill`.
         - **Category:** What category of icons will this new icon be listed?
         - **Title:** An OPTIONAL description of the icon. ††
         - **Description:** Alternative text of the icon that will be read back to the user via assistive technologies.
@@ -41,7 +41,7 @@ body:
       label: Icon attributes
       description: Please list out all icon related attributes
       placeholder: |
-        1. Icon name
+        1. Icon name (-stroke / -fill)
         2. Icon category
         3. Accessibility icon description
   - type: dropdown
