@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.37.0](https://github.com/AlaskaAirlines/Icons/compare/v4.36.2...v4.37.0) (2024-02-14)
+
+
+### Features
+
+* add new document-stroke icon [#233](https://github.com/AlaskaAirlines/Icons/issues/233) ([2401c84](https://github.com/AlaskaAirlines/Icons/commit/2401c8413850b94108ae5340b26fabd38bb24eec))
+
 ## [4.36.2](https://github.com/AlaskaAirlines/Icons/compare/v4.36.1...v4.36.2) (2024-02-11)
 
 
