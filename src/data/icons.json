@@ -326,8 +326,14 @@
       "deprecated": true
     },
     {
+      "name": "add-to-calendar-filled",
+      "desc": "rectangle calendar with a plus sign.",
+      "category": "interface",
+      "deprecated": false
+    },
+    {
       "name": "add-to-calendar-stroke",
-      "desc": "Add content option to calendar.",
+      "desc": "rectangle calendar with a plus sign.",
       "category": "interface",
       "deprecated": false
     },
@@ -338,8 +344,14 @@
       "deprecated": true
     },
     {
+      "name": "calendar-filled",
+      "desc": "rectangular calendar.",
+      "category": "interface",
+      "deprecated": false
+    },
+    {
       "name": "calendar-stroke",
-      "desc": "Indicates calendar option.",
+      "desc": "rectangular calendar.",
       "category": "interface",
       "deprecated": false
     },
@@ -366,7 +378,14 @@
       "deprecated": false
     },
     {
+      "name": "chat-filled",
+      "desc": "two rectangle chat bubble.",
+      "category": "interface",
+      "deprecated": false
+    },
+    {
       "name": "chat-stroke",
+      "desc": "two rectangle chat bubble.",
       "category": "interface",
       "deprecated": false
     },
@@ -591,9 +610,15 @@
       "deprecated": false
     },
     {
+      "name": "contract-fare-filled",
+      "desc": "two blue rectangles with a white dollar symbol in the middle.",
+      "category": "easybiz",
+      "deprecated": false
+    },
+    {
       "name": "contract-fare-stroke",
-      "desc": "A fare rate for companies that have a contract with Alaska Air.",
-      "category": "interface",
+      "desc": "two blue rectangles with a white dollar symbol in the middle.",
+      "category": "easybiz",
       "deprecated": false
     },
     {
@@ -604,14 +629,14 @@
     },
     {
       "name": "government-fare-filled",
-      "desc": "A fare rate only visible only to government employees.",
-      "category": "interface",
+      "desc": "blue dome building.",
+      "category": "easybiz",
       "deprecated": false
     },
     {
       "name": "government-fare-stroke",
-      "desc": "A fare rate only visible only to government employees.",
-      "category": "interface",
+      "desc": "blue dome building.",
+      "category": "easybiz",
       "deprecated": false
     },
     {
@@ -623,13 +648,13 @@
     {
       "name": "government-mixed-fare-filled",
       "desc": "Some segments of this journey include government fare rates, others do not.",
-      "category": "interface",
+      "category": "easybiz",
       "deprecated": false
     },
     {
       "name": "government-mixed-fare-stroke",
-      "desc": "Some segments of this journey include government fare rates, others do not.",
-      "category": "interface",
+      "desc": "yellow dome building.",
+      "category": "easybiz",
       "deprecated": false
     },
     {
@@ -639,9 +664,15 @@
       "deprecated": true
     },
     {
+      "name": "contract-mixed-fare-filled",
+      "desc": "two gold rectangles with a white stroke in the middle.",
+      "category": "easybiz",
+      "deprecated": false
+    },
+    {
       "name": "contract-mixed-fare-stroke",
-      "desc": "Some segments of this journey include contract fare rates, others do not.",
-      "category": "interface",
+      "desc": "two gold rectangles with a white stroke in the middle.",
+      "category": "easybiz",
       "deprecated": false
     },
     {
@@ -705,6 +736,12 @@
       "deprecated": true
     },
     {
+      "name": "carry-on-filled",
+      "desc": "backpack with front zipper.",
+      "category": "in-flight",
+      "deprecated": true
+    },
+    {
       "name": "elite-stroke",
       "desc": "Indicate elite passenger status.",
       "category": "in-flight",
@@ -723,7 +760,14 @@
       "deprecated": false
     },
     {
+      "name": "entertainment-filled",
+      "desc": "a rectangle with triangle inside.",
+      "category": "in-flight",
+      "deprecated": false
+    },
+    {
       "name": "entertainment-stroke",
+      "desc": "a rectangle with triangle inside.",
       "category": "in-flight",
       "deprecated": false
     },
@@ -982,8 +1026,14 @@
       "deprecated": false
     },
     {
+      "name": "cart-filled",
+      "desc": "a shopping cart.",
+      "category": "shop",
+      "deprecated": false
+    },
+    {
       "name": "cart-stroke",
-      "desc": "Indicate items related to purchases.",
+      "desc": "a shopping cart.",
       "category": "shop",
       "deprecated": false
     },
@@ -1030,8 +1080,14 @@
       "deprecated": true
     },
     {
+      "name": "credit-card-filled",
+      "desc": "credit card.",
+      "category": "payment",
+      "deprecated": false
+    },
+    {
       "name": "credit-card-stroke",
-      "desc": "Default credit card icon.",
+      "desc": "credit card.",
       "category": "payment",
       "deprecated": false
     },
@@ -1114,8 +1170,8 @@
     },
     {
       "name": "flight-pass-stroke",
-      "desc": "Pass with plane and 3 dots.",
-      "category": "terminal",
+      "desc": "rectangle with airplane in the middle and three circles on top.",
+      "category": "easybiz",
       "deprecated": false
     },
     {
@@ -1208,13 +1264,19 @@
       "name": "covid-test",
       "desc": "Indicates pre-travel testing and Covid-19 related information.",
       "category": "health",
+      "deprecated": true
+    },
+    {
+      "name": "covid-test-filled",
+      "desc": "test tube.",
+      "category": "health",
       "deprecated": false
     },
     {
       "name": "covid-test-stroke",
-      "desc": "Indicates pre-travel testing and Covid-19 related information.",
+      "desc": "test tube.",
       "category": "health",
-      "deprecated": true
+      "deprecated": false
     },
     {
       "name": "air",
@@ -1235,8 +1297,14 @@
       "deprecated": true
     },
     {
-      "name": "spraybottle-stroke",
-      "desc": "Indicates that there is information about cleaning.",
+      "name": "clean-filled",
+      "desc": "sanitizing spray.",
+      "category": "health",
+      "deprecated": false
+    },
+    {
+      "name": "clean-stroke",
+      "desc": "sanitizing spray.",
       "category": "health",
       "deprecated": false
     },
