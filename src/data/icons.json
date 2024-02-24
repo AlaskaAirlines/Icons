@@ -76,6 +76,12 @@
       "deprecated": false
     },
     {
+      "name": "discount-code-applied-stroke",
+      "desc": "Confirmation that a code has been applied.",
+      "category": "interface",
+      "deprecated": false
+    },
+    {
       "name": "discount-code-applied",
       "desc": "Confirmation that a code has been applied.",
       "category": "interface",
@@ -603,6 +609,12 @@
       "deprecated": false
     },
     {
+      "name": "government-fare-stroke",
+      "desc": "A fare rate only visible only to government employees.",
+      "category": "interface",
+      "deprecated": false
+    },
+    {
       "name": "government-fare",
       "desc": "A fare rate only visible only to government employees.",
       "category": "interface",
@@ -610,6 +622,12 @@
     },
     {
       "name": "government-mixed-fare-filled",
+      "desc": "Some segments of this journey include government fare rates, others do not.",
+      "category": "interface",
+      "deprecated": false
+    },
+    {
+      "name": "government-mixed-fare-stroke",
       "desc": "Some segments of this journey include government fare rates, others do not.",
       "category": "interface",
       "deprecated": false
@@ -1121,6 +1139,12 @@
       "deprecated": true
     },
     {
+      "name": "sun-stroke",
+      "desc": "Indicates destination options.",
+      "category": "destination",
+      "deprecated": false
+    },
+    {
       "name": "sun-filled",
       "desc": "Indicates destination options.",
       "category": "destination",
@@ -1234,6 +1258,12 @@
     },
     {
       "name": "pin-trip-filled",
+      "desc": "Indication of selected trip options.",
+      "category": "interface",
+      "deprecated": false
+    },
+    {
+      "name": "pin-trip-stroke",
       "desc": "Indication of selected trip options.",
       "category": "interface",
       "deprecated": false
