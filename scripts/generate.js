@@ -65,6 +65,7 @@ function runGenerator(data) {
     const ariaHidden = !icon.desc ? `aria-hidden="true"` : undefined;
     const labelledByTitle = icon.title ? `${icon.name}__title ` : "";
     const labelledByDesc = icon.desc ? `${icon.name}__desc` : "";
+    const iconDeprecated = icon.deprecated ? `data-deprecated="${icon.deprecated}" ` : "";
     const labelledBy = icon.desc ? `aria-labelledby="${labelledByTitle}${labelledByDesc}" ` : undefined;
 
     // Build new Title from icon file name
@@ -102,6 +103,7 @@ function runGenerator(data) {
     icon.svg = [icon.svg.slice(0, insertPos), `xmlns="${icon.xmlns}" `, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), `xmlns:xlink="${icon.xmlns_xlink}" `, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), `viewBox="${icon.viewBox}" `, icon.svg.slice(insertPos)].join('');
+    icon.svg = [icon.svg.slice(0, insertPos), iconDeprecated, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), ` `, icon.svg.slice(insertPos)].join('');
 
     //optimize SVG
