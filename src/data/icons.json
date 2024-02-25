@@ -15,10 +15,14 @@
   },
   "icons": [
     {
+      "name": "error-filled",
+      "desc": "triangle with exclamation mark.",
+      "category": "alert"
+    },
+    {
       "name": "error-stroke",
-      "desc": "Error alert indicator.",
-      "category": "alert",
-      "deprecated": false
+      "desc": "triangle with exclamation mark.",
+      "category": "alert"
     },
     {
       "name": "error",
@@ -29,38 +33,32 @@
     {
       "name": "information-stroke",
       "desc": "Important information indicator.",
-      "category": "alert",
-      "deprecated": false
+      "category": "alert"
     },
     {
       "name": "question-stroke",
       "desc": "Alert user of option to learn more about relative content.",
-      "category": "alert",
-      "deprecated": false
+      "category": "alert"
     },
     {
       "name": "warning-stroke",
       "desc": "Alerts user of troubling or concerning situation.",
-      "category": "alert",
-      "deprecated": false
+      "category": "alert"
     },
     {
       "name": "information-filled",
       "desc": "Important information indicator.",
-      "category": "alert",
-      "deprecated": false
+      "category": "alert"
     },
     {
       "name": "question-filled",
       "desc": "Alert user of option to learn more about relative content.",
-      "category": "alert",
-      "deprecated": false
+      "category": "alert"
     },
     {
       "name": "warning-filled",
       "desc": "Alert user of troubling or concerning situation.",
-      "category": "alert",
-      "deprecated": false
+      "category": "alert"
     },
     {
       "name": "gov-approval",
@@ -71,9 +69,13 @@
     },
     {
       "name": "discount-code-applied-filled",
-      "desc": "Confirmation that a code has been applied.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "green clover with a checkmark.",
+      "category": "interface"
+    },
+    {
+      "name": "discount-code-applied-stroke",
+      "desc": "green clover with a checkmark.",
+      "category": "interface"
     },
     {
       "name": "discount-code-applied",
@@ -82,10 +84,14 @@
       "deprecated": true
     },
     {
+      "name": "first-class-upgrade-available-filled",
+      "desc": "ribbon with a letter 'F'.",
+      "category": "interface"
+    },
+    {
       "name": "first-class-upgrade-available-stroke",
-      "desc": "Denotes that there is an immediate upgrade to FC available.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "ribbon with a letter 'F'.",
+      "category": "interface"
     },
     {
       "name": "first-class-upgrade-available",
@@ -94,10 +100,14 @@
       "deprecated": true
     },
     {
+      "name": "first-class-upgrade-waitlist-filled",
+      "desc": "a clock ribbon.",
+      "category": "interface"
+    },
+    {
       "name": "first-class-upgrade-waitlist-stroke",
-      "desc": "Denotes that guests can join a waitlist to upgrade to FC.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "a clock ribbon.",
+      "category": "interface"
     },
     {
       "name": "first-class-upgrade-waitlist",
@@ -108,8 +118,7 @@
     {
       "name": "free-same-day-change-stroke",
       "desc": "Some short, frequent flights aka 'shuttle flights' allow for free same day changes.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "free-same-day-change",
@@ -120,14 +129,17 @@
     {
       "name": "mixed-cabin-itinerary",
       "desc": "A guest will be in different cabins for different segments of the trip.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
+    },
+    {
+      "name": "not-recommended-for-standby-filled",
+      "desc": "red frown face.",
+      "category": "interface"
     },
     {
       "name": "not-recommended-for-standby-stroke",
-      "desc": "Viewable by travelers with guest passes to fly standby - this route has a low chance of standby availability.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "red frown face.",
+      "category": "interface"
     },
     {
       "name": "not-recommended-for-standby",
@@ -136,10 +148,14 @@
       "deprecated": true
     },
     {
+      "name": "recommended-for-standby-travel-but-watch-filled",
+      "desc": "yellow neutral face.",
+      "category": "interface"
+    },
+    {
       "name": "premium-class-upgrade-available-stroke",
-      "desc": "Denotes that there is an immediate upgrade to Premium class available.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "purple start with a letter 'P'.",
+      "category": "interface"
     },
     {
       "name": "premium-class-upgrade-available",
@@ -148,10 +164,14 @@
       "deprecated": true
     },
     {
+      "name": "premium-class-upgrade-waitlist-filled",
+      "desc": "gold start with watch face.",
+      "category": "interface"
+    },
+    {
       "name": "premium-class-upgrade-waitlist-stroke",
-      "desc": "Denotes that guests can join a waitlist to upgrade to Premium class.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "gold start with watch face.",
+      "category": "interface"
     },
     {
       "name": "premium-class-upgrade-waitlist",
@@ -162,8 +182,7 @@
     {
       "name": "recommended-for-standby-travel-but-monitor-stroke",
       "desc": "Viewable by travelers with guest passes to fly standby - this route has a medium chance of standby availability.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "recommended-for-standby-travel-but-monitor",
@@ -172,10 +191,14 @@
       "deprecated": true
     },
     {
+      "name": "recommended-for-standby-filled",
+      "desc": "green smiley face.",
+      "category": "interface"
+    },
+    {
       "name": "recommended-for-standby-stroke",
-      "desc": "Viewable by travelers with guest passes to fly standby - this route has a high chance of standby availability.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "green smiley face.",
+      "category": "interface"
     },
     {
       "name": "recommended-for-standby",
@@ -185,28 +208,30 @@
     },
     {
       "name": "route-pending-government-approval",
-      "desc": "A new route that is waiting for official government approval.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "dome building.",
+      "category": "interface"
     },
     {
       "name": "arrow-up",
       "desc": "Directional pointer; up.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "arrow-down",
       "desc": "Directional pointer; down.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
+    },
+    {
+      "name": "view-password-filled",
+      "title": "Toggle password visibility.",
+      "desc": "eye.",
+      "category": "interface"
     },
     {
       "name": "view-password-stroke",
       "title": "Toggle password visibility.",
-      "desc": "Password is currently hidden. Toggle to show password.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "eye.",
+      "category": "interface"
     },
     {
       "name": "view-password",
@@ -216,11 +241,16 @@
       "deprecated": true
     },
     {
+      "name": "hide-password-filled",
+      "title": "Toggle password visibility.",
+      "desc": "eye with a line in the middle.",
+      "category": "interface"
+    },
+    {
       "name": "hide-password-stroke",
       "title": "Toggle password visibility.",
-      "desc": "Password is currently visible. Toggle to hide password.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "eye with a line in the middle.",
+      "category": "interface"
     },
     {
       "name": "hide-password",
@@ -232,86 +262,72 @@
     {
       "name": "arrow-left",
       "desc": "Directional pointer; left.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "arrow-right",
       "desc": "Directional pointer; right.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "chevron-left",
       "desc": "Directional indicator; left.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "chevron-right",
       "desc": "Directional indicator; right.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "chevron-up",
       "desc": "Directional indicator; up.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "chevron-down",
       "desc": "Directional indicator; down.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "location-filled",
       "desc": "Pointer of specific location.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
-      "desc": "Target indicator.",
+      "desc": "target circle with a dot in the center.",
       "name": "location-found",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
-      "desc": "Target indicator.",
+      "desc": "target circle.",
       "name": "location-finder",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "chain-link",
       "desc": "Indication of hyperlink.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "plus-filled",
       "desc": "Indicates plus option.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "plus-stroke",
       "desc": "Indicates plus option.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "checkmark-lg",
       "desc": "Option has been checked.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "checkmark-sm",
       "desc": "Option has been checked.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "checkmark-sml",
@@ -320,10 +336,14 @@
       "deprecated": true
     },
     {
+      "name": "add-to-calendar-filled",
+      "desc": "rectangle calendar with a plus sign.",
+      "category": "interface"
+    },
+    {
       "name": "add-to-calendar-stroke",
-      "desc": "Add content option to calendar.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "rectangle calendar with a plus sign.",
+      "category": "interface"
     },
     {
       "name": "add-to-calendar",
@@ -332,10 +352,14 @@
       "deprecated": true
     },
     {
+      "name": "calendar-filled",
+      "desc": "rectangular calendar.",
+      "category": "interface"
+    },
+    {
       "name": "calendar-stroke",
-      "desc": "Indicates calendar option.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "rectangular calendar.",
+      "category": "interface"
     },
     {
       "name": "calendar",
@@ -346,23 +370,25 @@
     {
       "name": "accessibility",
       "desc": "Indicates accessible content.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "account-filled",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "account-stroke",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
+    },
+    {
+      "name": "chat-filled",
+      "desc": "two rectangle chat bubble.",
+      "category": "interface"
     },
     {
       "name": "chat-stroke",
-      "category": "interface",
-      "deprecated": false
+      "desc": "two rectangle chat bubble.",
+      "category": "interface"
     },
     {
       "name": "chat",
@@ -371,13 +397,11 @@
     },
     {
       "name": "check-stroke",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "check-filled",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "check-lg",
@@ -391,8 +415,7 @@
     },
     {
       "name": "global-language-stroke",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "global-language",
@@ -400,10 +423,14 @@
       "deprecated": true
     },
     {
+      "name": "filter-filled",
+      "desc": "marker sign.",
+      "category": "interface"
+    },
+    {
       "name": "filter-stroke",
-      "desc": "Indicates that content can be filtered.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "marker sign.",
+      "category": "interface"
     },
     {
       "name": "filter",
@@ -414,31 +441,26 @@
     {
       "name": "heart-filled",
       "desc": "Indicates favored item.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "heart-stroke",
       "desc": "Indicates item to be favored.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "home-filled",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "home-stroke",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "title": "Link to external site.",
       "desc": "This indicates a link to an external site that may not follow the same accessibility or privacy policies as Alaska Airlines. By selecting a partner link you agree to share your data with these sites.",
       "name": "external-link-stroke",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "title": "Link to external site.",
@@ -471,23 +493,19 @@
     },
     {
       "name": "location-stroke",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "mail",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "minus-filled",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "minus-lg-stroke",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "minus-lg",
@@ -496,8 +514,7 @@
     },
     {
       "name": "minus-sm-stroke",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "minus-sm",
@@ -506,23 +523,25 @@
     },
     {
       "name": "minus-stroke",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "plus-lg",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "plus-sm",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
+    },
+    {
+      "name": "printer-filled",
+      "desc": "a printer.",
+      "category": "interface"
     },
     {
       "name": "printer-stroke",
-      "category": "interface",
-      "deprecated": false
+      "desc": "a printer.",
+      "category": "interface"
     },
     {
       "name": "printer",
@@ -530,9 +549,14 @@
       "deprecated": true
     },
     {
+      "name": "search-filled",
+      "desc": "magnifying glass with dark circle in the middle.",
+      "category": "interface"
+    },
+    {
       "name": "search-stroke",
-      "category": "interface",
-      "deprecated": false
+      "desc": "magnifying glass with dark circle in the middle.",
+      "category": "interface"
     },
     {
       "name": "search",
@@ -541,28 +565,29 @@
     },
     {
       "name": "star-filled",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "star-stroke",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "x-lg",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "x-sm",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
+    },
+    {
+      "name": "notification-filled",
+      "desc": "a bell.",
+      "category": "interface"
     },
     {
       "name": "notification-stroke",
-      "category": "interface",
-      "deprecated": false
+      "desc": "a bell.",
+      "category": "interface"
     },
     {
       "name": "notification",
@@ -570,9 +595,14 @@
       "deprecated": true
     },
     {
+      "name": "notification-active-filled",
+      "desc": "a bell with red dot.",
+      "category": "interface"
+    },
+    {
       "name": "notification-active-stroke",
-      "category": "interface",
-      "deprecated": false
+      "desc": "a bell with red dot.",
+      "category": "interface"
     },
     {
       "name": "notification-active",
@@ -581,14 +611,17 @@
     },
     {
       "name": "navigation-menu",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
+    },
+    {
+      "name": "contract-fare-filled",
+      "desc": "two blue rectangles with a white dollar symbol in the middle.",
+      "category": "easybiz"
     },
     {
       "name": "contract-fare-stroke",
-      "desc": "A fare rate for companies that have a contract with Alaska Air.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "two blue rectangles with a white dollar symbol in the middle.",
+      "category": "easybiz"
     },
     {
       "name": "contract-fare",
@@ -598,9 +631,13 @@
     },
     {
       "name": "government-fare-filled",
-      "desc": "A fare rate only visible only to government employees.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "blue dome building.",
+      "category": "easybiz"
+    },
+    {
+      "name": "government-fare-stroke",
+      "desc": "blue dome building.",
+      "category": "easybiz"
     },
     {
       "name": "government-fare",
@@ -610,9 +647,13 @@
     },
     {
       "name": "government-mixed-fare-filled",
-      "desc": "Some segments of this journey include government fare rates, others do not.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "yellow dome building.",
+      "category": "easybiz"
+    },
+    {
+      "name": "government-mixed-fare-stroke",
+      "desc": "yellow dome building.",
+      "category": "easybiz"
     },
     {
       "name": "government-mixed-fare",
@@ -621,10 +662,14 @@
       "deprecated": true
     },
     {
+      "name": "contract-mixed-fare-filled",
+      "desc": "two gold rectangles with a white stroke in the middle.",
+      "category": "easybiz"
+    },
+    {
       "name": "contract-mixed-fare-stroke",
-      "desc": "Some segments of this journey include contract fare rates, others do not.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "two gold rectangles with a white stroke in the middle.",
+      "category": "easybiz"
     },
     {
       "name": "contract-mixed-fare",
@@ -635,8 +680,7 @@
     {
       "name": "qr-code-stroke",
       "desc": "Indicates availability of a QR code.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "qr-code",
@@ -645,10 +689,14 @@
       "deprecated": true
     },
     {
+      "name": "phone-filled",
+      "desc": "rectangle phone",
+      "category": "interface"
+    },
+    {
       "name": "phone-stroke",
-      "desc": "Mobile smart phone.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "rectangle phone",
+      "category": "interface"
     },
     {
       "name": "phone",
@@ -657,10 +705,14 @@
       "deprecated": true
     },
     {
+      "name": "settings-filled",
+      "desc": "a cog gear.",
+      "category": "interface"
+    },
+    {
       "name": "settings-stroke",
-      "desc": "Indicates settings option.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "a cog gear.",
+      "category": "interface"
     },
     {
       "name": "settings",
@@ -671,26 +723,27 @@
     {
       "name": "document-stroke",
       "desc": "Icon of a piece of paper.",
-      "category": "interface",
-      "deprecated": false
-    },
-    {
-      "name": "boarding-stroke",
-      "desc": "Indicate boarding options.",
-      "category": "in-flight",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "boarding",
       "desc": "Indicate boarding options.",
-      "category": "in-flight",
-      "deprecated": true
+      "category": "in-flight"
+    },
+    {
+      "name": "passenger-filled",
+      "desc": "circle with a single passenger outline.",
+      "category": "in-flight"
+    },
+    {
+      "name": "carry-on-filled",
+      "desc": "backpack with front zipper.",
+      "category": "in-flight"
     },
     {
       "name": "elite-stroke",
       "desc": "Indicate elite passenger status.",
-      "category": "in-flight",
-      "deprecated": false
+      "category": "in-flight"
     },
     {
       "name": "elite",
@@ -701,13 +754,17 @@
     {
       "name": "food-and-drink",
       "desc": "Indicates food and drink options.",
-      "category": "in-flight",
-      "deprecated": false
+      "category": "in-flight"
+    },
+    {
+      "name": "entertainment-filled",
+      "desc": "a rectangle with triangle inside.",
+      "category": "in-flight"
     },
     {
       "name": "entertainment-stroke",
-      "category": "in-flight",
-      "deprecated": false
+      "desc": "a rectangle with triangle inside.",
+      "category": "in-flight"
     },
     {
       "name": "entertainment",
@@ -716,8 +773,7 @@
     },
     {
       "name": "flight-cancelled-stroke",
-      "category": "in-flight",
-      "deprecated": false
+      "category": "in-flight"
     },
     {
       "name": "flight-cancelled",
@@ -726,8 +782,7 @@
     },
     {
       "name": "flight-delayed-stroke",
-      "category": "in-flight",
-      "deprecated": false
+      "category": "in-flight"
     },
     {
       "name": "flight-delayed",
@@ -736,8 +791,7 @@
     },
     {
       "name": "flight-on-time-stroke",
-      "category": "in-flight",
-      "deprecated": false
+      "category": "in-flight"
     },
     {
       "name": "flight-on-time",
@@ -745,9 +799,14 @@
       "deprecated": true
     },
     {
+      "name": "luggage-filled",
+      "desc": "a rectangle with wheels and handle.",
+      "category": "in-flight"
+    },
+    {
       "name": "luggage-stroke",
-      "category": "in-flight",
-      "deprecated": false
+      "desc": "a rectangle with wheels and handle.",
+      "category": "in-flight"
     },
     {
       "name": "luggage",
@@ -755,9 +814,14 @@
       "deprecated": true
     },
     {
+      "name": "plug-filled",
+      "desc": "rectangle with two lines",
+      "category": "in-flight"
+    },
+    {
       "name": "plug-stroke",
-      "category": "in-flight",
-      "deprecated": false
+      "desc": "rectangle with two lines",
+      "category": "in-flight"
     },
     {
       "name": "plug",
@@ -765,9 +829,14 @@
       "deprecated": true
     },
     {
+      "name": "seat-filled",
+      "desc": "airline seat.",
+      "category": "in-flight"
+    },
+    {
       "name": "seat-stroke",
-      "category": "in-flight",
-      "deprecated": false
+      "desc": "airline seat.",
+      "category": "in-flight"
     },
     {
       "name": "seat",
@@ -776,18 +845,15 @@
     },
     {
       "name": "wifi",
-      "category": "in-flight",
-      "deprecated": false
+      "category": "in-flight"
     },
     {
       "name": "wifi-disabled",
-      "category": "in-flight",
-      "deprecated": false
+      "category": "in-flight"
     },
     {
       "name": "lap-infant-stroke",
-      "category": "in-flight",
-      "deprecated": false
+      "category": "in-flight"
     },
     {
       "name": "lap-infant",
@@ -797,8 +863,7 @@
     {
       "desc": "Indication of passenger.",
       "name": "passenger-stroke",
-      "category": "in-flight",
-      "deprecated": false
+      "category": "in-flight"
     },
     {
       "desc": "Indication of passenger.",
@@ -807,10 +872,14 @@
       "deprecated": true
     },
     {
+      "name": "multipax-filled",
+      "desc": "circle with two passengers.",
+      "category": "in-flight"
+    },
+    {
       "name": "multipax-stroke",
-      "desc": "Indication of multiple passengers.",
-      "category": "in-flight",
-      "deprecated": false
+      "desc": "circle with two passengers.",
+      "category": "in-flight"
     },
     {
       "name": "multipax",
@@ -821,129 +890,106 @@
     {
       "name": "club49",
       "desc": "Alaska Airlines Club 49 program",
-      "category": "programs",
-      "deprecated": false
+      "category": "programs"
     },
     {
       "name": "diverted",
       "desc": "Indicates a diversion of original intent.",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "arrival-filled",
       "desc": "Indicates arrival to destination.",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "arrival-stroke",
       "desc": "Indicates arrival to destination.",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "departure-filled",
       "desc": "Indicates a point of departure.",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "departure-stroke",
       "desc": "Indicates a point of departure.",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "flight-details",
       "desc": "Find flight details here.",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "boarding-pass-filled",
       "desc": "Indicates boarding pass options.",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "boarding-pass-stroke",
       "desc": "Indicates boarding pass options.",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "booking-filled",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "booking-stroke",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "radar-filled",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "radar-stroke",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "flight-changes",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "plane-diag-fill",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "plane-diag-stroke",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "plane-side-fill",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "plane-side-stroke",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "plane-up-fill",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "plane-up-stroke",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "one-way-arrow",
       "desc": "indication of one way flight option.",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "round-trip-arrows",
       "desc": "indicate round-trip flight option.",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "check-in-stroke",
       "desc": "Indication to check-in here.",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "check-in",
@@ -954,20 +1000,22 @@
     {
       "name": "facebook",
       "desc": "Facebook social media icon.",
-      "category": "social",
-      "deprecated": false
+      "category": "social"
     },
     {
       "name": "instagram",
       "desc": "Instagram social media icon.",
-      "category": "social",
-      "deprecated": false
+      "category": "social"
+    },
+    {
+      "name": "cart-filled",
+      "desc": "a shopping cart.",
+      "category": "shop"
     },
     {
       "name": "cart-stroke",
-      "desc": "Indicate items related to purchases.",
-      "category": "shop",
-      "deprecated": false
+      "desc": "a shopping cart.",
+      "category": "shop"
     },
     {
       "name": "cart",
@@ -976,10 +1024,14 @@
       "deprecated": true
     },
     {
+      "name": "shopping-bag-filled",
+      "desc": "shopping bag with a handle.",
+      "category": "shop"
+    },
+    {
       "name": "shopping-bag-stroke",
-      "desc": "Indicate items related to purchases.",
-      "category": "shop",
-      "deprecated": false
+      "desc": "shopping bag with a handle.",
+      "category": "shop"
     },
     {
       "name": "shopping-bag",
@@ -988,10 +1040,14 @@
       "deprecated": true
     },
     {
+      "name": "gift-filled",
+      "desc": "gift box with a bow.",
+      "category": "shop"
+    },
+    {
       "name": "gift-stroke",
-      "desc": "Indicate when a guest receives or has earned a gift such as a complimentary food item.",
-      "category": "shop",
-      "deprecated": false
+      "desc": "gift box with a bow.",
+      "category": "shop"
     },
     {
       "name": "gift",
@@ -1000,10 +1056,14 @@
       "deprecated": true
     },
     {
+      "name": "receipt-filled",
+      "desc": "receipt paper.",
+      "category": "shop"
+    },
+    {
       "name": "receipt-stroke",
-      "desc": "Receipt with placeholder content.",
-      "category": "shop",
-      "deprecated": false
+      "desc": "receipt paper.",
+      "category": "shop"
     },
     {
       "name": "receipt",
@@ -1012,10 +1072,14 @@
       "deprecated": true
     },
     {
+      "name": "credit-card-filled",
+      "desc": "credit card.",
+      "category": "payment"
+    },
+    {
       "name": "credit-card-stroke",
-      "desc": "Default credit card icon.",
-      "category": "payment",
-      "deprecated": false
+      "desc": "credit card.",
+      "category": "payment"
     },
     {
       "name": "credit-card",
@@ -1027,54 +1091,51 @@
       "name": "cc-alaska",
       "desc": "Alaska Credit Card.",
       "category": "payment",
-      "path": "/icons/fullColor",
-      "deprecated": false
+      "path": "/icons/fullColor"
     },
     {
       "name": "cc-amex",
       "desc": "Amex Credit Card.",
       "category": "payment",
-      "path": "/icons/fullColor",
-      "deprecated": false
+      "path": "/icons/fullColor"
     },
     {
       "name": "cc-discover",
       "desc": "Discover Credit Card.",
       "category": "payment",
-      "path": "/icons/fullColor",
-      "deprecated": false
+      "path": "/icons/fullColor"
     },
     {
       "name": "cc-mastercard",
       "desc": "Mastercard Credit Card.",
       "category": "payment",
-      "path": "/icons/fullColor",
-      "deprecated": false
+      "path": "/icons/fullColor"
     },
     {
       "name": "cc-visa",
       "desc": "Visa Credit Card.",
       "category": "payment",
-      "path": "/icons/fullColor",
-      "deprecated": false
+      "path": "/icons/fullColor"
     },
     {
       "name": "first-class-legroom",
       "desc": "Indicates additional legroom for First Class cabin.",
-      "category": "in-flight",
-      "deprecated": false
+      "category": "in-flight"
     },
     {
       "name": "premium-class-legroom",
       "desc": "Indicates additional legroom for Premium Class cabin.",
-      "category": "in-flight",
-      "deprecated": false
+      "category": "in-flight"
+    },
+    {
+      "name": "wine-and-spirits-filled",
+      "desc": "wine glass.",
+      "category": "in-flight"
     },
     {
       "name": "wine-and-spirits-stroke",
-      "desc": "Indicates alcoholic beverage are available.",
-      "category": "in-flight",
-      "deprecated": false
+      "desc": "wine glass.",
+      "category": "in-flight"
     },
     {
       "name": "wine-and-spirits",
@@ -1085,8 +1146,7 @@
     {
       "name": "lounge-stroke",
       "desc": "Represents the Alaska Lounge or partner lounge access.",
-      "category": "terminal",
-      "deprecated": false
+      "category": "terminal"
     },
     {
       "name": "lounge",
@@ -1095,10 +1155,14 @@
       "deprecated": true
     },
     {
+      "name": "flight-pass-filled",
+      "desc": "rectangle with airplane in the middle and three circles on top.",
+      "category": "easybiz"
+    },
+    {
       "name": "flight-pass-stroke",
-      "desc": "Pass with plane and 3 dots.",
-      "category": "terminal",
-      "deprecated": false
+      "desc": "rectangle with airplane in the middle and three circles on top.",
+      "category": "easybiz"
     },
     {
       "name": "flight-pass",
@@ -1107,11 +1171,16 @@
       "deprecated": true
     },
     {
+      "name": "new-window-filled",
+      "title": "Link will open a new tab or window.",
+      "desc": "Notice indicator to alert users that action will result in the browser opening a new tab or window.",
+      "category": "interface"
+    },
+    {
       "name": "new-window-stroke",
       "title": "Link will open a new tab or window.",
       "desc": "Notice indicator to alert users that action will result in the browser opening a new tab or window.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "new-window",
@@ -1121,10 +1190,14 @@
       "deprecated": true
     },
     {
+      "name": "sun-stroke",
+      "desc": "full circle surrounded with lines.",
+      "category": "destination"
+    },
+    {
       "name": "sun-filled",
-      "desc": "Indicates destination options.",
-      "category": "destination",
-      "deprecated": false
+      "desc": "full circle surrounded with lines.",
+      "category": "destination"
     },
     {
       "name": "sun",
@@ -1133,10 +1206,14 @@
       "deprecated": true
     },
     {
+      "name": "hotel-filled",
+      "desc": "two rectangles with windows.",
+      "category": "destination"
+    },
+    {
       "name": "hotel-stroke",
-      "desc": "Indicates hotel options.",
-      "category": "destination",
-      "deprecated": false
+      "desc": "two rectangles with windows.",
+      "category": "destination"
     },
     {
       "name": "hotel",
@@ -1147,8 +1224,7 @@
     {
       "name": "car-rental-stroke",
       "desc": "Indicates car rental options.",
-      "category": "destination",
-      "deprecated": false
+      "category": "destination"
     },
     {
       "name": "car-rental",
@@ -1159,8 +1235,7 @@
     {
       "name": "ride-stroke",
       "desc": "Indicates options for transportation.",
-      "category": "destination",
-      "deprecated": false
+      "category": "destination"
     },
     {
       "name": "ride",
@@ -1169,10 +1244,14 @@
       "deprecated": true
     },
     {
+      "name": "mask-filled",
+      "desc": "face mask.",
+      "category": "health"
+    },
+    {
       "name": "mask-stroke",
-      "desc": "Indicates mask related information.",
-      "category": "health",
-      "deprecated": false
+      "desc": "face mask.",
+      "category": "health"
     },
     {
       "name": "mask",
@@ -1184,25 +1263,32 @@
       "name": "covid-test",
       "desc": "Indicates pre-travel testing and Covid-19 related information.",
       "category": "health",
-      "deprecated": false
+      "deprecated": true
+    },
+    {
+      "name": "covid-test-filled",
+      "desc": "test tube.",
+      "category": "health"
     },
     {
       "name": "covid-test-stroke",
-      "desc": "Indicates pre-travel testing and Covid-19 related information.",
-      "category": "health",
-      "deprecated": true
+      "desc": "test tube.",
+      "category": "health"
     },
     {
       "name": "air",
       "desc": "Indicates airflow.",
-      "category": "health",
-      "deprecated": false
+      "category": "health"
     },
     {
-      "name": "health-stroke",
-      "desc": "Indicates health related information.",
-      "category": "health",
-      "deprecated": false
+      "name": "medical-filled",
+      "desc": "circle with a cross in the middle.",
+      "category": "health"
+    },
+    {
+      "name": "medical-stroke",
+      "desc": "circle with a cross in the middle.",
+      "category": "health"
     },
     {
       "name": "health",
@@ -1211,10 +1297,14 @@
       "deprecated": true
     },
     {
-      "name": "spraybottle-stroke",
-      "desc": "Indicates that there is information about cleaning.",
-      "category": "health",
-      "deprecated": false
+      "name": "clean-filled",
+      "desc": "sanitizing spray.",
+      "category": "health"
+    },
+    {
+      "name": "clean-stroke",
+      "desc": "sanitizing spray.",
+      "category": "health"
     },
     {
       "name": "spraybottle",
@@ -1224,19 +1314,21 @@
     },
     {
       "name": "clock-filled",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "clock-stroke",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "pin-trip-filled",
-      "desc": "Indication of selected trip options.",
-      "category": "interface",
-      "deprecated": false
+      "desc": "drop pin with circles.",
+      "category": "interface"
+    },
+    {
+      "name": "pin-trip-stroke",
+      "desc": "drop pin with circles.",
+      "category": "interface"
     },
     {
       "name": "pin-trip",
@@ -1246,8 +1338,8 @@
     },
     {
       "name": "rising-sun-filled",
-      "category": "destination",
-      "deprecated": false
+      "desc": "semi-circle with lines",
+      "category": "destination"
     },
     {
       "name": "rising-sun",
@@ -1256,24 +1348,21 @@
     },
     {
       "name": "rising-sun-stroke",
-      "desc": "Semi-circle with lines.",
-      "category": "destination",
-      "deprecated": false
+      "desc": "semi-circle with lines.",
+      "category": "destination"
     },
     {
       "name": "sparkle-filled",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "sparkle-stroke",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "tag-filled",
-      "category": "interface",
-      "deprecated": false
+      "desc": "bag tag.",
+      "category": "interface"
     },
     {
       "name": "tag",
@@ -1283,8 +1372,7 @@
     {
       "name": "lyft",
       "desc": "Alaska and Lyft partnership.",
-      "category": "partnership",
-      "deprecated": false
+      "category": "partnership"
     },
     {
       "name": "penguin",
@@ -1295,128 +1383,112 @@
     {
       "name": "twitter",
       "desc": "Twitter's logo.",
-      "category": "social",
-      "deprecated": false
+      "category": "social"
     },
     {
       "name": "youtube",
       "desc": "Youtube's logo.",
-      "category": "social",
-      "deprecated": false
+      "category": "social"
     },
     {
       "name": "lock-filled",
       "desc": "Closed lock.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "lock-stroke",
       "desc": "Closed lock.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "unlock-filled",
       "desc": "Open lock.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "unlock-stroke",
       "desc": "Open lock.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "x-filled",
       "desc": "Indicates close action.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "x-stroke",
       "desc": "Indicates close action.",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "dashboard-stroke",
       "desc": "Four stroke rectangles arranges inside a square",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "dashboard-filled",
       "desc": "Four filled rectangles arranges inside a square",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "guest-stroke",
       "desc": "Two person stroke, one behind other",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "guest-filled",
       "desc": "Two person filled, one behind other",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "ticket-stroke",
       "desc": "Airline ticket",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "ticket-filled",
       "desc": "Airline ticket",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "reservation-stroke",
       "desc": "Calendar with airplane",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "reservation-filled",
       "desc": "Calendar with airplane",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "more-stroke",
       "desc": "Circle with three dots inside it",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "more-filled",
       "desc": "Circle with three dots inside it",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "profile-stroke",
       "desc": "Person inside circle",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "profile-filled",
       "desc": "Person inside circle",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
+    },
+    {
+      "name": "id-filled",
+      "desc": "rectangle with id silhouette inside.",
+      "category": "interface"
     },
     {
       "name": "id-stroke",
-      "desc": "Guests' identity document",
-      "category": "interface",
-      "deprecated": false
+      "desc": "rectangle with id silhouette inside.",
+      "category": "interface"
     },
     {
       "name": "id",
@@ -1427,20 +1499,17 @@
     {
       "name": "clear",
       "desc": "Alaska and Clear partnerhip",
-      "category": "partnership",
-      "deprecated": false
+      "category": "partnership"
     },
     {
       "name": "back-to-top",
       "desc": "Arrow with line on top",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "copy-paste-stroke",
       "desc": "Two layered squares",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     },
     {
       "name": "copy-paste",
@@ -1451,20 +1520,17 @@
     {
       "name": "linkedin",
       "desc": "LinkedIn's logo",
-      "category": "social",
-      "deprecated": false
+      "category": "social"
     },
     {
       "name": "tiktok",
       "desc": "Tiktok's logo",
-      "category": "social",
-      "deprecated": false
+      "category": "social"
     },
     {
       "name": "lavatory-stroke",
       "desc": "Toilet",
-      "category": "in-flight",
-      "deprecated": false
+      "category": "in-flight"
     },
     {
       "name": "lavatory",
@@ -1475,8 +1541,7 @@
     {
       "name": "download",
       "desc": "Arrow pointing towards surface",
-      "category": "interface",
-      "deprecated": false
+      "category": "interface"
     }
   ]
 }
