@@ -1,5 +1,18 @@
 # Semantic Release Automated Changelog
 
+# [4.38.0](https://github.com/AlaskaAirlines/Icons/compare/v4.37.0...v4.38.0) (2024-02-27)
+
+
+### Features
+
+* add and update icons ([d696825](https://github.com/AlaskaAirlines/Icons/commit/d696825ee80de63dac61eebcda687d145fe72063))
+
+
+### Performance Improvements
+
+* add data dash deprecated attribute ([38433e1](https://github.com/AlaskaAirlines/Icons/commit/38433e1d83d29dadfb477d524a8ddb98fa977c0c))
+* update to support new name convention [#210](https://github.com/AlaskaAirlines/Icons/issues/210) ([58a5e91](https://github.com/AlaskaAirlines/Icons/commit/58a5e91b4adbed2719e6bb7a08367ec98e98cd94))
+
 # [4.37.0](https://github.com/AlaskaAirlines/Icons/compare/v4.36.2...v4.37.0) (2024-02-14)
 
 
