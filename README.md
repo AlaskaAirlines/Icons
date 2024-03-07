@@ -42,7 +42,7 @@ This repo output two types of JS wrapped SVGs for easy inclusion with front-end 
 
 #### ES5 style - iconName.js
 
-**Note:** for icon SVGs, the ES5 `iconName.js` versions have been deprecated. Please update to the newly supported `iconName..mjs` file type. This currently does not apply to SVG logos or tails.
+**Note:** for icon SVGs, the ES5 `iconName.js` versions have been deprecated. Please update to the newly supported `iconName.mjs` file type. This currently does not apply to SVG logos or tails.
 
 ```javascript
 module.exports={ ... }
