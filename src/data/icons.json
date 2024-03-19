@@ -726,6 +726,16 @@
       "category": "interface"
     },
     {
+      "name": "mug-stroke",
+      "desc": "an outline of a coffee or tea mug with a handle.",
+      "category": "in-flight"
+    },
+    {
+      "name": "mug-filled",
+      "desc": "a solid fill coffee or tea mug with a handle.",
+      "category": "in-flight"
+    },
+    {
       "name": "boarding",
       "desc": "Indicate boarding options.",
       "category": "in-flight"
