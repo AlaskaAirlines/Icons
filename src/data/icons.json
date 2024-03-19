@@ -1331,6 +1331,16 @@
       "category": "interface"
     },
     {
+      "name": "pin-stroke",
+      "desc": "A pin pointing downwards outlined.",
+      "category": "interface"
+    },
+    {
+      "name": "pin-filled",
+      "desc": "A pin pointing downwards filled in.",
+      "category": "interface"
+    },
+    {
       "name": "pin-trip-filled",
       "desc": "drop pin with circles.",
       "category": "interface"
