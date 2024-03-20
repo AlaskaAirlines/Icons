@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+# [4.39.0](https://github.com/AlaskaAirlines/Icons/compare/v4.38.0...v4.39.0) (2024-03-20)
+
+
+### Features
+
+* add new mug icons to repo [#241](https://github.com/AlaskaAirlines/Icons/issues/241) ([4215529](https://github.com/AlaskaAirlines/Icons/commit/4215529765c6a625a042c979e0ce830ff51c724a))
+* update pin SVG with new versions [#240](https://github.com/AlaskaAirlines/Icons/issues/240) ([9f83a30](https://github.com/AlaskaAirlines/Icons/commit/9f83a30b9e547e3c674910d63bc1241266e30af2))
+
 # [4.38.0](https://github.com/AlaskaAirlines/Icons/compare/v4.37.0...v4.38.0) (2024-02-27)
 
 
