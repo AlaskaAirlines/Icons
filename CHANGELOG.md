@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.40.0](https://github.com/AlaskaAirlines/Icons/compare/v4.39.0...v4.40.0) (2024-04-05)
+
+
+### Features
+
+* add new Contour tail [#244](https://github.com/AlaskaAirlines/Icons/issues/244) ([8144b99](https://github.com/AlaskaAirlines/Icons/commit/8144b994a930e7d125ddbdc71e373d2e9ac17b76))
+
 # [4.39.0](https://github.com/AlaskaAirlines/Icons/compare/v4.38.0...v4.39.0) (2024-03-20)
 
 
