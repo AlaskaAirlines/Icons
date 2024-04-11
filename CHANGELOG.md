@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.40.1](https://github.com/AlaskaAirlines/Icons/compare/v4.40.0...v4.40.1) (2024-04-11)
+
+
+### Performance Improvements
+
+* update pin icon ([309a475](https://github.com/AlaskaAirlines/Icons/commit/309a475f7a15f8c51fdd7d1621e2211f818c6f70))
+
 # [4.40.0](https://github.com/AlaskaAirlines/Icons/compare/v4.39.0...v4.40.0) (2024-04-05)
 
 
