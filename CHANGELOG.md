@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.40.2](https://github.com/AlaskaAirlines/Icons/compare/v4.40.1...v4.40.2) (2024-04-19)
+
+
+### Performance Improvements
+
+* add support for CSS parts ([5ce5263](https://github.com/AlaskaAirlines/Icons/commit/5ce52636dcf03fe8e4b7555d106c93ac04774f80))
+
 ## [4.40.1](https://github.com/AlaskaAirlines/Icons/compare/v4.40.0...v4.40.1) (2024-04-11)
 
 
