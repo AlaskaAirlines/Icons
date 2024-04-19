@@ -126,6 +126,16 @@ function runGenerator(data) {
             },
           },
         },
+        {
+          name: 'addAttributesToSVGElement',
+          params: {
+            attributes: [
+              {
+                part: 'svg'
+              }
+            ]
+          }
+        },
       ],
     }).data;
 
