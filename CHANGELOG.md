@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.41.0](https://github.com/AlaskaAirlines/Icons/compare/v4.40.2...v4.41.0) (2024-04-29)
+
+
+### Features
+
+* add new Aleutian tail logo to repo [#249](https://github.com/AlaskaAirlines/Icons/issues/249) ([a51414c](https://github.com/AlaskaAirlines/Icons/commit/a51414cd050bd5437f541e56be9a2e8469c6ad62))
+
 ## [4.40.2](https://github.com/AlaskaAirlines/Icons/compare/v4.40.1...v4.40.2) (2024-04-19)
 
 
