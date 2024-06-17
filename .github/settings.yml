@@ -39,7 +39,7 @@ repository:
   allow_rebase_merge: true
 
 branches:
-  - name: master
+  - &default_protection
     # https://developer.github.com/v3/repos/branches/#update-branch-protection
     # Branch Protection settings. Set to null to disable
     protection:
@@ -50,7 +50,8 @@ branches:
         # Dismiss approved reviews automatically when a new commit is pushed.
         dismiss_stale_reviews: true
         # Blocks merge until code owners have reviewed.
-        require_code_owner_reviews: false
+        require_code_owner_reviews: true
+        # Required. Require status checks to pass before merging. Set to null to disable
         # Specify which users and teams can dismiss pull request reviews. Pass an empty dismissal_restrictions object to disable. User and team dismissal_restrictions are only available for organization-owned repositories. Omit this parameter for personal repositories.
         dismissal_restrictions:
           users: ["blackfalcon"]
@@ -64,6 +65,14 @@ branches:
       enforce_admins: false
       # Required. Restrict who can push to this branch. Team and user restrictions are only available for organization-owned repositories. Set to null to disable.
       restrictions: null
+      # Prevent merge commits from being pushed to matching branches
+      required_linear_history: true
+
+  - name: master
+    <<: *default_protection
+
+  - name: beta
+    <<: *default_protection
 
 # Labels: define labels for Issues and Pull Requests
 labels:

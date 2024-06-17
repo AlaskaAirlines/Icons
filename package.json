@@ -54,7 +54,15 @@
     "prepare": "husky install && chmod ug+x .husky/* && chmod ug+x .git/hooks/*"
   },
   "release": {
-    "branch": "master",
+    "branches": [
+      {
+        "name": "master"
+      },
+      {
+        "name": "beta",
+        "prerelease": true
+      }
+    ],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
