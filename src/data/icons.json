@@ -1562,6 +1562,21 @@
       "name": "download",
       "desc": "Arrow pointing towards surface",
       "category": "interface"
+    },
+    {
+      "name": "flag-stroke",
+      "desc": "An outlined flag",
+      "category": "destination"
+    },
+    {
+      "name": "mountain-stroke",
+      "desc": "Two outlined mountains and a sun",
+      "category": "destination"
+    },
+    {
+      "name": "snowflake-stroke",
+      "desc": "An outlined snowflake",
+      "category": "destination"
     }
   ]
 }
