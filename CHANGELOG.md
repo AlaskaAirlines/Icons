@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.42.0](https://github.com/AlaskaAirlines/Icons/compare/v4.41.1...v4.42.0) (2024-07-15)
+
+
+### Features
+
+* add new destination icons ([665cabf](https://github.com/AlaskaAirlines/Icons/commit/665cabfb739860426afd6e3f7a7b34163924b4b6))
+
 ## [4.41.1](https://github.com/AlaskaAirlines/Icons/compare/v4.41.0...v4.41.1) (2024-05-09)
 
 
