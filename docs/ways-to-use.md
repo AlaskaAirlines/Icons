@@ -111,10 +111,10 @@ In this example, the color and size is changed using CSS.
 
 ## Embed with litElement
 
-When working with HTML custom elements and litElement, you can inject the dependency of the icon into the scope of your element. For example, using the `chevron-right` icon. Also note that there are slightly different JS wrappers for the icons, e.g. in this context we want to use the `ES6` version.
+When working with HTML custom elements and litElement, you can inject the dependency of the icon into the scope of your element. For example, using the `chevron-right` icon. Also note that there are slightly different JS wrappers for the icons, e.g. in this context we want to use the `ES6/SSR` compatible version.
 
 ```js
-import chevronRight from '@alaskaairux/icons/dist/icons/interface/chevron-right_es6.js';
+import chevronRight from '@alaskaairux/icons/dist/icons/interface/chevron-right.mjs';
 ```
 
 Next we need a simple function that will take the icon's name as an argument. This function will take the string of the SVG from the icon object in the npm, convert it to HTML DOM and append to the DOM node assigned in the template.
