@@ -1254,6 +1254,51 @@
       "deprecated": true
     },
     {
+      "name": "aerosol",
+      "desc": "aersol.",
+      "category": "hazard"
+    },
+    {
+      "name": "canned-fuel",
+      "desc": "canned fuel.",
+      "category": "hazard"
+    },
+    {
+      "name": "cigarette-lighter",
+      "desc": "cigarette lighter.",
+      "category": "hazard"
+    },
+    {
+      "name": "flares-fireworks",
+      "desc": "flares and fireworks.",
+      "category": "hazard"
+    },
+    {
+      "name": "lithium-batteries",
+      "desc": "lithium batteries.",
+      "category": "hazard"
+    },
+    {
+      "name": "loose-ammo",
+      "desc": "loose ammo.",
+      "category": "hazard"
+    },
+    {
+      "name": "matches",
+      "desc": "matches.",
+      "category": "hazard"
+    },
+    {
+      "name": "oxygen",
+      "desc": "oxygen tank.",
+      "category": "hazard"
+    },
+    {
+      "name": "small-engine",
+      "desc": "small engine.",
+      "category": "hazard"
+    },
+    {
       "name": "mask-filled",
       "desc": "face mask.",
       "category": "health"
