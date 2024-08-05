@@ -18,7 +18,17 @@
     {
       "name": "logo-7H",
       "title": "Logo image for Ravn Alaska",
-      "viewBox": "0 0 532.7 161.77"
+      "viewBox": "0 0 187 91"
+    },
+    {
+      "name": "logo-9K",
+      "title": "Logo image for Cape Air",
+      "viewBox": "0 0 198 101"
+    },
+    {
+      "name": "logo-9X",
+      "title": "Logo image for Mokulele Airlines",
+      "viewBox": "0 0 284 76"
     },
     {
       "name": "logo-AS",
@@ -33,27 +43,32 @@
     {
       "name": "logo-AA",
       "title": "Logo image for American Airlines",
-      "viewBox": "0 -0.438 302.1115902939018 142.2640366546909"
+      "viewBox": "0 0 281 105"
+    },
+    {
+      "name": "logo-AT",
+      "title": "Logo image for Royal Air Maroc",
+      "viewBox": "0 0 146 101"
     },
     {
       "name": "logo-CX",
       "title": "Logo image for Cathay Pacific",
-      "viewBox": "0 0 430 60"
+      "viewBox": "0 0 454 64"
     },
     {
       "name": "logo-EK",
       "title": "Logo image for Emirates",
-      "viewBox": "0 0 328 166"
+      "viewBox": "0 0 146 96"
     },
     {
       "name": "logo-FJ",
       "title": "Logo image for Fiji Airways",
-      "viewBox": "0 0 1000 437.70996"
+      "viewBox": "0 0 218 97"
     },
     {
       "name": "logo-KE",
       "title": "Logo image for Korean Airlines",
-      "viewBox": "0 0 319.23459 37.385811"
+      "viewBox": "0 0 321 38"
     },
     {
       "name": "logo-KL",
@@ -62,8 +77,8 @@
     },
     {
       "name": "logo-LA",
-      "title": "Logo image for LATAM",
-      "viewBox": "0 0 2670 630.00001"
+      "title": "Logo image for LATAM Airlines",
+      "viewBox": "0 0 284 88"
     },
     {
       "name": "logo-LH",
@@ -76,19 +91,29 @@
       "viewBox": "-0.72468 -0.72468 110.04136 25.60536"
     },
     {
+      "name": "logo-PD",
+      "title": "Logo image for Porter Airlines",
+      "viewBox": "0 0 220 81"
+    },
+    {
       "name": "logo-QF",
       "title": "Logo image for Qantas",
-      "viewBox": "0 0 400 300"
+      "viewBox": "0 0 335 67"
     },
     {
       "name": "logo-SQ",
       "title": "Logo image for Singapore Airlines",
-      "viewBox": "0 0 350 128.381"
+      "viewBox": "0 0 375 86"
     },
     {
       "name": "logo-JL",
       "title": "Logo image for Japan Airlines",
-      "viewBox": "0 0 652 652"
+      "viewBox": "0 0 352 81"
+    },
+    {
+      "name": "logo-JX",
+      "title": "Logo image for Japan Airlines",
+      "viewBox": "0 0 404 77"
     },
     {
       "name": "logo-HA",
@@ -103,7 +128,7 @@
     {
       "name": "logo-HU",
       "title": "Logo image for Hainan Airlines",
-      "viewBox": "0 0 560 400"
+      "viewBox": "0 0 295 93"
     },
     {
       "name": "logo-AF",
@@ -118,17 +143,17 @@
     {
       "name": "logo-AY",
       "title": "Logo image for FinnAir",
-      "viewBox": "0 0 400 300"
+      "viewBox": "0 0 308 34"
     },
     {
       "name": "logo-BA",
       "title": "Logo image for British Airways",
-      "viewBox": "0 0 652 652"
+      "viewBox": "0 0 250 102"
     },
     {
       "name": "logo-DE",
       "title": "Logo image for Condor",
-      "viewBox": "0 0 652 652"
+      "viewBox": "0 0 320 68"
     },
     {
       "name": "logo-DL",
@@ -138,17 +163,67 @@
     {
       "name": "logo-EI",
       "title": "Logo image for Aer Lingus",
-      "viewBox": "0 0 652 652"
+      "viewBox": "0 0 368 69"
     },
     {
       "name": "logo-FI",
       "title": "Logo image for Icelandair",
-      "viewBox": "0 0 652 652"
+      "viewBox": "0 0 333 66"
+    },
+    {
+      "name": "logo-IB",
+      "title": "Logo image for Iberia",
+      "viewBox": "0 0 328 73"
+    },
+    {
+      "name": "logo-M5",
+      "title": "Logo image for Kenmore Air",
+      "viewBox": "0 0 379 41"
+    },
+    {
+      "name": "logo-MH",
+      "title": "Logo image for Mayalsia Airlines",
+      "viewBox": "0 0 368 92"
+    },
+    {
+      "name": "logo-RJ",
+      "title": "Logo image for Royal Jordanian",
+      "viewBox": "0 0 313 76"
+    },
+    {
+      "name": "logo-SAE",
+      "title": "Logo image for Southern Airways Express",
+      "viewBox": "0 0 296 52"
+    },
+    {
+      "name": "logo-TN",
+      "title": "Logo image for Air Tahiti Nui",
+      "viewBox": "0 0 368 40"
+    },
+    {
+      "name": "logo-UL",
+      "title": "Logo image for SriLankan Airlines",
+      "viewBox": "0 0 456 69"
+    },
+    {
+      "name": "logo-UP",
+      "title": "Logo image for Bahamasair",
+      "viewBox": "0 0 340 49"
+    },
+    {
+      "name": "logo-VC",
+      "title": "Logo image for Aleutian Airways",
+      "viewBox": "0 0 274 94"
+    },
+    {
+      "name": "logo-VT",
+      "title": "Logo image for Air Tahiti",
+      "viewBox": "0 0 346 53"
     },
     {
       "name": "logo-ELAL",
       "title": "Logo image for Israel Airlines",
-      "viewBox": "0 0 242 35"
+      "viewBox": "0 0 390 82"
     },
     {
       "name": "tail-AA",
