@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+# [4.43.0](https://github.com/AlaskaAirlines/Icons/compare/v4.42.0...v4.43.0) (2024-08-26)
+
+
+### Features
+
+* add and edit partner logos [#252](https://github.com/AlaskaAirlines/Icons/issues/252) ([708c9b5](https://github.com/AlaskaAirlines/Icons/commit/708c9b53662fe1873cc09d0ef4301e0026f9f374))
+* add oman air icon [#260](https://github.com/AlaskaAirlines/Icons/issues/260) ([8cb3a67](https://github.com/AlaskaAirlines/Icons/commit/8cb3a67211ed0c9bcf15a864a054b94577ca5f54))
+
 # [4.42.0](https://github.com/AlaskaAirlines/Icons/compare/v4.41.1...v4.42.0) (2024-07-15)
 
 
