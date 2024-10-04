@@ -115,126 +115,48 @@ The easiest use of Auro Icons is to use the auro-icon web component. See the fol
 
 ### React
 
-React supports a standard for linking to assets and using them within the context of a component.
-
-```javascript
-import warning from '@alaskaairux/icons/dist/icons/alert/warning.svg';
-```
-
-Within the component's `render()` function, passing in the new variable into the `src` attribute of an `<img>` element will render the asset.
-
-```html
-<img src={warning} alt="warning" />
-```
-
-### SVG React Loader
-
-Using `svg-react-loader` in combination with webpack will render the SVG inline from the designated resource location.
-
-```javascript
-import warning from '-!svg-react-loader!@alaskaairux/icons/dist/icons/alert/warning.svg';
-```
-
-Within the component's `render()` function, simply reference the new component that is generated via `svg-react-loader`.
-
-```html
-<warning />
-```
-
-With SVG React Loader, users are also able to over-ride attributes within the SVG. For example, the following code illustrates how a user could over-ride the `role="img"` and `aria-hidden="true"` attributes:
-
-```html
-<warning role="group" aria-hidden="false"/>
-```
-
-### Note: eslint support
-
-The above syntax may cause issues with your eslint configurations. The following error may appear:
-
-```bash
-Unexpected '!' in '-!svg-react-loader?name=Icon!@alaskaairux/icons/dist/icons/alert/warning.svg'. Do not use import syntax to configure webpack loaders
-```
-
-In this event, adding the following comments within the component may address the issue:
-
-```javascript
-// eslint-disable-next-line import/no-webpack-loader-syntax
-import Arrowdown from '-!svg-react-loader?name=Icon!@alaskaairux/icons/dist/icons/alert/warning.svg';
-```
-
-## Node application dependency
-
-Via a node.js dependency or other node like dependency management architecture, a developer can choose from two different scenarios for the rendering of the SVG. This technique will render the SVG inline from the designated resource location.
-
-### Individual icon request
-
-It is suggested that developers list individual dependencies per UI component, like so:
-
-```javascript
-const arrowDown = require('@alaskaairux/icons/dist/icons/arrowdown');
-```
-
-Within the UI component a developer can reference the object assigned to the newly created variable to get the specific icon's SVG code:
-
-```javascript
-<button>Click Me ${arrowDown.svg}</button>
-```
-
-This will return the icon's SVG HTML inline.
-
-### Full library dependency
-
-If there are several icons within a view, developers may opt to include all available icons. **Be aware**, as this npm grows, so will this type of dependency. It's strongly suggested that dependencies are individually declared.
-
-To require the full library as a dependency of the UI, do the following:
-
-```javascript
-const auroIcons = require('@alaskaairux/icons/dist');
-```
-
-Then within UI component, a developer can render a specific icon from the output array, like so:
+SVGs can be imported and used directly as React components in your React code. The image is not loaded as a separate file; rather, it’s rendered along with the HTML. A sample use case would look like this:
 
 ```js
-<button>Click Me ${auroIcons['Arrow Down'].svg}</button>
+import React from 'react';
+import { ErrorFilled, InformationFilled } from '@alaskaairux/icons/dist/reactComponents.js';
+
+const App = () => {
+  return (
+    <div>
+      <h1>My Icons</h1>
+      <ErrorFilled />
+      <InformationFilled />
+    </div>
+  );
+};
+
+export default App;
 ```
 
-This will return the icon's SVG HTML inline.
+### Webpack loader
 
-### Altering the SVG output
-
-Using either method, the SVG is captured as an object that can be manipulated. For example, calling the `arrow-down.js` file as shown below ...
+This configuration is required in order to use SVG files as React components.
 
 ```js
-const arrowDown = require('@alaskaairux/icons/dist/icons/arrow-down');
+npm install --save-dev @svgr/webpack
 ```
 
-... will output the following HTML
-
-```html
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="ico_squareLarge" role="img" style="min-width:var(--auro-size-lg);height:var(--auro-size-lg);fill:currentColor" viewBox="0 0 24 24">
-  <title>Directional pointer; down</title>
-  <desc/>
-  <path d="m11.47 19.78-5.25-5.25a.75.75 0 0 1 .976-1.133l.084.073 3.97 3.97V4.75a.75.75 0 0 1 .648-.743L12 4a.75.75 0 0 1 .743.648l.007.102v12.69l3.97-3.97a.75.75 0 0 1 .976-.073l.084.073a.75.75 0 0 1 .073.976l-.073.084-5.25 5.25a.75.75 0 0 1-.976.073l-.084-.073-5.25-5.25 5.25 5.25Z"/>
-</svg>
+```js
+{
+  test: /\.svg$/,
+  use: [
+    {
+      loader: '@svgr/webpack',
+      options: {
+        svgo: false,
+      },
+    },
+  ],
+},
 ```
 
-Adding the following line of JavaScript will find and update the `aria-hidden` attribute in the `arrowDown.svg` string ...
-
-```javascript
-arrowDown.svg = arrowDown.svg.replace(/role="img"/g, `role="img" aria-hidden="true"`);
-```
-
-... and then output the following:
-
-```html
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="ico_squareLarge" role="img" aria-hidden="true" style="min-width:var(--auro-size-lg);height:var(--auro-size-lg);fill:currentColor" viewBox="0 0 24 24">
-  <title>Directional pointer; down</title>
-  <desc/>
-  <path d="m11.47 19.78-5.25-5.25a.75.75 0 0 1 .976-1.133l.084.073 3.97 3.97V4.75a.75.75 0 0 1 .648-.743L12 4a.75.75 0 0 1 .743.648l.007.102v12.69l3.97-3.97a.75.75 0 0 1 .976-.073l.084.073a.75.75 0 0 1 .073.976l-.073.084-5.25 5.25a.75.75 0 0 1-.976.073l-.084-.073-5.25-5.25 5.25 5.25Z"/>
-</svg>
-```
-
-## Adding new icons
+## Adding new icons to the repo
 
 Adding new icons to this repository requires a few steps.
 
