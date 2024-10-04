@@ -54,7 +54,8 @@ const icons = {};
 console.log(chalk.hex('#f26135')(`Generating Icons ... \n`));
 
 // Accumulate import statements for the output file
-let importStatements = '';
+let componentsImportStatements = '';
+let componentsDeclarationStatements = '';
 
 /**
  * Runs the generator to process the icons data and generate necessary files.
@@ -172,12 +173,15 @@ function runGenerator(data) {
     // Generate the import statement for react specific icons
     const camelCaseName = toCamelCase(icon.name);
     const importStatement = `import { ReactComponent as ${camelCaseName} } from "@alaskaairux/icons/dist/icons/${icon.category}/${iconName}.svg";`;
+    const declarationStatement = `declare module "@alaskaairux/icons/dist/icons/${icon.category}/${iconName}.svg";`;
 
     // Identify deprecated icons
     if (icon.deprecated) {
-      importStatements += `${importStatement} // deprecated: discontinue use!\n`;
+      componentsImportStatements += `${importStatement} // deprecated: discontinue use!\n`;
+      componentsDeclarationStatements += `${declarationStatement} // deprecated: discontinue use!\n`;
     } else {
-      importStatements += `${importStatement}\n`;
+      componentsImportStatements += `${importStatement}\n`;
+      componentsDeclarationStatements += `${declarationStatement}\n`;
     }
 
     // Write the static .js file for the icon
@@ -201,8 +205,10 @@ runGenerator(restrictedIconData);
 runGenerator(logoData);
 
 // Write the accumulated React import statements to the output file after all icons are processed
-const outputFile = `${distDir}/reactComponents.js`;
-fs.writeFileSync(outputFile, importStatements);
+const componentsOutputFile = `${distDir}/reactComponents.js`;
+const componentsTsOutputFile = `${distDir}/declaration.d.ts`;
+fs.writeFileSync(componentsOutputFile, componentsImportStatements)
+fs.writeFileSync(componentsTsOutputFile, componentsDeclarationStatements);
 console.log(chalk.green(`\n\nGenerated reactComponents.js with ${Object.keys(icons).length} icons.`));
 
 
