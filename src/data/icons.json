@@ -414,6 +414,36 @@
       "deprecated": true
     },
     {
+      "name": "dollar-sign-filled",
+      "desc": "a dollar sign inside a filled circle.",
+      "category": "interface"
+    },
+    {
+      "name": "dollar-sign-stroke",
+      "desc": "a dollar sign inside an outlined circle.",
+      "category": "interface"
+    },
+    {
+      "name": "dollar-sign-sm",
+      "desc": "a small dollar sign.",
+      "category": "interface"
+    },
+    {
+      "name": "dollar-sign-lg",
+      "desc": "a large dollar sign.",
+      "category": "interface"
+    },
+    {
+      "name": "edit-stroke",
+      "desc": "an outline of a pencil and a line.",
+      "category": "interface"
+    },
+    {
+      "name": "edit-filled",
+      "desc": "a solid pencil and a line.",
+      "category": "interface"
+    },
+    {
       "name": "global-language-stroke",
       "category": "interface"
     },
