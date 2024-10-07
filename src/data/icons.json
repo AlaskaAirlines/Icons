@@ -321,12 +321,12 @@
     },
     {
       "name": "checkmark-lg",
-      "desc": "Option has been checked.",
+      "desc": "a large check mark.",
       "category": "interface"
     },
     {
       "name": "checkmark-sm",
-      "desc": "Option has been checked.",
+      "desc": "a small check mark.",
       "category": "interface"
     },
     {
@@ -573,11 +573,13 @@
     },
     {
       "name": "x-lg",
-      "category": "interface"
+      "category": "interface",
+      "desc": "a large x"
     },
     {
       "name": "x-sm",
-      "category": "interface"
+      "category": "interface",
+      "desc": "a small x"
     },
     {
       "name": "notification-filled",
