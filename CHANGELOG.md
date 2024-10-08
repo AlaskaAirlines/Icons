@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+# [4.44.0](https://github.com/AlaskaAirlines/Icons/compare/v4.43.0...v4.44.0) (2024-10-08)
+
+
+### Features
+
+* add dollar sign and edit icons [#262](https://github.com/AlaskaAirlines/Icons/issues/262) ([fec3dc0](https://github.com/AlaskaAirlines/Icons/commit/fec3dc01d569e326db1d0b93629cd7c7f018a641))
+
+
+### Performance Improvements
+
+* update interface icon code [#263](https://github.com/AlaskaAirlines/Icons/issues/263) ([9813638](https://github.com/AlaskaAirlines/Icons/commit/981363822dafa9d327f60127fc4baf45f01f053f))
+
 # [4.43.0](https://github.com/AlaskaAirlines/Icons/compare/v4.42.0...v4.43.0) (2024-08-26)
 
 
