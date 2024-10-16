@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.44.1](https://github.com/AlaskaAirlines/Icons/compare/v4.44.0...v4.44.1) (2024-10-16)
+
+
+### Performance Improvements
+
+* remove duplicate data reference [#269](https://github.com/AlaskaAirlines/Icons/issues/269) ([f1f6e6e](https://github.com/AlaskaAirlines/Icons/commit/f1f6e6e7d049c8494eab41e7556b42c4226d833d))
+
 # [4.44.0](https://github.com/AlaskaAirlines/Icons/compare/v4.43.0...v4.44.0) (2024-10-08)
 
 
