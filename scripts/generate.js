@@ -21,6 +21,7 @@ const fileSys = require('file-system');
 const chalk = require('chalk');
 const fs = require('fs');
 const { optimize } = require('svgo');
+const { transform } = require('@svgr/core');
 
 let buildIconsDir = `${__dirname}/../dist/icons`;
 
@@ -92,7 +93,7 @@ function runGenerator(data) {
     split[1] = '<svg>';
     split.splice(2, 0, `
     <title ${icon.title ? `id="${icon.name}__title"` : ""}>${icon.title}</title>
-    ${icon.desc ? `<desc id="${icon.name}__desc">${icon.desc}</desc>` : "" }`);
+    ${icon.desc ? `<desc id="${icon.name}__desc">${icon.desc}</desc>` : ""}`);
     icon.svg = split.join('');
 
     if (icon.path === '/icons') {
@@ -172,7 +173,7 @@ function runGenerator(data) {
 
     // Generate the import statement for react specific icons
     const camelCaseName = toCamelCase(icon.name);
-    const importStatement = `import { ReactComponent as ${camelCaseName} } from "@alaskaairux/icons/dist/icons/${icon.category}/${iconName}.svg";`;
+    const importStatement = `import ${camelCaseName} from "@alaskaairux/icons/dist/icons/${icon.category}/${iconName}_react.mjs"; export { ${camelCaseName} };`;
     const declarationStatement = `declare module "@alaskaairux/icons/dist/icons/${icon.category}/${iconName}.svg";`;
 
     // Identify deprecated icons
@@ -187,6 +188,14 @@ function runGenerator(data) {
     // Write the static .js file for the icon
     fs.writeFileSync(`${buildIconsDir}/${distFilename}.js`, `module.exports=${JSON.stringify(icon)};`);
     fs.writeFileSync(`${buildIconsDir}/${distFilename}_es6.js`, `export default ${JSON.stringify(icon)};`);
+    fs.writeFileSync(`${buildIconsDir}/${distFilename}_react.mjs`, `${transform.sync(icon.svg,
+      {
+        plugins: ['@svgr/plugin-jsx', '@svgr/plugin-prettier'],
+        icon: false,
+        expandProps: false
+      },
+      { componentName: camelCaseName },
+    )}`);
 
     // restrict new extension generation of files
     if (icon.type === 'icon' || icon.type === 'restricted' || icon.esm === true) {
@@ -205,7 +214,7 @@ runGenerator(restrictedIconData);
 runGenerator(logoData);
 
 // Write the accumulated React import statements to the output file after all icons are processed
-const componentsOutputFile = `${distDir}/reactComponents.js`;
+const componentsOutputFile = `${distDir}/reactComponents.mjs`;
 const componentsTsOutputFile = `${distDir}/declaration.d.ts`;
 fs.writeFileSync(componentsOutputFile, componentsImportStatements)
 fs.writeFileSync(componentsTsOutputFile, componentsDeclarationStatements);
@@ -226,6 +235,6 @@ console.log(chalk.hex('#f26135')(`
  Generating the Icons People Love.
  `))
 
- // write our generic index.js
- fs.writeFileSync(indexFileES5, `module.exports=${JSON.stringify(icons)};`);
- fs.writeFileSync(indexFileES6, `export default ${JSON.stringify(icons)};`);
+// write our generic index.js
+fs.writeFileSync(indexFileES5, `module.exports=${JSON.stringify(icons)};`);
+fs.writeFileSync(indexFileES6, `export default ${JSON.stringify(icons)};`);
