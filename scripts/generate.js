@@ -10,8 +10,9 @@
 const dataFile = '../src/data/icons.json';
 const restrictedDataFile = '../src/data/restrictedIcons.json';
 const logoDataFile = '../src/data/logoIcons.json';
-const indexFileES5 = `${__dirname}/../dist/index_es5.js`;
-const indexFileES6 = `${__dirname}/../dist/index.js`;
+const distDir = `${__dirname}/../dist`;
+const indexFileES5 = `${distDir}/index_es5.js`;
+const indexFileES6 = `${distDir}/index.js`;
 const iconsDir = `${__dirname}/../src`;
 const iconData = require(dataFile);
 const restrictedIconData = require(restrictedDataFile);
@@ -20,40 +21,55 @@ const fileSys = require('file-system');
 const chalk = require('chalk');
 const fs = require('fs');
 const { optimize } = require('svgo');
+const { transform } = require('@svgr/core');
 
 let buildIconsDir = `${__dirname}/../dist/icons`;
 
 const { getDistFilename, getDistSubFolder } = require('./utils');
 
-// creates necessary directory on build of not already there
+// creates necessary directory on build if not already there
 const icoDir = './dist/icons';
-if (!fileSys.existsSync(icoDir)){
+if (!fileSys.existsSync(icoDir)) {
   fileSys.mkdirSync(icoDir);
 }
 
 function titleCase(str) {
   let splitStr = str.toLowerCase().split(' ');
   for (let i = 0; i < splitStr.length; i++) {
-      splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+    splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
   }
   return splitStr.join(' ');
+}
+
+// Helper function to convert file names to PascalCase (for React components)
+function toCamelCase(str) {
+  return str
+    .replace(/[-_]+(.)?/g, (_, char) => char ? char.toUpperCase() : '')
+    .replace(/^./, firstChar => firstChar.toUpperCase());
 }
 
 // export JS versions of Icons
 // =======================================================================
 const icons = {};
 
-console.log(chalk.hex('#f26135')(`Generating Icons ... \n`))
+console.log(chalk.hex('#f26135')(`Generating Icons ... \n`));
 
+// Accumulate import statements for the output file
+let componentsImportStatements = '';
+let componentsDeclarationStatements = '';
+
+/**
+ * Runs the generator to process the icons data and generate necessary files.
+ *
+ * @param {Object} data - The icons data object.
+ */
 function runGenerator(data) {
   data.icons.forEach((iconRaw, index) => {
     let count = index + 1;
     let icon = {
       ...data.commonProperties,
       ...iconRaw
-    }
-
-    // const iconStatus = icon.status;
+    };
 
     const iconName = icon.name;
     const distFilename = getDistFilename(icon);
@@ -77,7 +93,7 @@ function runGenerator(data) {
     split[1] = '<svg>';
     split.splice(2, 0, `
     <title ${icon.title ? `id="${icon.name}__title"` : ""}>${icon.title}</title>
-    ${icon.desc ? `<desc id="${icon.name}__desc">${icon.desc}</desc>` : "" }`);
+    ${icon.desc ? `<desc id="${icon.name}__desc">${icon.desc}</desc>` : ""}`);
     icon.svg = split.join('');
 
     if (icon.path === '/icons') {
@@ -86,15 +102,15 @@ function runGenerator(data) {
       const fillNone = icon.svg.match(/fill="none"/);
 
       if (fill) {
-        icon.svg = icon.svg.replace(fill, '')
+        icon.svg = icon.svg.replace(fill, '');
       }
 
       if (fillNone) {
-        icon.svg = icon.svg.replace(fillNone, '')
+        icon.svg = icon.svg.replace(fillNone, '');
       }
     }
 
-    // adds attributes to SVG string based on icons.json data
+    // Adds attributes to SVG string based on icons.json data
     icon.svg = [icon.svg.slice(0, insertPos), ariaHidden, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), elementStyle, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), labelledBy, icon.svg.slice(insertPos)].join('');
@@ -106,7 +122,7 @@ function runGenerator(data) {
     icon.svg = [icon.svg.slice(0, insertPos), iconDeprecated, icon.svg.slice(insertPos)].join('');
     icon.svg = [icon.svg.slice(0, insertPos), ` `, icon.svg.slice(insertPos)].join('');
 
-    //optimize SVG
+    // Optimize SVG
     icon.svg = optimize(icon.svg, {
       plugins: [
         {
@@ -115,9 +131,7 @@ function runGenerator(data) {
             overrides: {
               removeDesc: false,            // keep <desc>
               cleanupIds: false,
-
               sortDefsChildren: false,
-
               removeTitle: false,           // keep <title>
               removeUnusedNS: false,        // keep xmlns:xlink=
               removeUnknownsAndDefaults: {
@@ -147,47 +161,79 @@ function runGenerator(data) {
       buildIconsDir = `${__dirname}/../dist`;
     }
 
+    // Create the publish folder if it doesn't exist
     const publishFolder = `${buildIconsDir}/${getDistSubFolder(icon.category)}`;
-    if (!fileSys.existsSync(publishFolder)){
+
+    if (!fileSys.existsSync(publishFolder)) {
       fileSys.mkdirSync(publishFolder);
     }
 
+    // Add the icon to the icons object
     icons[icon.name] = icon;
 
-    // write the static .js file for the icon
-    fs.writeFileSync( `${buildIconsDir}/${distFilename}.js`, `module.exports=${JSON.stringify(icon)};`);
-    fs.writeFileSync( `${buildIconsDir}/${distFilename}_es6.js`, `export default ${JSON.stringify(icon)};`);
+    // Generate the import statement for react specific icons
+    const camelCaseName = toCamelCase(icon.name);
+    const importStatement = `import ${camelCaseName} from "@alaskaairux/icons/dist/icons/${icon.category}/${iconName}_react.mjs"; export { ${camelCaseName} };`;
+    const declarationStatement = `declare module "@alaskaairux/icons/dist/icons/${icon.category}/${iconName}.svg";`;
+
+    // Identify deprecated icons
+    if (icon.deprecated) {
+      componentsImportStatements += `${importStatement} // deprecated: discontinue use!\n`;
+      componentsDeclarationStatements += `${declarationStatement} // deprecated: discontinue use!\n`;
+    } else {
+      componentsImportStatements += `${importStatement}\n`;
+      componentsDeclarationStatements += `${declarationStatement}\n`;
+    }
+
+    // Write the static .js file for the icon
+    fs.writeFileSync(`${buildIconsDir}/${distFilename}.js`, `module.exports=${JSON.stringify(icon)};`);
+    fs.writeFileSync(`${buildIconsDir}/${distFilename}_es6.js`, `export default ${JSON.stringify(icon)};`);
+    fs.writeFileSync(`${buildIconsDir}/${distFilename}_react.mjs`, `${transform.sync(icon.svg,
+      {
+        plugins: ['@svgr/plugin-jsx', '@svgr/plugin-prettier'],
+        icon: false,
+        expandProps: false
+      },
+      { componentName: camelCaseName },
+    )}`);
 
     // restrict new extension generation of files
     if (icon.type === 'icon' || icon.type === 'restricted' || icon.esm === true) {
-      fs.writeFileSync( `${buildIconsDir}/${distFilename}.mjs`, `export default ${JSON.stringify(icon)};`);
+      fs.writeFileSync(`${buildIconsDir}/${distFilename}.mjs`, `export default ${JSON.stringify(icon)};`);
     }
 
     // write new SVGs to ./dist
-    fs.writeFileSync( `${buildIconsDir}/${distFilename}.svg`, icon.svg);
+    fs.writeFileSync(`${buildIconsDir}/${distFilename}.svg`, icon.svg);
     process.stdout.write(`- `);
   });
 }
 
+// Generate the icons and React imports
 runGenerator(iconData);
 runGenerator(restrictedIconData);
 runGenerator(logoData);
 
+// Write the accumulated React import statements to the output file after all icons are processed
+const componentsOutputFile = `${distDir}/reactComponents.mjs`;
+const componentsTsOutputFile = `${distDir}/declaration.d.ts`;
+fs.writeFileSync(componentsOutputFile, componentsImportStatements)
+fs.writeFileSync(componentsTsOutputFile, componentsDeclarationStatements);
+console.log(chalk.green(`\n\nGenerated reactComponents.js with ${Object.keys(icons).length} icons.`));
 
 
 console.log(chalk.hex('#f26135')(`
- _______                   __           __ __
-|     __|.---.-.--.--.    |  |--.-----.|  |  |.-----.
-|__     ||  _  |  |  |    |     |  -__||  |  ||  _  |
-|_______||___._|___  |    |__|__|_____||__|__||_____|
-               |_____|
- __              _______                    __
-|  |_.-----.    |   _   |.--.--.----.-----.|  |
-|   _|  _  |    |       ||  |  |   _|  _  ||__|
-|____|_____|    |___|___||_____|__| |_____||__|
+  _______                   __           __ __
+ |     __|.---.-.--.--.    |  |--.-----.|  |  |.-----.
+ |__     ||  _  |  |  |    |     |  -__||  |  ||  _  |
+ |_______||___._|___  |    |__|__|_____||__|__||_____|
+                |_____|
+  __              _______                    __
+ |  |_.-----.    |   _   |.--.--.----.-----.|  |
+ |   _|  _  |    |       ||  |  |   _|  _  ||__|
+ |____|_____|    |___|___||_____|__| |_____||__|
 
-Generating the Icons People Love.
-`))
+ Generating the Icons People Love.
+ `))
 
 // write our generic index.js
 fs.writeFileSync(indexFileES5, `module.exports=${JSON.stringify(icons)};`);
