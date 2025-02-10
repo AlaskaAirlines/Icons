@@ -1,5 +1,20 @@
 # Semantic Release Automated Changelog
 
+# [5.0.0](https://github.com/AlaskaAirlines/Icons/compare/v4.44.1...v5.0.0) (2025-02-10)
+
+
+### chore
+
+* change supported node versions to 20 and 22 ([adb7864](https://github.com/AlaskaAirlines/Icons/commit/adb78640757e1a4cfddf6d476efdfc6a8ffd6492))
+
+
+### BREAKING CHANGES
+
+* drops support for node 18
+
+Official EOL is in April 2025, and we as the Auro team need to
+lead the curve as the upstream.
+
 ## [4.44.1](https://github.com/AlaskaAirlines/Icons/compare/v4.44.0...v4.44.1) (2024-10-16)
 
 
