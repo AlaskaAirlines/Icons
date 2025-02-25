@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.1.0](https://github.com/AlaskaAirlines/Icons/compare/v5.0.0...v5.1.0) (2025-02-25)
+
+
+### Features
+
+* add x logo, deprecate twitter, update linkedin ([6fea072](https://github.com/AlaskaAirlines/Icons/commit/6fea0723cc203f4a1344a76545187fe954f16a07))
+
 # [5.0.0](https://github.com/AlaskaAirlines/Icons/compare/v4.44.1...v5.0.0) (2025-02-10)
 
 
