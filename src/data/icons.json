@@ -1615,6 +1615,96 @@
       "name": "x-social",
       "desc": "X (formerly Twitter) logo",
       "category": "social"
+    },
+    {
+      "name": "hazmat-aerosol-filled",
+      "desc": "Filled icon representing aerosol containers with flammable or pressurized contents",
+      "category": "hazmat"
+    },
+    {
+      "name": "hazmat-aerosol-stroke",
+      "desc": "Outline icon representing aerosol containers with flammable or pressurized contents",
+      "category": "hazmat"
+    },
+    {
+      "name": "hazmat-canned-fuel-filled",
+      "desc": "Filled icon representing portable canned fuel or combustible liquids",
+      "category": "hazmat"
+    },
+    {
+      "name": "hazmat-canned-fuel-stroke",
+      "desc": "Outline icon representing portable canned fuel or combustible liquids",
+      "category": "hazmat"
+    },
+    {
+      "name": "hazmat-fireworks-filled",
+      "desc": "Filled icon representing fireworks and other pyrotechnic devices",
+      "category": "hazmat"
+    },
+    {
+      "name": "hazmat-fireworks-stroke",
+      "desc": "Outline icon representing fireworks and other pyrotechnic devices",
+      "category": "hazmat"
+    },
+    {
+      "name": "hazmat-lighter-filled",
+      "desc": "Filled icon representing cigarette lighters or similar flame-producing devices",
+      "category": "hazmat"
+    },
+    {
+      "name": "hazmat-lighter-stroke",
+      "desc": "Outline icon representing cigarette lighters or similar flame-producing devices",
+      "category": "hazmat"
+    },
+    {
+      "name": "hazmat-lithium-batteries-filled",
+      "desc": "Filled icon representing lithium batteries and other potentially hazardous power cells",
+      "category": "hazmat"
+    },
+    {
+      "name": "hazmat-lithium-batteries-stroke",
+      "desc": "Outline icon representing lithium batteries and other potentially hazardous power cells",
+      "category": "hazmat"
+    },
+    {
+      "name": "hazmat-loose-ammo-filled",
+      "desc": "Filled icon representing loose ammunition or cartridges",
+      "category": "hazmat"
+    },
+    {
+      "name": "hazmat-loose-ammo-stroke",
+      "desc": "Outline icon representing loose ammunition or cartridges",
+      "category": "hazmat"
+    },
+    {
+      "name": "hazmat-matches-filled",
+      "desc": "Filled icon representing matches and other fire-starting implements",
+      "category": "hazmat"
+    },
+    {
+      "name": "hazmat-matches-stroke",
+      "desc": "Outline icon representing matches and other fire-starting implements",
+      "category": "hazmat"
+    },
+    {
+      "name": "hazmat-oxygen-filled",
+      "desc": "Filled icon representing compressed oxygen tanks, cylinders, or medical oxygen supplies",
+      "category": "hazmat"
+    },
+    {
+      "name": "hazmat-oxygen-stroke",
+      "desc": "Outline icon representing compressed oxygen tanks, cylinders, or medical oxygen supplies",
+      "category": "hazmat"
+    },
+    {
+      "name": "hazmat-small-engine-filled",
+      "desc": "Filled icon representing small engines containing fuel or oil",
+      "category": "hazmat"
+    },
+    {
+      "name": "hazmat-small-engine-stroke",
+      "desc": "Outline icon representing small engines containing fuel or oil",
+      "category": "hazmat"
     }
   ]
 }
