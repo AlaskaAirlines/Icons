@@ -20,14 +20,15 @@ Icons fall into a series of use categories, these are:
 | category | description |
 |---|---|
 | alert | Icons used specifically to alert users as to the state of awareness |
-| in-flight | icons reserved for 'day of travel' user experiences |
+| hazard | Icons indicating hazardous materials or dangerous goods requiring special handling |
+| in-flight | Icons reserved for 'day of travel' user experiences |
 | interface | Icons used to create interface enhancements |
+| partnership | Icons related to business partnerships |
 | payment | Icons specifically to be used in a transaction flow |
-| shop | icons for use with shopping experiences |
+| programs | Icons related to Alaska Airlines programs |
+| shop | Icons for use with shopping experiences |
 | social | Icons for use with social media |
 | terminal | Icons related to terminal experiences |
-| partnership | Icons related to business partnerships |
-| programs | Icons related to Alaska Airlines programs |
 
 
 ## JavaScript framework support
