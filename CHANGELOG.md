@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.2.0](https://github.com/AlaskaAirlines/Icons/compare/v5.1.0...v5.2.0) (2025-02-25)
+
+
+### Features
+
+* adding new hazmat icons ([ae8d357](https://github.com/AlaskaAirlines/Icons/commit/ae8d357a31afc00b2be2e220b34c21f5c7de1f7b))
+
 # [5.1.0](https://github.com/AlaskaAirlines/Icons/compare/v5.0.0...v5.1.0) (2025-02-25)
 
 
