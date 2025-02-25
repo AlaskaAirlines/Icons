@@ -1435,7 +1435,8 @@
     {
       "name": "twitter",
       "desc": "Twitter's logo.",
-      "category": "social"
+      "category": "social",
+      "deprecated": true
     },
     {
       "name": "youtube",
@@ -1609,6 +1610,11 @@
       "name": "snowflake-stroke",
       "desc": "An outlined snowflake",
       "category": "destination"
+    },
+    {
+      "name": "x-social",
+      "desc": "X (formerly Twitter) logo",
+      "category": "social"
     }
   ]
 }
