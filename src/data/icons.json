@@ -1391,7 +1391,8 @@
     {
       "name": "rising-sun-filled",
       "desc": "semi-circle with lines",
-      "category": "destination"
+      "category": "destination",
+      "deprecated": true
     },
     {
       "name": "rising-sun",
@@ -1400,8 +1401,9 @@
     },
     {
       "name": "rising-sun-stroke",
-      "desc": "semi-circle with lines.",
-      "category": "destination"
+      "desc": "semi-circle with lines",
+      "category": "destination",
+      "deprecated": true
     },
     {
       "name": "sparkle-filled",
@@ -1705,6 +1707,26 @@
       "name": "hazmat-small-engine-stroke",
       "desc": "Outline icon representing small engines containing fuel or oil",
       "category": "hazmat"
+    },
+    {
+      "name": "moon-filled",
+      "desc": "A crescent moon with solid fill",
+      "category": "destination"
+    },
+    {
+      "name": "moon-stroke",
+      "desc": "An outline of a crescent moon",
+      "category": "destination"
+    },
+    {
+      "name": "sun-rising-stroke",
+      "desc": "semi-circle with lines",
+      "category": "destination"
+    },
+    {
+      "name": "sun-rising-filled",
+      "desc": "semi-circle with lines",
+      "category": "destination"
     }
   ]
 }
