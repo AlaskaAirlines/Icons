@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.3.0](https://github.com/AlaskaAirlines/Icons/compare/v5.2.0...v5.3.0) (2025-03-11)
+
+
+### Features
+
+* add/replace destination icons [#281](https://github.com/AlaskaAirlines/Icons/issues/281) ([590e226](https://github.com/AlaskaAirlines/Icons/commit/590e226d16b365e15d400ca5ee71ead0b555b979))
+
 # [5.2.0](https://github.com/AlaskaAirlines/Icons/compare/v5.1.0...v5.2.0) (2025-02-25)
 
 
