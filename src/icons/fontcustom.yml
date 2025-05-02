@@ -48,12 +48,12 @@ no_hash: true
 #     names as the key.
 # -----------------------------------------------------------------------------
 
-#input:
-#  vectors: my/vectors
+input:
+  vectors: .
 #  templates: my/templates
 
-#output:
-#  fonts: app/assets/fonts
+output:
+  fonts: iconFonts
 #  css: app/assets/stylesheets
 #  preview: app/views/styleguide
 #  my-custom-template.yml: path/to/template/output

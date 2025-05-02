@@ -1,14 +1,14 @@
 {
   "checksum": {
-    "previous": "274cee891ab7b9230519d05762e1243e073df886788523857a0967a54111964d",
-    "current": "274cee891ab7b9230519d05762e1243e073df886788523857a0967a54111964d"
+    "previous": "f0321f0fecd859265f8d4ad190bde7dc8ee3e44afbac55e022cb5dbb6df741ca",
+    "current": "f0321f0fecd859265f8d4ad190bde7dc8ee3e44afbac55e022cb5dbb6df741ca"
   },
   "fonts": [
-    "ASIcons/ASIcons.ttf",
-    "ASIcons/ASIcons.svg",
-    "ASIcons/ASIcons.woff",
-    "ASIcons/ASIcons.eot",
-    "ASIcons/ASIcons.woff2"
+    "iconFonts/ASIcons.ttf",
+    "iconFonts/ASIcons.svg",
+    "iconFonts/ASIcons.woff",
+    "iconFonts/ASIcons.eot",
+    "iconFonts/ASIcons.woff2"
   ],
   "glyphs": {
     "accessibility": {
@@ -1359,9 +1359,9 @@
     },
     "no_hash": true,
     "output": {
-      "css": "ASIcons",
-      "fonts": "ASIcons",
-      "preview": "ASIcons"
+      "css": "iconFonts",
+      "fonts": "iconFonts",
+      "preview": "iconFonts"
     },
     "preprocessor_path": null,
     "quiet": false,
@@ -1371,7 +1371,7 @@
     ]
   },
   "templates": [
-    "ASIcons/ASIcons.css",
-    "ASIcons/ASIcons-preview.html"
+    "iconFonts/ASIcons.css",
+    "iconFonts/ASIcons-preview.html"
   ]
 }
