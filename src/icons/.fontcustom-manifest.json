@@ -1,14 +1,14 @@
 {
   "checksum": {
-    "previous": "72cf918ace55928a25b03d4e3b3ff4a8a8ea95286b07bfa5ba3e5ed791761339",
-    "current": "72cf918ace55928a25b03d4e3b3ff4a8a8ea95286b07bfa5ba3e5ed791761339"
+    "previous": "274cee891ab7b9230519d05762e1243e073df886788523857a0967a54111964d",
+    "current": "274cee891ab7b9230519d05762e1243e073df886788523857a0967a54111964d"
   },
   "fonts": [
-    "fontcustom/fontcustom_72cf918ace55928a25b03d4e3b3ff4a8.ttf",
-    "fontcustom/fontcustom_72cf918ace55928a25b03d4e3b3ff4a8.svg",
-    "fontcustom/fontcustom_72cf918ace55928a25b03d4e3b3ff4a8.woff",
-    "fontcustom/fontcustom_72cf918ace55928a25b03d4e3b3ff4a8.eot",
-    "fontcustom/fontcustom_72cf918ace55928a25b03d4e3b3ff4a8.woff2"
+    "ASIcons/ASIcons.ttf",
+    "ASIcons/ASIcons.svg",
+    "ASIcons/ASIcons.woff",
+    "ASIcons/ASIcons.eot",
+    "ASIcons/ASIcons.woff2"
   ],
   "glyphs": {
     "accessibility": {
@@ -1342,7 +1342,7 @@
   },
   "options": {
     "autowidth": false,
-    "config": false,
+    "config": "fontcustom.yml",
     "copyright": "",
     "css3": false,
     "css_selector": ".icon-{{glyph}}",
@@ -1351,17 +1351,17 @@
     "font_descent": 64,
     "font_design_size": 16,
     "font_em": 512,
-    "font_name": "fontcustom",
+    "font_name": "ASIcons",
     "force": false,
     "input": {
       "templates": ".",
       "vectors": "."
     },
-    "no_hash": false,
+    "no_hash": true,
     "output": {
-      "css": "fontcustom",
-      "fonts": "fontcustom",
-      "preview": "fontcustom"
+      "css": "ASIcons",
+      "fonts": "ASIcons",
+      "preview": "ASIcons"
     },
     "preprocessor_path": null,
     "quiet": false,
@@ -1371,7 +1371,7 @@
     ]
   },
   "templates": [
-    "fontcustom/fontcustom.css",
-    "fontcustom/fontcustom-preview.html"
+    "ASIcons/ASIcons.css",
+    "ASIcons/ASIcons-preview.html"
   ]
 }

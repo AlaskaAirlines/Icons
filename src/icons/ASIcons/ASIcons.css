@@ -1,23 +1,23 @@
 /*
-  Icon Font: fontcustom
+  Icon Font: ASIcons
 */
 
 @font-face {
-  font-family: "fontcustom";
-  src: url("./fontcustom_72cf918ace55928a25b03d4e3b3ff4a8.eot");
-  src: url("./fontcustom_72cf918ace55928a25b03d4e3b3ff4a8.eot?#iefix") format("embedded-opentype"),
-       url("./fontcustom_72cf918ace55928a25b03d4e3b3ff4a8.woff2") format("woff2"),
-       url("./fontcustom_72cf918ace55928a25b03d4e3b3ff4a8.woff") format("woff"),
-       url("./fontcustom_72cf918ace55928a25b03d4e3b3ff4a8.ttf") format("truetype"),
-       url("./fontcustom_72cf918ace55928a25b03d4e3b3ff4a8.svg#fontcustom") format("svg");
+  font-family: "ASIcons";
+  src: url("./ASIcons.eot");
+  src: url("./ASIcons.eot?#iefix") format("embedded-opentype"),
+       url("./ASIcons.woff2") format("woff2"),
+       url("./ASIcons.woff") format("woff"),
+       url("./ASIcons.ttf") format("truetype"),
+       url("./ASIcons.svg#ASIcons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
-    font-family: "fontcustom";
-    src: url("./fontcustom_72cf918ace55928a25b03d4e3b3ff4a8.svg#fontcustom") format("svg");
+    font-family: "ASIcons";
+    src: url("./ASIcons.svg#ASIcons") format("svg");
   }
 }
 
@@ -357,7 +357,7 @@
 .icon-x-stroke:before,
 .icon-youtube:before {
   display: inline-block;
-  font-family: "fontcustom";
+  font-family: "ASIcons";
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
