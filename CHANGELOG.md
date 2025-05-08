@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.4.0-beta.1](https://github.com/AlaskaAirlines/Icons/compare/v5.3.0...v5.4.0-beta.1) (2025-05-08)
+
+
+### Features
+
+* **icon:** add new aple pay icon [#287](https://github.com/AlaskaAirlines/Icons/issues/287) ([986c5ad](https://github.com/AlaskaAirlines/Icons/commit/986c5ad8c1e11863258274a766ff5ec177edc3fd))
+
 # [5.3.0](https://github.com/AlaskaAirlines/Icons/compare/v5.2.0...v5.3.0) (2025-03-11)
 
 
