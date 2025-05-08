@@ -1114,6 +1114,11 @@
       "deprecated": true
     },
     {
+      "name": "apple-pay",
+      "desc": "Apple Pay.",
+      "category": "payment"
+    },
+    {
       "name": "credit-card-filled",
       "desc": "credit card.",
       "category": "payment"
