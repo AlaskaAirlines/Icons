@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.4.0](https://github.com/AlaskaAirlines/Icons/compare/v5.3.0...v5.4.0) (2025-05-20)
+
+
+### Features
+
+* add philippine airlines tail ([182d37a](https://github.com/AlaskaAirlines/Icons/commit/182d37a45138c38865970f194c9eeb611cb51457))
+
 # [5.3.0](https://github.com/AlaskaAirlines/Icons/compare/v5.2.0...v5.3.0) (2025-03-11)
 
 
