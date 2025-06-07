@@ -1727,6 +1727,31 @@
       "name": "sun-rising-filled",
       "desc": "semi-circle with lines",
       "category": "destination"
+    },
+    {
+      "name": "apple-pay",
+      "desc": "graphic of the Apple logo and the word 'pay' in a rectangle",
+      "category": "payment"
+    },
+    {
+      "name": "play-stroke", 
+      "desc": "outline triangle pointing right",
+      "category": "interface"
+    },
+    {
+      "name": "play-filled",
+      "desc": "solid triangle pointing right", 
+      "category": "interface"
+    },
+    {
+      "name": "cruise-stroke",
+      "desc": "outline of the front view of a boat on water",
+      "category": "destination"
+    },
+    {
+      "name": "pause",
+      "desc": "two vertical parallel lines",
+      "category": "interface"
     }
   ]
 }
