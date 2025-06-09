@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.5.0](https://github.com/AlaskaAirlines/Icons/compare/v5.4.0...v5.5.0) (2025-06-09)
+
+
+### Features
+
+* add play, pause, applepay, cruise icons ([ecb208c](https://github.com/AlaskaAirlines/Icons/commit/ecb208c395cfea2affb0eff77166e35401eca3d1))
+
 # [5.4.0](https://github.com/AlaskaAirlines/Icons/compare/v5.3.0...v5.4.0) (2025-05-20)
 
 
