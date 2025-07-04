@@ -442,6 +442,21 @@
       "name": "tail-VC",
       "title": "Airplane tail image for Aleutian Airways",
       "viewBox": "0 0 141 138"
+    },
+    {
+      "name": "tail-B6",
+      "title": "Airplane tail image for jetBlue",
+      "viewBox": "0 0 142 138"
+    },
+    {
+      "name": "tail-VA",
+      "title": "Airplane tail image for Virgin Australia",
+      "viewBox": "0 0 142 138"
+    },
+    {
+      "name": "tail-CI",
+      "title": "Airplane tail image for China Airlines",
+      "viewBox": "0 0 142 138"
     }
   ]
 }
