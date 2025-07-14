@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.6.0](https://github.com/AlaskaAirlines/Icons/compare/v5.5.0...v5.6.0) (2025-07-14)
+
+
+### Features
+
+* add B6, VA, CI tails ([753d4e8](https://github.com/AlaskaAirlines/Icons/commit/753d4e83877b3a1bdbe50a97370194bedef337b0))
+
 # [5.5.0](https://github.com/AlaskaAirlines/Icons/compare/v5.4.0...v5.5.0) (2025-06-09)
 
 
