@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.7.0](https://github.com/AlaskaAirlines/Icons/compare/v5.6.0...v5.7.0) (2025-08-13)
+
+
+### Features
+
+* add packages icons ([8e14b20](https://github.com/AlaskaAirlines/Icons/commit/8e14b200fbdff146c0b6c0765117eeb542b920a9))
+
 # [5.6.0](https://github.com/AlaskaAirlines/Icons/compare/v5.5.0...v5.6.0) (2025-07-14)
 
 
