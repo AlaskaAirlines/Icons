@@ -1553,7 +1553,7 @@
     },
     {
       "name": "clear",
-      "desc": "Alaska and Clear partnerhip",
+      "desc": "Alaska and Clear partnership",
       "category": "partnership"
     },
     {
@@ -1752,6 +1752,16 @@
       "name": "pause",
       "desc": "two vertical parallel lines",
       "category": "interface"
+    },
+    {
+      "name": "packages-stroke",
+      "desc": "Outline of a hotel, car, and airplane grouped together",
+      "category": "destination"
+    },
+    {
+      "name": "packages-filled",
+      "desc": "Solid icon of a hotel, car, and airplane grouped together",
+      "category": "destination"
     }
   ]
 }
