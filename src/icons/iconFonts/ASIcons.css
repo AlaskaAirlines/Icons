@@ -1,0 +1,704 @@
+/*
+  Icon Font: ASIcons
+*/
+
+@font-face {
+  font-family: "ASIcons";
+  src: url("./ASIcons.eot");
+  src: url("./ASIcons.eot?#iefix") format("embedded-opentype"),
+       url("./ASIcons.woff2") format("woff2"),
+       url("./ASIcons.woff") format("woff"),
+       url("./ASIcons.ttf") format("truetype"),
+       url("./ASIcons.svg#ASIcons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "ASIcons";
+    src: url("./ASIcons.svg#ASIcons") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon-accessibility:before,
+.icon-account-filled:before,
+.icon-account-stroke:before,
+.icon-add-to-calendar:before,
+.icon-add-to-calendar-filled:before,
+.icon-add-to-calendar-stroke:before,
+.icon-air:before,
+.icon-arrival-filled:before,
+.icon-arrival-stroke:before,
+.icon-arrow-down:before,
+.icon-arrow-left:before,
+.icon-arrow-right:before,
+.icon-arrow-up:before,
+.icon-back-to-top:before,
+.icon-boarding:before,
+.icon-boarding-pass-filled:before,
+.icon-boarding-pass-stroke:before,
+.icon-booking-filled:before,
+.icon-booking-stroke:before,
+.icon-calendar:before,
+.icon-calendar-filled:before,
+.icon-calendar-stroke:before,
+.icon-car-rental:before,
+.icon-car-rental-stroke:before,
+.icon-carry-on:before,
+.icon-carry-on-filled:before,
+.icon-cart:before,
+.icon-cart-filled:before,
+.icon-cart-stroke:before,
+.icon-chain-link:before,
+.icon-chat:before,
+.icon-chat-filled:before,
+.icon-chat-stroke:before,
+.icon-check-filled:before,
+.icon-check-in:before,
+.icon-check-in-stroke:before,
+.icon-check-lg:before,
+.icon-check-sm:before,
+.icon-check-stroke:before,
+.icon-checkmark-lg:before,
+.icon-checkmark-sm:before,
+.icon-checkmark-sml:before,
+.icon-chevron-down:before,
+.icon-chevron-left:before,
+.icon-chevron-right:before,
+.icon-chevron-up:before,
+.icon-clean:before,
+.icon-clean-filled:before,
+.icon-clean-stroke:before,
+.icon-clear:before,
+.icon-clock-filled:before,
+.icon-clock-stroke:before,
+.icon-club49:before,
+.icon-contract-fare:before,
+.icon-contract-fare-filled:before,
+.icon-contract-fare-stroke:before,
+.icon-contract-mixed-fare:before,
+.icon-contract-mixed-fare-filled:before,
+.icon-contract-mixed-fare-stroke:before,
+.icon-copy-paste:before,
+.icon-copy-paste-stroke:before,
+.icon-covid-test:before,
+.icon-covid-test-filled:before,
+.icon-covid-test-stroke:before,
+.icon-credit-card:before,
+.icon-credit-card-filled:before,
+.icon-credit-card-stroke:before,
+.icon-dashboard-filled:before,
+.icon-dashboard-stroke:before,
+.icon-departure-filled:before,
+.icon-departure-stroke:before,
+.icon-discount-code-applied:before,
+.icon-discount-code-applied-filled:before,
+.icon-discount-code-applied-stroke:before,
+.icon-diverted:before,
+.icon-document-stroke:before,
+.icon-dollar-sign-filled:before,
+.icon-dollar-sign-lg:before,
+.icon-dollar-sign-sm:before,
+.icon-dollar-sign-stroke:before,
+.icon-download:before,
+.icon-edit-filled:before,
+.icon-edit-stroke:before,
+.icon-elite:before,
+.icon-elite-stroke:before,
+.icon-entertainment:before,
+.icon-entertainment-filled:before,
+.icon-entertainment-stroke:before,
+.icon-error:before,
+.icon-error-filled:before,
+.icon-error-stroke:before,
+.icon-external-link:before,
+.icon-external-link-md:before,
+.icon-external-link-sm:before,
+.icon-external-link-stroke:before,
+.icon-facebook:before,
+.icon-filter:before,
+.icon-filter-filled:before,
+.icon-filter-stroke:before,
+.icon-first-class-legroom:before,
+.icon-first-class-upgrade-available:before,
+.icon-first-class-upgrade-available-filled:before,
+.icon-first-class-upgrade-available-stroke:before,
+.icon-first-class-upgrade-waitlist:before,
+.icon-first-class-upgrade-waitlist-filled:before,
+.icon-first-class-upgrade-waitlist-stroke:before,
+.icon-flag-stroke:before,
+.icon-flight-cancelled:before,
+.icon-flight-cancelled-stroke:before,
+.icon-flight-changes:before,
+.icon-flight-delayed:before,
+.icon-flight-delayed-stroke:before,
+.icon-flight-details:before,
+.icon-flight-on-time:before,
+.icon-flight-on-time-stroke:before,
+.icon-flight-pass:before,
+.icon-flight-pass-filled:before,
+.icon-flight-pass-stroke:before,
+.icon-food-and-drink:before,
+.icon-free-same-day-change:before,
+.icon-free-same-day-change-stroke:before,
+.icon-gift:before,
+.icon-gift-filled:before,
+.icon-gift-stroke:before,
+.icon-global-language:before,
+.icon-global-language-stroke:before,
+.icon-gov-approval:before,
+.icon-government-fare:before,
+.icon-government-fare-filled:before,
+.icon-government-fare-stroke:before,
+.icon-government-mixed-fare:before,
+.icon-government-mixed-fare-filled:before,
+.icon-government-mixed-fare-stroke:before,
+.icon-guest-filled:before,
+.icon-guest-stroke:before,
+.icon-hazmat-aerosol-filled:before,
+.icon-hazmat-aerosol-stroke:before,
+.icon-hazmat-canned-fuel-filled:before,
+.icon-hazmat-canned-fuel-stroke:before,
+.icon-hazmat-fireworks-filled:before,
+.icon-hazmat-fireworks-stroke:before,
+.icon-hazmat-lighter-filled:before,
+.icon-hazmat-lighter-stroke:before,
+.icon-hazmat-lithium-batteries-filled:before,
+.icon-hazmat-lithium-batteries-stroke:before,
+.icon-hazmat-loose-ammo-filled:before,
+.icon-hazmat-loose-ammo-stroke:before,
+.icon-hazmat-matches-filled:before,
+.icon-hazmat-matches-stroke:before,
+.icon-hazmat-oxygen-filled:before,
+.icon-hazmat-oxygen-stroke:before,
+.icon-hazmat-small-engine-filled:before,
+.icon-hazmat-small-engine-stroke:before,
+.icon-health:before,
+.icon-heart-filled:before,
+.icon-heart-stroke:before,
+.icon-hide-password:before,
+.icon-hide-password-filled:before,
+.icon-hide-password-stroke:before,
+.icon-home-filled:before,
+.icon-home-stroke:before,
+.icon-hotel:before,
+.icon-hotel-filled:before,
+.icon-hotel-stroke:before,
+.icon-id:before,
+.icon-id-filled:before,
+.icon-id-stroke:before,
+.icon-information-filled:before,
+.icon-information-stroke:before,
+.icon-instagram:before,
+.icon-lap-infant:before,
+.icon-lap-infant-stroke:before,
+.icon-lavatory:before,
+.icon-lavatory-stroke:before,
+.icon-linkedin:before,
+.icon-location-filled:before,
+.icon-location-finder:before,
+.icon-location-found:before,
+.icon-location-stroke:before,
+.icon-lock-filled:before,
+.icon-lock-stroke:before,
+.icon-lounge:before,
+.icon-lounge-stroke:before,
+.icon-luggage:before,
+.icon-luggage-filled:before,
+.icon-luggage-stroke:before,
+.icon-lyft:before,
+.icon-mail:before,
+.icon-mask:before,
+.icon-mask-filled:before,
+.icon-mask-stroke:before,
+.icon-medical-filled:before,
+.icon-medical-stroke:before,
+.icon-minus-filled:before,
+.icon-minus-lg:before,
+.icon-minus-lg-stroke:before,
+.icon-minus-sm:before,
+.icon-minus-sm-stroke:before,
+.icon-minus-stroke:before,
+.icon-mixed-cabin-itinerary:before,
+.icon-moon-filled:before,
+.icon-moon-stroke:before,
+.icon-more-filled:before,
+.icon-more-stroke:before,
+.icon-mountain-stroke:before,
+.icon-mug-filled:before,
+.icon-mug-stroke:before,
+.icon-multipax:before,
+.icon-multipax-filled:before,
+.icon-multipax-stroke:before,
+.icon-navigation-menu:before,
+.icon-new-window:before,
+.icon-new-window-filled:before,
+.icon-new-window-stroke:before,
+.icon-not-recommended-for-standby:before,
+.icon-not-recommended-for-standby-filled:before,
+.icon-not-recommended-for-standby-stroke:before,
+.icon-notification:before,
+.icon-notification-active:before,
+.icon-notification-active-filled:before,
+.icon-notification-active-stroke:before,
+.icon-notification-filled:before,
+.icon-notification-stroke:before,
+.icon-one-way-arrow:before,
+.icon-passenger:before,
+.icon-passenger-filled:before,
+.icon-passenger-stroke:before,
+.icon-penguin:before,
+.icon-phone:before,
+.icon-phone-filled:before,
+.icon-phone-stroke:before,
+.icon-pin-filled:before,
+.icon-pin-stroke:before,
+.icon-pin-trip:before,
+.icon-pin-trip-filled:before,
+.icon-pin-trip-stroke:before,
+.icon-plane-diag-fill:before,
+.icon-plane-diag-stroke:before,
+.icon-plane-side-fill:before,
+.icon-plane-side-stroke:before,
+.icon-plane-up-fill:before,
+.icon-plane-up-stroke:before,
+.icon-plug:before,
+.icon-plug-filled:before,
+.icon-plug-stroke:before,
+.icon-plus-filled:before,
+.icon-plus-lg:before,
+.icon-plus-sm:before,
+.icon-plus-stroke:before,
+.icon-premium-class-legroom:before,
+.icon-premium-class-upgrade-available:before,
+.icon-premium-class-upgrade-available-stroke:before,
+.icon-premium-class-upgrade-waitlist:before,
+.icon-premium-class-upgrade-waitlist-filled:before,
+.icon-premium-class-upgrade-waitlist-stroke:before,
+.icon-printer:before,
+.icon-printer-filled:before,
+.icon-printer-stroke:before,
+.icon-profile-filled:before,
+.icon-profile-stroke:before,
+.icon-qr-code:before,
+.icon-qr-code-stroke:before,
+.icon-question-filled:before,
+.icon-question-stroke:before,
+.icon-radar-filled:before,
+.icon-radar-stroke:before,
+.icon-receipt:before,
+.icon-receipt-filled:before,
+.icon-receipt-stroke:before,
+.icon-recommended-for-standby:before,
+.icon-recommended-for-standby-filled:before,
+.icon-recommended-for-standby-stroke:before,
+.icon-recommended-for-standby-travel-but-monitor:before,
+.icon-recommended-for-standby-travel-but-monitor-stroke:before,
+.icon-recommended-for-standby-travel-but-watch-filled:before,
+.icon-reservation-filled:before,
+.icon-reservation-stroke:before,
+.icon-ride:before,
+.icon-ride-stroke:before,
+.icon-rising-sun:before,
+.icon-rising-sun-filled:before,
+.icon-rising-sun-stroke:before,
+.icon-round-trip-arrows:before,
+.icon-route-pending-government-approval:before,
+.icon-route-pending-government-approval-filled:before,
+.icon-search:before,
+.icon-search-filled:before,
+.icon-search-stroke:before,
+.icon-seat:before,
+.icon-seat-filled:before,
+.icon-seat-stroke:before,
+.icon-settings:before,
+.icon-settings-filled:before,
+.icon-settings-stroke:before,
+.icon-shopping-bag:before,
+.icon-shopping-bag-filled:before,
+.icon-shopping-bag-stroke:before,
+.icon-snowflake-stroke:before,
+.icon-sparkle-filled:before,
+.icon-sparkle-stroke:before,
+.icon-spraybottle:before,
+.icon-star-filled:before,
+.icon-star-stroke:before,
+.icon-sun:before,
+.icon-sun-filled:before,
+.icon-sun-rising-filled:before,
+.icon-sun-rising-stroke:before,
+.icon-sun-stroke:before,
+.icon-tag:before,
+.icon-tag-filled:before,
+.icon-ticket-filled:before,
+.icon-ticket-stroke:before,
+.icon-tiktok:before,
+.icon-twitter:before,
+.icon-unlock-filled:before,
+.icon-unlock-stroke:before,
+.icon-view-password:before,
+.icon-view-password-filled:before,
+.icon-view-password-stroke:before,
+.icon-warning-filled:before,
+.icon-warning-stroke:before,
+.icon-wifi:before,
+.icon-wifi-disabled:before,
+.icon-wine-and-spirits:before,
+.icon-wine-and-spirits-filled:before,
+.icon-wine-and-spirits-stroke:before,
+.icon-x-filled:before,
+.icon-x-lg:before,
+.icon-x-sm:before,
+.icon-x-social:before,
+.icon-x-stroke:before,
+.icon-youtube:before {
+  display: inline-block;
+  font-family: "ASIcons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icon-accessibility:before { content: "\f100"; }
+.icon-account-filled:before { content: "\f101"; }
+.icon-account-stroke:before { content: "\f102"; }
+.icon-add-to-calendar:before { content: "\f103"; }
+.icon-add-to-calendar-filled:before { content: "\f104"; }
+.icon-add-to-calendar-stroke:before { content: "\f105"; }
+.icon-air:before { content: "\f106"; }
+.icon-arrival-filled:before { content: "\f107"; }
+.icon-arrival-stroke:before { content: "\f108"; }
+.icon-arrow-down:before { content: "\f109"; }
+.icon-arrow-left:before { content: "\f10a"; }
+.icon-arrow-right:before { content: "\f10b"; }
+.icon-arrow-up:before { content: "\f10c"; }
+.icon-back-to-top:before { content: "\f10d"; }
+.icon-boarding:before { content: "\f10e"; }
+.icon-boarding-pass-filled:before { content: "\f10f"; }
+.icon-boarding-pass-stroke:before { content: "\f110"; }
+.icon-booking-filled:before { content: "\f111"; }
+.icon-booking-stroke:before { content: "\f112"; }
+.icon-calendar:before { content: "\f113"; }
+.icon-calendar-filled:before { content: "\f114"; }
+.icon-calendar-stroke:before { content: "\f115"; }
+.icon-car-rental:before { content: "\f116"; }
+.icon-car-rental-stroke:before { content: "\f117"; }
+.icon-carry-on:before { content: "\f118"; }
+.icon-carry-on-filled:before { content: "\f119"; }
+.icon-cart:before { content: "\f11a"; }
+.icon-cart-filled:before { content: "\f11b"; }
+.icon-cart-stroke:before { content: "\f11c"; }
+.icon-chain-link:before { content: "\f11d"; }
+.icon-chat:before { content: "\f11e"; }
+.icon-chat-filled:before { content: "\f11f"; }
+.icon-chat-stroke:before { content: "\f120"; }
+.icon-check-filled:before { content: "\f121"; }
+.icon-check-in:before { content: "\f122"; }
+.icon-check-in-stroke:before { content: "\f123"; }
+.icon-check-lg:before { content: "\f124"; }
+.icon-check-sm:before { content: "\f125"; }
+.icon-check-stroke:before { content: "\f126"; }
+.icon-checkmark-lg:before { content: "\f127"; }
+.icon-checkmark-sm:before { content: "\f128"; }
+.icon-checkmark-sml:before { content: "\f129"; }
+.icon-chevron-down:before { content: "\f12a"; }
+.icon-chevron-left:before { content: "\f12b"; }
+.icon-chevron-right:before { content: "\f12c"; }
+.icon-chevron-up:before { content: "\f12d"; }
+.icon-clean:before { content: "\f12e"; }
+.icon-clean-filled:before { content: "\f12f"; }
+.icon-clean-stroke:before { content: "\f130"; }
+.icon-clear:before { content: "\f131"; }
+.icon-clock-filled:before { content: "\f132"; }
+.icon-clock-stroke:before { content: "\f133"; }
+.icon-club49:before { content: "\f134"; }
+.icon-contract-fare:before { content: "\f135"; }
+.icon-contract-fare-filled:before { content: "\f136"; }
+.icon-contract-fare-stroke:before { content: "\f137"; }
+.icon-contract-mixed-fare:before { content: "\f138"; }
+.icon-contract-mixed-fare-filled:before { content: "\f139"; }
+.icon-contract-mixed-fare-stroke:before { content: "\f13a"; }
+.icon-copy-paste:before { content: "\f13b"; }
+.icon-copy-paste-stroke:before { content: "\f13c"; }
+.icon-covid-test:before { content: "\f13d"; }
+.icon-covid-test-filled:before { content: "\f13e"; }
+.icon-covid-test-stroke:before { content: "\f13f"; }
+.icon-credit-card:before { content: "\f140"; }
+.icon-credit-card-filled:before { content: "\f141"; }
+.icon-credit-card-stroke:before { content: "\f142"; }
+.icon-dashboard-filled:before { content: "\f143"; }
+.icon-dashboard-stroke:before { content: "\f144"; }
+.icon-departure-filled:before { content: "\f145"; }
+.icon-departure-stroke:before { content: "\f146"; }
+.icon-discount-code-applied:before { content: "\f147"; }
+.icon-discount-code-applied-filled:before { content: "\f148"; }
+.icon-discount-code-applied-stroke:before { content: "\f149"; }
+.icon-diverted:before { content: "\f14a"; }
+.icon-document-stroke:before { content: "\f14b"; }
+.icon-dollar-sign-filled:before { content: "\f14c"; }
+.icon-dollar-sign-lg:before { content: "\f14d"; }
+.icon-dollar-sign-sm:before { content: "\f14e"; }
+.icon-dollar-sign-stroke:before { content: "\f14f"; }
+.icon-download:before { content: "\f150"; }
+.icon-edit-filled:before { content: "\f151"; }
+.icon-edit-stroke:before { content: "\f152"; }
+.icon-elite:before { content: "\f153"; }
+.icon-elite-stroke:before { content: "\f154"; }
+.icon-entertainment:before { content: "\f155"; }
+.icon-entertainment-filled:before { content: "\f156"; }
+.icon-entertainment-stroke:before { content: "\f157"; }
+.icon-error:before { content: "\f158"; }
+.icon-error-filled:before { content: "\f159"; }
+.icon-error-stroke:before { content: "\f15a"; }
+.icon-external-link:before { content: "\f15b"; }
+.icon-external-link-md:before { content: "\f15c"; }
+.icon-external-link-sm:before { content: "\f15d"; }
+.icon-external-link-stroke:before { content: "\f15e"; }
+.icon-facebook:before { content: "\f15f"; }
+.icon-filter:before { content: "\f160"; }
+.icon-filter-filled:before { content: "\f161"; }
+.icon-filter-stroke:before { content: "\f162"; }
+.icon-first-class-legroom:before { content: "\f163"; }
+.icon-first-class-upgrade-available:before { content: "\f164"; }
+.icon-first-class-upgrade-available-filled:before { content: "\f165"; }
+.icon-first-class-upgrade-available-stroke:before { content: "\f166"; }
+.icon-first-class-upgrade-waitlist:before { content: "\f167"; }
+.icon-first-class-upgrade-waitlist-filled:before { content: "\f168"; }
+.icon-first-class-upgrade-waitlist-stroke:before { content: "\f169"; }
+.icon-flag-stroke:before { content: "\f16a"; }
+.icon-flight-cancelled:before { content: "\f16b"; }
+.icon-flight-cancelled-stroke:before { content: "\f16c"; }
+.icon-flight-changes:before { content: "\f16d"; }
+.icon-flight-delayed:before { content: "\f16e"; }
+.icon-flight-delayed-stroke:before { content: "\f16f"; }
+.icon-flight-details:before { content: "\f170"; }
+.icon-flight-on-time:before { content: "\f171"; }
+.icon-flight-on-time-stroke:before { content: "\f172"; }
+.icon-flight-pass:before { content: "\f173"; }
+.icon-flight-pass-filled:before { content: "\f174"; }
+.icon-flight-pass-stroke:before { content: "\f175"; }
+.icon-food-and-drink:before { content: "\f176"; }
+.icon-free-same-day-change:before { content: "\f177"; }
+.icon-free-same-day-change-stroke:before { content: "\f178"; }
+.icon-gift:before { content: "\f179"; }
+.icon-gift-filled:before { content: "\f17a"; }
+.icon-gift-stroke:before { content: "\f17b"; }
+.icon-global-language:before { content: "\f17c"; }
+.icon-global-language-stroke:before { content: "\f17d"; }
+.icon-gov-approval:before { content: "\f17e"; }
+.icon-government-fare:before { content: "\f17f"; }
+.icon-government-fare-filled:before { content: "\f180"; }
+.icon-government-fare-stroke:before { content: "\f181"; }
+.icon-government-mixed-fare:before { content: "\f182"; }
+.icon-government-mixed-fare-filled:before { content: "\f183"; }
+.icon-government-mixed-fare-stroke:before { content: "\f184"; }
+.icon-guest-filled:before { content: "\f185"; }
+.icon-guest-stroke:before { content: "\f186"; }
+.icon-hazmat-aerosol-filled:before { content: "\f187"; }
+.icon-hazmat-aerosol-stroke:before { content: "\f188"; }
+.icon-hazmat-canned-fuel-filled:before { content: "\f189"; }
+.icon-hazmat-canned-fuel-stroke:before { content: "\f18a"; }
+.icon-hazmat-fireworks-filled:before { content: "\f18b"; }
+.icon-hazmat-fireworks-stroke:before { content: "\f18c"; }
+.icon-hazmat-lighter-filled:before { content: "\f18d"; }
+.icon-hazmat-lighter-stroke:before { content: "\f18e"; }
+.icon-hazmat-lithium-batteries-filled:before { content: "\f18f"; }
+.icon-hazmat-lithium-batteries-stroke:before { content: "\f190"; }
+.icon-hazmat-loose-ammo-filled:before { content: "\f191"; }
+.icon-hazmat-loose-ammo-stroke:before { content: "\f192"; }
+.icon-hazmat-matches-filled:before { content: "\f193"; }
+.icon-hazmat-matches-stroke:before { content: "\f194"; }
+.icon-hazmat-oxygen-filled:before { content: "\f195"; }
+.icon-hazmat-oxygen-stroke:before { content: "\f196"; }
+.icon-hazmat-small-engine-filled:before { content: "\f197"; }
+.icon-hazmat-small-engine-stroke:before { content: "\f198"; }
+.icon-health:before { content: "\f199"; }
+.icon-heart-filled:before { content: "\f19a"; }
+.icon-heart-stroke:before { content: "\f19b"; }
+.icon-hide-password:before { content: "\f19c"; }
+.icon-hide-password-filled:before { content: "\f19d"; }
+.icon-hide-password-stroke:before { content: "\f19e"; }
+.icon-home-filled:before { content: "\f19f"; }
+.icon-home-stroke:before { content: "\f1a0"; }
+.icon-hotel:before { content: "\f1a1"; }
+.icon-hotel-filled:before { content: "\f1a2"; }
+.icon-hotel-stroke:before { content: "\f1a3"; }
+.icon-id:before { content: "\f1a4"; }
+.icon-id-filled:before { content: "\f1a5"; }
+.icon-id-stroke:before { content: "\f1a6"; }
+.icon-information-filled:before { content: "\f1a7"; }
+.icon-information-stroke:before { content: "\f1a8"; }
+.icon-instagram:before { content: "\f1a9"; }
+.icon-lap-infant:before { content: "\f1aa"; }
+.icon-lap-infant-stroke:before { content: "\f1ab"; }
+.icon-lavatory:before { content: "\f1ac"; }
+.icon-lavatory-stroke:before { content: "\f1ad"; }
+.icon-linkedin:before { content: "\f1ae"; }
+.icon-location-filled:before { content: "\f1af"; }
+.icon-location-finder:before { content: "\f1b0"; }
+.icon-location-found:before { content: "\f1b1"; }
+.icon-location-stroke:before { content: "\f1b2"; }
+.icon-lock-filled:before { content: "\f1b3"; }
+.icon-lock-stroke:before { content: "\f1b4"; }
+.icon-lounge:before { content: "\f1b5"; }
+.icon-lounge-stroke:before { content: "\f1b6"; }
+.icon-luggage:before { content: "\f1b7"; }
+.icon-luggage-filled:before { content: "\f1b8"; }
+.icon-luggage-stroke:before { content: "\f1b9"; }
+.icon-lyft:before { content: "\f1ba"; }
+.icon-mail:before { content: "\f1bb"; }
+.icon-mask:before { content: "\f1bc"; }
+.icon-mask-filled:before { content: "\f1bd"; }
+.icon-mask-stroke:before { content: "\f1be"; }
+.icon-medical-filled:before { content: "\f1bf"; }
+.icon-medical-stroke:before { content: "\f1c0"; }
+.icon-minus-filled:before { content: "\f1c1"; }
+.icon-minus-lg:before { content: "\f1c2"; }
+.icon-minus-lg-stroke:before { content: "\f1c3"; }
+.icon-minus-sm:before { content: "\f1c4"; }
+.icon-minus-sm-stroke:before { content: "\f1c5"; }
+.icon-minus-stroke:before { content: "\f1c6"; }
+.icon-mixed-cabin-itinerary:before { content: "\f1c7"; }
+.icon-moon-filled:before { content: "\f1c8"; }
+.icon-moon-stroke:before { content: "\f1c9"; }
+.icon-more-filled:before { content: "\f1ca"; }
+.icon-more-stroke:before { content: "\f1cb"; }
+.icon-mountain-stroke:before { content: "\f1cc"; }
+.icon-mug-filled:before { content: "\f1cd"; }
+.icon-mug-stroke:before { content: "\f1ce"; }
+.icon-multipax:before { content: "\f1cf"; }
+.icon-multipax-filled:before { content: "\f1d0"; }
+.icon-multipax-stroke:before { content: "\f1d1"; }
+.icon-navigation-menu:before { content: "\f1d2"; }
+.icon-new-window:before { content: "\f1d3"; }
+.icon-new-window-filled:before { content: "\f1d4"; }
+.icon-new-window-stroke:before { content: "\f1d5"; }
+.icon-not-recommended-for-standby:before { content: "\f1d6"; }
+.icon-not-recommended-for-standby-filled:before { content: "\f1d7"; }
+.icon-not-recommended-for-standby-stroke:before { content: "\f1d8"; }
+.icon-notification:before { content: "\f1d9"; }
+.icon-notification-active:before { content: "\f1da"; }
+.icon-notification-active-filled:before { content: "\f1db"; }
+.icon-notification-active-stroke:before { content: "\f1dc"; }
+.icon-notification-filled:before { content: "\f1dd"; }
+.icon-notification-stroke:before { content: "\f1de"; }
+.icon-one-way-arrow:before { content: "\f1df"; }
+.icon-passenger:before { content: "\f1e0"; }
+.icon-passenger-filled:before { content: "\f1e1"; }
+.icon-passenger-stroke:before { content: "\f1e2"; }
+.icon-penguin:before { content: "\f1e3"; }
+.icon-phone:before { content: "\f1e4"; }
+.icon-phone-filled:before { content: "\f1e5"; }
+.icon-phone-stroke:before { content: "\f1e6"; }
+.icon-pin-filled:before { content: "\f1e7"; }
+.icon-pin-stroke:before { content: "\f1e8"; }
+.icon-pin-trip:before { content: "\f1e9"; }
+.icon-pin-trip-filled:before { content: "\f1ea"; }
+.icon-pin-trip-stroke:before { content: "\f1eb"; }
+.icon-plane-diag-fill:before { content: "\f1ec"; }
+.icon-plane-diag-stroke:before { content: "\f1ed"; }
+.icon-plane-side-fill:before { content: "\f1ee"; }
+.icon-plane-side-stroke:before { content: "\f1ef"; }
+.icon-plane-up-fill:before { content: "\f1f0"; }
+.icon-plane-up-stroke:before { content: "\f1f1"; }
+.icon-plug:before { content: "\f1f2"; }
+.icon-plug-filled:before { content: "\f1f3"; }
+.icon-plug-stroke:before { content: "\f1f4"; }
+.icon-plus-filled:before { content: "\f1f5"; }
+.icon-plus-lg:before { content: "\f1f6"; }
+.icon-plus-sm:before { content: "\f1f7"; }
+.icon-plus-stroke:before { content: "\f1f8"; }
+.icon-premium-class-legroom:before { content: "\f1f9"; }
+.icon-premium-class-upgrade-available:before { content: "\f1fa"; }
+.icon-premium-class-upgrade-available-stroke:before { content: "\f1fb"; }
+.icon-premium-class-upgrade-waitlist:before { content: "\f1fc"; }
+.icon-premium-class-upgrade-waitlist-filled:before { content: "\f1fd"; }
+.icon-premium-class-upgrade-waitlist-stroke:before { content: "\f1fe"; }
+.icon-printer:before { content: "\f1ff"; }
+.icon-printer-filled:before { content: "\f200"; }
+.icon-printer-stroke:before { content: "\f201"; }
+.icon-profile-filled:before { content: "\f202"; }
+.icon-profile-stroke:before { content: "\f203"; }
+.icon-qr-code:before { content: "\f204"; }
+.icon-qr-code-stroke:before { content: "\f205"; }
+.icon-question-filled:before { content: "\f206"; }
+.icon-question-stroke:before { content: "\f207"; }
+.icon-radar-filled:before { content: "\f208"; }
+.icon-radar-stroke:before { content: "\f209"; }
+.icon-receipt:before { content: "\f20a"; }
+.icon-receipt-filled:before { content: "\f20b"; }
+.icon-receipt-stroke:before { content: "\f20c"; }
+.icon-recommended-for-standby:before { content: "\f20d"; }
+.icon-recommended-for-standby-filled:before { content: "\f20e"; }
+.icon-recommended-for-standby-stroke:before { content: "\f20f"; }
+.icon-recommended-for-standby-travel-but-monitor:before { content: "\f210"; }
+.icon-recommended-for-standby-travel-but-monitor-stroke:before { content: "\f211"; }
+.icon-recommended-for-standby-travel-but-watch-filled:before { content: "\f212"; }
+.icon-reservation-filled:before { content: "\f213"; }
+.icon-reservation-stroke:before { content: "\f214"; }
+.icon-ride:before { content: "\f215"; }
+.icon-ride-stroke:before { content: "\f216"; }
+.icon-rising-sun:before { content: "\f217"; }
+.icon-rising-sun-filled:before { content: "\f218"; }
+.icon-rising-sun-stroke:before { content: "\f219"; }
+.icon-round-trip-arrows:before { content: "\f21a"; }
+.icon-route-pending-government-approval:before { content: "\f21b"; }
+.icon-route-pending-government-approval-filled:before { content: "\f21c"; }
+.icon-search:before { content: "\f21d"; }
+.icon-search-filled:before { content: "\f21e"; }
+.icon-search-stroke:before { content: "\f21f"; }
+.icon-seat:before { content: "\f220"; }
+.icon-seat-filled:before { content: "\f221"; }
+.icon-seat-stroke:before { content: "\f222"; }
+.icon-settings:before { content: "\f223"; }
+.icon-settings-filled:before { content: "\f224"; }
+.icon-settings-stroke:before { content: "\f225"; }
+.icon-shopping-bag:before { content: "\f226"; }
+.icon-shopping-bag-filled:before { content: "\f227"; }
+.icon-shopping-bag-stroke:before { content: "\f228"; }
+.icon-snowflake-stroke:before { content: "\f229"; }
+.icon-sparkle-filled:before { content: "\f22a"; }
+.icon-sparkle-stroke:before { content: "\f22b"; }
+.icon-spraybottle:before { content: "\f22c"; }
+.icon-star-filled:before { content: "\f22d"; }
+.icon-star-stroke:before { content: "\f22e"; }
+.icon-sun:before { content: "\f22f"; }
+.icon-sun-filled:before { content: "\f230"; }
+.icon-sun-rising-filled:before { content: "\f231"; }
+.icon-sun-rising-stroke:before { content: "\f232"; }
+.icon-sun-stroke:before { content: "\f233"; }
+.icon-tag:before { content: "\f234"; }
+.icon-tag-filled:before { content: "\f235"; }
+.icon-ticket-filled:before { content: "\f236"; }
+.icon-ticket-stroke:before { content: "\f237"; }
+.icon-tiktok:before { content: "\f238"; }
+.icon-twitter:before { content: "\f239"; }
+.icon-unlock-filled:before { content: "\f23a"; }
+.icon-unlock-stroke:before { content: "\f23b"; }
+.icon-view-password:before { content: "\f23c"; }
+.icon-view-password-filled:before { content: "\f23d"; }
+.icon-view-password-stroke:before { content: "\f23e"; }
+.icon-warning-filled:before { content: "\f23f"; }
+.icon-warning-stroke:before { content: "\f240"; }
+.icon-wifi:before { content: "\f241"; }
+.icon-wifi-disabled:before { content: "\f242"; }
+.icon-wine-and-spirits:before { content: "\f243"; }
+.icon-wine-and-spirits-filled:before { content: "\f244"; }
+.icon-wine-and-spirits-stroke:before { content: "\f245"; }
+.icon-x-filled:before { content: "\f246"; }
+.icon-x-lg:before { content: "\f247"; }
+.icon-x-sm:before { content: "\f248"; }
+.icon-x-social:before { content: "\f249"; }
+.icon-x-stroke:before { content: "\f24a"; }
+.icon-youtube:before { content: "\f24b"; }

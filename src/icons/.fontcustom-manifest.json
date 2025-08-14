@@ -1,0 +1,1377 @@
+{
+  "checksum": {
+    "previous": "f0321f0fecd859265f8d4ad190bde7dc8ee3e44afbac55e022cb5dbb6df741ca",
+    "current": "f0321f0fecd859265f8d4ad190bde7dc8ee3e44afbac55e022cb5dbb6df741ca"
+  },
+  "fonts": [
+    "iconFonts/ASIcons.ttf",
+    "iconFonts/ASIcons.svg",
+    "iconFonts/ASIcons.woff",
+    "iconFonts/ASIcons.eot",
+    "iconFonts/ASIcons.woff2"
+  ],
+  "glyphs": {
+    "accessibility": {
+      "codepoint": 61696,
+      "source": "./accessibility.svg"
+    },
+    "account-filled": {
+      "codepoint": 61697,
+      "source": "./account-filled.svg"
+    },
+    "account-stroke": {
+      "codepoint": 61698,
+      "source": "./account-stroke.svg"
+    },
+    "add-to-calendar": {
+      "codepoint": 61699,
+      "source": "./add-to-calendar.svg"
+    },
+    "add-to-calendar-filled": {
+      "codepoint": 61700,
+      "source": "./add-to-calendar-filled.svg"
+    },
+    "add-to-calendar-stroke": {
+      "codepoint": 61701,
+      "source": "./add-to-calendar-stroke.svg"
+    },
+    "air": {
+      "codepoint": 61702,
+      "source": "./air.svg"
+    },
+    "arrival-filled": {
+      "codepoint": 61703,
+      "source": "./arrival-filled.svg"
+    },
+    "arrival-stroke": {
+      "codepoint": 61704,
+      "source": "./arrival-stroke.svg"
+    },
+    "arrow-down": {
+      "codepoint": 61705,
+      "source": "./arrow-down.svg"
+    },
+    "arrow-left": {
+      "codepoint": 61706,
+      "source": "./arrow-left.svg"
+    },
+    "arrow-right": {
+      "codepoint": 61707,
+      "source": "./arrow-right.svg"
+    },
+    "arrow-up": {
+      "codepoint": 61708,
+      "source": "./arrow-up.svg"
+    },
+    "back-to-top": {
+      "codepoint": 61709,
+      "source": "./back-to-top.svg"
+    },
+    "boarding": {
+      "codepoint": 61710,
+      "source": "./boarding.svg"
+    },
+    "boarding-pass-filled": {
+      "codepoint": 61711,
+      "source": "./boarding-pass-filled.svg"
+    },
+    "boarding-pass-stroke": {
+      "codepoint": 61712,
+      "source": "./boarding-pass-stroke.svg"
+    },
+    "booking-filled": {
+      "codepoint": 61713,
+      "source": "./booking-filled.svg"
+    },
+    "booking-stroke": {
+      "codepoint": 61714,
+      "source": "./booking-stroke.svg"
+    },
+    "calendar": {
+      "codepoint": 61715,
+      "source": "./calendar.svg"
+    },
+    "calendar-filled": {
+      "codepoint": 61716,
+      "source": "./calendar-filled.svg"
+    },
+    "calendar-stroke": {
+      "codepoint": 61717,
+      "source": "./calendar-stroke.svg"
+    },
+    "car-rental": {
+      "codepoint": 61718,
+      "source": "./car-rental.svg"
+    },
+    "car-rental-stroke": {
+      "codepoint": 61719,
+      "source": "./car-rental-stroke.svg"
+    },
+    "carry-on": {
+      "codepoint": 61720,
+      "source": "./carry-on.svg"
+    },
+    "carry-on-filled": {
+      "codepoint": 61721,
+      "source": "./carry-on-filled.svg"
+    },
+    "cart": {
+      "codepoint": 61722,
+      "source": "./cart.svg"
+    },
+    "cart-filled": {
+      "codepoint": 61723,
+      "source": "./cart-filled.svg"
+    },
+    "cart-stroke": {
+      "codepoint": 61724,
+      "source": "./cart-stroke.svg"
+    },
+    "chain-link": {
+      "codepoint": 61725,
+      "source": "./chain-link.svg"
+    },
+    "chat": {
+      "codepoint": 61726,
+      "source": "./chat.svg"
+    },
+    "chat-filled": {
+      "codepoint": 61727,
+      "source": "./chat-filled.svg"
+    },
+    "chat-stroke": {
+      "codepoint": 61728,
+      "source": "./chat-stroke.svg"
+    },
+    "check-filled": {
+      "codepoint": 61729,
+      "source": "./check-filled.svg"
+    },
+    "check-in": {
+      "codepoint": 61730,
+      "source": "./check-in.svg"
+    },
+    "check-in-stroke": {
+      "codepoint": 61731,
+      "source": "./check-in-stroke.svg"
+    },
+    "check-lg": {
+      "codepoint": 61732,
+      "source": "./check-lg.svg"
+    },
+    "check-sm": {
+      "codepoint": 61733,
+      "source": "./check-sm.svg"
+    },
+    "check-stroke": {
+      "codepoint": 61734,
+      "source": "./check-stroke.svg"
+    },
+    "checkmark-lg": {
+      "codepoint": 61735,
+      "source": "./checkmark-lg.svg"
+    },
+    "checkmark-sm": {
+      "codepoint": 61736,
+      "source": "./checkmark-sm.svg"
+    },
+    "checkmark-sml": {
+      "codepoint": 61737,
+      "source": "./checkmark-sml.svg"
+    },
+    "chevron-down": {
+      "codepoint": 61738,
+      "source": "./chevron-down.svg"
+    },
+    "chevron-left": {
+      "codepoint": 61739,
+      "source": "./chevron-left.svg"
+    },
+    "chevron-right": {
+      "codepoint": 61740,
+      "source": "./chevron-right.svg"
+    },
+    "chevron-up": {
+      "codepoint": 61741,
+      "source": "./chevron-up.svg"
+    },
+    "clean": {
+      "codepoint": 61742,
+      "source": "./clean.svg"
+    },
+    "clean-filled": {
+      "codepoint": 61743,
+      "source": "./clean-filled.svg"
+    },
+    "clean-stroke": {
+      "codepoint": 61744,
+      "source": "./clean-stroke.svg"
+    },
+    "clear": {
+      "codepoint": 61745,
+      "source": "./clear.svg"
+    },
+    "clock-filled": {
+      "codepoint": 61746,
+      "source": "./clock-filled.svg"
+    },
+    "clock-stroke": {
+      "codepoint": 61747,
+      "source": "./clock-stroke.svg"
+    },
+    "club49": {
+      "codepoint": 61748,
+      "source": "./club49.svg"
+    },
+    "contract-fare": {
+      "codepoint": 61749,
+      "source": "./contract-fare.svg"
+    },
+    "contract-fare-filled": {
+      "codepoint": 61750,
+      "source": "./contract-fare-filled.svg"
+    },
+    "contract-fare-stroke": {
+      "codepoint": 61751,
+      "source": "./contract-fare-stroke.svg"
+    },
+    "contract-mixed-fare": {
+      "codepoint": 61752,
+      "source": "./contract-mixed-fare.svg"
+    },
+    "contract-mixed-fare-filled": {
+      "codepoint": 61753,
+      "source": "./contract-mixed-fare-filled.svg"
+    },
+    "contract-mixed-fare-stroke": {
+      "codepoint": 61754,
+      "source": "./contract-mixed-fare-stroke.svg"
+    },
+    "copy-paste": {
+      "codepoint": 61755,
+      "source": "./copy-paste.svg"
+    },
+    "copy-paste-stroke": {
+      "codepoint": 61756,
+      "source": "./copy-paste-stroke.svg"
+    },
+    "covid-test": {
+      "codepoint": 61757,
+      "source": "./covid-test.svg"
+    },
+    "covid-test-filled": {
+      "codepoint": 61758,
+      "source": "./covid-test-filled.svg"
+    },
+    "covid-test-stroke": {
+      "codepoint": 61759,
+      "source": "./covid-test-stroke.svg"
+    },
+    "credit-card": {
+      "codepoint": 61760,
+      "source": "./credit-card.svg"
+    },
+    "credit-card-filled": {
+      "codepoint": 61761,
+      "source": "./credit-card-filled.svg"
+    },
+    "credit-card-stroke": {
+      "codepoint": 61762,
+      "source": "./credit-card-stroke.svg"
+    },
+    "dashboard-filled": {
+      "codepoint": 61763,
+      "source": "./dashboard-filled.svg"
+    },
+    "dashboard-stroke": {
+      "codepoint": 61764,
+      "source": "./dashboard-stroke.svg"
+    },
+    "departure-filled": {
+      "codepoint": 61765,
+      "source": "./departure-filled.svg"
+    },
+    "departure-stroke": {
+      "codepoint": 61766,
+      "source": "./departure-stroke.svg"
+    },
+    "discount-code-applied": {
+      "codepoint": 61767,
+      "source": "./discount-code-applied.svg"
+    },
+    "discount-code-applied-filled": {
+      "codepoint": 61768,
+      "source": "./discount-code-applied-filled.svg"
+    },
+    "discount-code-applied-stroke": {
+      "codepoint": 61769,
+      "source": "./discount-code-applied-stroke.svg"
+    },
+    "diverted": {
+      "codepoint": 61770,
+      "source": "./diverted.svg"
+    },
+    "document-stroke": {
+      "codepoint": 61771,
+      "source": "./document-stroke.svg"
+    },
+    "dollar-sign-filled": {
+      "codepoint": 61772,
+      "source": "./dollar-sign-filled.svg"
+    },
+    "dollar-sign-lg": {
+      "codepoint": 61773,
+      "source": "./dollar-sign-lg.svg"
+    },
+    "dollar-sign-sm": {
+      "codepoint": 61774,
+      "source": "./dollar-sign-sm.svg"
+    },
+    "dollar-sign-stroke": {
+      "codepoint": 61775,
+      "source": "./dollar-sign-stroke.svg"
+    },
+    "download": {
+      "codepoint": 61776,
+      "source": "./download.svg"
+    },
+    "edit-filled": {
+      "codepoint": 61777,
+      "source": "./edit-filled.svg"
+    },
+    "edit-stroke": {
+      "codepoint": 61778,
+      "source": "./edit-stroke.svg"
+    },
+    "elite": {
+      "codepoint": 61779,
+      "source": "./elite.svg"
+    },
+    "elite-stroke": {
+      "codepoint": 61780,
+      "source": "./elite-stroke.svg"
+    },
+    "entertainment": {
+      "codepoint": 61781,
+      "source": "./entertainment.svg"
+    },
+    "entertainment-filled": {
+      "codepoint": 61782,
+      "source": "./entertainment-filled.svg"
+    },
+    "entertainment-stroke": {
+      "codepoint": 61783,
+      "source": "./entertainment-stroke.svg"
+    },
+    "error": {
+      "codepoint": 61784,
+      "source": "./error.svg"
+    },
+    "error-filled": {
+      "codepoint": 61785,
+      "source": "./error-filled.svg"
+    },
+    "error-stroke": {
+      "codepoint": 61786,
+      "source": "./error-stroke.svg"
+    },
+    "external-link": {
+      "codepoint": 61787,
+      "source": "./external-link.svg"
+    },
+    "external-link-md": {
+      "codepoint": 61788,
+      "source": "./external-link-md.svg"
+    },
+    "external-link-sm": {
+      "codepoint": 61789,
+      "source": "./external-link-sm.svg"
+    },
+    "external-link-stroke": {
+      "codepoint": 61790,
+      "source": "./external-link-stroke.svg"
+    },
+    "facebook": {
+      "codepoint": 61791,
+      "source": "./facebook.svg"
+    },
+    "filter": {
+      "codepoint": 61792,
+      "source": "./filter.svg"
+    },
+    "filter-filled": {
+      "codepoint": 61793,
+      "source": "./filter-filled.svg"
+    },
+    "filter-stroke": {
+      "codepoint": 61794,
+      "source": "./filter-stroke.svg"
+    },
+    "first-class-legroom": {
+      "codepoint": 61795,
+      "source": "./first-class-legroom.svg"
+    },
+    "first-class-upgrade-available": {
+      "codepoint": 61796,
+      "source": "./first-class-upgrade-available.svg"
+    },
+    "first-class-upgrade-available-filled": {
+      "codepoint": 61797,
+      "source": "./first-class-upgrade-available-filled.svg"
+    },
+    "first-class-upgrade-available-stroke": {
+      "codepoint": 61798,
+      "source": "./first-class-upgrade-available-stroke.svg"
+    },
+    "first-class-upgrade-waitlist": {
+      "codepoint": 61799,
+      "source": "./first-class-upgrade-waitlist.svg"
+    },
+    "first-class-upgrade-waitlist-filled": {
+      "codepoint": 61800,
+      "source": "./first-class-upgrade-waitlist-filled.svg"
+    },
+    "first-class-upgrade-waitlist-stroke": {
+      "codepoint": 61801,
+      "source": "./first-class-upgrade-waitlist-stroke.svg"
+    },
+    "flag-stroke": {
+      "codepoint": 61802,
+      "source": "./flag-stroke.svg"
+    },
+    "flight-cancelled": {
+      "codepoint": 61803,
+      "source": "./flight-cancelled.svg"
+    },
+    "flight-cancelled-stroke": {
+      "codepoint": 61804,
+      "source": "./flight-cancelled-stroke.svg"
+    },
+    "flight-changes": {
+      "codepoint": 61805,
+      "source": "./flight-changes.svg"
+    },
+    "flight-delayed": {
+      "codepoint": 61806,
+      "source": "./flight-delayed.svg"
+    },
+    "flight-delayed-stroke": {
+      "codepoint": 61807,
+      "source": "./flight-delayed-stroke.svg"
+    },
+    "flight-details": {
+      "codepoint": 61808,
+      "source": "./flight-details.svg"
+    },
+    "flight-on-time": {
+      "codepoint": 61809,
+      "source": "./flight-on-time.svg"
+    },
+    "flight-on-time-stroke": {
+      "codepoint": 61810,
+      "source": "./flight-on-time-stroke.svg"
+    },
+    "flight-pass": {
+      "codepoint": 61811,
+      "source": "./flight-pass.svg"
+    },
+    "flight-pass-filled": {
+      "codepoint": 61812,
+      "source": "./flight-pass-filled.svg"
+    },
+    "flight-pass-stroke": {
+      "codepoint": 61813,
+      "source": "./flight-pass-stroke.svg"
+    },
+    "food-and-drink": {
+      "codepoint": 61814,
+      "source": "./food-and-drink.svg"
+    },
+    "free-same-day-change": {
+      "codepoint": 61815,
+      "source": "./free-same-day-change.svg"
+    },
+    "free-same-day-change-stroke": {
+      "codepoint": 61816,
+      "source": "./free-same-day-change-stroke.svg"
+    },
+    "gift": {
+      "codepoint": 61817,
+      "source": "./gift.svg"
+    },
+    "gift-filled": {
+      "codepoint": 61818,
+      "source": "./gift-filled.svg"
+    },
+    "gift-stroke": {
+      "codepoint": 61819,
+      "source": "./gift-stroke.svg"
+    },
+    "global-language": {
+      "codepoint": 61820,
+      "source": "./global-language.svg"
+    },
+    "global-language-stroke": {
+      "codepoint": 61821,
+      "source": "./global-language-stroke.svg"
+    },
+    "gov-approval": {
+      "codepoint": 61822,
+      "source": "./gov-approval.svg"
+    },
+    "government-fare": {
+      "codepoint": 61823,
+      "source": "./government-fare.svg"
+    },
+    "government-fare-filled": {
+      "codepoint": 61824,
+      "source": "./government-fare-filled.svg"
+    },
+    "government-fare-stroke": {
+      "codepoint": 61825,
+      "source": "./government-fare-stroke.svg"
+    },
+    "government-mixed-fare": {
+      "codepoint": 61826,
+      "source": "./government-mixed-fare.svg"
+    },
+    "government-mixed-fare-filled": {
+      "codepoint": 61827,
+      "source": "./government-mixed-fare-filled.svg"
+    },
+    "government-mixed-fare-stroke": {
+      "codepoint": 61828,
+      "source": "./government-mixed-fare-stroke.svg"
+    },
+    "guest-filled": {
+      "codepoint": 61829,
+      "source": "./guest-filled.svg"
+    },
+    "guest-stroke": {
+      "codepoint": 61830,
+      "source": "./guest-stroke.svg"
+    },
+    "hazmat-aerosol-filled": {
+      "codepoint": 61831,
+      "source": "./hazmat-aerosol-filled.svg"
+    },
+    "hazmat-aerosol-stroke": {
+      "codepoint": 61832,
+      "source": "./hazmat-aerosol-stroke.svg"
+    },
+    "hazmat-canned-fuel-filled": {
+      "codepoint": 61833,
+      "source": "./hazmat-canned-fuel-filled.svg"
+    },
+    "hazmat-canned-fuel-stroke": {
+      "codepoint": 61834,
+      "source": "./hazmat-canned-fuel-stroke.svg"
+    },
+    "hazmat-fireworks-filled": {
+      "codepoint": 61835,
+      "source": "./hazmat-fireworks-filled.svg"
+    },
+    "hazmat-fireworks-stroke": {
+      "codepoint": 61836,
+      "source": "./hazmat-fireworks-stroke.svg"
+    },
+    "hazmat-lighter-filled": {
+      "codepoint": 61837,
+      "source": "./hazmat-lighter-filled.svg"
+    },
+    "hazmat-lighter-stroke": {
+      "codepoint": 61838,
+      "source": "./hazmat-lighter-stroke.svg"
+    },
+    "hazmat-lithium-batteries-filled": {
+      "codepoint": 61839,
+      "source": "./hazmat-lithium-batteries-filled.svg"
+    },
+    "hazmat-lithium-batteries-stroke": {
+      "codepoint": 61840,
+      "source": "./hazmat-lithium-batteries-stroke.svg"
+    },
+    "hazmat-loose-ammo-filled": {
+      "codepoint": 61841,
+      "source": "./hazmat-loose-ammo-filled.svg"
+    },
+    "hazmat-loose-ammo-stroke": {
+      "codepoint": 61842,
+      "source": "./hazmat-loose-ammo-stroke.svg"
+    },
+    "hazmat-matches-filled": {
+      "codepoint": 61843,
+      "source": "./hazmat-matches-filled.svg"
+    },
+    "hazmat-matches-stroke": {
+      "codepoint": 61844,
+      "source": "./hazmat-matches-stroke.svg"
+    },
+    "hazmat-oxygen-filled": {
+      "codepoint": 61845,
+      "source": "./hazmat-oxygen-filled.svg"
+    },
+    "hazmat-oxygen-stroke": {
+      "codepoint": 61846,
+      "source": "./hazmat-oxygen-stroke.svg"
+    },
+    "hazmat-small-engine-filled": {
+      "codepoint": 61847,
+      "source": "./hazmat-small-engine-filled.svg"
+    },
+    "hazmat-small-engine-stroke": {
+      "codepoint": 61848,
+      "source": "./hazmat-small-engine-stroke.svg"
+    },
+    "health": {
+      "codepoint": 61849,
+      "source": "./health.svg"
+    },
+    "heart-filled": {
+      "codepoint": 61850,
+      "source": "./heart-filled.svg"
+    },
+    "heart-stroke": {
+      "codepoint": 61851,
+      "source": "./heart-stroke.svg"
+    },
+    "hide-password": {
+      "codepoint": 61852,
+      "source": "./hide-password.svg"
+    },
+    "hide-password-filled": {
+      "codepoint": 61853,
+      "source": "./hide-password-filled.svg"
+    },
+    "hide-password-stroke": {
+      "codepoint": 61854,
+      "source": "./hide-password-stroke.svg"
+    },
+    "home-filled": {
+      "codepoint": 61855,
+      "source": "./home-filled.svg"
+    },
+    "home-stroke": {
+      "codepoint": 61856,
+      "source": "./home-stroke.svg"
+    },
+    "hotel": {
+      "codepoint": 61857,
+      "source": "./hotel.svg"
+    },
+    "hotel-filled": {
+      "codepoint": 61858,
+      "source": "./hotel-filled.svg"
+    },
+    "hotel-stroke": {
+      "codepoint": 61859,
+      "source": "./hotel-stroke.svg"
+    },
+    "id": {
+      "codepoint": 61860,
+      "source": "./id.svg"
+    },
+    "id-filled": {
+      "codepoint": 61861,
+      "source": "./id-filled.svg"
+    },
+    "id-stroke": {
+      "codepoint": 61862,
+      "source": "./id-stroke.svg"
+    },
+    "information-filled": {
+      "codepoint": 61863,
+      "source": "./information-filled.svg"
+    },
+    "information-stroke": {
+      "codepoint": 61864,
+      "source": "./information-stroke.svg"
+    },
+    "instagram": {
+      "codepoint": 61865,
+      "source": "./instagram.svg"
+    },
+    "lap-infant": {
+      "codepoint": 61866,
+      "source": "./lap-infant.svg"
+    },
+    "lap-infant-stroke": {
+      "codepoint": 61867,
+      "source": "./lap-infant-stroke.svg"
+    },
+    "lavatory": {
+      "codepoint": 61868,
+      "source": "./lavatory.svg"
+    },
+    "lavatory-stroke": {
+      "codepoint": 61869,
+      "source": "./lavatory-stroke.svg"
+    },
+    "linkedin": {
+      "codepoint": 61870,
+      "source": "./linkedin.svg"
+    },
+    "location-filled": {
+      "codepoint": 61871,
+      "source": "./location-filled.svg"
+    },
+    "location-finder": {
+      "codepoint": 61872,
+      "source": "./location-finder.svg"
+    },
+    "location-found": {
+      "codepoint": 61873,
+      "source": "./location-found.svg"
+    },
+    "location-stroke": {
+      "codepoint": 61874,
+      "source": "./location-stroke.svg"
+    },
+    "lock-filled": {
+      "codepoint": 61875,
+      "source": "./lock-filled.svg"
+    },
+    "lock-stroke": {
+      "codepoint": 61876,
+      "source": "./lock-stroke.svg"
+    },
+    "lounge": {
+      "codepoint": 61877,
+      "source": "./lounge.svg"
+    },
+    "lounge-stroke": {
+      "codepoint": 61878,
+      "source": "./lounge-stroke.svg"
+    },
+    "luggage": {
+      "codepoint": 61879,
+      "source": "./luggage.svg"
+    },
+    "luggage-filled": {
+      "codepoint": 61880,
+      "source": "./luggage-filled.svg"
+    },
+    "luggage-stroke": {
+      "codepoint": 61881,
+      "source": "./luggage-stroke.svg"
+    },
+    "lyft": {
+      "codepoint": 61882,
+      "source": "./lyft.svg"
+    },
+    "mail": {
+      "codepoint": 61883,
+      "source": "./mail.svg"
+    },
+    "mask": {
+      "codepoint": 61884,
+      "source": "./mask.svg"
+    },
+    "mask-filled": {
+      "codepoint": 61885,
+      "source": "./mask-filled.svg"
+    },
+    "mask-stroke": {
+      "codepoint": 61886,
+      "source": "./mask-stroke.svg"
+    },
+    "medical-filled": {
+      "codepoint": 61887,
+      "source": "./medical-filled.svg"
+    },
+    "medical-stroke": {
+      "codepoint": 61888,
+      "source": "./medical-stroke.svg"
+    },
+    "minus-filled": {
+      "codepoint": 61889,
+      "source": "./minus-filled.svg"
+    },
+    "minus-lg": {
+      "codepoint": 61890,
+      "source": "./minus-lg.svg"
+    },
+    "minus-lg-stroke": {
+      "codepoint": 61891,
+      "source": "./minus-lg-stroke.svg"
+    },
+    "minus-sm": {
+      "codepoint": 61892,
+      "source": "./minus-sm.svg"
+    },
+    "minus-sm-stroke": {
+      "codepoint": 61893,
+      "source": "./minus-sm-stroke.svg"
+    },
+    "minus-stroke": {
+      "codepoint": 61894,
+      "source": "./minus-stroke.svg"
+    },
+    "mixed-cabin-itinerary": {
+      "codepoint": 61895,
+      "source": "./mixed-cabin-itinerary.svg"
+    },
+    "moon-filled": {
+      "codepoint": 61896,
+      "source": "./moon-filled.svg"
+    },
+    "moon-stroke": {
+      "codepoint": 61897,
+      "source": "./moon-stroke.svg"
+    },
+    "more-filled": {
+      "codepoint": 61898,
+      "source": "./more-filled.svg"
+    },
+    "more-stroke": {
+      "codepoint": 61899,
+      "source": "./more-stroke.svg"
+    },
+    "mountain-stroke": {
+      "codepoint": 61900,
+      "source": "./mountain-stroke.svg"
+    },
+    "mug-filled": {
+      "codepoint": 61901,
+      "source": "./mug-filled.svg"
+    },
+    "mug-stroke": {
+      "codepoint": 61902,
+      "source": "./mug-stroke.svg"
+    },
+    "multipax": {
+      "codepoint": 61903,
+      "source": "./multipax.svg"
+    },
+    "multipax-filled": {
+      "codepoint": 61904,
+      "source": "./multipax-filled.svg"
+    },
+    "multipax-stroke": {
+      "codepoint": 61905,
+      "source": "./multipax-stroke.svg"
+    },
+    "navigation-menu": {
+      "codepoint": 61906,
+      "source": "./navigation-menu.svg"
+    },
+    "new-window": {
+      "codepoint": 61907,
+      "source": "./new-window.svg"
+    },
+    "new-window-filled": {
+      "codepoint": 61908,
+      "source": "./new-window-filled.svg"
+    },
+    "new-window-stroke": {
+      "codepoint": 61909,
+      "source": "./new-window-stroke.svg"
+    },
+    "not-recommended-for-standby": {
+      "codepoint": 61910,
+      "source": "./not-recommended-for-standby.svg"
+    },
+    "not-recommended-for-standby-filled": {
+      "codepoint": 61911,
+      "source": "./not-recommended-for-standby-filled.svg"
+    },
+    "not-recommended-for-standby-stroke": {
+      "codepoint": 61912,
+      "source": "./not-recommended-for-standby-stroke.svg"
+    },
+    "notification": {
+      "codepoint": 61913,
+      "source": "./notification.svg"
+    },
+    "notification-active": {
+      "codepoint": 61914,
+      "source": "./notification-active.svg"
+    },
+    "notification-active-filled": {
+      "codepoint": 61915,
+      "source": "./notification-active-filled.svg"
+    },
+    "notification-active-stroke": {
+      "codepoint": 61916,
+      "source": "./notification-active-stroke.svg"
+    },
+    "notification-filled": {
+      "codepoint": 61917,
+      "source": "./notification-filled.svg"
+    },
+    "notification-stroke": {
+      "codepoint": 61918,
+      "source": "./notification-stroke.svg"
+    },
+    "one-way-arrow": {
+      "codepoint": 61919,
+      "source": "./one-way-arrow.svg"
+    },
+    "passenger": {
+      "codepoint": 61920,
+      "source": "./passenger.svg"
+    },
+    "passenger-filled": {
+      "codepoint": 61921,
+      "source": "./passenger-filled.svg"
+    },
+    "passenger-stroke": {
+      "codepoint": 61922,
+      "source": "./passenger-stroke.svg"
+    },
+    "penguin": {
+      "codepoint": 61923,
+      "source": "./penguin.svg"
+    },
+    "phone": {
+      "codepoint": 61924,
+      "source": "./phone.svg"
+    },
+    "phone-filled": {
+      "codepoint": 61925,
+      "source": "./phone-filled.svg"
+    },
+    "phone-stroke": {
+      "codepoint": 61926,
+      "source": "./phone-stroke.svg"
+    },
+    "pin-filled": {
+      "codepoint": 61927,
+      "source": "./pin-filled.svg"
+    },
+    "pin-stroke": {
+      "codepoint": 61928,
+      "source": "./pin-stroke.svg"
+    },
+    "pin-trip": {
+      "codepoint": 61929,
+      "source": "./pin-trip.svg"
+    },
+    "pin-trip-filled": {
+      "codepoint": 61930,
+      "source": "./pin-trip-filled.svg"
+    },
+    "pin-trip-stroke": {
+      "codepoint": 61931,
+      "source": "./pin-trip-stroke.svg"
+    },
+    "plane-diag-fill": {
+      "codepoint": 61932,
+      "source": "./plane-diag-fill.svg"
+    },
+    "plane-diag-stroke": {
+      "codepoint": 61933,
+      "source": "./plane-diag-stroke.svg"
+    },
+    "plane-side-fill": {
+      "codepoint": 61934,
+      "source": "./plane-side-fill.svg"
+    },
+    "plane-side-stroke": {
+      "codepoint": 61935,
+      "source": "./plane-side-stroke.svg"
+    },
+    "plane-up-fill": {
+      "codepoint": 61936,
+      "source": "./plane-up-fill.svg"
+    },
+    "plane-up-stroke": {
+      "codepoint": 61937,
+      "source": "./plane-up-stroke.svg"
+    },
+    "plug": {
+      "codepoint": 61938,
+      "source": "./plug.svg"
+    },
+    "plug-filled": {
+      "codepoint": 61939,
+      "source": "./plug-filled.svg"
+    },
+    "plug-stroke": {
+      "codepoint": 61940,
+      "source": "./plug-stroke.svg"
+    },
+    "plus-filled": {
+      "codepoint": 61941,
+      "source": "./plus-filled.svg"
+    },
+    "plus-lg": {
+      "codepoint": 61942,
+      "source": "./plus-lg.svg"
+    },
+    "plus-sm": {
+      "codepoint": 61943,
+      "source": "./plus-sm.svg"
+    },
+    "plus-stroke": {
+      "codepoint": 61944,
+      "source": "./plus-stroke.svg"
+    },
+    "premium-class-legroom": {
+      "codepoint": 61945,
+      "source": "./premium-class-legroom.svg"
+    },
+    "premium-class-upgrade-available": {
+      "codepoint": 61946,
+      "source": "./premium-class-upgrade-available.svg"
+    },
+    "premium-class-upgrade-available-stroke": {
+      "codepoint": 61947,
+      "source": "./premium-class-upgrade-available-stroke.svg"
+    },
+    "premium-class-upgrade-waitlist": {
+      "codepoint": 61948,
+      "source": "./premium-class-upgrade-waitlist.svg"
+    },
+    "premium-class-upgrade-waitlist-filled": {
+      "codepoint": 61949,
+      "source": "./premium-class-upgrade-waitlist-filled.svg"
+    },
+    "premium-class-upgrade-waitlist-stroke": {
+      "codepoint": 61950,
+      "source": "./premium-class-upgrade-waitlist-stroke.svg"
+    },
+    "printer": {
+      "codepoint": 61951,
+      "source": "./printer.svg"
+    },
+    "printer-filled": {
+      "codepoint": 61952,
+      "source": "./printer-filled.svg"
+    },
+    "printer-stroke": {
+      "codepoint": 61953,
+      "source": "./printer-stroke.svg"
+    },
+    "profile-filled": {
+      "codepoint": 61954,
+      "source": "./profile-filled.svg"
+    },
+    "profile-stroke": {
+      "codepoint": 61955,
+      "source": "./profile-stroke.svg"
+    },
+    "qr-code": {
+      "codepoint": 61956,
+      "source": "./qr-code.svg"
+    },
+    "qr-code-stroke": {
+      "codepoint": 61957,
+      "source": "./qr-code-stroke.svg"
+    },
+    "question-filled": {
+      "codepoint": 61958,
+      "source": "./question-filled.svg"
+    },
+    "question-stroke": {
+      "codepoint": 61959,
+      "source": "./question-stroke.svg"
+    },
+    "radar-filled": {
+      "codepoint": 61960,
+      "source": "./radar-filled.svg"
+    },
+    "radar-stroke": {
+      "codepoint": 61961,
+      "source": "./radar-stroke.svg"
+    },
+    "receipt": {
+      "codepoint": 61962,
+      "source": "./receipt.svg"
+    },
+    "receipt-filled": {
+      "codepoint": 61963,
+      "source": "./receipt-filled.svg"
+    },
+    "receipt-stroke": {
+      "codepoint": 61964,
+      "source": "./receipt-stroke.svg"
+    },
+    "recommended-for-standby": {
+      "codepoint": 61965,
+      "source": "./recommended-for-standby.svg"
+    },
+    "recommended-for-standby-filled": {
+      "codepoint": 61966,
+      "source": "./recommended-for-standby-filled.svg"
+    },
+    "recommended-for-standby-stroke": {
+      "codepoint": 61967,
+      "source": "./recommended-for-standby-stroke.svg"
+    },
+    "recommended-for-standby-travel-but-monitor": {
+      "codepoint": 61968,
+      "source": "./recommended-for-standby-travel-but-monitor.svg"
+    },
+    "recommended-for-standby-travel-but-monitor-stroke": {
+      "codepoint": 61969,
+      "source": "./recommended-for-standby-travel-but-monitor-stroke.svg"
+    },
+    "recommended-for-standby-travel-but-watch-filled": {
+      "codepoint": 61970,
+      "source": "./recommended-for-standby-travel-but-watch-filled.svg"
+    },
+    "reservation-filled": {
+      "codepoint": 61971,
+      "source": "./reservation-filled.svg"
+    },
+    "reservation-stroke": {
+      "codepoint": 61972,
+      "source": "./reservation-stroke.svg"
+    },
+    "ride": {
+      "codepoint": 61973,
+      "source": "./ride.svg"
+    },
+    "ride-stroke": {
+      "codepoint": 61974,
+      "source": "./ride-stroke.svg"
+    },
+    "rising-sun": {
+      "codepoint": 61975,
+      "source": "./rising-sun.svg"
+    },
+    "rising-sun-filled": {
+      "codepoint": 61976,
+      "source": "./rising-sun-filled.svg"
+    },
+    "rising-sun-stroke": {
+      "codepoint": 61977,
+      "source": "./rising-sun-stroke.svg"
+    },
+    "round-trip-arrows": {
+      "codepoint": 61978,
+      "source": "./round-trip-arrows.svg"
+    },
+    "route-pending-government-approval": {
+      "codepoint": 61979,
+      "source": "./route-pending-government-approval.svg"
+    },
+    "route-pending-government-approval-filled": {
+      "codepoint": 61980,
+      "source": "./route-pending-government-approval-filled.svg"
+    },
+    "search": {
+      "codepoint": 61981,
+      "source": "./search.svg"
+    },
+    "search-filled": {
+      "codepoint": 61982,
+      "source": "./search-filled.svg"
+    },
+    "search-stroke": {
+      "codepoint": 61983,
+      "source": "./search-stroke.svg"
+    },
+    "seat": {
+      "codepoint": 61984,
+      "source": "./seat.svg"
+    },
+    "seat-filled": {
+      "codepoint": 61985,
+      "source": "./seat-filled.svg"
+    },
+    "seat-stroke": {
+      "codepoint": 61986,
+      "source": "./seat-stroke.svg"
+    },
+    "settings": {
+      "codepoint": 61987,
+      "source": "./settings.svg"
+    },
+    "settings-filled": {
+      "codepoint": 61988,
+      "source": "./settings-filled.svg"
+    },
+    "settings-stroke": {
+      "codepoint": 61989,
+      "source": "./settings-stroke.svg"
+    },
+    "shopping-bag": {
+      "codepoint": 61990,
+      "source": "./shopping-bag.svg"
+    },
+    "shopping-bag-filled": {
+      "codepoint": 61991,
+      "source": "./shopping-bag-filled.svg"
+    },
+    "shopping-bag-stroke": {
+      "codepoint": 61992,
+      "source": "./shopping-bag-stroke.svg"
+    },
+    "snowflake-stroke": {
+      "codepoint": 61993,
+      "source": "./snowflake-stroke.svg"
+    },
+    "sparkle-filled": {
+      "codepoint": 61994,
+      "source": "./sparkle-filled.svg"
+    },
+    "sparkle-stroke": {
+      "codepoint": 61995,
+      "source": "./sparkle-stroke.svg"
+    },
+    "spraybottle": {
+      "codepoint": 61996,
+      "source": "./spraybottle.svg"
+    },
+    "star-filled": {
+      "codepoint": 61997,
+      "source": "./star-filled.svg"
+    },
+    "star-stroke": {
+      "codepoint": 61998,
+      "source": "./star-stroke.svg"
+    },
+    "sun": {
+      "codepoint": 61999,
+      "source": "./sun.svg"
+    },
+    "sun-filled": {
+      "codepoint": 62000,
+      "source": "./sun-filled.svg"
+    },
+    "sun-rising-filled": {
+      "codepoint": 62001,
+      "source": "./sun-rising-filled.svg"
+    },
+    "sun-rising-stroke": {
+      "codepoint": 62002,
+      "source": "./sun-rising-stroke.svg"
+    },
+    "sun-stroke": {
+      "codepoint": 62003,
+      "source": "./sun-stroke.svg"
+    },
+    "tag": {
+      "codepoint": 62004,
+      "source": "./tag.svg"
+    },
+    "tag-filled": {
+      "codepoint": 62005,
+      "source": "./tag-filled.svg"
+    },
+    "ticket-filled": {
+      "codepoint": 62006,
+      "source": "./ticket-filled.svg"
+    },
+    "ticket-stroke": {
+      "codepoint": 62007,
+      "source": "./ticket-stroke.svg"
+    },
+    "tiktok": {
+      "codepoint": 62008,
+      "source": "./tiktok.svg"
+    },
+    "twitter": {
+      "codepoint": 62009,
+      "source": "./twitter.svg"
+    },
+    "unlock-filled": {
+      "codepoint": 62010,
+      "source": "./unlock-filled.svg"
+    },
+    "unlock-stroke": {
+      "codepoint": 62011,
+      "source": "./unlock-stroke.svg"
+    },
+    "view-password": {
+      "codepoint": 62012,
+      "source": "./view-password.svg"
+    },
+    "view-password-filled": {
+      "codepoint": 62013,
+      "source": "./view-password-filled.svg"
+    },
+    "view-password-stroke": {
+      "codepoint": 62014,
+      "source": "./view-password-stroke.svg"
+    },
+    "warning-filled": {
+      "codepoint": 62015,
+      "source": "./warning-filled.svg"
+    },
+    "warning-stroke": {
+      "codepoint": 62016,
+      "source": "./warning-stroke.svg"
+    },
+    "wifi": {
+      "codepoint": 62017,
+      "source": "./wifi.svg"
+    },
+    "wifi-disabled": {
+      "codepoint": 62018,
+      "source": "./wifi-disabled.svg"
+    },
+    "wine-and-spirits": {
+      "codepoint": 62019,
+      "source": "./wine-and-spirits.svg"
+    },
+    "wine-and-spirits-filled": {
+      "codepoint": 62020,
+      "source": "./wine-and-spirits-filled.svg"
+    },
+    "wine-and-spirits-stroke": {
+      "codepoint": 62021,
+      "source": "./wine-and-spirits-stroke.svg"
+    },
+    "x-filled": {
+      "codepoint": 62022,
+      "source": "./x-filled.svg"
+    },
+    "x-lg": {
+      "codepoint": 62023,
+      "source": "./x-lg.svg"
+    },
+    "x-sm": {
+      "codepoint": 62024,
+      "source": "./x-sm.svg"
+    },
+    "x-social": {
+      "codepoint": 62025,
+      "source": "./x-social.svg"
+    },
+    "x-stroke": {
+      "codepoint": 62026,
+      "source": "./x-stroke.svg"
+    },
+    "youtube": {
+      "codepoint": 62027,
+      "source": "./youtube.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "copyright": "",
+    "css3": false,
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "ASIcons",
+    "force": false,
+    "input": {
+      "templates": ".",
+      "vectors": "."
+    },
+    "no_hash": true,
+    "output": {
+      "css": "iconFonts",
+      "fonts": "iconFonts",
+      "preview": "iconFonts"
+    },
+    "preprocessor_path": null,
+    "quiet": false,
+    "templates": [
+      "css",
+      "preview"
+    ]
+  },
+  "templates": [
+    "iconFonts/ASIcons.css",
+    "iconFonts/ASIcons-preview.html"
+  ]
+}
