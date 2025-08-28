@@ -1165,6 +1165,11 @@
       "category": "in-flight"
     },
     {
+      "name": "first-class-lieflat",
+      "desc": "Indicates seat reclines 180° into a lie-flat bed.",
+      "category": "in-flight"
+    },
+    {
       "name": "premium-class-legroom",
       "desc": "Indicates additional legroom for Premium Class cabin.",
       "category": "in-flight"
