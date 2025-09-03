@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.8.0](https://github.com/AlaskaAirlines/Icons/compare/v5.7.1...v5.8.0) (2025-09-03)
+
+
+### Features
+
+* add first-class-lieflat icon into in-flight ([d77a312](https://github.com/AlaskaAirlines/Icons/commit/d77a3121e58ec2c19aa93197d6b34513fc2adfce))
+
 ## [5.7.1](https://github.com/AlaskaAirlines/Icons/compare/v5.7.0...v5.7.1) (2025-08-14)
 
 
