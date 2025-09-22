@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.9.0](https://github.com/AlaskaAirlines/Icons/compare/v5.8.0...v5.9.0) (2025-09-22)
+
+
+### Features
+
+* add main-legroom icon into in-flight [#310](https://github.com/AlaskaAirlines/Icons/issues/310) ([c57dcda](https://github.com/AlaskaAirlines/Icons/commit/c57dcdacdde12f5c990f7cf7a6ca9e5f117b52b0))
+
 # [5.8.0](https://github.com/AlaskaAirlines/Icons/compare/v5.7.1...v5.8.0) (2025-09-03)
 
 
