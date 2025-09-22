@@ -1170,6 +1170,11 @@
       "category": "in-flight"
     },
     {
+      "name": "main-legroom",
+      "desc": "Indicates main legroom.",
+      "category": "in-flight"
+    },
+    {
       "name": "premium-class-legroom",
       "desc": "Indicates additional legroom for Premium Class cabin.",
       "category": "in-flight"
