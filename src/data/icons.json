@@ -1142,6 +1142,12 @@
       "path": "/icons/fullColor"
     },
     {
+      "name": "cc-dinersclub",
+      "desc": "Diner's Club Credit Card.",
+      "category": "payment",
+      "path": "/icons/fullColor"
+    },
+    {
       "name": "cc-discover",
       "desc": "Discover Credit Card.",
       "category": "payment",
