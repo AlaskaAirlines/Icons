@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [5.9.1](https://github.com/AlaskaAirlines/Icons/compare/v5.9.0...v5.9.1) (2025-09-29)
+
+
+### Bug Fixes
+
+* **icons:** changed fill color to currentColor ([6c6357e](https://github.com/AlaskaAirlines/Icons/commit/6c6357e4522bf80fd99a37c81152b68009297d2e))
+
 # [5.9.0](https://github.com/AlaskaAirlines/Icons/compare/v5.8.0...v5.9.0) (2025-09-22)
 
 
