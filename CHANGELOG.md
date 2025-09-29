@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.10.0](https://github.com/AlaskaAirlines/Icons/compare/v5.9.1...v5.10.0) (2025-09-29)
+
+
+### Features
+
+* **icons:** add cc-dinersclub icon into payment [#315](https://github.com/AlaskaAirlines/Icons/issues/315) ([5f7ff65](https://github.com/AlaskaAirlines/Icons/commit/5f7ff6543779b53a1dd2198f5a75f1d11ca8da7c))
+
 ## [5.9.1](https://github.com/AlaskaAirlines/Icons/compare/v5.9.0...v5.9.1) (2025-09-29)
 
 
