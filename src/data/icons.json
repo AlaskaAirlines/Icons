@@ -127,6 +127,24 @@
       "deprecated": true
     },
     {
+      "name": "grid-filled",
+      "title": "Grid filled",
+      "desc": "Filled icon representing a grid layout",
+      "category": "interface"
+    },
+    {
+      "name": "grid-stroke",
+      "title": "Grid stroke",
+      "desc": "Stroke icon representing a grid layout",
+      "category": "interface"
+    },
+    {
+      "name": "list",
+      "title": "List",
+      "desc": "Representation of a list of items",
+      "category": "interface"
+    },
+    {
       "name": "mixed-cabin-itinerary",
       "desc": "A guest will be in different cabins for different segments of the trip.",
       "category": "interface"
