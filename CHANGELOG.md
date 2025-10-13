@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.11.0](https://github.com/AlaskaAirlines/Icons/compare/v5.10.0...v5.11.0) (2025-10-13)
+
+
+### Features
+
+* add new interface icons [#321](https://github.com/AlaskaAirlines/Icons/issues/321) ([a8ebbc0](https://github.com/AlaskaAirlines/Icons/commit/a8ebbc05904ea8c1cf126fbeb26f23a3fd22a4fd))
+
 # [5.10.0](https://github.com/AlaskaAirlines/Icons/compare/v5.9.1...v5.10.0) (2025-09-29)
 
 
