@@ -150,6 +150,18 @@
       "category": "interface"
     },
     {
+      "name": "no-symbol-filled",
+      "title": "No symbol filled",
+      "desc": "Representation of restriction",
+      "category": "interface"
+    },
+    {
+      "name": "no-symbol-stroke",
+      "title": "No symbol stroke",
+      "desc": "Representation of restriction stroke",
+      "category": "interface"
+    },
+    {
       "name": "not-recommended-for-standby-filled",
       "desc": "red frown face.",
       "category": "interface"
