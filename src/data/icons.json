@@ -150,15 +150,9 @@
       "category": "interface"
     },
     {
-      "name": "no-symbol-filled",
-      "title": "No symbol filled",
-      "desc": "Representation of restriction",
-      "category": "interface"
-    },
-    {
-      "name": "no-symbol-stroke",
-      "title": "No symbol stroke",
-      "desc": "Representation of restriction stroke",
+      "name": "no-symbol",
+      "title": "No symbol",
+      "desc": "A universal prohibition icon consisting of a circle with a diagonal line crossing through it. It is used to indicate that an action, behavior, or object is not allowed or is restricted.",
       "category": "interface"
     },
     {
