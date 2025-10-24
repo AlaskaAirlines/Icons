@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.13.0](https://github.com/AlaskaAirlines/Icons/compare/v5.12.0...v5.13.0) (2025-10-24)
+
+
+### Features
+
+* add new payment icons cc-jscb cc-uatp and cc-unionpay [#327](https://github.com/AlaskaAirlines/Icons/issues/327) ([7093da2](https://github.com/AlaskaAirlines/Icons/commit/7093da250660071006748e774a2beb6e37eaacce))
+
 # [5.12.0](https://github.com/AlaskaAirlines/Icons/compare/v5.11.0...v5.12.0) (2025-10-24)
 
 
