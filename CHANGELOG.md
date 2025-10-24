@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.14.0](https://github.com/AlaskaAirlines/Icons/compare/v5.13.0...v5.14.0) (2025-10-24)
+
+
+### Features
+
+* add new no-symbol icon to interface list [#323](https://github.com/AlaskaAirlines/Icons/issues/323) ([1e217c4](https://github.com/AlaskaAirlines/Icons/commit/1e217c412cfc44d302fb2a6be1e9c07941d02a38))
+
 # [5.13.0](https://github.com/AlaskaAirlines/Icons/compare/v5.12.0...v5.13.0) (2025-10-24)
 
 
