@@ -1173,10 +1173,31 @@
       "path": "/icons/fullColor"
     },
     {
+      "name": "cc-jcb",
+      "desc": "Pay with JCB",
+      "category": "payment",
+      "path": "/icons/fullColor",
+      "title": "JCB"
+    },
+    {
       "name": "cc-mastercard",
       "desc": "Mastercard Credit Card.",
       "category": "payment",
       "path": "/icons/fullColor"
+    },
+    {
+      "name": "cc-uatp",
+      "desc": "Pay with UATP",
+      "category": "payment",
+      "path": "/icons/fullColor",
+      "title": "UATP"
+    },
+    {
+      "name": "cc-unionpay",
+      "desc": "Pay with UnionPay",
+      "category": "payment",
+      "path": "/icons/fullColor",
+      "title": "UnionPay"
     },
     {
       "name": "cc-visa",
