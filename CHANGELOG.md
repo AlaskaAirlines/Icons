@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.12.0](https://github.com/AlaskaAirlines/Icons/compare/v5.11.0...v5.12.0) (2025-10-24)
+
+
+### Features
+
+* update cc-dinersclub icon [#325](https://github.com/AlaskaAirlines/Icons/issues/325) ([1df6371](https://github.com/AlaskaAirlines/Icons/commit/1df63718677c896cdc641d0d188956e276f6da07))
+
 # [5.11.0](https://github.com/AlaskaAirlines/Icons/compare/v5.10.0...v5.11.0) (2025-10-13)
 
 
