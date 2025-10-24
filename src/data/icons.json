@@ -1161,9 +1161,10 @@
     },
     {
       "name": "cc-dinersclub",
-      "desc": "Diner's Club Credit Card.",
+      "desc": "Diner's Club International credit card.",
       "category": "payment",
-      "path": "/icons/fullColor"
+      "path": "/icons/fullColor",
+      "title": "Diner's club"
     },
     {
       "name": "cc-discover",
