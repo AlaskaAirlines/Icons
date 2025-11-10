@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.15.0](https://github.com/AlaskaAirlines/Icons/compare/v5.14.0...v5.15.0) (2025-11-10)
+
+
+### Features
+
+* add new interface icons filter-alt sort-down and sort-up [#329](https://github.com/AlaskaAirlines/Icons/issues/329) ([58d0cde](https://github.com/AlaskaAirlines/Icons/commit/58d0cde98eca0f8d52629c4c7977ad2c525d9575))
+
 # [5.14.0](https://github.com/AlaskaAirlines/Icons/compare/v5.13.0...v5.14.0) (2025-10-24)
 
 
