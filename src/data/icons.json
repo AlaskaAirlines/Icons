@@ -1075,7 +1075,8 @@
     {
       "name": "round-trip-arrows",
       "desc": "indicate round-trip flight option.",
-      "category": "terminal"
+      "category": "terminal",
+      "deprecated": true
     },
     {
       "name": "check-in-stroke",
