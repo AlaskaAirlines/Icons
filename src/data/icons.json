@@ -1063,6 +1063,16 @@
       "category": "terminal"
     },
     {
+      "name": "round-trip-arrows-horizontal",
+      "desc": "indicate horizontal round-trip flight option.",
+      "category": "terminal"
+    },
+    {
+      "name": "round-trip-arrows-vertical",
+      "desc": "indicate vertical round-trip flight option.",
+      "category": "terminal"
+    },
+    {
       "name": "round-trip-arrows",
       "desc": "indicate round-trip flight option.",
       "category": "terminal"
