@@ -457,6 +457,11 @@
       "name": "tail-CI",
       "title": "Airplane tail image for China Airlines",
       "viewBox": "0 0 142 138"
+    },
+    {
+      "name": "tail-AZ",
+      "title": "Airplane tail image for ITA Airways",
+      "viewBox": "0 0 144 140"
     }
   ]
 }
