@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.17.0](https://github.com/AlaskaAirlines/Icons/compare/v5.16.0...v5.17.0) (2026-01-09)
+
+
+### Features
+
+* add tail-AZ logo icon for ITA Airways [#335](https://github.com/AlaskaAirlines/Icons/issues/335) ([2ea8c9d](https://github.com/AlaskaAirlines/Icons/commit/2ea8c9d723c4f195b1b39c736981f29414606443))
+
 # [5.16.0](https://github.com/AlaskaAirlines/Icons/compare/v5.15.0...v5.16.0) (2026-01-09)
 
 
