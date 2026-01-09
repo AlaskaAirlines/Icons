@@ -477,6 +477,11 @@
       "deprecated": true
     },
     {
+      "name": "filter-alt",
+      "desc": "Filter or equalizer icon.",
+      "category": "interface"
+    },
+    {
       "name": "filter-filled",
       "desc": "marker sign.",
       "category": "interface"
@@ -616,6 +621,16 @@
       "name": "search",
       "category": "interface",
       "deprecated": true
+    },
+    {
+      "name": "sort-down",
+      "desc": "Column sort with arrow pointing down.",
+      "category": "interface"
+    },
+    {
+      "name": "sort-up",
+      "desc": "Column sort with arrow pointing up.",
+      "category": "interface"
     },
     {
       "name": "star-filled",
@@ -1045,6 +1060,16 @@
     {
       "name": "one-way-arrow",
       "desc": "indication of one way flight option.",
+      "category": "terminal"
+    },
+    {
+      "name": "round-trip-arrows-horizontal",
+      "desc": "indicate horizontal round-trip flight option.",
+      "category": "terminal"
+    },
+    {
+      "name": "round-trip-arrows-vertical",
+      "desc": "indicate vertical round-trip flight option.",
       "category": "terminal"
     },
     {
