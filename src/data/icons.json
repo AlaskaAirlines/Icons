@@ -974,6 +974,11 @@
       "category": "programs"
     },
     {
+      "name": "huaka'i",
+      "desc": "Hawaiian islands",
+      "category": "programs"
+    },
+    {
       "name": "diverted",
       "desc": "Indicates a diversion of original intent.",
       "category": "terminal"
