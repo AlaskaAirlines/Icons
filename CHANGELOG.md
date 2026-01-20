@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.18.0](https://github.com/AlaskaAirlines/Icons/compare/v5.17.0...v5.18.0) (2026-01-20)
+
+
+### Features
+
+* add new huaka'i icon [#344](https://github.com/AlaskaAirlines/Icons/issues/344) ([ee4a506](https://github.com/AlaskaAirlines/Icons/commit/ee4a506bfa84fc6850c3c5f8428695f0df4d4039))
+
 # [5.17.0](https://github.com/AlaskaAirlines/Icons/compare/v5.16.0...v5.17.0) (2026-01-09)
 
 
