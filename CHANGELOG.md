@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [5.18.1](https://github.com/AlaskaAirlines/Icons/compare/v5.18.0...v5.18.1) (2026-01-28)
+
+
+### Bug Fixes
+
+* remove apostrophe from huakai icon name [#348](https://github.com/AlaskaAirlines/Icons/issues/348) ([e057e58](https://github.com/AlaskaAirlines/Icons/commit/e057e58400a3d831d411d1c80334d93538c6d183))
+
 # [5.18.0](https://github.com/AlaskaAirlines/Icons/compare/v5.17.0...v5.18.0) (2026-01-20)
 
 
