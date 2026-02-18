@@ -1854,6 +1854,16 @@
       "name": "packages-filled",
       "desc": "Solid icon of a hotel, car, and airplane grouped together",
       "category": "destination"
+    },
+    {
+      "name": "gift-certificate",
+      "desc": "Card with bow tie",
+      "category": "shop"
+    },
+    {
+      "name": "travel-wallet",
+      "desc": "Plane and wallet",
+      "category": "payment"
     }
   ]
 }
