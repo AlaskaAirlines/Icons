@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+# [5.19.0](https://github.com/AlaskaAirlines/Icons/compare/v5.18.1...v5.19.0) (2026-02-20)
+
+
+### Features
+
+* add gift cert and travel wallet [#307](https://github.com/AlaskaAirlines/Icons/issues/307) ([e8bc879](https://github.com/AlaskaAirlines/Icons/commit/e8bc879fe09e111abbc86635d47caf2a2ecdef1f))
+* add tail-NU ([e77cdc0](https://github.com/AlaskaAirlines/Icons/commit/e77cdc032b519ee68c69da65e17d491b2c014728))
+
 ## [5.18.1](https://github.com/AlaskaAirlines/Icons/compare/v5.18.0...v5.18.1) (2026-01-28)
 
 
