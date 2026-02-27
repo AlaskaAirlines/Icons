@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [5.20.1](https://github.com/AlaskaAirlines/Icons/compare/v5.20.0...v5.20.1) (2026-02-27)
+
+
+### Bug Fixes
+
+* rename tail-default icon to tail-DEFAULT AB[#1497875](https://github.com/AlaskaAirlines/Icons/issues/1497875) ([33e1836](https://github.com/AlaskaAirlines/Icons/commit/33e1836dd60346d064678babe0ce861cb1417bc7))
+
 # [5.20.0](https://github.com/AlaskaAirlines/Icons/compare/v5.19.0...v5.20.0) (2026-02-27)
 
 
