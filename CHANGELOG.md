@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.21.0](https://github.com/AlaskaAirlines/Icons/compare/v5.20.1...v5.21.0) (2026-03-24)
+
+
+### Features
+
+* **intl:** add AS intl tail [#355](https://github.com/AlaskaAirlines/Icons/issues/355) ([ceeb98e](https://github.com/AlaskaAirlines/Icons/commit/ceeb98ec2d3cc6a93c069029279fabab49f4c2d8))
+
 ## [5.20.1](https://github.com/AlaskaAirlines/Icons/compare/v5.20.0...v5.20.1) (2026-02-27)
 
 
