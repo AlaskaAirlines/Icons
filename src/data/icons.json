@@ -1356,6 +1356,16 @@
       "deprecated": true
     },
     {
+      "name": "island-filled",
+      "desc": "Palm tree on a shore with a waterline.",
+      "category": "destination"
+    },
+    {
+      "name": "island-stroke",
+      "desc": "Palm tree on an outlined shore with a waterline.",
+      "category": "destination"
+    },
+    {
       "name": "car-rental-stroke",
       "desc": "Indicates car rental options.",
       "category": "destination"
