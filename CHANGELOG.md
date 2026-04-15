@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+# [5.23.0](https://github.com/AlaskaAirlines/Icons/compare/v5.22.0...v5.23.0) (2026-04-15)
+
+
+### Features
+
+* **brand:** add new multibrand tail icons [#362](https://github.com/AlaskaAirlines/Icons/issues/362) ([ddd58a9](https://github.com/AlaskaAirlines/Icons/commit/ddd58a92d89c5a7b7d462879bdac94c53c06f1f4))
+* **child:** add new child icon [#363](https://github.com/AlaskaAirlines/Icons/issues/363) ([56922ad](https://github.com/AlaskaAirlines/Icons/commit/56922add1aa8a9a8d236787f60b178852707bfdb))
+
 # [5.22.0](https://github.com/AlaskaAirlines/Icons/compare/v5.21.0...v5.22.0) (2026-04-15)
 
 
