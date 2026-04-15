@@ -1310,6 +1310,16 @@
       "deprecated": true
     },
     {
+      "name": "multibrand-filled",
+      "desc": "Two filled airline tails to indicate multiple carriers.",
+      "category": "interface"
+    },
+    {
+      "name": "multibrand-stroke",
+      "desc": "Outline of two airline tails to indicate multiple carriers.",
+      "category": "interface"
+    },
+    {
       "name": "new-window-filled",
       "title": "Link will open a new tab or window.",
       "desc": "Notice indicator to alert users that action will result in the browser opening a new tab or window.",
