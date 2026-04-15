@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.22.0](https://github.com/AlaskaAirlines/Icons/compare/v5.21.0...v5.22.0) (2026-04-15)
+
+
+### Features
+
+* **island:** add new island icon [#358](https://github.com/AlaskaAirlines/Icons/issues/358) ([3a39766](https://github.com/AlaskaAirlines/Icons/commit/3a39766f3d0af34229dac85e7355b2f88d8fa57c))
+
 # [5.21.0](https://github.com/AlaskaAirlines/Icons/compare/v5.20.1...v5.21.0) (2026-03-24)
 
 
