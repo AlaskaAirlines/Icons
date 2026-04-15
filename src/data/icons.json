@@ -1242,6 +1242,11 @@
       "path": "/icons/fullColor"
     },
     {
+      "name": "child",
+      "desc": "Outline of a child.",
+      "category": "in-flight"
+    },
+    {
       "name": "first-class-legroom",
       "desc": "Indicates additional legroom for First Class cabin.",
       "category": "in-flight"
