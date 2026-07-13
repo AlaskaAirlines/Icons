@@ -1816,6 +1816,16 @@
       "category": "hazmat"
     },
     {
+      "name": "hazmat-power-bank-filled",
+      "desc": "Filled icon representing portable power banks and external battery chargers",
+      "category": "hazmat"
+    },
+    {
+      "name": "hazmat-power-bank-stroke",
+      "desc": "Outline icon representing portable power banks and external battery chargers",
+      "category": "hazmat"
+    },
+    {
       "name": "hazmat-small-engine-filled",
       "desc": "Filled icon representing small engines containing fuel or oil",
       "category": "hazmat"
