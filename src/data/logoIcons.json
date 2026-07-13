@@ -477,6 +477,21 @@
       "name": "tail-AZ",
       "title": "Airplane tail image for ITA Airways",
       "viewBox": "0 0 144 140"
+    },
+    {
+      "name": "tail-GK",
+      "title": "Airplane tail representing Jetstar Japan",
+      "viewBox": "0 0 141 138"
+    },
+    {
+      "name": "tail-JQ",
+      "title": "Airplane tail representing Jetstar Australia",
+      "viewBox": "0 0 141 138"
+    },
+    {
+      "name": "tail-MX",
+      "title": "Airplane tail representing Breeze Airways",
+      "viewBox": "0 0 141 138"
     }
   ]
 }
