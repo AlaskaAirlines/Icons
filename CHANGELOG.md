@@ -1,5 +1,18 @@
 # Semantic Release Automated Changelog
 
+# [5.24.0](https://github.com/AlaskaAirlines/Icons/compare/v5.23.0...v5.24.0) (2026-07-13)
+
+
+### Bug Fixes
+
+* remove unnecessary rectangle from tail-TN.svg AB[#1587656](https://github.com/AlaskaAirlines/Icons/issues/1587656) ([bf8490e](https://github.com/AlaskaAirlines/Icons/commit/bf8490e04b1f335b1832b5c61c2415ed60bf778b))
+
+
+### Features
+
+* **hazmat:** add filled and outline icons for portable power banks AB[#1596233](https://github.com/AlaskaAirlines/Icons/issues/1596233) ([37a1d7c](https://github.com/AlaskaAirlines/Icons/commit/37a1d7c052d1c25272f1da15b1db193fee179e0c))
+* **tail:** add Jetstar Japan, Jetstar Australia, Breeze tail icons AB[#1552872](https://github.com/AlaskaAirlines/Icons/issues/1552872) ([d8aa492](https://github.com/AlaskaAirlines/Icons/commit/d8aa49225406984528a587e95dab28f8f664197d))
+
 # [5.23.0](https://github.com/AlaskaAirlines/Icons/compare/v5.22.0...v5.23.0) (2026-04-15)
 
 
