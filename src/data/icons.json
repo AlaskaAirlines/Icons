@@ -1392,6 +1392,16 @@
       "deprecated": true
     },
     {
+      "name": "cruise-stroke",
+      "desc": "An outlined icon of a cruise ship sitting on a wave of water.",
+      "category": "destination"
+    },
+    {
+      "name": "cruise-filled",
+      "desc": "A solid icon of a cruise ship sitting on a wave of water.",
+      "category": "destination"
+    },
+    {
       "name": "ride-stroke",
       "desc": "Indicates options for transportation.",
       "category": "destination"
