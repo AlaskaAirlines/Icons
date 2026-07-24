@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.25.0](https://github.com/AlaskaAirlines/Icons/compare/v5.24.0...v5.25.0) (2026-07-24)
+
+
+### Features
+
+* add new cruise icons AB[#1458948](https://github.com/AlaskaAirlines/Icons/issues/1458948) ([4129c4c](https://github.com/AlaskaAirlines/Icons/commit/4129c4c8dc7b2442e72c05d2a086556e203eef14))
+
 # [5.24.0](https://github.com/AlaskaAirlines/Icons/compare/v5.23.0...v5.24.0) (2026-07-13)
 
 
