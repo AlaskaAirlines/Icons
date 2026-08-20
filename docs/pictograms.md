@@ -38,6 +38,8 @@ element.innerHTML = elbowRoom.svg;
 
 Each pictogram object exposes `name`, `title`, `desc`, `viewBox`, `style`, and the optimized `svg` string, with an accessible `<title>` and `<desc>` injected during the build.
 
+> **Rendering the same pictogram more than once on a page.** Each pictogram's SVG contains internal ids (e.g. a clip-path reference). The build namespaces these to the pictogram name, so two *different* pictograms on the same page never collide. Inserting the *same* pictogram inline multiple times, however, still duplicates its ids in the DOM — and the browser resolves every reference to the first match. If you render one pictogram repeatedly (e.g. in a list), isolate each instance — render it inside its own shadow root, or rewrite the ids per instance — so its clip-paths resolve correctly.
+
 ## Animated pictograms
 
 Some pictograms have historically existed as animated GIFs. The current pipeline is built for **static SVG only**, and that is the supported format for this collection today. Animated formats are **deferred** to a future story.
