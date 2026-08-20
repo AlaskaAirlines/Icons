@@ -31,6 +31,18 @@ Icons fall into a series of use categories, these are:
 | terminal | Icons related to terminal experiences |
 
 
+## Collections
+
+Beyond the UI icons above, the library publishes additional collections that share the same build, optimization, and versioning pipeline:
+
+| collection | dist path | description |
+|---|---|---|
+| icons | `dist/icons/` | Monochrome UI glyphs, tinted via `currentColor`. |
+| tails / logos | `dist/logos/` | Full-color airline tail and brand logos. |
+| restricted | `dist/restricted/` | Full-color marks reserved for restricted use. |
+| pictograms | `dist/pictograms/` | Larger, full-color illustrative graphics. See [docs/pictograms.md](docs/pictograms.md). |
+
+
 ## JavaScript framework support
 
 When using other JavaScript development frameworks, the process above may not parse to HTML. To address this, there are a few techniques that could be used.

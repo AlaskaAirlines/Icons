@@ -80,6 +80,22 @@ const buildRestricted = (logos) => {
   return elements;
 }
 
+const buildPictograms = (pictograms) => {
+  let elements = "";
+
+  pictograms.forEach(i => {
+    const file = path.basename(i);
+    elements += `
+      <div class="block block--large" title="${i}">
+        <img src="./dist/pictograms/${file}" alt="">
+        <p>${i}</p>
+      </div>
+    `
+  });
+
+  return elements;
+}
+
 const getCategory = (iconPath) => {
   const iconAndDist = iconPath.split(`icons${path.sep}`)[1];
   let category = '';
@@ -108,6 +124,12 @@ const getCategory = (iconPath) => {
   const restrictedPath = path.join(__dirname, "..", 'dist', 'restricted');
   for await (const file of getFiles(restrictedPath)) {
     if (file.includes('.svg')) restricted.push(file.split(currentPath)[1]);
+  }
+
+  const pictograms = [];
+  const pictogramPath = path.join(__dirname, "..", 'dist', 'pictograms');
+  for await (const file of getFiles(pictogramPath)) {
+    if (file.includes('.svg')) pictograms.push(file.split(currentPath)[1]);
   }
 
   const sortedIcons = {};
@@ -166,6 +188,13 @@ const getCategory = (iconPath) => {
     <h2 class="icon-category">Restricted</h2>
     <div class="iconsWrapper">
       ${buildRestricted(restricted)}
+    </div>
+  </section>
+
+  <section>
+    <h2 class="icon-category">Pictograms</h2>
+    <div class="iconsWrapper">
+      ${buildPictograms(pictograms)}
     </div>
   </section>
 </body>
