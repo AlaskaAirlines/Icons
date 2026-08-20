@@ -41,6 +41,29 @@ function titleCase(str) {
   return splitStr.join(' ');
 }
 
+// Prefix every `id` (and its `url(#…)` / `href="#…"` references) in an SVG
+// string with the icon name. Figma exports generic, per-file ids (e.g.
+// `clip0_1429_2007`) and SVGO runs with `cleanupIds: false`, so without this
+// two different pictograms rendered inline on the same page could ship the
+// same id and have their clip-paths resolve to the wrong definition.
+function scopeSvgIds(svg, name) {
+  const ids = new Set();
+  const idPattern = /\bid="([^"]+)"/g;
+  let match;
+  while ((match = idPattern.exec(svg)) !== null) {
+    ids.add(match[1]);
+  }
+  ids.forEach((id) => {
+    const scoped = `${name}__${id}`;
+    const escaped = id.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    svg = svg
+      .replace(new RegExp(`\\bid="${escaped}"`, 'g'), `id="${scoped}"`)
+      .replace(new RegExp(`url\\(#${escaped}\\)`, 'g'), `url(#${scoped})`)
+      .replace(new RegExp(`href="#${escaped}"`, 'g'), `href="#${scoped}"`);
+  });
+  return svg;
+}
+
 // export JS versions of Icons
 // =======================================================================
 const icons = {};
@@ -60,6 +83,13 @@ function runGenerator(data) {
     const iconName = icon.name;
     const distFilename = getDistFilename(icon);
     icon.svg = fs.readFileSync(`${iconsDir}${icon.path}/${iconName}.svg`, 'utf8');
+    // Pictograms are consumed inline (`element.innerHTML = icon.svg`), so their
+    // internal ids share a document with every other pictogram on the page.
+    // Namespace them to the icon name before any further processing. Scoped to
+    // this collection so the other three stay byte-for-byte identical.
+    if (icon.category === 'pictograms') {
+      icon.svg = scopeSvgIds(icon.svg, iconName);
+    }
     const insertPos = icon.svg.indexOf("svg") + 3;
     // UI glyphs use a fixed px value where `min-width` prevents unwanted
     // shrinking. Pictograms are fluid (`width: 100%`) and must use plain
@@ -70,7 +100,7 @@ function runGenerator(data) {
     // Only tint via fill when the collection opts in with a color. Pictograms
     // carry their own brand fills and must not be recolored (see docs/pictograms.md).
     const fillStyle = icon.color ? `fill: ${icon.color}` : '';
-    const elementStyle = `style="${width} ${height} ${fillStyle}" `;
+    const elementStyle = `style="${[width, height, fillStyle].filter(Boolean).join(' ')}" `;
     const ariaHidden = !icon.desc ? `aria-hidden="true"` : undefined;
     const labelledByTitle = icon.title ? `${icon.name}__title ` : "";
     const labelledByDesc = icon.desc ? `${icon.name}__desc` : "";

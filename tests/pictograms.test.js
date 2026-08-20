@@ -56,6 +56,22 @@ icons.forEach(iconRaw => {
     expect(subject.svg).not.toMatch(/min-width/);
   });
 
+  test(`${icon.name} namespaces its internal ids to avoid collisions`, () => {
+    // Figma exports generic ids (e.g. clip0_1429_2007) and SVGO keeps them
+    // (cleanupIds: false). The build must prefix every id — and every
+    // url(#…) reference — with the icon name so two different pictograms on
+    // one page can't collide.
+    const ids = [...subject.svg.matchAll(/\bid="([^"]+)"/g)].map(m => m[1]);
+    ids.forEach(id => {
+      expect(id.startsWith(`${icon.name}__`)).toBe(true);
+    });
+
+    const refs = [...subject.svg.matchAll(/url\(#([^)]+)\)/g)].map(m => m[1]);
+    refs.forEach(ref => {
+      expect(ref.startsWith(`${icon.name}__`)).toBe(true);
+    });
+  });
+
   test(`${icon.name} emits a parseable .mjs entry`, () => {
     // docs/pictograms.md advertises the .mjs file as the preferred import
     // entry, so guard the generate.js branch that writes it.
