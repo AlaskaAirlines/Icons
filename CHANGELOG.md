@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+# [5.26.0](https://github.com/AlaskaAirlines/Icons/compare/v5.25.0...v5.26.0) (2026-08-21)
+
+
+### Bug Fixes
+
+* **pictograms:** scope svg ids and tidy style attribute AB[#1372704](https://github.com/AlaskaAirlines/Icons/issues/1372704) ([1b43bb3](https://github.com/AlaskaAirlines/Icons/commit/1b43bb384bf09ae7ad7e3fd204920954a49c19d2)), closes [#387](https://github.com/AlaskaAirlines/Icons/issues/387)
+
+
+### Features
+
+* **pictograms:** add collection, build pipeline, tests, and docs AB[#1372704](https://github.com/AlaskaAirlines/Icons/issues/1372704) ([9097864](https://github.com/AlaskaAirlines/Icons/commit/909786419f2401b1a20308089852e18c4e3202c5))
+
 # [5.25.0](https://github.com/AlaskaAirlines/Icons/compare/v5.24.0...v5.25.0) (2026-07-24)
 
 
