@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.27.0](https://github.com/AlaskaAirlines/Icons/compare/v5.26.0...v5.27.0) (2026-08-31)
+
+
+### Features
+
+* **in-flight:** add pet stroke and filled paw print icons AB[#1631139](https://github.com/AlaskaAirlines/Icons/issues/1631139) ([304e73d](https://github.com/AlaskaAirlines/Icons/commit/304e73d367a90dc41a12eaa02258108f4c76c617))
+
 # [5.26.0](https://github.com/AlaskaAirlines/Icons/compare/v5.25.0...v5.26.0) (2026-08-21)
 
 
