@@ -797,6 +797,16 @@
       "category": "interface"
     },
     {
+      "name": "pet-stroke",
+      "desc": "Outline of a paw print",
+      "category": "in-flight"
+    },
+    {
+      "name": "pet-filled",
+      "desc": "Paw print",
+      "category": "in-flight"
+    },
+    {
       "name": "mug-stroke",
       "desc": "an outline of a coffee or tea mug with a handle.",
       "category": "in-flight"
