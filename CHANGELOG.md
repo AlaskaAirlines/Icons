@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.28.0](https://github.com/AlaskaAirlines/Icons/compare/v5.27.0...v5.28.0) (2026-09-11)
+
+
+### Features
+
+* **in-flight:** add seat-lie-flat, seat-suite and update first & premium class-legroom AB[#1641004](https://github.com/AlaskaAirlines/Icons/issues/1641004) ([da51439](https://github.com/AlaskaAirlines/Icons/commit/da51439eaa5a0ba1f2870402aaaebcbdd67e01a8))
+
 # [5.27.0](https://github.com/AlaskaAirlines/Icons/compare/v5.26.0...v5.27.0) (2026-08-31)
 
 
