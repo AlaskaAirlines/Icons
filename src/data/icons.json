@@ -1277,6 +1277,21 @@
       "category": "in-flight"
     },
     {
+      "name": "seat-lieflat",
+      "desc": "Indicates seat reclines 180° into a lie-flat bed.",
+      "category": "in-flight"
+    },
+    {
+      "name": "seat-standard-legroom",
+      "desc": "Indicates standard legroom.",
+      "category": "in-flight"
+    },
+    {
+      "name": "seat-suite",
+      "desc": "Indicates a private suite seat.",
+      "category": "in-flight"
+    },
+    {
       "name": "wine-and-spirits-filled",
       "desc": "wine glass.",
       "category": "in-flight"
