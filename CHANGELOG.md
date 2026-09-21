@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.29.0](https://github.com/AlaskaAirlines/Icons/compare/v5.28.0...v5.29.0) (2026-09-21)
+
+
+### Features
+
+* **tail:** add Air Rarotonga, Air Tahiti, Mokulele tail icons AB[#1649180](https://github.com/AlaskaAirlines/Icons/issues/1649180) ([ad1e52c](https://github.com/AlaskaAirlines/Icons/commit/ad1e52c1c6022545135a8c08d32754fec9b1591d))
+
 # [5.28.0](https://github.com/AlaskaAirlines/Icons/compare/v5.27.0...v5.28.0) (2026-09-11)
 
 
