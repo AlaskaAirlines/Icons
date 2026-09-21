@@ -492,6 +492,21 @@
       "name": "tail-MX",
       "title": "Airplane tail representing Breeze Airways",
       "viewBox": "0 0 141 138"
+    },
+    {
+      "name": "tail-GZ",
+      "title": "Airplane tail representing Air Rarotonga",
+      "viewBox": "0 0 141 138"
+    },
+    {
+      "name": "tail-VT",
+      "title": "Airplane tail representing Air Tahiti",
+      "viewBox": "0 0 141 138"
+    },
+    {
+      "name": "tail-MW",
+      "title": "Airplane tail representing Mokulele",
+      "viewBox": "0 0 141 138"
     }
   ]
 }
