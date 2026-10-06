@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.30.0](https://github.com/AlaskaAirlines/Icons/compare/v5.29.0...v5.30.0) (2026-10-06)
+
+
+### Features
+
+* **in-flight:** add lieflat-180-degrees-stroke and suite-privacy-stroke AB[#1654045](https://github.com/AlaskaAirlines/Icons/issues/1654045) ([e9318ac](https://github.com/AlaskaAirlines/Icons/commit/e9318acce2dd55b7ef40329510edf990c63f6363))
+
 # [5.29.0](https://github.com/AlaskaAirlines/Icons/compare/v5.28.0...v5.29.0) (2026-09-21)
 
 
