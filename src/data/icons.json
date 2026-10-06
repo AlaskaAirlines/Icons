@@ -1267,6 +1267,11 @@
       "category": "in-flight"
     },
     {
+      "name": "lieflat-180-degrees-stroke",
+      "desc": "Lie-flat seat that reclines into a fully flat 180-degree bed.",
+      "category": "in-flight"
+    },
+    {
       "name": "main-legroom",
       "desc": "Indicates main legroom.",
       "category": "in-flight"
@@ -1289,6 +1294,11 @@
     {
       "name": "seat-suite",
       "desc": "Indicates a private suite seat.",
+      "category": "in-flight"
+    },
+    {
+      "name": "suite-privacy-stroke",
+      "desc": "Private enclosed suite with direct aisle access.",
       "category": "in-flight"
     },
     {
