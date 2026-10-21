@@ -507,6 +507,11 @@
       "name": "tail-MW",
       "title": "Airplane tail representing Mokulele",
       "viewBox": "0 0 141 138"
+    },
+    {
+      "name": "tail-G3",
+      "title": "Airplane tail representing GOL Airlines",
+      "viewBox": "0 0 141 138"
     }
   ]
 }
