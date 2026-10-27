@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+# [5.31.0](https://github.com/AlaskaAirlines/Icons/compare/v5.30.0...v5.31.0) (2026-10-27)
+
+
+### Bug Fixes
+
+* **tail:** add fill none to G3 outline path to stop it rendering black [#400](https://github.com/AlaskaAirlines/Icons/issues/400) ([efb95b9](https://github.com/AlaskaAirlines/Icons/commit/efb95b9e8d70f1ab3889dd846cb4a489aed0488e))
+
+
+### Features
+
+* **tail:** add GOL Airlines tail icon AB[#1667784](https://github.com/AlaskaAirlines/Icons/issues/1667784) ([d9f9702](https://github.com/AlaskaAirlines/Icons/commit/d9f97027ef057cc6dd5b58ead7e630e5a9b2641f))
+
 # [5.30.0](https://github.com/AlaskaAirlines/Icons/compare/v5.29.0...v5.30.0) (2026-10-06)
 
 
