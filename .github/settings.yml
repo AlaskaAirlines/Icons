@@ -71,9 +71,6 @@ branches:
   - name: master
     <<: *default_protection
 
-  - name: beta
-    <<: *default_protection
-
 # Labels: define labels for Issues and Pull Requests
 labels:
   - name: icons
