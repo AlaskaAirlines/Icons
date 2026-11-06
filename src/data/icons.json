@@ -1416,6 +1416,11 @@
       "category": "destination"
     },
     {
+      "name": "globe-stroke",
+      "desc": "Globe indicating worldwide destinations.",
+      "category": "destination"
+    },
+    {
       "name": "car-rental-stroke",
       "desc": "Indicates car rental options.",
       "category": "destination"
@@ -1578,6 +1583,11 @@
     {
       "name": "tag-filled",
       "desc": "bag tag.",
+      "category": "interface"
+    },
+    {
+      "name": "tag-stroke",
+      "desc": "Outlined tag with a hole, indicating labels, deals or categories.",
       "category": "interface"
     },
     {
