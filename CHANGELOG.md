@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.32.0](https://github.com/AlaskaAirlines/Icons/compare/v5.31.0...v5.32.0) (2026-11-09)
+
+
+### Features
+
+* **icons:** add interface:tag-stroke AB[#1674673](https://github.com/AlaskaAirlines/Icons/issues/1674673) and destination:globe-stroke AB[#1674811](https://github.com/AlaskaAirlines/Icons/issues/1674811) ([4048a1c](https://github.com/AlaskaAirlines/Icons/commit/4048a1c22f6cb05e66c3081fa38e3fa2877aaaa2))
+
 # [5.31.0](https://github.com/AlaskaAirlines/Icons/compare/v5.30.0...v5.31.0) (2026-10-28)
 
 
